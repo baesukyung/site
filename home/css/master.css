@@ -212,7 +212,7 @@
 
 .menu_box{
 	
-	padding: 20px;
+	/* padding: 20px; */
 	z-index: 999;
 	width:100%; 
 	display: flex;

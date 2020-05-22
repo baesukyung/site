@@ -336,12 +336,12 @@ transition:all 0.5s ease-in-out;
 	/* display: block; */
 	padding-left: 4%;
 	margin: 0 auto;
-	line-height: 13em;
+
 }
 
-.bg-txt h1 span{
+/* .bg-txt h1 span{
 	display: none;
-}
+} */
 .txt-box{
 	width: 100%;
 	display: block;

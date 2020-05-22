@@ -310,9 +310,7 @@ transition:all 0.5s ease-in-out;
 #main-txt1{
 	display: none;
 }
-/* #section01{
-	padding-bottom: 10%;
-} */
+
 
 /* <여기까지 section1> */
 #section02{
@@ -326,10 +324,10 @@ transition:all 0.5s ease-in-out;
 	
 }
 .bg-txt{
-	width: 75%;
+	width: 80%;
 	font-size: 1.2rem;
 	position: absolute;
-	padding-top: 18%;
+	padding-top: 10%;
 	padding-left: 13%;
 
 	display: block;

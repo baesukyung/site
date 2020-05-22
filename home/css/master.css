@@ -146,7 +146,6 @@ padding-top: 9%;
 
 .txt-box{
 	width: 100%;
-	height: 80vh;
 	background: rgba(159, 204, 137,0.4);
 	display: flex;
 
@@ -197,7 +196,11 @@ padding-top: 9%;
 #section03{
 	width:100%; 
 	height:1500px; 
-	background:#9F0;}
+	background:#f6eeda;}
+
+
+
+
 	/* section 03 end---------------------------------------------------------  */	
 #section04{
 	width:100%; 
@@ -318,16 +321,19 @@ transition:all 0.5s ease-in-out;
 /* <여기까지 section1> */
 #section02{
 	width: 100%;
-	position: relative;
+	/* position: relative; */
 }
 .bg{
 	width: 100%;
 
-	position: absolute;
+	/* position: absolute; */
 	
 }
-.bgtxt-box{
+.bg-box{
 	position: relative;
+}
+.bgtxt-box{
+	position: absolute;
 }
 .bg-txt{
 	width: 90%;
@@ -345,9 +351,6 @@ transition:all 0.5s ease-in-out;
 .txt-box{
 	width: 100%;
 	display: block;
-	
-
-
 }
 .aside{
 	width: 100%;
@@ -385,6 +388,7 @@ transition:all 0.5s ease-in-out;
 
 
 
+/* diplay:flex-direction */
 
 /* h3{
     display: inline-block;

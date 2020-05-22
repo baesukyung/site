@@ -326,14 +326,17 @@ transition:all 0.5s ease-in-out;
 	position: absolute;
 	
 }
+.bgtxt-box{
+	position: relative;
+}
 .bg-txt{
 	width: 90%;
 	font-size: 1.2rem;
-	position: relative;
+	position: absolute;
 	/* display: block; */
-
-	line-height: 3em;
-
+	padding-left: 4%;
+	margin: 0 auto;
+	line-height: 13em;
 }
 
 .bg-txt h1 span{

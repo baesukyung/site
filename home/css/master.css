@@ -142,6 +142,21 @@ padding-top: 9%;
 
 }
 
+/* 자동타이핑 */
+/* #typing-txt{display: none;}
+
+#typing h1.on {  
+  display: inline-block; 
+  animation-name: cursor; 
+  animation-duration: 0.3s; 
+  animation-iteration-count: infinite; 
+} 
+@keyframes cursor{ 
+  0%{border-right: 1px solid #fff} 
+  50%{border-right: 1px solid #000} 
+  100%{border-right: 1px solid #fff} 
+} */
+
 /* bg end */
 
 .txt-box{
@@ -317,8 +332,9 @@ transition:all 0.5s ease-in-out;
 	display: none;
 }
 
-
 /* <여기까지 section1> */
+
+
 #section02{
 	width: 100%;
 	/* position: relative; */

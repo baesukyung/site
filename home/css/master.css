@@ -324,11 +324,11 @@ transition:all 0.5s ease-in-out;
 	
 }
 .bg-txt{
-	width: 80%;
+	width: 90%;
 	font-size: 1.2rem;
 	position: absolute;
-	padding-top: 10%;
-	padding-left: 13%;
+	padding-top: 12%;
+	padding-left: 11%;
 
 	display: block;
 	line-height: 3em;

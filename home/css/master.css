@@ -37,7 +37,7 @@
 	.warp{
 		width: 100%;
 		display: flex;
-		padding-top: 150px;
+		padding-top: 110px;
 	}
 	.logo{
 		padding-top: 1.8%;
@@ -129,14 +129,17 @@
 }
 
 .bg-txt{
-	padding-top: 7%;
 	position: relative;
+padding-top: 9%;
+	align-items: center;
+	justify-content: center;
+
 	z-index: 888;
 	color:#165851;
 	font-size: 2.5em;
 	text-align: center;
-	/* padding-top: 95px; */
-	/* padding-left: 13%; */
+	
+
 }
 
 /* bg end */
@@ -326,14 +329,13 @@ transition:all 0.5s ease-in-out;
 .bg-txt{
 	width: 90%;
 	font-size: 1.2rem;
-	position: absolute;
-	padding-top: 12%;
-	padding-left: 11%;
+	position: relative;
+	/* display: block; */
 
-	display: block;
 	line-height: 3em;
 
 }
+
 .bg-txt h1 span{
 	display: none;
 }

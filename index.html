@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta property="og:image" content=""/>
+<meta property="og:title" content="숨쉬는 공간 이레가든빌리지"/>
+<meta property="og:description" content="사람과 식물들이 함께 살아가는 식물문화 공간"/> 
+<title>이레가든빌리지</title>
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<style>
+*{list-style:none; margin:0; padding:0;}
+</style>
+<link rel="stylesheet" href="css/master.css">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/nomal.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+	
+		<div id="section01">
+			<div class="menu_box">
+				<div class="logo"><a href="#section01"><img src="images/logo.jpg"></a></div>
+				<ul class="nav">
+					<li><a href="#section01">이레메인</a></li>
+					<li><a href="#section02">이레소개</a></li>
+					<li><a href="#section03">서비스이용</a></li>
+					<li><a href="#section04">이레갤러리</a></li>
+					<li><a href="#section05">이레오시는길</a></li>
+				</ul>
+			<div class="goast_btn" id="">
+				<img src="images/goast_btn.png" id="">
+			</div>
+			</div>
+
+			<div class="warp">
+				<div class="main-content-img">
+					<img src="images/garden_img.jpg" alt="" class="garden">
+				</div>
+				<div class="main-content-txt">
+					<h1 class="main-txt">
+						Garden Village</h1>
+						<h1 class="main-txt" id="main-txt1">Plant Space Design Garden</h1>
+						
+					</h1>
+					<p class="content">
+						이레가든빌리지에 오신것을 환영합니다<br>
+						지친 마음을 달래줄 반려식물들과 함께 <br>
+						여유롭게 차한잔 어떠세요?
+					</p>
+				
+				</div>
+			</div>
+			
+			<!-- menu end -->
+		</div>
+		<!-- section01 -->
+		<div id="section02">
+			<div class="container">
+				<div class="bg-box">
+					<div class="bg"></div>
+					<div class="bg-white"></div>
+					<div class="bg-txt"><h1><strong> GARDEN VILLAGE DESIGN CONCEPT</strong></h1></div>
+				</div>
+				
+				<div class="txt-box">
+					<div class="aside">
+						<div class="title">
+							<h2 class="title-txt">이레소개</h2>
+						</div>
+					</div>
+					<div class=" infor">
+						<div class="info-txt">
+							<p>이레가든빌리지의 디자인 컨셉은 <strong>'결합'</strong>, <strong>'해체'</strong>, <strong>'재결합'</strong> 입니다.<br>
+
+								이곳에서 살아가는 식물들과 방문하는 고객들에게  가장 만족스러운 공간을 만들고자 하는 <br>
+								
+								고민을 하였습니다. 빠르게 변화되는 트랜드에 민첩히 대응하며, 이를 식물과 함께 조화롭<br>게
+								
+								연출해 내기위한 고민이 이레가든빌리지에 담겨있습니다.<br>
+								
+								모던한 큐브형태의 구조물들과 다양한 식물들의 조화를 통한 <strong>'식물공간디자인'</strong>을 이레가든<br>빌리지를 통해서 경험하시기 바랍니다.</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			</div>
+		
+
+		
+		<!-- section02 -->
+		<div id="section03">
+<div class="service">
+	<div class="service-title">
+		<h2>서비스이용</h2>
+	</div>
+	<div class=""
+</div>
+			
+
+		</div>
+		<!-- section03 -->
+		<div id="section04">
+
+		</div>
+		<!-- section04 -->
+		<div id="section05">
+
+		</div>
+
+<!-- section05 -->
+
+
+
+
+
+<script src="js/fontawesome.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+<script>
+AOS.init();
+
+
+	/**스크롤이 설정한 높이 이상 내려갔을때 스타일추가하기**/
+	if (jQuery(window).width() > 0) {
+    jQuery(window).on("scroll",function(ev){
+        if(jQuery(window).scrollTop() > 150 ) { /**높이 픽셀 조정**/
+            jQuery('.menu_box').addClass('fixed');  /**위의 높이에서 .fixed 클래스를 추가합니다. 스타일에서 자유롭게 수치 조절 가능합니다.**/
+        }
+        else{
+			jQuery('.menu_box').removeClass('fixed');
+        }
+        return false;
+    });
+	}
+	
+	/**마우스 부드럽게 해당위치로 이동**/
+	$(function(){
+	   $('a[href^=#]').click(function() {
+		  var speed = 800;
+		  var href= $(this).attr("href");
+		  var target = $(href == "#" || href == "" ? 'html' : href);
+		  var position = target.offset().top;
+		  $('body,html').animate({scrollTop:position}, speed, 'swing');
+		  return false;
+	   });
+	});
+</script>
+</body>
+</html>

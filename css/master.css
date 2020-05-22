@@ -1,0 +1,482 @@
+/* @import url('reset css') */
+/* @font-face { font-family: 'BinggraeTaom'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.1/BinggraeTaomA1.woff') format('woff'); font-weight: normal; font-style: normal; } */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* body{
+	font-family: 'Noto Serif KR', 'serif';
+} */
+
+
+#section01{
+	width:100%;
+	background:#f6eeda;
+	position: relative;
+}
+.menu_box li a{
+	padding: 20px;
+	text-decoration:none;
+	color:#165851;
+	/* font-family: 'Noto Sans KR', sans-serif; */
+	/* font-family:'BinggraeTaom';  */
+	font-family: 'Noto Serif KR', serif;
+	font-size:15px; font-weight: bold;
+}
+.goast_btn{
+
+	position: absolute;
+	padding-left: 93%;
+	padding-top: 1.8%;
+	display: none;
+}
+.goast_btn img{
+	width: 28%;
+}
+
+
+
+	.warp{
+		width: 100%;
+		display: flex;
+		padding-top: 150px;
+	}
+	.logo{
+		padding-top: 1.8%;
+		padding-left: 3%;
+	}
+	.nav{
+		display: flex;
+		padding-top: 1.8%;
+		/* padding-left: 3%; */
+		padding-right: 5%;
+		letter-spacing: .3rem;
+		z-index: 999;
+	}
+	.main-content-img{
+		width: 50%;
+		display: flex;
+		align-items: center;
+	}
+	.main-content-txt{
+		width: 50%;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		flex-direction: column;
+		
+	}
+	.main-txt{
+		-webkit-box-shadow: inset 0px -18px 0px 0px rgba(216,219,54,1);
+		-moz-box-shadow: inset 0px -18px 0px 0px rgba(216,219,54,1);
+		box-shadow: inset 0px -18px 0px 0px rgba(216,219,54,1);
+		margin-top: 5px;
+	}
+
+	.main-content-txt h1{
+		font-size: 3rem;
+		line-height: 4rem;
+		color: #165851;
+		font-family: 'Noto Serif KR', serif;
+		
+	}
+	.content{
+		top: 5%;
+		line-height: 3.5em;
+		color: #165851;
+		font-family: 'Noto Serif KR', serif;
+	}
+	.garden{
+		width: 60%;
+		margin: 0 auto;
+	}
+
+
+	/* section 01 end------------------------------------------------------  */
+
+	
+#section02{
+	width:100%;
+	/* height: 100vh; */
+	background: #ffffff;
+}
+/* .container{
+	width: 100%;
+
+} */
+.bg-box{
+	width: 100%;
+	height: 40vh;
+
+}
+.bg{
+	width: 100%;
+	height: 40vh;
+	position: absolute;
+	z-index: 99;
+	overflow: hidden;
+	background: url('../images/bg-plant.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+
+}
+.bg-white{
+	width: 100%;
+	height: 40vh;
+	position: absolute;
+	background: rgba(255, 255, 255, 0.5);
+	z-index: 105;
+}
+
+.bg-txt{
+	padding-top: 7%;
+	position: relative;
+	z-index: 888;
+	color:#165851;
+	font-size: 2.5em;
+	text-align: center;
+	/* padding-top: 95px; */
+	/* padding-left: 13%; */
+}
+
+/* bg end */
+
+.txt-box{
+	width: 100%;
+	height: 80vh;
+	background: rgba(159, 204, 137,0.4);
+	display: flex;
+
+}
+.aside{
+	width: 40%;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+
+
+}
+
+.title{
+	/* display: flex; */
+	font-size: 2.5em;
+	color:#165851;
+	font-weight: 600;
+	-webkit-box-shadow: 0px -30px 0px -20px rgba(216,219,54,1);
+	-moz-box-shadow: 0px -30px 0px -20px rgba(216,219,54,1);
+	box-shadow: 0px -30px 0px -20px rgba(216,219,54,1);
+
+}
+.infor{
+	display: flex;
+	width: 60%;
+	align-items: center;
+	justify-content: center;
+	
+}
+.info-txt{
+	
+	color: #165851;
+	font-size: 1.2em;
+	/* padding-top: 10%; */
+
+	line-height: 2.7em;
+	word-spacing: .3em;
+
+}
+
+
+
+
+
+/* section 02 end---------------------------------------------------------  */	
+	
+#section03{
+	width:100%; 
+	height:1500px; 
+	background:#9F0;}
+	/* section 03 end---------------------------------------------------------  */	
+#section04{
+	width:100%; 
+	height:1500px; 
+	background:#F33;}
+	/* section 04 end---------------------------------------------------------  */	
+	
+#section05{
+	width:100%; 
+	height:1500px; 
+	background:#FC0;}
+/* section 05 end---------------------------------------------------------  */	
+
+
+
+.menu_box{
+	
+	padding: 20px;
+	z-index: 999;
+	width:100%; 
+	display: flex;
+	height:90px; 
+	color:#FFF; 
+	position:fixed;
+	transition:all 0.5s ease-in-out; 
+	-webkit-transition:all 0.5s ease-in-out;
+	border-bottom:1px solid #165851;
+	justify-content:space-between;
+}
+
+
+
+
+
+	
+.fixed{
+background:rgba(255, 255, 255, 0.705);
+transition:all 0.5s ease-in-out; 
+-webkit-transition:all 0.5s ease-in-out;}
+	
+
+			
+
+			
+
+
+/* .line2{
+	width:100%;
+} */
+
+				
+
+					
+					/**메뉴부분 마우스 오버시 색상 **/
+					.menu_box li a:hover{
+						border-bottom:2px solid #d8db36; 
+						padding-top:40px; 
+						color:#d8db36;
+					}
+						
+					.menu_box li:nth-child(2) a:hover{
+						border-bottom:2px solid #adb46a; 
+						padding-top:40px; 
+						color:#adb46a; 
+					}
+						
+					.menu_box li:nth-child(3) a:hover{
+						border-bottom:2px solid #6dba77;
+						padding-top:40px; 
+						color:#6dba77;
+					}
+						
+					.menu_box li:nth-child(4) a:hover{
+						border-bottom:2px solid #0d773b; 
+						padding-top:40px; 
+						color:#0d773b;
+					}
+						
+					.menu_box li:nth-child(5) a:hover{
+						border-bottom:2px solid #2fb29f; 
+						padding-top:40px; 
+						color:#2fb29f;
+					}
+
+                        
+@media(max-width:767px){
+
+.nav{
+	display: none;
+}
+.content{
+	text-align: left;
+	font-size: .87em;
+	text-align: center;
+}
+.warp{
+	display: block;
+	align-items: center;
+	padding-left: 25%;
+	}
+.menu_box{
+	border-bottom: unset;
+}
+#main-txt1{
+	display: none;
+}
+#section01{
+	padding-bottom: 10%;
+}
+
+/* <여기까지 section1> */
+#section02{
+	width: 100%;
+	position: relative;
+}
+.bg{
+	width: 100%;
+	height: 40vh;
+	position: absolute;
+	
+}
+.bg-txt{
+	width: 75%;
+	font-size: 1.2rem;
+	position: absolute;
+	padding-top: 18%;
+	padding-left: 13%;
+
+	display: block;
+	line-height: 3em;
+
+}
+.txt-box{
+	width: 100%;
+	display: block;
+	
+
+
+}
+.aside{
+	width: 100%;
+
+}
+
+.title{
+	width: 100%;
+
+}
+.title-txt{
+	padding-top: 3%;
+	text-align: center;
+	font-size: .8em;
+}
+.infor{
+	width: 90%;
+	align-items: center;
+	justify-content: center;
+	padding-left: 5%;
+}
+/* <여기까지 section2> */
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* h3{
+    display: inline-block;
+    margin-bottom: 60px;
+
+    strong{
+      display: inline-block;
+      font-weight: normal;
+      overflow: hidden;
+      border-right: 3px solid $mint-color;
+      white-space: nowrap; /* Keeps the content on a single line */
+      /* margin: 0 auto; Gives that scrolling effect as the typing happens */
+
+      /* &.animate{
+        animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+      }
+
+      @media (max-width: 1000px) {
+        overflow: auto;
+        white-space: normal;
+        border-right: none;
+
+        &.animate{
+          animation: none;
+        }
+      }
+    }
+  }
+} */
+
+
+/* The typing effect */
+/* @keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+/* @keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: $mint-color; }
+} */ 
+
+
+
+
+
+/*                         
+@media(min-width:576px){
+    .container{
+        max-width: 540px;
+        margin: 0 auto;
+    }
+}
+
+
+@media (min-width:768px){
+    .container{
+        max-width: 720px;
+        margin: 0 auto;
+      }
+}
+
+@media (min-width:992px){
+    .container{
+        max-width: 960px;
+        margin: 0 auto;
+      }
+}
+
+
+@media (min-width:1200px){
+    .container{
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+}                        */
+
+
+
+/* @media(max-width: 767px){
+    
+    .small-info{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .navi{
+        display: none;
+    }
+    nav{
+        justify-content: space-between;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .width-40{
+        width: 100%;
+    }
+    .width-60{
+        width: 100%;
+    }
+    .info-big{
+        padding: 0;
+    }
+} */
+
+
+                        

@@ -334,6 +334,9 @@ transition:all 0.5s ease-in-out;
 	line-height: 3em;
 
 }
+.bg-txt h1 span{
+	display: none;
+}
 .txt-box{
 	width: 100%;
 	display: block;

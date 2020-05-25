@@ -21,14 +21,14 @@
 	font-family: 'Noto Serif KR', serif;
 	font-size:15px; font-weight: bold;
 }
-.goast_btn{
+.ghost_btn{
 
 	position: absolute;
 	padding-left: 93%;
 	padding-top: 1.8%;
 	display: none;
 }
-.goast_btn img{
+.ghost_btn img{
 	width: 28%;
 }
 
@@ -130,7 +130,7 @@
 
 .bg-txt{
 	position: relative;
-padding-top: 9%;
+	padding-top: 9%;
 	align-items: center;
 	justify-content: center;
 
@@ -216,15 +216,62 @@ padding-top: 9%;
 .title1{
 	text-align: center;
 }
+.title1 h2{
+	line-height: 5em;
+	font-size: 2.5em;
+	color:#165851;
+	font-weight: 600;
+}
 .title1-box{
 	display: flex;
-	width:90%;
-}
+	width:100%;
+	}
 .title1-box div{
-	width: 30%;
+	width: 33.33%;
+	position: relative;
+}
+
+.box1-txt{
+	text-align: center;
+	line-height: 5em;
+	font-size: 1.8em;
+	color:#165851;
+	font-weight: 600;
+}
+.box2-txt{
+	text-align: center;
+	line-height: 5em;
+	font-size: 1.8em;
+	color:#165851;
+	font-weight: 600;
+}
+.box3-txt{
+	text-align: center;
+	line-height: 5em;
+	font-size: 1.8em;
+	color:#165851;
+	font-weight: 600;
 }
 
 
+.box1 img{
+	width: 180%;
+	position: absolute;
+	padding-left: 10%;
+
+
+}
+.box2 img{
+	padding-left: 10%;
+	width: 180%;
+	position: absolute;
+}
+.box3 img{
+	padding-left: 10%;
+	width: 180%;
+	position: absolute;
+}
+	
 
 
 	/* section 03 end---------------------------------------------------------  */	

@@ -211,7 +211,18 @@ padding-top: 9%;
 #section03{
 	width:100%; 
 	height:1500px; 
-	background:#f6eeda;}
+	background:#fff;}
+
+.title1{
+	text-align: center;
+}
+.title1-box{
+	display: flex;
+	width:90%;
+}
+.title1-box div{
+	width: 30%;
+}
 
 
 

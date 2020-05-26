@@ -11,7 +11,7 @@
 <style>
 *{list-style:none; margin:0; padding:0;}
 </style>
-<link rel="stylesheet" href="css/master.css">
+
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/nomal.css">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -19,6 +19,7 @@
 <link rel="stylesheet" href="css/jquery.bxslider.css">
 <link rel="stylesheet" type="text/css" href="css/default.css" />
 <link rel="stylesheet" type="text/css" href="css/component.css" />
+<link rel="stylesheet" href="css/master.css">
 
 
 
@@ -133,7 +134,7 @@
 		<div class="title1"><h2><strong>서비스이용</strong></h2></div>
 		<div class="snip1200-box">
 			<figure class="snip1200">
-				<img src="images/box1.png" alt="sq-sample27" />
+				<img src="images/box1.png" alt="sq-sample27"  class="snip1200-img"/>
 				<figcaption>
 				<p>이레가든빌리지의<br>디자인정원은 식물이<br>
 					살아가는 공간에<br>여러분을 초대하여 잠시<br>머무르다 가실 수 있는<br>
@@ -180,6 +181,7 @@
 		
 			
 <div id="section04">
+	<div class="title2"><h2><strong>이레갤러리</strong></h2></div>
 	<ul class="grid cs-style-7">
 		<li>
 			<figure>
@@ -232,26 +234,7 @@
 </div>
 <!-- section04 -->
 <div id="section05">
-	<div class="hover">
-		<div class="hover-container">
-			<img src="images/box2.png" alt="Avatar" class="image">
-			<div class="overlay">
-			  <div class="text">Hello World</div>
-			</div>
-		  </div>
-		  <div class="hover-container">
-			<img src="images/box1.png" alt="Avatar" class="image">
-			<div class="overlay">
-			  <div class="text">Hello World</div>
-			</div>
-		  </div>
-		  <div class="hover-container">
-			<img src="images/box3.png" alt="Avatar" class="image">
-			<div class="overlay">
-			  <div class="text">Hello World</div>
-			</div>
-		  </div>
-		  </div>
+
 </div>
 
 <!-- section05 -->
@@ -329,3 +312,79 @@ $('.bxslider').bxSlider({
 </script>
 </body>
 </html>
+
+
+
+
+
+
+
+<!-- html
+<div class="hover">
+	<div class="hover-container">
+		<img src="images/box2.png" alt="Avatar" class="image">
+		<div class="overlay">
+		  <div class="text">Hello World</div>
+		</div>
+	  </div>
+	  <div class="hover-container">
+		<img src="images/box1.png" alt="Avatar" class="image">
+		<div class="overlay">
+		  <div class="text">Hello World</div>
+		</div>
+	  </div>
+	  <div class="hover-container">
+		<img src="images/box3.png" alt="Avatar" class="image">
+		<div class="overlay">
+		  <div class="text">Hello World</div>
+		</div>
+	  </div>
+	  </div> -->
+
+
+	  <!-- css
+	  .hover{
+		display: flex;
+	}
+	
+	.hover-container {
+		position: relative;
+		width: 30%;
+		display: flex;
+	
+	  }
+	  
+	  .image {
+		display: block;
+		width: 100%;
+		height: auto;
+	  }
+	  
+	  .overlay {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 100%;
+		width: 100%;
+		opacity: 0;
+		transition: .5s ease;
+		background-color: #008CBA;
+	  }
+	  
+	  .hover-container:hover .overlay {
+		opacity: 1;
+	  }
+	  
+	  .text {
+		color: white;
+		font-size: 20px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		text-align: center;
+	  } -->

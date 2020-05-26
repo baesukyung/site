@@ -349,8 +349,17 @@ figure.snip1200.hover p {
 	height:1500px; 
 	background:#f6eeda;}
 
+.title2 h2{
+	line-height: 4em;
+	font-size: 2.5em;
+	color:#165851;
+	font-weight: 600;
 
+}
+.title2{
+	text-align: center;
 
+}
 
 
 
@@ -359,53 +368,9 @@ figure.snip1200.hover p {
 	
 #section05{
 	width:100%; 
- 
+ 	height: 1500px;
 	background:#FC0;}
-	.hover{
-		display: flex;
-	}
 	
-	.hover-container {
-		position: relative;
-		width: 30%;
-		display: flex;
-	
-	  }
-	  
-	  .image {
-		display: block;
-		width: 100%;
-		height: auto;
-	  }
-	  
-	  .overlay {
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		height: 100%;
-		width: 100%;
-		opacity: 0;
-		transition: .5s ease;
-		background-color: #008CBA;
-	  }
-	  
-	  .hover-container:hover .overlay {
-		opacity: 1;
-	  }
-	  
-	  .text {
-		color: white;
-		font-size: 20px;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		-webkit-transform: translate(-50%, -50%);
-		-ms-transform: translate(-50%, -50%);
-		transform: translate(-50%, -50%);
-		text-align: center;
-	  }
 /* section 05 end---------------------------------------------------------  */	
 
 
@@ -583,6 +548,9 @@ figure.snip1200 p{
 	line-height: 1.5em;
 	font-size: 1.1rem;
 }
+.snip1200-box{
+	padding-left: 12%;
+  }
 
 }
 

@@ -55,12 +55,27 @@ nav{
 
 
 /* nav */
+#slide_wrap{
+    width: 1200px;
+    height: 300px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.slide_box{
+    overflow: hidden;
+}
+.slide_box>ul>li>a>img{
+    display: block;
+    border: 0;
+    width: 1200px;
+    height: 300px;
+    transition: 1s;
+}
 
-
-.slider{
+/* .slider{
     background-color: lavender;
     height: 300px;
-}
+} */
 .content{
     height: 200px;
     display: flex;

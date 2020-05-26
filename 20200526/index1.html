@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-2.1.3.js"></script>
+    <style>
+#header{
+    background-color: #6A84B7;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a.author{
+    color: grey;
+}
+label, #toggle{
+    display: none;
+}
+#nav{
+    padding: 0;
+    margin: 0;
+    display: inline;
+}
+#nav li{
+    display: inline;
+}
+#contents{
+    min-height: 200px;
+    background: #D9E5FF;
+}
+#footer{
+    background-color: #EAEAEA;
+    font-size: 13px;
+}
+
+/* Android 버그 교정 */
+body{
+    -webkit-animation: bugfix infinite 1s;
+}
+@-webkit-keyframes bugfix {
+    from {
+        padding: 0;
+    }
+    to {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 480px){
+    #nav{
+        display: none;
+    }
+    /* #toggle:checked + #nav{
+        display: block;
+    }
+    #nav li{
+        display: block;
+        width: 100%;
+        text-align: center; 
+        border-top: 1px solid #ccc;
+        padding: 4px;
+    }
+    label{
+        display: block;
+        text-align: center;
+        background: url('menu-btn.png');
+        background-repeat: no-repeat;
+        background-position: 97% 10px;
+        background-size: 24px 19px;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 4px 3%;
+    } */
+    #nav li{
+        display: block;}
+    label{
+        display: block;
+        text-align: center;
+        background: url('menu-btn.png');
+        background-repeat: no-repeat;
+        background-position: 97% 10px;
+        background-size: 24px 19px;
+        padding: 4px 3%;}
+}
+    
+
+    </style>
+</head>
+<body>
+    <div id="header">
+        <label for="toggle" onclick>MENU</label>
+        <input type="checkbox" id="toggle"/>
+        <ul id="nav">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Guest</a>
+            </li>
+            <li>
+                <a href="#">Notice</a>
+            </li>
+        </ul>
+    </div>
+    <div id="contents">
+        <h1>본문</h1>
+    </div>
+    <div id="footer">
+        Designed by commaeng
+        <a class="author" href="http://www.illyweb.com/" title="Anton Saputro">Anton Saputro</a>
+        <a class="author" href="http://www.illyweb.com/" title="Flaticon">http://www.illyweb.com</a>
+        is licensed by <a class="author" href="http://www.illyweb.com" title="Creative Commons BY 3.0">CC BY commaeng</a>
+    </div>
+    
+    
+    
+    
+<script>
+
+// $(function(){
+//     $("menu-btn").on('click',function(event){
+//     event.preventDefault();
+//     $(this).toggleClass('vidible');
+// });
+// });
+
+
+
+// $(function(){
+//     $(".menu-btn").mouseover(function(){
+//         $("#nav").stop().slideDown();
+//         $("#nav").css("display","flex");
+//     });
+//     $(".menu-btn").mouseleave(function(){
+//         $(this).children("#nav").stop().slideUp();
+//     });
+// });
+
+$(function(){
+    $('#toggle').click(function(){
+        $('#nav').slideToggle().css("display", "block")
+    });
+});
+
+</script>
+</body>
+</html>

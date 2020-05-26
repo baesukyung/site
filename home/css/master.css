@@ -13,6 +13,7 @@
 	background:#f6eeda;
 	position: relative;
 }
+
 .menu_box li a{
 	padding: 20px;
 	text-decoration:none;
@@ -99,10 +100,7 @@
 	width:100%;
 	background: #ffffff;
 }
-/* .container{
-	width: 100%;
 
-} */
 .bg-box{
 	width: 100%;
 	height: 40vh;
@@ -337,51 +335,7 @@ figure.snip1200.hover p {
   transition-delay: 0.35s;
 }
 
-/* .hover{
-	display: flex;
-}
 
-.hover-container {
-	position: relative;
-	width: 30%;
-	display: flex;
-
-  }
-  
-  .image {
-	display: block;
-	width: 100%;
-	height: auto;
-  }
-  
-  .overlay {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	height: 100%;
-	width: 100%;
-	opacity: 0;
-	transition: .5s ease;
-	background-color: #008CBA;
-  }
-  
-  .hover-container:hover .overlay {
-	opacity: 1;
-  }
-  
-  .text {
-	color: white;
-	font-size: 20px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	text-align: center;
-  } */
 
 
 
@@ -405,8 +359,53 @@ figure.snip1200.hover p {
 	
 #section05{
 	width:100%; 
-	height:1500px; 
+ 
 	background:#FC0;}
+	.hover{
+		display: flex;
+	}
+	
+	.hover-container {
+		position: relative;
+		width: 30%;
+		display: flex;
+	
+	  }
+	  
+	  .image {
+		display: block;
+		width: 100%;
+		height: auto;
+	  }
+	  
+	  .overlay {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 100%;
+		width: 100%;
+		opacity: 0;
+		transition: .5s ease;
+		background-color: #008CBA;
+	  }
+	  
+	  .hover-container:hover .overlay {
+		opacity: 1;
+	  }
+	  
+	  .text {
+		color: white;
+		font-size: 20px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		text-align: center;
+	  }
 /* section 05 end---------------------------------------------------------  */	
 
 
@@ -532,12 +531,13 @@ transition:all 0.5s ease-in-out;
 	position: absolute;
 }
 .bg-txt{
-	width: 90%;
-	font-size: 1.1rem;
-	position: absolute;
+	/* width: 90%; */
+	font-size: .8rem;
+	/* position: absolute; */
 	/* display: block; */
-	padding-left: 4%;
-	margin: 0 auto;
+	/* padding-left: 4%;
+	margin: 0 auto; */
+
 
 }
 
@@ -569,7 +569,20 @@ transition:all 0.5s ease-in-out;
 	padding-left: 5%;
 }
 /* <여기까지 section2> */
-
+#section03{
+	width: 100%;
+}
+.snip1200-box{
+	display: block;
+}
+figure.snip1200{
+	width: 100%;
+	max-width: 80%;
+}
+figure.snip1200 p{
+	line-height: 1.5em;
+	font-size: 1.1rem;
+}
 
 }
 

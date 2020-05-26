@@ -315,7 +315,7 @@ figure.snip1200 a {
   top: 0;
   bottom: 0;
   position: absolute;
-  z-index: 1;
+  /* z-index: 1; */
 }
 figure.snip1200:hover img,
 figure.snip1200.hover img {

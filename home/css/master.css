@@ -116,6 +116,7 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	
+	
 
 }
 .bg-white{
@@ -190,17 +191,20 @@
 	
 }
 .info-txt{
-	
+	width: 78%;
+	padding-bottom: 10%;
 	color: #165851;
-	font-size: 1.2em;
-	/* padding-top: 10%; */
-
+	font-size: 1.1em;
+	padding-top: 10%;
 	line-height: 2.7em;
 	word-spacing: .3em;
+	/* letter-spacing: .3em; */
 
 }
 
-
+.info-txt p{
+	
+}
 
 
 
@@ -449,6 +453,9 @@ transition:all 0.5s ease-in-out;
 
 .nav{
 	display: none;
+}
+.nav li{
+	display: block;
 }
 .content{
 	text-align: left;

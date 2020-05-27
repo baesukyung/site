@@ -176,7 +176,7 @@
 			
 <div id="section04">
 	<div class="title2"><h2><strong>이레갤러리</strong></h2></div>
-	<div class="center-slide">
+	<div class="bxslider1">
 		<ul class="grid cs-style-7">
 			<li>
 				<figure>
@@ -305,7 +305,23 @@ $('.bxslider').bxSlider({
 
 //네번째section 사진 슬라이드
 
+$(document).ready(function(){
+$('.bxslider1').bxSlider({
+  auto: true,
+  autoControls: true,
+  stopAutoOnClick: true,
+  pager: true,
+//   slideWidth:0,
+  speed:250,
+  minSlides:1,
+  maxSlides:1,
+  slideWidth:1800,
+  controls: false,
+  infiniteLoop:true,
 
+
+});
+	});
 
 
 

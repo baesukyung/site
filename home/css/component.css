@@ -31,14 +31,14 @@
 	top: 0;
 	left: 0;
 	padding: 20px;
-	background: #165851;
+	background: #eadbb2;
 	color: #ed4e6e;
 }
 
 .grid figcaption h3 {
 	margin: 0;
 	padding: 0;
-	color: #fff;
+	color: #165851;
 }
 
 .grid figcaption span:before {
@@ -341,14 +341,14 @@
 	-webkit-transition: opacity 0.3s, height 0.3s, box-shadow 0.3s;
 	-moz-transition: opacity 0.3s, height 0.3s, box-shadow 0.3s;
 	transition: opacity 0.3s, height 0.3s, box-shadow 0.3s;
-	box-shadow: 0 0 0 0px #165851;
+	box-shadow: 0 0 0 0px #eadbb2;
 }
 
 .no-touch .cs-style-7 figure:hover figcaption,
 .cs-style-7 figure.cs-hover figcaption {
 	opacity: 1;
 	height: 130%;
-	box-shadow: 0 0 0 10px #165851;
+	box-shadow: 0 0 0 10px #eadbb2;
 }
 
 .cs-style-7 figcaption h3 {

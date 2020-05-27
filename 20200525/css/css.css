@@ -76,6 +76,8 @@ nav{
     background-color: lavender;
     height: 300px;
 } */
+
+
 .content{
     height: 200px;
     display: flex;
@@ -86,6 +88,111 @@ nav{
 .tab-contents{
     background-color: lightblue;
 }
+.tab-menu>ul{
+    display: flex;
+}
+.tab-menu>ul>li{
+    padding: 10px 0;
+    width: 100px;
+    text-align: center;
+
+
+}
+.tab-menu>ul>li:first-child{
+    background-color: lightcoral;
+}
+.tab-1{
+    padding-left: 20px;
+    line-height: 30px;
+}
+
+.tab-2{
+    display: none;
+}
+
+/* .content{
+    display: flex;
+    height: 200px;
+}
+.content div{
+    width: 400px;
+}
+.content-tab{
+    background-color: lightgreen;
+}
+.tab-menu>ul{
+    display: flex;
+}
+.tab-menu>ul>li{
+    padding: 10px 3px;
+    width: 100px;
+    text-align: center;
+}
+.notice{
+    padding: 20px 35px;
+    line-height: 30px;
+}
+.tab-menu>ul>li:first-child{
+    background-color: lightpink;
+}
+
+.gallary{
+    display: none;
+
+
+    내가 해본거_---------------------------------------------------------------------->>
+} */
+
+
+/* tab */
+
+
+.popup{
+    display: none;
+    position: fixed;
+    top: 100px;
+    left: 350px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.popup_body{
+    width: 200px;
+    height: 300px;
+    padding: 20px;
+    background: white;
+    border: 2px solid black;
+}
+.popup:active{
+    display: block;
+    opacity: 1;
+}
+
+.popup_top{
+height: 80%;
+text-align: center;
+margin-bottom: 20px;
+}
+
+.popup_top h2{
+    color: chocolate;
+    margin-bottom: 20px;
+    font-size: 20pt;
+}
+.popup_button{
+    text-align: right;
+}
+.팝업닫기{
+    background-color: crimson;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+
 .banner-contents{
     background-color: lightcoral;
 }

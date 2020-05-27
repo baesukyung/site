@@ -7,7 +7,8 @@
 	font-family: 'Noto Serif KR', 'serif';
 } */
 
-
+/* 767-1280
+512-0 */
 #section01{
 	width:100%;
 	background:#f6eeda;
@@ -462,11 +463,17 @@ transition:all 0.5s ease-in-out;
 	font-size: .87em;
 	text-align: center;
 }
+#content1{
+	width: 100%;
+	padding-top: 10%;
+}
 .warp{
 	display: block;
 	align-items: center;
-	
-	}
+	padding-top: .5%;
+	padding-bottom: .5%;
+}
+
 
 .main-content-img{
 	width: 100%;
@@ -483,7 +490,7 @@ transition:all 0.5s ease-in-out;
 	display: none;
 }
 
-/* <여기까지 section1> */
+/* <여기까지 section1> -------------------------------------------------*/
 
 
 #section02{
@@ -504,18 +511,23 @@ transition:all 0.5s ease-in-out;
 }
 .bg-txt{
 	/* width: 90%; */
-	font-size: .8rem;
+	font-size: 1rem;
+
 	/* position: absolute; */
 	/* display: block; */
 	/* padding-left: 4%;
 	margin: 0 auto; */
-
-
 }
 
-/* .bg-txt h1 span{
+.bg-txt h1 span{
 	display: none;
-} */
+}
+.bg-txt h1{
+	padding-top: 13.5%;
+	padding-left: 10%;
+	line-height: 5rem;
+	font-size: 3rem;
+}
 .txt-box{
 	width: 100%;
 	display: block;
@@ -527,22 +539,29 @@ transition:all 0.5s ease-in-out;
 
 .title{
 	width: 100%;
-
 }
+
 .title-txt{
-	padding-top: 3%;
+	padding-top: 10%;
 	text-align: center;
 	font-size: .8em;
 }
 .infor{
-	width: 90%;
+	width: 100%;
 	align-items: center;
 	justify-content: center;
 	padding-left: 5%;
 }
-/* <여기까지 section2> */
+.info-txt{
+	letter-spacing: -.18rem;
+	font-size: 1rem;
+}
+/* <여기까지 section2> -------------------------------------------------*/
 #section03{
 	width: 100%;
+}
+.section03-main{
+	padding-bottom: 10%;
 }
 .snip1200-box{
 	display: block;
@@ -558,6 +577,9 @@ figure.snip1200 p{
 .snip1200-box{
 	padding-left: 12%;
   }
+.title1{
+	font-size: .8em;
+}
 
 }
 

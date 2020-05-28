@@ -30,10 +30,7 @@
 	font-size: 14px;
 	text-decoration: none;
 }
-.nav li a:hover{
-	background-color:#165851;
-	color: white;
-}
+
 
 
 
@@ -384,10 +381,12 @@ figure.snip1200.hover p {
 	width: 100%;
 	padding-top: 5%;
 	padding-bottom: 5%;
+
 }
 .gallery-box-bottom{
 	width: 50%;
 	text-align: center;
+	background:#f6eeda;
 }
 .gallery-box-bottom img{
 	width:70%;
@@ -396,10 +395,11 @@ figure.snip1200.hover p {
 	width: 50%;
 	text-align: center;
 	font-size: 1.5rem;
+	padding-right: 5%;
 }
 .gallery-txt p{
 	line-height: 5rem;
-	padding-right: 5%;
+	/* padding-right: 5%; */
 	padding-top: 10%;
 	color: #165851;
 }
@@ -503,24 +503,22 @@ transition:all 0.5s ease-in-out;
 
 .nav{
 	display: none;
-	width: 150%;
+	width: 100%;
 	display:flex;
 	flex-direction: column;
 	position: absolute;
 	text-align: center;
 	padding-top: 20%;
-	padding-right: 45%;
-	height: 100vh;
+	/* padding-right: 45%; */
+	/* height: 100vh; */
 
 }
 
-.nav li {
-	display: none;
-}
-.nav li a{
-	font-size: 1.5rem;
-	line-height: 10rem;
+.nav>li{
+	display:none;
+	font-size: 1.2rem;
 	font-weight: 900;
+	position: absolute;
 }
 .ghost_btn{
 	cursor: pointer;
@@ -531,16 +529,15 @@ transition:all 0.5s ease-in-out;
 	text-align: center;
 	z-index: 9999;
 }
-.backg-box{
-	width: 100%;
-	background: rgba(22, 88, 81, 0.15);
-	display: none;
-	
-}
 
-.ghost_btn img:hover{
+/* .ghost_btn img:hover{
 	color: wheat;
-}
+} */
+/* .white-box{
+	display: none;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.705);
+} */
 /* ---------------------------------ghost_btn---------------------- */
 .content{
 	text-align: left;
@@ -569,7 +566,6 @@ transition:all 0.5s ease-in-out;
 
 .menu_box{
 	border-bottom: unset;
-	padding-bottom: 10%;
 }
 #main-txt1{
 	display: none;
@@ -689,13 +685,29 @@ figure.snip1200 p{
 #IRE{
 	display: none;
 }
+#IRE1{
+	font-size: 1.2rem;
+}
+#IRE2{
+font-size: 1.5rem;
+}
 .gallery-box-bottom img{
-	width: 100%;
+	width: 180%;
+	/* margin-left: 10%; */
+	padding-left: 15%;
 }
 .gallery-txt p{
-	line-height: 2rem;
-	text-align: center;
+	line-height: 2.5rem;
 }
+.gallery-txt{
+	position: relative;
+	left: 15%;
+}
+.gallery-txt-box{
+	width: 80%;
+}
+/* <여기까지 section4> -------------------------------------------------*/
+
 }
 
 

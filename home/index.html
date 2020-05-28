@@ -31,18 +31,18 @@
 	<div id="section01">
 		<div class="section01-main">
 			<div class="menu_box">
-				<div class="backg-box"></div>
 				<div class="logo"><a href="#section01"><img src="images/logo.jpg"></a></div>
 					<ul class="nav">
-						<li class="navmenu"><a href="#section01">이레메인</a></li>
-						<li class="navmenu"><a href="#section02">이레소개</a></li>
-						<li class="navmenu"><a href="#section03">서비스이용</a></li>
-						<li class="navmenu"><a href="#section04">이레갤러리</a></li>
-						<li class="navmenu"><a href="#section05">이레오시는길</a></li>
+						<li><a href="#section01">이레메인</a></li>
+						<li><a href="#section02">이레소개</a></li>
+						<li><a href="#section03">서비스이용</a></li>
+						<li><a href="#section04">이레갤러리</a></li>
+						<li><a href="#section05">이레오시는길</a></li>
 					</ul>
 			<div class="ghost_btn">
 				<img src="images/ghost_btn.png" alt="" style="width: 28%;">
 			</div>
+			
 			</div>
 
 			<div class="bxslider">
@@ -229,9 +229,9 @@
 		<div class="gallery-txt-box">
 			<div class="gallery-txt">
 				<p id="IRE"><strong>IRE-GARDEN VILLAGE</strong></p>
-				<p>The best place for refreshing and healing your life
+				<p id="IRE1">The <strong>best place </strong>for<strong> refreshing</strong> and<strong> healing</strong> your life
 					with flowers and plants.</p>
-				<p>Here is IRE-GARDEN VILLAGE</p>
+				<p id="IRE2">Here is <strong>IRE-GARDEN VILLAGE</strong></p>
 			</div>
 		</div>
 	</div>
@@ -297,7 +297,7 @@ AOS.init();
 
 	jQuery(document).ready(function(){
     jQuery(".ghost_btn").click(function(){
-	jQuery(".navmenu").addClass("backg-box").slideToggle();
+	jQuery(".nav").slideToggle();
     });
 });
 

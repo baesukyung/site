@@ -31,13 +31,14 @@
 	<div id="section01">
 		<div class="section01-main">
 			<div class="menu_box">
+				<div class="backg-box"></div>
 				<div class="logo"><a href="#section01"><img src="images/logo.jpg"></a></div>
 					<ul class="nav">
-						<li><a href="#section01">이레메인</a></li>
-						<li><a href="#section02">이레소개</a></li>
-						<li><a href="#section03">서비스이용</a></li>
-						<li><a href="#section04">이레갤러리</a></li>
-						<li><a href="#section05">이레오시는길</a></li>
+						<li class="navmenu"><a href="#section01">이레메인</a></li>
+						<li class="navmenu"><a href="#section02">이레소개</a></li>
+						<li class="navmenu"><a href="#section03">서비스이용</a></li>
+						<li class="navmenu"><a href="#section04">이레갤러리</a></li>
+						<li class="navmenu"><a href="#section05">이레오시는길</a></li>
 					</ul>
 			<div class="ghost_btn">
 				<img src="images/ghost_btn.png" alt="" style="width: 28%;">
@@ -199,18 +200,18 @@
 				</figure>
 			</li>
 			<li>
-				<figure>
-					<img src="images/gallery2.png" alt="img06">
+				<figure id="third-img">
+					<img src="images/gallery2.png" alt="img03" id="third-img">
 					<figcaption>
 						<h3>틸란드시아</h3>
-						<span>나쁜 먼지를 잡아 먹는 이오난사 틸란드시아</span>
+						<span>나쁜 먼지를 먹는 이오난사 틸란드시아</span>
 					
 					</figcaption>
 				</figure>
 			</li>
 			<li>
 				<figure>
-					<img src="images/gallery0.png" alt="img06">
+					<img src="images/gallery0.png" alt="img04" id="last-img">
 					<figcaption>
 						<h3>이레 쉼터</h3>
 						<span>식물과 함께 향긋한 차 한잔 하고 싶지 않으세요?</span>
@@ -220,6 +221,19 @@
 			</li>
 			
 		</ul>
+	</div>
+	<div class="gallery-box">
+		<div class="gallery-box-bottom">
+			<img src="images/tree.png">
+		</div>
+		<div class="gallery-txt-box">
+			<div class="gallery-txt">
+				<p id="IRE"><strong>IRE-GARDEN VILLAGE</strong></p>
+				<p>The best place for refreshing and healing your life
+					with flowers and plants.</p>
+				<p>Here is IRE-GARDEN VILLAGE</p>
+			</div>
+		</div>
 	</div>
 </div><!-- /container -->
 <script src="js/toucheffects.js"></script>
@@ -283,7 +297,7 @@ AOS.init();
 
 	jQuery(document).ready(function(){
     jQuery(".ghost_btn").click(function(){
-	jQuery(".nav").slideToggle();
+	jQuery(".navmenu").addClass("backg-box").slideToggle();
     });
 });
 
@@ -325,12 +339,11 @@ $('.bxslider1').bxSlider({
 //   slideWidth:0,
   speed:250,
   minSlides:1,
-  maxSlides:1,
+  maxSlides:10,
   slideWidth:1800,
   controls: false,
-  infiniteLoop:true,
-
-
+//   infiniteLoop:true,
+  slideMargin: 10,
 });
 	});
 

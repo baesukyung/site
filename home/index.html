@@ -17,10 +17,10 @@
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link rel="stylesheet" href="css/swiper.min.css">
 <link rel="stylesheet" href="css/jquery.bxslider.css">
-<link rel="stylesheet" href="css/slick-theme.css">
-<link rel="stylesheet" href="css/slick.css">
+<!-- <link rel="stylesheet" href="css/slick-theme.css">
+<link rel="stylesheet" href="css/slick.css"> -->
 <link rel="stylesheet" type="text/css" href="css/default.css" />
-<link rel="stylesheet" type="text/css" href="css/component.css" />
+<!-- <link rel="stylesheet" type="text/css" href="css/component.css" /> -->
 <link rel="stylesheet" href="css/master.css">
 
 
@@ -100,7 +100,8 @@
 				<div class="txt-box">
 					<div class="aside">
 						<div class="title">
-							<h2 class="title-txt"><strong>이레소개</strong></h2>
+							<h2 class="title-txt" data-aos="fade-up"
+							data-aos-anchor-placement="center-bottom"><strong>이레소개</strong></h2>
 						</div>
 					</div>
 					<div class=" infor">
@@ -126,7 +127,8 @@
 
 <div id="section03">
 	<div class="section03-main">
-		<div class="title1"><h2><strong>서비스이용</strong></h2></div>
+		<div class="title1" data-aos="fade-up"
+		data-aos-anchor-placement="center-bottom"><h2><strong>서비스이용</strong></h2></div>
 		<div class="snip1200-box">
 			<figure class="snip1200">
 				<img src="images/box1.png" alt="sq-sample27"  class="snip1200-img"/>
@@ -173,16 +175,20 @@
 
 
 <!-- section03 -->
+
+
 		
 			
 <div id="section04">
-	<div class="title2"><h2><strong>이레갤러리</strong></h2></div>
+	<div class="title2" data-aos="fade-up"
+	data-aos-anchor-placement="center-bottom"><h2><strong>이레갤러리</strong></h2></div>
 	<div class="bxslider1">
+		
 		<ul class="grid cs-style-7">
 			<li>
 				<figure>
 					<img src="images/gallery4.png" alt="img01">
-					<figcaption>
+					<figcaption class="gallery-txt">
 						<h3>수국 PARTY</h3>
 						<span>너무 예쁜 수국이 활짝 만개했어요</span>
 					
@@ -192,7 +198,7 @@
 			<li>
 				<figure>
 					<img src="images/gallery.png" alt="img02">
-					<figcaption>
+					<figcaption class="gallery-txt">
 						<h3>귀여운 다육이들</h3>
 						<span>따뜻한 햇살을 받으며 자란 다육이들이 귀엽죠?</span>
 					
@@ -202,7 +208,7 @@
 			<li>
 				<figure id="third-img">
 					<img src="images/gallery2.png" alt="img03" id="third-img">
-					<figcaption>
+					<figcaption class="gallery-txt">
 						<h3>틸란드시아</h3>
 						<span>나쁜 먼지를 먹는 이오난사 틸란드시아</span>
 					
@@ -212,7 +218,7 @@
 			<li>
 				<figure>
 					<img src="images/gallery0.png" alt="img04" id="last-img">
-					<figcaption>
+					<figcaption class="gallery-txt">
 						<h3>이레 쉼터</h3>
 						<span>식물과 함께 향긋한 차 한잔 하고 싶지 않으세요?</span>
 					
@@ -229,14 +235,14 @@
 		<div class="gallery-txt-box">
 			<div class="gallery-txt">
 				<p id="IRE"><strong>IRE-GARDEN VILLAGE</strong></p>
-				<p id="IRE1">The <strong>best place </strong>for<strong> refreshing</strong> and<strong> healing</strong> your life
+				<p id="IRE1">The best place for refreshing and healing your life
 					with flowers and plants.</p>
-				<p id="IRE2">Here is <strong>IRE-GARDEN VILLAGE</strong></p>
+				<p id="IRE2">Here is IRE-GARDEN VILLAGE</p>
 			</div>
 		</div>
 	</div>
 </div><!-- /container -->
-<script src="js/toucheffects.js"></script>
+<!-- <script src="js/toucheffects.js"></script> -->
 </body>
 
 	
@@ -244,6 +250,15 @@
 </div>
 <!-- section04 -->
 <div id="section05">
+	<div class="map_address">
+		<div class="title3" data-aos="fade-up"
+		data-aos-anchor-placement="center-bottom"><h2><strong>이레오시는길</strong></h2>
+			<p><strong>이레가든빌리지</strong>는 식물들이 기분 좋게 맞아주는 곳입니다.<br>
+				잠시나마의 여유와 힐링을 원하신다면 우리 이레가든빌리지에서 만나요.</p>
+		</div>
+		<div class="map-img" >
+			<img src="images/map.png"></div>
+	</div>
 
 </div>
 
@@ -336,13 +351,15 @@ $('.bxslider1').bxSlider({
   autoControls: true,
   stopAutoOnClick: true,
   pager: true,
-//   slideWidth:0,
+  slideWidth:0,
   speed:250,
   minSlides:1,
-  maxSlides:10,
-  slideWidth:1800,
-  controls: false,
-//   infiniteLoop:true,
+  maxSlides:1,
+ 
+//   controls: false,
+  slideWidth:0,
+
+  infiniteLoop:true,
   slideMargin: 10,
 });
 	});

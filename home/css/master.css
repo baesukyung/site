@@ -33,8 +33,6 @@
 
 
 
-
-
 .menu_box li a{
 	padding: 20px;
 	text-decoration:none;
@@ -106,6 +104,9 @@
 	.garden{
 		width: 60%;
 		margin: 0 auto;
+	}
+	.ghost_btn{
+		display: none;
 	}
 
 
@@ -363,7 +364,8 @@ figure.snip1200.hover p {
 
 #section04{
 	width:100%; 
-	background:#f6eeda;}
+	background:#f6eeda;
+}
 
 .title2 h2{
 	line-height: 4em;
@@ -371,6 +373,10 @@ figure.snip1200.hover p {
 	color:#165851;
 	font-weight: 600;
 
+}
+
+.grid{
+	display: flex;
 }
 .title2{
 	text-align: center;
@@ -406,23 +412,71 @@ figure.snip1200.hover p {
 #IRE{
 	font-size: 3rem;
 }
+figcaption.gallery-txt h3{
+	font-size: 1.3rem;
+	color: #6dba77;
+	line-height: 3em;
+	
+	}
+figcaption.gallery-txt span{
+	font-size: 1rem;
+	color: #165851;
+	line-height: normal;
+	}
 
+	/* figure img:honer{
+		background-color: #6dba77;
+	} */
 
 
 	/* section 04 end---------------------------------------------------------  */	
 	
 #section05{
 	width:100%; 
- 	height: 1500px;
-	background:#FC0;}
-.title2 h2{
-	line-height: 13rem;
+
 }
-.bxslider1{
+.map_address{
 	width: 100%;
+	display: flex;
+	padding-bottom: 20%;
+
+}
+.title3{
+	width: 40%;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 20%;
+	
+}
+.title3 h2{
+	line-height: 4em;
+	font-size: 2.5em;
+	color:#165851;
+	font-weight: 600;
+	/* padding-top: 60%; */
+}
+	
+
+
+
+
+
+
+.title3 p{
+	line-height: 3.5em;
+	color:#165851;
+	font-size:1em;
+} 
+
+
+.map-img{
+	width: 60%;
+}	
+.map-img img{
+	width: 95%;
+	padding-top: 10%;
 }
 
-	
 /* section 05 end---------------------------------------------------------  */	
 
 
@@ -521,6 +575,7 @@ transition:all 0.5s ease-in-out;
 	position: absolute;
 }
 .ghost_btn{
+
 	cursor: pointer;
 	padding-top: 2%;
 	padding-left: 40%;
@@ -672,12 +727,30 @@ figure.snip1200 p{
 	max-width:1920px;
 	min-width: 767px;
 }
+figure{
+	position: relative;
+}
+figure.gallery-txt{
+display: none;
+}
+figcaption.gallery-txt h3{
+/* line-height: 1.2em;
+font-size: 1rem;
+position: absolute; */
+display: none;
+}
+figcaption.gallery-txt span{
+	/* line-height: 1.2em;
+	font-size: .8rem;
+	text-align: left; */
+display: none;
+	}
 #last-img{
 	display: none;
 }
-#third-img{
+/* #third-img{
 	width: 80%;
-}
+} */
 .gallery-box{
 	display: block;
 	width: 100%;
@@ -685,30 +758,42 @@ figure.snip1200 p{
 #IRE{
 	display: none;
 }
-#IRE1{
-	font-size: 1.2rem;
-}
-#IRE2{
-font-size: 1.5rem;
-}
+/* #IRE1{
+	width: 80%;
+} */
 .gallery-box-bottom img{
 	width: 180%;
 	/* margin-left: 10%; */
-	padding-left: 15%;
+	padding-left: 30%;
 }
 .gallery-txt p{
 	line-height: 2.5rem;
 }
 .gallery-txt{
 	position: relative;
-	left: 15%;
+	left: 18%;
+	font-size: 1.3rem;
 }
 .gallery-txt-box{
 	width: 80%;
 }
 /* <여기까지 section4> -------------------------------------------------*/
+.map_address{
+	display: block;
+}
+.title3{
+	font-size: .8em;
+	width: 100%;
 
 }
+.title3 p{
+	font-size: 1em;
+}
+.map-img{
+	width: 100%;
+	text-align: center;
+}
+
 
 
 @media(min-width:768px){

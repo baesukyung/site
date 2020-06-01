@@ -182,27 +182,51 @@
 <div id="section04">
 	<div class="title2" data-aos="fade-up"
 	data-aos-anchor-placement="center-bottom"><h2><strong>이레갤러리</strong></h2></div>
-
-	<div class="gallery-btn">
-		<div class="gallery-btn1">
-			<img src="images/Untitled-1.png" >
-		</div>
-		<div class="gallery-btn2">
-			<img src="images/Untitled-2.png" >
-		</div>
-	</div>
+	<div class="bxslider1">
 		
-	<div class="gallery-img">
-		<div class="gallery-img1">
-			<img src="images/gallery1.png" alt="" id="gal1">
-			<img src="images/gallery0.png" alt="" id="gal2">
-			<img src="images/gallery5.png" alt="" id="gal3">
-		</div>
-		<div class="gallery-img2">
-				<img src="images/gallery.png" alt="" id="gal4">
-				<img src="images/gallery2.png" alt="" id="gal5">
-				<img src="images/gallery4.png" alt="" id="gal6">
-			</div>
+		<ul class="grid cs-style-7">
+			<li>
+				<figure>
+					<img src="images/gallery4.png" alt="img01">
+					<figcaption class="gallery-txt">
+						<h3>수국 PARTY</h3>
+						<span>너무 예쁜 수국이 활짝 만개했어요</span>
+					
+					</figcaption>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<img src="images/gallery.png" alt="img02">
+					<figcaption class="gallery-txt">
+						<h3>귀여운 다육이들</h3>
+						<span>따뜻한 햇살을 받으며 자란 다육이들이 귀엽죠?</span>
+					
+					</figcaption>
+				</figure>
+			</li>
+			<li>
+				<figure id="third-img">
+					<img src="images/gallery2.png" alt="img03" id="third-img">
+					<figcaption class="gallery-txt">
+						<h3>틸란드시아</h3>
+						<span>나쁜 먼지를 먹는 이오난사 틸란드시아</span>
+					
+					</figcaption>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<img src="images/gallery0.png" alt="img04" id="last-img">
+					<figcaption class="gallery-txt">
+						<h3>이레 쉼터</h3>
+						<span>식물과 함께 향긋한 차 한잔 하고 싶지 않으세요?</span>
+					
+					</figcaption>
+				</figure>
+			</li>
+			
+		</ul>
 	</div>
 	<div class="gallery-box">
 		<div class="gallery-box-bottom">
@@ -211,15 +235,18 @@
 		<div class="gallery-txt-box">
 			<div class="gallery-txt">
 				<p id="IRE"><strong>IRE-GARDEN VILLAGE</strong></p>
-				<p id="IRE1">The <strong>best place </strong>for<strong> refreshing</strong> and<strong> healing</strong> your life
+				<p id="IRE1">The best place for refreshing and healing your life
 					with flowers and plants.</p>
-				<p id="IRE2">Here is <strong>IRE-GARDEN VILLAGE</strong></p>
+				<p id="IRE2">Here is IRE-GARDEN VILLAGE</p>
 			</div>
 		</div>
 	</div>
-		
+</div><!-- /container -->
+<!-- <script src="js/toucheffects.js"></script> -->
+</body>
 
-	</div>
+	
+					
 </div>
 <!-- section04 -->
 <div id="section05">
@@ -316,19 +343,28 @@ $('.bxslider').bxSlider({
 
 
 
+//네번째section 사진 슬라이드
+
+$(document).ready(function(){
+$('.bxslider1').bxSlider({
+  auto: true,
+  autoControls: true,
+  stopAutoOnClick: true,
+  pager: true,
+  slideWidth:0,
+  speed:250,
+  minSlides:1,
+  maxSlides:1,
+ 
+//   controls: false,
+  slideWidth:0,
+
+  infiniteLoop:true,
+  slideMargin: 10,
+});
+	});
 
 
-//4. 갤러리 사진 슬라이드
-$(function(){
-		$('.gallery-btn1').click(function(){
-			$('.gallery-img1').slideToggle();
-		});
-	});
-	$(function(){
-		$('.gallery-btn2').click(function(){
-			$('.gallery-img2').slideToggle();
-		});
-	});
 
 
       </script>
@@ -349,3 +385,72 @@ $(function(){
 
 
 
+<!-- html
+<div class="hover">
+	<div class="hover-container">
+		<img src="images/box2.png" alt="Avatar" class="image">
+		<div class="overlay">
+		  <div class="text">Hello World</div>
+		</div>
+	  </div>
+	  <div class="hover-container">
+		<img src="images/box1.png" alt="Avatar" class="image">
+		<div class="overlay">
+		  <div class="text">Hello World</div>
+		</div>
+	  </div>
+	  <div class="hover-container">
+		<img src="images/box3.png" alt="Avatar" class="image">
+		<div class="overlay">
+		  <div class="text">Hello World</div>
+		</div>
+	  </div>
+	  </div> -->
+
+
+	  <!-- css
+	  .hover{
+		display: flex;
+	}
+	
+	.hover-container {
+		position: relative;
+		width: 30%;
+		display: flex;
+	
+	  }
+	  
+	  .image {
+		display: block;
+		width: 100%;
+		height: auto;
+	  }
+	  
+	  .overlay {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 100%;
+		width: 100%;
+		opacity: 0;
+		transition: .5s ease;
+		background-color: #008CBA;
+	  }
+	  
+	  .hover-container:hover .overlay {
+		opacity: 1;
+	  }
+	  
+	  .text {
+		color: white;
+		font-size: 20px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		text-align: center;
+	  } -->

@@ -33,8 +33,6 @@
 
 
 
-
-
 .menu_box li a{
 	padding: 20px;
 	text-decoration:none;
@@ -106,6 +104,9 @@
 	.garden{
 		width: 60%;
 		margin: 0 auto;
+	}
+	.ghost_btn{
+		display: none;
 	}
 
 
@@ -363,7 +364,8 @@ figure.snip1200.hover p {
 
 #section04{
 	width:100%; 
-	background:#f6eeda;}
+	background:#f6eeda;
+}
 
 .title2 h2{
 	line-height: 4em;
@@ -371,6 +373,10 @@ figure.snip1200.hover p {
 	color:#165851;
 	font-weight: 600;
 
+}
+
+.grid{
+	display: flex;
 }
 .title2{
 	text-align: center;
@@ -399,71 +405,36 @@ figure.snip1200.hover p {
 }
 .gallery-txt p{
 	line-height: 5rem;
-
+	/* padding-right: 5%; */
 	padding-top: 10%;
 	color: #165851;
 }
 #IRE{
 	font-size: 3rem;
 }
-.gallery-btn{
-	display: flex;
-	padding-top: 3%;
-	padding-bottom: 3%;
-	padding-left: 10%;
-}
-
-.gallery-btn1{
-	width: 50%;
+figcaption.gallery-txt h3{
+	font-size: 1.3rem;
+	color: #6dba77;
+	line-height: 3em;
 	
-}
-.gallery-btn2{
-	width: 50%;
+	}
+figcaption.gallery-txt span{
+	font-size: 1rem;
+	color: #165851;
+	line-height: normal;
+	}
 
-}
-.gallery-img{
-	width: 100%;
-	
-}
-.gallery-img1{
-	width: 100%;
-	text-align: center;
-	display: none;
-
-}
-.gallery-img2{
-	width: 100%;
-	text-align: center;
-	display: none;
-	
-}
-#gal1:hover{
-	border:7px solid white;
-}
-#gal2:hover{
-	border:7px solid white;
-}
-#gal3:hover{
-	border:7px solid white;
-}
-#gal4:hover{
-	border:7px solid #165851;
-}
-#gal5:hover{
-	border:7px solid #165851;
-}
-#gal6:hover{
-	border:7px solid #165851;
-}
-
+	/* figure img:honer{
+		background-color: #6dba77;
+	} */
 
 
 	/* section 04 end---------------------------------------------------------  */	
 	
 #section05{
 	width:100%; 
-}
 
+}
 .map_address{
 	width: 100%;
 	display: flex;
@@ -485,6 +456,12 @@ figure.snip1200.hover p {
 	/* padding-top: 60%; */
 }
 	
+
+
+
+
+
+
 .title3 p{
 	line-height: 3.5em;
 	color:#165851;
@@ -500,10 +477,6 @@ figure.snip1200.hover p {
 	padding-top: 10%;
 }
 
-
-
-
-	
 /* section 05 end---------------------------------------------------------  */	
 
 
@@ -602,6 +575,7 @@ transition:all 0.5s ease-in-out;
 	position: absolute;
 }
 .ghost_btn{
+
 	cursor: pointer;
 	padding-top: 2%;
 	padding-left: 40%;
@@ -743,7 +717,7 @@ figure.snip1200 p{
 /* <여기까지 section3> -------------------------------------------------*/
 
 
-/* .title2 {
+.title2 {
 	font-size: .8em;
 }
 
@@ -753,12 +727,30 @@ figure.snip1200 p{
 	max-width:1920px;
 	min-width: 767px;
 }
+figure{
+	position: relative;
+}
+figure.gallery-txt{
+display: none;
+}
+figcaption.gallery-txt h3{
+/* line-height: 1.2em;
+font-size: 1rem;
+position: absolute; */
+display: none;
+}
+figcaption.gallery-txt span{
+	/* line-height: 1.2em;
+	font-size: .8rem;
+	text-align: left; */
+display: none;
+	}
 #last-img{
 	display: none;
 }
-#third-img{
+/* #third-img{
 	width: 80%;
-}
+} */
 .gallery-box{
 	display: block;
 	width: 100%;
@@ -766,95 +758,42 @@ figure.snip1200 p{
 #IRE{
 	display: none;
 }
-#IRE1{
-	font-size: 1.2rem;
-}
-#IRE2{
-font-size: 1.5rem;
-}
+/* #IRE1{
+	width: 80%;
+} */
 .gallery-box-bottom img{
 	width: 180%;
-	padding-left: 15%;
+	/* margin-left: 10%; */
+	padding-left: 30%;
 }
 .gallery-txt p{
 	line-height: 2.5rem;
 }
 .gallery-txt{
 	position: relative;
-	left: 15%;
+	left: 18%;
+	font-size: 1.3rem;
 }
 .gallery-txt-box{
 	width: 80%;
-} */
-.title2 {
-	font-size: .8em;
-}
-.gallery-btn{
-	width: 100%;
-}
-.gallery-btn1 img{
-	width: 80%;
-	display: block;
-
-}
-.gallery-btn2 img{
-	width: 80%;
-
-}
-.gallery-img{
-width: 90%;
-padding-left: 10%;
-}
-.gallery-img1 img{
-	width: 100%;
-}
-.gallery-img2 img{
-	width: 100%;
-}
-/* <section4 갤러리부분 끝> */
-
-.gallery-box{
-	width: 100%;
-	display: block;
-}
-.gallery-box-bottom{
-	width: 100%;
-}
-.gallery-txt-box{
-	width: 100%;
-}
-#IRE{
-	font-size: 2rem;
-}
-#IRE1{
-	font-size: 1.2rem;
-	padding-left: 3%;
-	
-}
-#IRE2{
-	font-size: 1.5rem;
 }
 /* <여기까지 section4> -------------------------------------------------*/
 .map_address{
-	width: 100%;
 	display: block;
 }
 .title3{
-	width: 100%;
 	font-size: .8em;
-}
-
-.title3 p{
 	width: 100%;
+
+}
+.title3 p{
+	font-size: 1em;
 }
 .map-img{
 	width: 100%;
+	text-align: center;
 }
-.map-img img{
-	width: 95%;
-	padding-left: 5%;
-}
-}
+
 
 
 @media(min-width:768px){

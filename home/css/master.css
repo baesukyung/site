@@ -824,7 +824,7 @@ padding-left: 10%;
 	width: 100%;
 }
 #IRE{
-	font-size: 2rem;
+	font-size: 1.6rem;
 }
 #IRE1{
 	font-size: 1.2rem;
@@ -832,7 +832,7 @@ padding-left: 10%;
 	
 }
 #IRE2{
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 }
 /* <여기까지 section4> -------------------------------------------------*/
 .map_address{
@@ -845,7 +845,8 @@ padding-left: 10%;
 }
 
 .title3 p{
-	width: 100%;
+	width: 90%;
+padding-left: 12%;
 }
 .map-img{
 	width: 100%;
@@ -855,7 +856,7 @@ padding-left: 10%;
 	padding-left: 5%;
 }
 }
-
+/* <여기까지 section5> -------------------------------------------------*/
 
 @media(min-width:768px){
 	.ghost_btn{

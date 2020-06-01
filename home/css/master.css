@@ -821,14 +821,16 @@ padding-left: 10%;
 	width: 100%;
 }
 .gallery-txt-box{
-	width: 100%;
+	width: 90%;
+	padding-left: 10%;
 }
 #IRE{
 	font-size: 1.4rem;
 }
 #IRE1{
 	font-size: 1.15rem;
-	padding-left: 3%;
+
+
 	
 }
 #IRE2{
@@ -845,8 +847,10 @@ padding-left: 10%;
 }
 
 .title3 p{
-	width: 90%;
-padding-left: 12%;
+	font-size: 1.1rem;
+	width:90%;
+	padding-left: 12%;
+	text-align: justify;
 }
 .map-img{
 	width: 100%;

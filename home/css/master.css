@@ -437,6 +437,12 @@ figure.snip1200.hover p {
 	display: none;
 	
 }
+.gallery-btn1 img:hover{
+	transform: scale(1.1,1.1);
+}
+.gallery-btn2 img:hover{
+	transform: scale(1.1,1.1);
+}
 #gal1:hover{
 	border:7px solid white;
 }
@@ -811,6 +817,12 @@ padding-left: 10%;
 .gallery-img2 img{
 	width: 100%;
 }
+.gallery-btn1 img:hover{
+	width: 85%;
+}
+.gallery-btn2 img:hover{
+	width: 85%;
+}
 /* <section4 갤러리부분 끝> */
 
 .gallery-box{
@@ -822,7 +834,7 @@ padding-left: 10%;
 }
 .gallery-txt-box{
 	width: 90%;
-	padding-left: 10%;
+	padding-left: 12%;
 }
 #IRE{
 	font-size: 1.4rem;

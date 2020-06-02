@@ -95,8 +95,8 @@ nav{
     background-color: white;
     width: 350px;
     height: 175px;
- margin-top: 13px;
- margin-left: 20px;
+     margin-top: 13px;
+    margin-left: 20px;
 }
 .tab-menu>ul{
     display: flex;

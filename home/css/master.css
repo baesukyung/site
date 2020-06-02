@@ -35,6 +35,7 @@
 
 
 
+
 .menu_box li a{
 	padding: 20px;
 	text-decoration:none;
@@ -44,6 +45,8 @@
 	font-family: 'Noto Serif KR', serif;
 	font-size:15px; font-weight: bold;
 }
+
+
 
 
 
@@ -107,7 +110,7 @@
 		width: 60%;
 		margin: 0 auto;
 	}
-
+ 
 
 	/* section 01 end------------------------------------------------------  */
 
@@ -496,15 +499,52 @@ figure.snip1200.hover p {
 	color:#165851;
 	font-size:1em;
 } 
+.map-link p{
+	color: #888;
+}
+
+
+
 
 
 .map-img{
 	width: 60%;
+	display: flex;
+	position: relative;
 }	
 .map-img img{
-	width: 95%;
+	width: 100%;
 	padding-top: 10%;
+	z-index: 99;
+	position: absolute;
 }
+#act-plant{
+	z-index: 100;
+	position: absolute;
+	align-items: center;
+	padding-top: 27%;
+	margin-left: 45%;
+
+
+}
+.blinking{
+	-webkit-animation:blink 1.5s ease-in-out infinite alternate;
+    -moz-animation:blink 1.5s ease-in-out infinite alternate;
+    animation:blink 1.5s ease-in-out infinite alternate;
+}
+@-webkit-keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@-moz-keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
 
 
 
@@ -587,35 +627,39 @@ transition:all 0.5s ease-in-out;
 @media(max-width:767px){
 
 
-
+.section01-main{
+	width: 100%;
+	position: relative;
+}
 .nav{
 	display: none;
-	width: 100%;
-	display:flex;
-	flex-direction: column;
 	position: absolute;
-	text-align: center;
-	padding-top: 20%;
-	/* padding-right: 45%; */
-	/* height: 100vh; */
+	width: 100%;
+	background: rgba(255, 255, 255, 0.9);
+	z-index: 9990;
 
 }
 
-.nav>li{
-	display:none;
-	font-size: 1.2rem;
-	font-weight: 900;
-	position: absolute;
+.menu_box{
+	border-bottom: unset;
 }
 .ghost_btn{
+
 	cursor: pointer;
-	padding-top: 2%;
-	padding-left: 40%;
-	width: 100%;
-	vertical-align: middle;
-	text-align: center;
+	padding-top: 1%;
+	padding-right: 5%;
+	text-align: right;
 	z-index: 9999;
 }
+.nav li{
+	text-align: center;
+
+}
+.nav li a{
+	font-size: 1.4rem;
+	line-height: 6em;
+}
+
 
 /* .ghost_btn img:hover{
 	color: wheat;
@@ -651,9 +695,7 @@ transition:all 0.5s ease-in-out;
 }
 
 
-.menu_box{
-	border-bottom: unset;
-}
+
 #main-txt1{
 	display: none;
 }
@@ -841,9 +883,6 @@ padding-left: 10%;
 }
 #IRE1{
 	font-size: 1.15rem;
-
-
-	
 }
 #IRE2{
 	font-size: 1.2rem;
@@ -856,8 +895,8 @@ padding-left: 10%;
 .title3{
 	width: 100%;
 	font-size: .8em;
-}
 
+}
 .title3 p{
 	font-size: 1.1rem;
 	width:90%;

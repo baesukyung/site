@@ -1,16 +1,16 @@
-// 슬라이드
-setInterval(function(){
-    $(".slide-img1").stop().slideDown('2500')
-});
+// // 슬라이드
+// setInterval(function(){
+//     $(".slide-body")
+// });
 
 // 메뉴슬라이드
 $(function(){
     $(".main-menu").mouseover(function(){
-        $(".sub-menu").stop().slideDown();
-        $(".sub-menu").css("display","flex");
+        $(".sub-Menu").stop().slideDown();
+        $(".sub-Menu").css("display","flex");
     });
-    $(".main-menu").mouseleave(function(){
-        $(this).children(".sub-menu").stop().slideUp();
+    $(".menu").mouseleave(function(){
+        $(this).children(".sub-Menu").stop().slideUp();
     });
 });
 

@@ -90,7 +90,16 @@ padding-left: 40px;
 .content{
     width:400px;
 }
+.content-menu{
+    display: flex;
+}
+#notice1{
+  background-color: white;
+}
 
+#gallery1{
+    background-color: #888;
+}
 .notice{
     width: 350px;
     height: 185;

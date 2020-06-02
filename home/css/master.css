@@ -151,7 +151,7 @@
 	padding-top: 7.5%;
 	align-items: center;
 	justify-content: center;
-
+	font-family: 'Noto Serif KR', serif;
 	z-index: 888;
 	color:#165851;
 	font-size: 2.5em;
@@ -202,6 +202,9 @@
 	box-shadow: 0px -30px 0px -20px rgba(216,219,54,1);
 
 }
+.title-txt {
+	font-family: 'Noto Serif KR', serif;
+}
 .infor{
 	display: flex;
 	width: 60%;
@@ -217,6 +220,7 @@
 	padding-top: 10%;
 	line-height: 2.7em;
 	word-spacing: .3em;
+	font-family: 'Noto Serif KR', serif;
 	/* letter-spacing: .3em; */
 
 }
@@ -233,6 +237,7 @@
 
 .title1{
 	text-align: center;
+	font-family: 'Noto Serif KR', serif;
 
 }
 .title1 h2{
@@ -242,7 +247,8 @@
 	font-weight: 600;
 }
 figure.snip1200 {
-  font-family: 'Raleway', Arial, sans-serif;
+  /* font-family: 'Raleway', Arial, sans-serif; */
+  font-family: 'Noto Serif KR', serif;
   position: relative;
   overflow: hidden;
   margin: 10px;
@@ -377,7 +383,7 @@ figure.snip1200.hover p {
 }
 .title2{
 	text-align: center;
-
+	font-family: 'Noto Serif KR', serif;
 }
 .gallery-box{
 	display: flex;
@@ -402,7 +408,7 @@ figure.snip1200.hover p {
 }
 .gallery-txt p{
 	line-height: 5rem;
-
+	font-family: 'Noto Serif KR', serif;
 	padding-top: 10%;
 	color: #165851;
 }
@@ -484,7 +490,7 @@ figure.snip1200.hover p {
 	text-align: center;
 	vertical-align: middle;
 	padding-top: 20%;
-	
+	font-family: 'Noto Serif KR', serif;
 }
 .title3 h2{
 	line-height: 4em;
@@ -498,9 +504,11 @@ figure.snip1200.hover p {
 	line-height: 3.5em;
 	color:#165851;
 	font-size:1em;
+	font-family: 'Noto Serif KR', serif;
 } 
 .map-link p{
 	color: #888;
+	font-family: 'Noto Serif KR', serif;
 }
 
 

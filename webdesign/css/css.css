@@ -69,10 +69,14 @@ padding-right: 42px;
 
 
 /* nav */
+
+
 .slide-warp{
     width: 1200px;
     overflow: hidden;
     margin: 0 auto;
+    border: 0;
+
 
 }
 .slide-body{
@@ -81,6 +85,7 @@ padding-right: 42px;
     height: 300px;
     transition: 1s;
     display: block;
+    border: 0;
 
 }
 
@@ -97,10 +102,10 @@ padding-right: 42px;
 }
 .content-menu{
     display: flex;
+    padding-left: 8px;
 }
 #notice1{
   background-color: white;
-
 }
 
 #gallery1{
@@ -111,12 +116,16 @@ padding-right: 42px;
     line-height: 43.8px;
     width: 380px;
     height: 165px;
+    margin-left: 8px;
 }
 
 
 .gallery{
     display: none;
-    background: #888;
+    background: lightcoral;
+    width: 380px;
+    height: 165px;
+    margin-left: 8px;
 
 }
 .gallery ul{
@@ -149,6 +158,23 @@ padding-left: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
     }
+
+    .popup{
+        top: 100px;
+       
+        position: fixed;
+        background-color: white;
+    }
+    .pop-body{
+        border: 1px solid #555;
+        display: none;
+    }
+    .popup_btn{
+        text-align: right;
+      }
+    
+    
+    /* popup */
 
 /* contents */
 .footer{

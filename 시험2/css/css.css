@@ -26,6 +26,7 @@ a{
   width: 300px;
   height: 40px;
   text-transform: center;
+
   padding: 30px 0;
 }
 
@@ -33,7 +34,7 @@ a{
 
 .navi_box{
   position:absolute;
-  width: 600px;
+  /* width: 600px; */
   height: 150px;
   left: 590px;
   margin: 60px 10px 0 0;
@@ -114,7 +115,7 @@ a{
 
 
 /* slide */
-
+/*
 .slide_wrap{
 
   height: 300px;
@@ -136,9 +137,16 @@ position: relative;
 }
 .slide-img li{
   float: left;
+} */
+.slide_wrap{
+  width: 1200px;
+  overflow: hidden;
+  margin: 0 auto;
+  }
+.slide-img{
+  height: 300px;
+  display: flex;
 }
-
-
 /*section */
 .section{
   width: 1200px;
@@ -254,18 +262,19 @@ padding-right: 10px;
   width: 400px;
   position: fixed;
   top: 100px;
-  left: 250px;
+  left: 400px;
   display: flex;
   /* text-align: center; */
   line-height: 28px;
-display: none;
+  display: none;
+  border: 1px solid #000;
+
 
 }
 .popup-body{
   height: 200px;
   background: white;
-  border: 1px solid #000;
-  border: 0;
+
 
 }
 .popup-body ul{

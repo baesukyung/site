@@ -53,11 +53,11 @@
 <div class="slide_wrap">
 
   <div class="slide-img">
-  <ul>
-    <li><a href="#">  <img src="images/img1.png" alt="이미지1"></li>
-    <li><a href="#"> <img src="images/img2.png" alt="이미지2"></li>
-    <li><a href="#">  <img src="images/img3.png" alt="이미지3"> </li>
-  </ul>
+
+    <a href="#"><img src="images/img1.png" alt="이미지1"></a>
+    <a href="#"><img src="images/img2.png" alt="이미지2"></a>
+    <a href="#"><img src="images/img3.png" alt="이미지3"></a>
+
 </div>
 </div>
     <!-- slide -->
@@ -156,23 +156,32 @@
 // 이미지슬라이드
 
 
-setInterval(function() {
-    $(".slide-img").delay("2500");
-    $(".slide-img").animate({
-        marginLeft: "-1200px"
-    }, "700");
-    $(".slide-img").delay("2500");
-    $(".slide-img").animate({
-        marginLeft: "-2400px"
-    }, "700");
-    $(".slide-img").delay("2500");
-    $(".slide-img").animate({
-        marginLeft: "-1200px"
-    }, "700");
-    $(".slide-img").delay("2500");
-    $(".slide-img").animate({
-        marginLeft: "0"
-    }, "700");
+// setInterval(function() {
+//     $(".slide-img").delay("2500");
+//     $(".slide-img").animate({
+//         marginLeft: "-1200px"
+//     }, "700");
+//     $(".slide-img").delay("2500");
+//     $(".slide-img").animate({
+//         marginLeft: "-2400px"
+//     }, "700");
+//     $(".slide-img").delay("2500");
+//     $(".slide-img").animate({
+//         marginLeft: "-1200px"
+//     }, "700");
+//     $(".slide-img").delay("2500");
+//     $(".slide-img").animate({
+//         marginLeft: "0"
+//     }, "700");
+// });
+
+setInterval(function(){
+  $(".slide-img").delay("2500");
+  $(".slide-img").animate({marginLeft:"-1200"},"500")
+  $(".slide-img").delay("2500");
+  $(".slide-img").animate({marginLeft:"-2400"},"500")
+  $(".slide-img").delay("2500");
+  $(".slide-img").animate({marginLeft:"0"},"500")
 });
 
 // 팝업

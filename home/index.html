@@ -123,7 +123,7 @@
 								
 								연출해 내기위한 고민이 이레가든빌리지에 담겨있습니다.<br>
 								
-								모던한 큐브형태의 구조물들과 다양한 식물들의 조화를 통한 <strong>식물공간디자인</strong>을 이레가든빌리지를 통해서 경험하시기 바랍니다.</p>
+								모던한 큐브형태의 구조물들과 다양한 식물들의 조화를 통한 <strong>'식물공간디자인'</strong>을 이레가든빌리지를 통해서 경험하시기 바랍니다.</p>
 						</div>
 					</div>
 				</div>
@@ -190,29 +190,41 @@
 			
 <div id="section04">
 	<div class="title2" data-aos="fade-up"
-	data-aos-anchor-placement="center-bottom"><h2><strong>이레갤러리</strong></h2></div>
+    data-aos-anchor-placement="center-bottom"><h2><strong>이레갤러리</strong></h2></div>
 
-	<div class="gallery-btn">
-		<div class="gallery-btn1">
-			<img src="images/Untitled-1.png" >
-		</div>
-		<div class="gallery-btn2">
-			<img src="images/Untitled-2.png" >
-		</div>
+  <div class="gallery-btn">
+    <div class="gallery-btn1">
+      <img src="images/Untitled-1.png" >
+    </div>
+    <div class="gallery-btn2">
+      <img src="images/Untitled-2.png" >
+    </div>
+  </div>
+<div class="gallery-wrap">
+      <div class="gal-wrap1">
+        <div class="gallery-img1">
+          <img src="images/gallery.png" alt="" id="gal1" >
+          <img src="images/gallery2.png" alt="" id="gal2">
+        </div>
+        <div class="gallery-img2">
+          <img src="images/gallery4.png" alt="" id="gal3">
+          <img src="images/galley6.png" alt="" id="gal4">
+        </div>
 	</div>
-		
-	<div class="gallery-img">
-		<div class="gallery-img1">
-			<img src="images/gallery1.png" alt="" id="gal1" >
-			<img src="images/gallery0.png" alt="" id="gal2">
-			<img src="images/gallery5.png" alt="" id="gal3">
-		</div>
-		<div class="gallery-img2">
-				<img src="images/gallery.png" alt="" id="gal4">
-				<img src="images/gallery2.png" alt="" id="gal5">
-				<img src="images/gallery4.png" alt="" id="gal6">
-			</div>
-	</div>
+
+    <div class="gal-wrap2">
+      <div class="gallery-img3">
+				<img src="images/gallery1.png" alt="" id="gal5">
+        <img src="images/gallery0.png" alt="" id="gal6">
+      </div>
+      <div class="gallery-img4">
+        <img src="images/gallery5.png" alt="" id="gal7">
+        <img src="images/gallery7.png" alt="" id="gal8">
+      </div>
+    </div>
+</div>
+
+
 	<div class="gallery-box">
 		<div class="gallery-box-bottom">
 			<img src="images/tree.png">
@@ -228,16 +240,17 @@
 	</div>
 		
 
-	</div>
-</div>
+	
+
 <!-- section04 -->
 <div id="section05">
 	<div class="map_address">
 		<div class="title3" data-aos="fade-up"
 		data-aos-anchor-placement="center-bottom"><h2><strong>이레오시는길</strong></h2>
-			<p><strong>이레가든빌리지</strong>는 식물들이 기분 좋게 맞아주는 곳입니다.<br>
+			<p><strong>이레가든빌리지</strong>는 싱그러운 식물들이 기분 좋게 맞이하는 곳입니다.<br>
 				잠시나마의 <strong>여유</strong>와 <strong>힐링</strong>을 원하신다면 우리 <strong>이레가든빌리지</strong></strong>에서 만나요.</p>
-				<div class="map-link"><a href="#"><p>지도 자세히 보기</p></a></div>
+				<div class="map-link"><a href="https://www.google.co.kr/maps/place/%EC%9D%B4%EB%A0%88%EA%B0%80%EB%93%A0%EB%B9%8C%EB%A6%AC%EC%A7%80/@37.6552546,126.6115366,17z/data=!3m1!4b1!4m5!3m4!1s0x357c87547293edff:0x1014841de18d3d04!8m2!3d37.6552504!4d126.6137253?hl=ko" target="_blank">
+					<p>지도 자세히 보기</p></a></div>
 		</div>
 		<div class="map-img" >
 			<img src="images/map1.png" alt="">
@@ -338,8 +351,19 @@ $(function(){
 		});
 	});
 	$(function(){
-		$('.gallery-btn2').click(function(){
+		$('.gallery-btn1').click(function(){
 			$('.gallery-img2').slideToggle();
+		});
+	});
+
+	$(function(){
+		$('.gallery-btn2').click(function(){
+			$('.gallery-img3').slideToggle();
+		});
+	});
+	$(function(){
+		$('.gallery-btn2').click(function(){
+			$('.gallery-img4').slideToggle();
 		});
 	});
 

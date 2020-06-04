@@ -751,6 +751,7 @@ transition:all 0.5s ease-in-out;
 
 .menu_box{
 	border-bottom: unset;
+	height: 60px;
 }
 .ghost_btn{
 
@@ -769,15 +770,6 @@ transition:all 0.5s ease-in-out;
 	line-height: 6em;
 }
 
-
-/* .ghost_btn img:hover{
-	color: wheat;
-} */
-/* .white-box{
-	display: none;
-	width: 100%;
-	background-color: rgba(255, 255, 255, 0.705);
-} */
 /* ---------------------------------ghost_btn---------------------- */
 .content{
 	text-align: left;
@@ -814,13 +806,9 @@ transition:all 0.5s ease-in-out;
 
 #section02{
 	width: 100%;
-	/* position: relative; */
 }
 .bg{
 	width: 100%;
-
-	/* position: absolute; */
-	
 }
 .bg-box{
 	position: relative;
@@ -829,13 +817,7 @@ transition:all 0.5s ease-in-out;
 	position: absolute;
 }
 .bg-txt{
-	/* width: 90%; */
 	font-size: 1rem;
-
-	/* position: absolute; */
-	/* display: block; */
-	/* padding-left: 4%;
-	margin: 0 auto; */
 }
 
 .bg-txt h1 span{
@@ -900,49 +882,6 @@ figure.snip1200 p{
 /* <여기까지 section3> -------------------------------------------------*/
 
 
-/* .title2 {
-	font-size: .8em;
-}
-
-.grid{
-	display: flex;
-	width: 100%;
-	max-width:1920px;
-	min-width: 767px;
-}
-#last-img{
-	display: none;
-}
-#third-img{
-	width: 80%;
-}
-.gallery-box{
-	display: block;
-	width: 100%;
-}
-#IRE{
-	display: none;
-}
-#IRE1{
-	font-size: 1.2rem;
-}
-#IRE2{
-font-size: 1.5rem;
-}
-.gallery-box-bottom img{
-	width: 180%;
-	padding-left: 15%;
-}
-.gallery-txt p{
-	line-height: 2.5rem;
-}
-.gallery-txt{
-	position: relative;
-	left: 15%;
-}
-.gallery-txt-box{
-	width: 80%;
-} */
 .title2 {
 	font-size: .8em;
 }
@@ -972,16 +911,7 @@ font-size: 1.5rem;
 .gal-wrap2{
 	width: 100%;
 }
-/* .gallery-img{
-width: 90%;
-padding-left: 10%;
-}
-.gallery-img1 img{
-	width: 100%;
-}
-.gallery-img2 img{
-	width: 100%;
-} */
+
 .gallery-btn1 img:hover{
 	width: 85%;
 }
@@ -1010,6 +940,16 @@ padding-left: 10%;
 #IRE2{
 	font-size: 1.2rem;
 }
+
+
+.gallery-box-bottom img{
+-webkit-transition: all .5s ease;
+-moz-transition: all .5s ease;
+-ms-transition: all .5s ease;
+-o-transition: all .5s ease;
+transition: all .5s ease;
+}
+
 /* <여기까지 section4> -------------------------------------------------*/
 .map_address{
 	width: 100%;
@@ -1032,6 +972,11 @@ padding-left: 10%;
 .map-img img{
 	width: 95%;
 	padding-left: 5%;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
 }
 }
 /* <여기까지 section5> -------------------------------------------------*/

@@ -16,8 +16,8 @@
 
 <!-- 파비콘 -->
 <link rel="shortcut icon" href="images/pavicon/pavicon.ico">
-<!-- 파비콘 끝-->
 
+<!--link-->
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/nomal.css">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -45,11 +45,7 @@
 			<div class="ghost_btn">
 				<img src="images/ghost_btn.png" alt="" style="width: 40px;">
 			</div>
-		
-			<!-- <button type="button" class="menuBtn">
-				<i><img src="images/menu-btn.png" style="width:20px;height:20px;"/>
-				</i><span>MENU</span>
-			</button> -->
+
 			
 			</div>
 
@@ -85,14 +81,8 @@
 	</div>
 			<!-- menu end -->
 
-
-
-
-
-
-
+<!-- section01 -->
 		
-		<!-- section01 -->
 		<div id="section02">
 			<div class="container">
 				<div class="bg-box">
@@ -147,7 +137,7 @@
 					<h2>CAFE<span>THE조은</span></h2>
 				</div>
 				</figcaption>
-				<!-- <a href="#"></a> -->
+			
 			</figure>
 		
 		
@@ -161,7 +151,7 @@
 						<h2>DESIGN<span>GARDEN</span></h2>
 				</div>
 				</figcaption>
-				<!-- <a href="#"></a> -->
+				
 			</figure>
 		
 		
@@ -174,7 +164,7 @@
 					<h2>DAILY<span>LESSON</span></h2>
 				</div>
 				</figcaption>
-				<!-- <a href="#"></a> -->
+				
 			</figure>
 		</div>
 	</div>
@@ -202,23 +192,23 @@
 <div class="gallery-wrap">
       <div class="gal-wrap1">
         <div class="gallery-img1">
-          <img src="images/gallery.png" alt="" id="gal1" >
-          <img src="images/gallery2.png" alt="" id="gal2">
+          <img src="images/gallery.png" alt=""  >
+          <img src="images/gallery2.png" alt="">
         </div>
         <div class="gallery-img2">
-          <img src="images/gallery4.png" alt="" id="gal3">
-          <img src="images/galley6.png" alt="" id="gal4">
+          <img src="images/gallery4.png" alt="">
+          <img src="images/galley6.png" alt="">
         </div>
 	</div>
 
     <div class="gal-wrap2">
       <div class="gallery-img3">
-				<img src="images/gallery1.png" alt="" id="gal5">
-        <img src="images/gallery0.png" alt="" id="gal6">
+				<img src="images/gallery1.png" alt="">
+        <img src="images/gallery0.png" alt="">
       </div>
       <div class="gallery-img4">
-        <img src="images/gallery5.png" alt="" id="gal7">
-        <img src="images/gallery7.png" alt="" id="gal8">
+        <img src="images/gallery5.png" alt="">
+        <img src="images/gallery7.png" alt="">
       </div>
     </div>
 </div>
@@ -271,109 +261,7 @@
 <script src="js/modernizr.custom.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/slick.js"></script>
-
-
-
-<script>
-
-var swiper = new Swiper('.swiper-container');
-AOS.init();
-
-
-	/**스크롤이 설정한 높이 이상 내려갔을때 스타일추가하기**/
-	if (jQuery(window).width() > 0) {
-    jQuery(window).on("scroll",function(ev){
-        if(jQuery(window).scrollTop() > 150 ) { /**높이 픽셀 조정**/
-            jQuery('.menu_box').addClass('fixed');  /**위의 높이에서 .fixed 클래스를 추가합니다. 스타일에서 자유롭게 수치 조절 가능합니다.**/
-        }
-        else{
-			jQuery('.menu_box').removeClass('fixed');
-        }
-        return false;
-    });
-	}
-	
-	/**마우스 부드럽게 해당위치로 이동**/
-	$(function(){
-	   $('a[href^=#]').click(function() {
-		  var speed = 800;
-		  var href= $(this).attr("href");
-		  var target = $(href == "#" || href == "" ? 'html' : href);
-		  var position = target.offset().top;
-		  $('body,html').animate({scrollTop:position}, speed, 'swing');
-		  return false;
-	   });
-	});
-
-
-	// 고스트버튼
-
-	jQuery(document).ready(function(){
-    jQuery(".ghost_btn").click(function(){
-	jQuery(".nav").slideToggle();
-    });
-});
-
-
-
-
-
-	// 메인-슬라이드 자동
-$(document).ready(function(){
-$('.bxslider').bxSlider({
-  auto: true,
-  autoControls: true,
-  stopAutoOnClick: true,
-  pager: true,
-  slideWidth:0,
-  speed:250,
-});
-	});
-
-
-//3번째 section 사진 hover
-	$(".hover").mouseleave(
-    function () {
-      $(this).removeClass("hover");
-    }
-  );
-
-
-
-
-
-
-//4. 갤러리 사진 슬라이드
-$(function(){
-		$('.gallery-btn1').click(function(){
-			$('.gallery-img1').slideToggle();
-		});
-	});
-	$(function(){
-		$('.gallery-btn1').click(function(){
-			$('.gallery-img2').slideToggle();
-		});
-	});
-
-	$(function(){
-		$('.gallery-btn2').click(function(){
-			$('.gallery-img3').slideToggle();
-		});
-	});
-	$(function(){
-		$('.gallery-btn2').click(function(){
-			$('.gallery-img4').slideToggle();
-		});
-	});
-
-
-      </script>
-
-
-
-
-
-
+<script src="js/js.js"></script>
 
 
 </body>

@@ -1,11 +1,7 @@
-/* @import url('reset css') */
-/* @font-face { font-family: 'BinggraeTaom'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.1/BinggraeTaomA1.woff') format('woff'); font-weight: normal; font-style: normal; } */
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
-/* @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800); */
-/* body{
-	font-family: 'Noto Serif KR', 'serif';
-} */
+
 
 /* 767-1280
 512-0 */
@@ -40,8 +36,6 @@
 	padding: 20px;
 	text-decoration:none;
 	color:#165851;
-	/* font-family: 'Noto Sans KR', sans-serif; */
-	/* font-family:'BinggraeTaom';  */
 	font-family: 'Noto Serif KR', serif;
 	font-size:15px; font-weight: bold;
 }
@@ -53,7 +47,6 @@
 	.warp{
 		width: 100%;
 		display: flex;
-		/* padding-top: 110px; */
 		padding-top: .4%;
 	
 	
@@ -67,7 +60,6 @@
 	.nav{
 		display: flex;
 		padding-top: 1.8%;
-		/* padding-left: 3%; */
 		padding-right: 5%;
 		letter-spacing: .3rem;
 		z-index: 999;
@@ -162,20 +154,7 @@
 
 }
 
-/* 자동타이핑 */
-/* #typing-txt{display: none;}
 
-#typing h1.on {  
-  display: inline-block; 
-  animation-name: cursor; 
-  animation-duration: 0.3s; 
-  animation-iteration-count: infinite; 
-} 
-@keyframes cursor{ 
-  0%{border-right: 1px solid #fff} 
-  50%{border-right: 1px solid #000} 
-  100%{border-right: 1px solid #fff} 
-} */
 
 /* bg end */
 
@@ -195,7 +174,7 @@
 }
 
 .title{
-	/* display: flex; */
+	
 	font-size: 2.5em;
 	color:#165851;
 	font-weight: 600;
@@ -223,8 +202,6 @@
 	line-height: 2.7em;
 	word-spacing: .3em;
 	font-family: 'Noto Serif KR', serif;
-	/* letter-spacing: .3em; */
-
 }
 
 
@@ -249,7 +226,7 @@
 	font-weight: 600;
 }
 figure.snip1200 {
-  /* font-family: 'Raleway', Arial, sans-serif; */
+  
   font-family: 'Noto Serif KR', serif;
   position: relative;
   overflow: hidden;
@@ -343,7 +320,7 @@ figure.snip1200 a {
   top: 0;
   bottom: 0;
   position: absolute;
-  /* z-index: 1; */
+ 
 }
 figure.snip1200:hover img,
 figure.snip1200.hover img {
@@ -416,10 +393,7 @@ figure.snip1200.hover p {
 	display: flex;
 
   }
-  .gallery-img1 img{
-	width: 80%;
-  
-  }
+
   .gallery-img1 {
 	text-align: center;
 	display: none;
@@ -434,6 +408,9 @@ figure.snip1200.hover p {
   .gallery-img4{
 	display: none;
 }
+.gallery-img1 img{
+	width: 80%;
+}
   .gallery-img2 img{
 	width: 80%;
   }
@@ -443,47 +420,6 @@ figure.snip1200.hover p {
   .gallery-img4 img{
 	width: 80%;
   }
-
-/* .gallery-btn{
-	display: flex;
-	justify-content: space-between;
-	padding: 2% 18.2%;
-  }
-  
-  .gallery-wrap{
-	width: 100%;
-	display: flex;
-	padding-left: 3%;
-  }
-  .gal-wrap1{
-	width: 50%;
-	display: flex;
-  }
-  
-  .gal-wrap2{
-	width: 50%;
-	display: flex;
-  }
-  .gallery-img1 img{
-	width: 80%;
-  
-  }
-  .gallery-img1 {
-	text-align: center;
-  }
-  .gallery-img3{
-	text-align: center;
-  }
-  .gallery-img2 img{
-	width: 80%;
-  }
-  .gallery-img3 img{
-	width: 80%;
-  }
-  .gallery-img4 img{
-	width: 80%;
-  } */
-
 
 .gallery-box{
 	display: flex;
@@ -515,65 +451,9 @@ figure.snip1200.hover p {
 #IRE{
 	font-size: 3rem;
 }
-/* .gallery-btn{
-	display: flex;
-	padding-top: 3%;
-	padding-bottom: 3%;
-	padding-left: 10%;
-}
-
-.gallery-btn1{
-	width: 50%;
-	
-}
-.gallery-btn2{
-	width: 50%;
-
-}
-.gallery-img{
-	width: 100%;
-	
-}
-.gallery-img1{
-	width: 100%;
-	text-align: center;
-	display: none;
-
-}
-.gallery-img2{
-	width: 100%;
-	text-align: center;
-	display: none;
-	
-}
-.gallery-btn1 img:hover{
-	transform: scale(1.1,1.1);
-}
-.gallery-btn2 img:hover{
-	transform: scale(1.1,1.1);
-}
-#gal1:hover{
-	border:7px solid white;
-}
-#gal2:hover{
-	border:7px solid white;
-}
-#gal3:hover{
-	border:7px solid white;
-}
-#gal4:hover{
-	border:7px solid #165851;
-}
-#gal5:hover{
-	border:7px solid #165851;
-}
-#gal6:hover{
-	border:7px solid #165851;
-} */
 
 
-
-	/* section 04 end---------------------------------------------------------  */	
+/* section 04 end---------------------------------------------------------  */	
 	
 #section05{
 	width:100%;
@@ -677,30 +557,7 @@ figure.snip1200.hover p {
 	border-bottom:1px solid #165851;
 	justify-content:space-between;
 }
-
-
-
-
-
-	
-.fixed{
-background:rgba(255, 255, 255, 0.705);
-transition:all 0.5s ease-in-out; 
--webkit-transition:all 0.5s ease-in-out;}
-	
-
-			
-
-			
-
-
-/* .line2{
-	width:100%;
-} */
-
 				
-
-					
 					/**메뉴부분 마우스 오버시 색상 **/
 					.menu_box li a:hover{
 						border-bottom:2px solid #d8db36; 
@@ -968,6 +825,7 @@ transition: all .5s ease;
 }
 .map-img{
 	width: 100%;
+
 }
 .map-img img{
 	width: 95%;
@@ -978,6 +836,8 @@ transition: all .5s ease;
 	-o-transition: all .5s ease;
 	transition: all .5s ease;
 }
+
+
 }
 /* <여기까지 section5> -------------------------------------------------*/
 

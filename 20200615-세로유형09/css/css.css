@@ -1,0 +1,72 @@
+*{padding: 0; margin: 0; text-decoration: none; list-style: none;}
+img{margin: 0; padding:0;}
+a{font-size: 12pt; color: inherit;}
+
+
+.container{width: 1000px; display: flex;}
+.left-container{width: 300px; height: 650px; background:#4682b4;}
+.right-container{width: 700px;}
+.header{width: 300px;}
+nav{width: 280px; height: 650px;}
+.logo{width: 280px; text-align: center; padding-top: 30px;}
+.menu{width: 280px; text-align: center;}
+.menu-wrap li{line-height: 30px;}
+.menu-wrap{border:1px solid white; width: 220px;  text-align: center;margin-left: 35px;}
+.main-menu h3{border-bottom:1px solid white; width: 220px;}
+.sub-menu{display: none;}
+
+
+
+.section{width: 700px;height: 350px;}
+.slider{position: relative;}
+.slider img{position: absolute;}
+
+
+
+
+
+
+.tab-contents{width: 700px; height: 200px; display: flex; background-color: purple;}
+.tab-contents div{width: 233.3%;}
+.tab1{width: 233.3%; height: 200px; position: relative; padding-left: 5px; padding-top: 10px;}
+.tab-main-txt{display: flex;}
+.notice{background: white; width: 105px; height: 30px; text-align: center;}
+.gallery{background: yellowgreen; width: 105px; height: 30px; text-align: center;}
+.notice-bottom{background: white; width:225px; height: 150px; line-height: 35px;}
+.gallery-bottom{background: yellowgreen; display: flex; width: 225px; height: 150px;}
+.tab-bottom ul{position: absolute;}
+.gallery-bottom>li>a>img{width: 85%; padding-top: 30px; padding-left: 5px;}
+.date1{padding-left: 47px;}
+.date{padding-left:30px;}
+
+
+
+
+.tab2{width: 233.3%; height: 200px;}
+.banner{height: 200px;}
+.banner img{width: 228px; height: 180px;padding-top: 10px;}
+.tab3{width: 233.3%; height: 200px;}
+.go-contents {height: 200px;}
+.go-contents img{width: 228px; height: 180px;padding-top: 10px;}
+
+
+
+
+
+
+
+.footer{width: 700px; }
+.footer-wrap{width: 700px; height: 100px; display: flex;}
+.logo-bottom{width: 200px; background: skyblue; text-align: center;}
+.logo-bottom img{width: 200px; padding-top: 25px;}
+.right-bottom{width: 500px;background-color: turquoise;}
+.menu-bottom{ width: 500px;height: 50px;}
+.menu-bottom ul{display: flex; justify-content: space-between; text-align: center;padding-left: 20px;  padding-top: 10px;  margin-right: 20px;}
+
+.copy{ width: 500px;height: 50px; text-align: center; }
+
+
+.popup{width: 300px; height: 230px; background-color: purple; text-align: center;position: absolute; top: 200px; left: 400px; display: none;}
+.popup-body{width: 280px; height: 200px; background-color: white; margin: 15px 10px; }
+.popup-top li{line-height: 30px;}
+.popup-bottom{padding: 20px 10px; text-align: right;}

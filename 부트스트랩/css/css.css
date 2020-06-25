@@ -1,0 +1,59 @@
+@font-face { font-family: 'Arita-buri-SemiBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-buri-SemiBold.woff') format('woff'); font-weight: normal; font-style: normal; }
+.section01{background: url('../images/990F8E495BFF69F244.jpg');
+background-position: bottom center;
+background-size: cover;
+height: 100vh;
+width: 100%;
+position: relative;
+}
+.title{
+    color: ivory;
+    font-size:60pt;
+    font-family: 'Arita-buri-SemiBold';
+}
+.title-sub-txt{
+    color: ivory;
+    font-size:20pt;
+
+    font-family: 'Arita-buri-SemiBold';
+    padding-top: 55px;
+}
+
+.text-main-padding{
+    padding-top: 25%;
+    display: flex;
+}
+img{
+    width: 30%;
+}
+
+.icon-bg{
+    margin-top:18%;
+    background: #fff;
+}
+.logo-img-width img{
+    width: 4%;
+    margin-top: .5%;
+}
+.logo-bg{
+    background: #fff;
+    height: 8%;
+}
+.padding-30{
+    padding: 20px 0;
+}
+.span-spacing p{margin-left: 3%;}
+.span-spacing span{margin-left:7%;}
+@media(max-width: 767px){
+    .text-main-padding{
+        padding: 0 !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    .title-sub-txt{
+        padding: 0 !important;
+    }
+}

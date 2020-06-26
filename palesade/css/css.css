@@ -30,18 +30,24 @@ img{
 .icon-bg{
     margin-top:18%;
     background: #fff;
+    height: 10%;
 }
 .logo-img-width img{
     width: 4%;
     margin-top: .5%;
+    
 }
 .logo-bg{
     background: #fff;
     height: 8%;
 }
-.padding-30{
-    padding: 20px 0;
+.align-items{
+    vertical-align: middle;
 }
+.padding-top-10{
+    padding-top: 40px;
+}
+.img-padding{padding-top: 20px;}
 .span-spacing p{margin-left: 3%;}
 .span-spacing span{margin-left:7%;}
 @media(max-width: 767px){

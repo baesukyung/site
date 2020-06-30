@@ -14,12 +14,12 @@ $(function(){
         $('#rf').css('display','none').fadeOut();
         $('#r2t').css('display','none').fadeOut();
         
-        $('#wc91').show();
-        $('#r2t1').hide();
-        $('#mc1').hide();
-        $('#tb1').hide();
-        $('#cb1').hide();
-        $('#rf1').hide();
+        $('#wc91').css('display','block').fadeIn();
+        $('#r2t1').css('display','none').fadeOut();
+        $('#mc1').css('display','none').fadeOut();
+        $('#tb1').css('display','none').fadeOut();
+        $('#cb1').css('display','none').fadeOut();
+        $('#rf1').css('display','none').fadeOut();
 
     });
     $('.mc').click(function(){
@@ -30,12 +30,12 @@ $(function(){
         $('#rf').css('display','none').fadeOut();
         $('#r2t').css('display','none').fadeOut();
 
-        $('#r2t1').show();
-        $('#wc91').hide();
-        $('#mc1').hide();
-        $('#tb1').hide();
-        $('#cb1').hide();
-        $('#rf1').hide();  
+        $('#mc1').css('display','block').fadeIn();
+        $('#wc91').css('display','none').fadeOut();
+        $('#r2t1').css('display','none').fadeOut();
+        $('#tb1').css('display','none').fadeOut();
+        $('#cb1').css('display','none').fadeOut();
+        $('#rf1').css('display','none').fadeOut();
     });
     $('.tb').click(function(){
         $('#tb').css('display','block').fadeIn();
@@ -44,6 +44,13 @@ $(function(){
         $('#cb').css('display','none').fadeOut();
         $('#rf').css('display','none').fadeOut();
         $('#r2t').css('display','none').fadeOut();
+
+        $('#tb1').css('display','block').fadeIn();
+        $('#wc91').css('display','none').fadeOut();
+        $('#mc1').css('display','none').fadeOut();
+        $('#r2t1').css('display','none').fadeOut();
+        $('#cb1').css('display','none').fadeOut();
+        $('#rf1').css('display','none').fadeOut(); 
     });
     $('.cb').click(function(){
         $('#cb').css('display','block').fadeIn();
@@ -52,6 +59,13 @@ $(function(){
         $('#tb').css('display','none').fadeOut();
         $('#rf').css('display','none').fadeOut();
         $('#r2t').css('display','none').fadeOut();
+
+        $('#cb1').css('display','block').fadeIn();
+        $('#wc91').css('display','none').fadeOut();
+        $('#mc1').css('display','none').fadeOut();
+        $('#r2t1').css('display','none').fadeOut();
+        $('#tb1').css('display','none').fadeOut();
+        $('#rf1').css('display','none').fadeOut(); 
     });
     $('.rf').click(function(){
         $('#rf').css('display','block').fadeIn();
@@ -60,6 +74,13 @@ $(function(){
         $('#tb').css('display','none').fadeOut();
         $('#cb').css('display','none').fadeOut();
         $('#r2t').css('display','none').fadeOut();
+
+        $('#rf1').css('display','block').fadeIn();
+        $('#wc91').css('display','none').fadeOut();
+        $('#mc1').css('display','none').fadeOut();
+        $('#r2t1').css('display','none').fadeOut();
+        $('#tb1').css('display','none').fadeOut();
+        $('#cb1').css('display','none').fadeOut(); 
     });
     $('.r2t').click(function(){
         $('#r2t').css('display','block').fadeIn();
@@ -68,7 +89,20 @@ $(function(){
         $('#tb').css('display','none').fadeOut();
         $('#cb').css('display','none').fadeOut();
         $('#rf').css('display','none').fadeOut();
+
+        $('#r2t1').css('display','block').fadeIn();
+        $('#wc91').css('display','none').fadeOut();
+        $('#mc1').css('display','none').fadeOut();
+        $('#rf1').css('display','none').fadeOut();
+        $('#tb1').css('display','none').fadeOut();
+        $('#cb1').css('display','none').fadeOut(); 
     });
+$('.modal-img1').hover(function(){
+    $('.whitecar-txt').show();
+});
+$('.modal-img1').mouseleave(function(){
+    $('.whitecar-txt').hide();
+});
 
 });
 

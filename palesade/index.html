@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/swiper.min.js"></script>
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/css.css">
     
     <title>palesade</title>
@@ -100,7 +104,8 @@
 <div class="section02">
     
         <div class="container tab-content-img">
-            <div class="col-sm-12 text-center padding-top-10 car-color-ex">
+            <div class="col-sm-12 text-center padding-top-10 car-color-ex"data-aos="fade-down"
+            data-aos-easing="linear" data-aos-duration="1500" >
                 <h1>Exterior Colors</h1>
                 <h4>palesade의 다양하고 고급스러운 컬러로 당신만의 개성을 나타낼 수 있습니다.</h4>
             </div>
@@ -209,157 +214,161 @@
     <!-- light box  modal-->
     <div class="container-fluid">
         <div class="col-sm-12">
-            <div class="container text-center" style="font-weight: 600; padding: 2.5%;">
+            <div class="container text-center" style="font-weight: 600; padding: 2.5%;" data-aos="fade-down"data-aos-easing="linear"data-aos-duration="1500">
                 <h1>Exterior</h1>
                 <h4>palesade의 혁신적이고 진보적인 디자인</h4>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-4 text-center" style="padding-top: 10%;">
+            <div class="col-sm-4 text-center" style="padding-top: 10%;" data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom">
                 <h4 class="text-left">Exterior Details</h6>
                 <h3 class="text-left"style="line-height:150%">바디컬러 클래딩과 프론트 & 리어 크롬 스키드플레이트<br> 를 적용해 웅장하고 와이드한 이미지를 구현합니다.</h3>
             </div>
-            <div class="col-sm-8 interior-img1">
+            <div class="col-sm-8 interior-img1" data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom">
                 <img src="images/blue.png" alt="interior_beige">
             </div>
 
         </div>
-        <div class="container-fluid"style="padding-top:5%;">
-        <div class="col-sm-4 palesade-car-img">
-            <div class="first-title text-center">
-                <h3>전면부와 후면부 디자인</h3>
+        <div class="container-fluid"style="padding-top:5%; margin-left:-1%; margin-right:-2%;">
+            <div class="col-sm-4 palesade-car-img">
+                <div class="first-title text-center"data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500">
+                    <h3>전면부와 후면부 디자인</h3>
+                </div>
+                <!-- Trigger the modal with a button -->
+                <img src="images/whitecar4.jpg" data-toggle="modal" data-target="#myModal1" class="modal-img modal-img1"><a></a><h3 class="whitecar-txt">당신의 감각을 일깨워 줄 플래그십 SUV</h3></img>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal1" role="dialog">
+                    <div class="modal-dialog modal-md">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">당신의 감각을 일깨워 줄 플래그십 SUV</h4>
+                        </div>
+                        <div class="modal-body" style="width: 100%;">
+                        <img src="images/whitecar4.jpg">
+                        </div>
+                        <div class="body-txt" style="margin-left:2.5%;">
+                            <h4>바디컬러 클래딩과 프론트 & 리어 크롬 스키드 플레이트를<br> 적용해 웅장하고 와이드한 이미지를 구현합니다</h4>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
             </div>
-              <!-- Trigger the modal with a button -->
-              <img src="images/whitecar4.jpg" data-toggle="modal" data-target="#myModal1" class="modal-img modal-img1"><a></a><h3 class="whitecar-txt">당신의 감각을 일깨워 줄 플래그십 SUV</h3></img>
+            <div class="col-sm-4">
+                <div class="row">
+                    <div class="col-sm-12">
+                                    <!-- Trigger the modal with a button -->
+                <img src="images/headlight.jpg" data-toggle="modal" data-target="#myModal2" class="modal-img"></img>
 
-              <!-- Modal -->
-              <div class="modal fade" id="myModal1" role="dialog">
-                  <div class="modal-dialog modal-md">
-                  <div class="modal-content">
-                      <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      <h4 class="modal-title">당신의 감각을 일깨워 줄 플래그십 SUV</h4>
-                      </div>
-                      <div class="modal-body" style="width: 100%;">
-                      <img src="images/whitecar4.jpg">
-                      </div>
-                      <div class="body-txt" style="margin-left:2.5%;">
-                          <h4>바디컬러 클래딩과 프론트 & 리어 크롬 스키드 플레이트를<br> 적용해 웅장하고 와이드한 이미지를 구현합니다</h4>
-                      </div>
-                      <div class="modal-footer">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                      </div>
-                  </div>
-                  </div>
-              </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="row">
+                <!-- Modal -->
+                <div class="modal fade" id="myModal2" role="dialog">
+                    <div class="modal-dialog modal-md">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">프로젝션 헤드램프</h4>
+                        </div>
+                        <div class="modal-body">
+                        <img src="images/headlight.jpg" >
+                        </div>
+                        <div class="body-txt" style="margin-left:2.5%;">
+                            <h4>야간 운전시 전방에 빛을 비춰 운전자의 시야를 확보할 수 있도록 <br>돕습니다.<br>
+                                * Full LED 타입 : 상향등과 하향등이 모두 LED가 적용되어 <br>광도가 우수하고 고급스러운 이미지를 연출합니다.</h4>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                    </div>
+                    <div class="col-sm-12">
+                    <!-- Trigger the modal with a button -->
+                <img src="images/backheadlight.png" data-toggle="modal" data-target="#myModal3" class="modal-img"></img>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal3" role="dialog">
+                    <div class="modal-dialog modal-md">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">LED 리어 콤비 램프</h4>
+                        </div>
+                        <div class="modal-body">
+                        <img src="images/backheadlight.png" class="modal-img">
+                        </div>
+                        <div class="body-txt" style="margin-left:2.5%;">
+                            <h4>차량 후방에 장착되며 포지셔닝램프, 제동등, 방향지시등과 <br> 여러 기능이 조합된 등화장치를 빛을 내는 반도체 소자로<br> 밝은 빛을 내며 효율이 좋은 광원인 LED를 사용하였습니다.</h4>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
                 <div class="col-sm-12">
-                                  <!-- Trigger the modal with a button -->
-              <img src="images/headlight.jpg" data-toggle="modal" data-target="#myModal2" class="modal-img"></img>
+                                    <!-- Trigger the modal with a button -->
+                <img src="images/frontgrill.png" data-toggle="modal" data-target="#myModal4" class="modal-img"></img>
 
-              <!-- Modal -->
-              <div class="modal fade" id="myModal2" role="dialog">
-                  <div class="modal-dialog modal-md">
-                  <div class="modal-content">
-                      <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      <h4 class="modal-title">프로젝션 헤드램프</h4>
-                      </div>
-                      <div class="modal-body">
-                      <img src="images/headlight.jpg" >
-                      </div>
-                      <div class="body-txt" style="margin-left:2.5%;">
-                        <h4>야간 운전시 전방에 빛을 비춰 운전자의 시야를 확보할 수 있도록 <br>돕습니다.<br>
-                            * Full LED 타입 : 상향등과 하향등이 모두 LED가 적용되어 <br>광도가 우수하고 고급스러운 이미지를 연출합니다.</h4>
-                      </div>
-                      <div class="modal-footer">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                      </div>
-                  </div>
-                  </div>
-              </div>
+                <!-- Modal -->
+                <div class="modal fade" id="myModal4" role="dialog">
+                    <div class="modal-dialog modal-md">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">입체적인 형상의 역삼각형의 엣지 그릴</h4>
+                        </div>
+                        <div class="modal-body">
+                        <img src="images/frontgrill.png" class="modal-img">
+                        </div>
+                        <div class="body-txt" style="margin-left:2.5%;">
+                            <h4>입체적인 크롬 매쉬타입의 대형 캐스케이딩 그릴로<br> 강인하고 고급스러운 플래그십 이미지를 전달합니다</h4>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
                 </div>
                 <div class="col-sm-12">
                 <!-- Trigger the modal with a button -->
-              <img src="images/backheadlight.png" data-toggle="modal" data-target="#myModal3" class="modal-img"></img>
+                <img src="images/wheel.png" data-toggle="modal" data-target="#myModal5" class="modal-img"></img>
 
-              <!-- Modal -->
-              <div class="modal fade" id="myModal3" role="dialog">
-                  <div class="modal-dialog modal-md">
-                  <div class="modal-content">
-                      <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      <h4 class="modal-title">LED 리어 콤비 램프</h4>
-                      </div>
-                      <div class="modal-body">
-                      <img src="images/backheadlight.png" class="modal-img">
-                      </div>
-                      <div class="body-txt" style="margin-left:2.5%;">
-                        <h4>차량 후방에 장착되며 포지셔닝램프, 제동등, 방향지시등과 <br> 여러 기능이 조합된 등화장치를 빛을 내는 반도체 소자로<br> 밝은 빛을 내며 효율이 좋은 광원인 LED를 사용하였습니다.</h4>
-                      </div>
-                      <div class="modal-footer">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                      </div>
-                  </div>
-                  </div>
-              </div>
+                <!-- Modal -->
+                <div class="modal fade" id="myModal5" role="dialog">
+                    <div class="modal-dialog modal-md">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">캘리그라피 전용 전면 가공 알로이 휠</h4>
+                        </div>
+                        <div class="modal-body">
+                        <img src="images/wheel.png" class="modal-img">
+                        </div>
+                        <div class="body-txt" style="margin-left:2.5%;">
+                            <h4>바디컬러 클래딩과 프론트 & 리어 크롬 스키드 플레이트를<br> 적용해 웅장하고 와이드한 이미지를 구현합니다</h4>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
                 </div>
             </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="col-sm-12">
-                                <!-- Trigger the modal with a button -->
-              <img src="images/frontgrill.png" data-toggle="modal" data-target="#myModal4" class="modal-img"></img>
-
-              <!-- Modal -->
-              <div class="modal fade" id="myModal4" role="dialog">
-                  <div class="modal-dialog modal-md">
-                  <div class="modal-content">
-                      <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      <h4 class="modal-title">입체적인 형상의 역삼각형의 엣지 그릴</h4>
-                      </div>
-                      <div class="modal-body">
-                      <img src="images/frontgrill.png" class="modal-img">
-                      </div>
-                      <div class="body-txt" style="margin-left:2.5%;">
-                        <h4>입체적인 크롬 매쉬타입의 대형 캐스케이딩 그릴로<br> 강인하고 고급스러운 플래그십 이미지를 전달합니다</h4>
-                      </div>
-                      <div class="modal-footer">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                      </div>
-                  </div>
-                  </div>
-              </div>
-            </div>
-            <div class="col-sm-12">
-            <!-- Trigger the modal with a button -->
-              <img src="images/wheel.png" data-toggle="modal" data-target="#myModal5" class="modal-img"></img>
-
-              <!-- Modal -->
-              <div class="modal fade" id="myModal5" role="dialog">
-                  <div class="modal-dialog modal-md">
-                  <div class="modal-content">
-                      <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      <h4 class="modal-title">캘리그라피 전용 전면 가공 알로이 휠</h4>
-                      </div>
-                      <div class="modal-body">
-                      <img src="images//wheel.png" class="modal-img">
-                      </div>
-                      <div class="body-txt" style="margin-left:2.5%;">
-                        <h4>바디컬러 클래딩과 프론트 & 리어 크롬 스키드 플레이트를<br> 적용해 웅장하고 와이드한 이미지를 구현합니다</h4>
-                      </div>
-                      <div class="modal-footer">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                      </div>
-                  </div>
-                  </div>
-              </div>
-            </div>
-        </div>
     </div>
 
     <!-- interior -->
@@ -369,7 +378,7 @@
 <div class="section04">
     <div class="container-fluid">
         <div class="col-sm-12">
-            <div class="container text-center" style="font-weight: 600; padding: 2.5%;">
+            <div class="container text-center" style="font-weight: 600; padding: 2.5%;" data-aos="fade-down"data-aos-easing="linear"data-aos-duration="1500">
                 <h1>Interior</h1>
                 <h4>palesade 우아하고 고급스러운 내장 디자인</h4>
             </div>
@@ -378,46 +387,149 @@
             <div class="row">
                 <div class="col-sm-8 interior-img1">
                     <img src="images/palisade_lx2_20my_space_calligraphy_interior_beige.png" alt="interior_beige">
+                    <div class="conts-area">
+                        <div class="point point-1" data-toggle="modal" data-target="#myModal6" class="modal-img">
+                            <div class="bg"></div>  
+                            <span class="dot"></span>
+                            <div class="modal fade" id="myModal6" role="dialog">
+                                <div class="modal-dialog modal-md">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">캘리그라피 전용 전면 가공 알로이 휠</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                    <img src="images/palisade_lx2_20my_convenience_backseat_conversation_sleep_mode_sleep_mode.png" class="modal-img">
+                                    </div>
+                                    <div class="body-txt" style="margin-left:2.5%;">
+                                        <h4>바디컬러 클래딩과 프론트 & 리어 크롬 스키드 플레이트를<br> 적용해 웅장하고 와이드한 이미지를 구현합니다</h4>
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="point point-2">
+                            <div class="bg"></div>  
+                            <span class="dot"></span>
+                        </div>
+                        <div class="point point-3">
+                            <div class="bg"></div>  
+                            <span class="dot"></span>
+                        </div>
+                        <div class="point point-4">
+                            <div class="bg"></div>  
+                            <span class="dot"></span>
+                        </div>
+                        <div class="point point-5">
+                            <div class="bg"></div>  
+                            <span class="dot"></span>
+                        </div>
+                        <div class="point point-6">
+                            <div class="bg"></div>  
+                            <span class="dot"></span>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-4 text-center" style="padding-top: 10%;">
+                <div class="col-sm-4 text-center" style="padding-top: 10%;" data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom">
                     <h4 class="text-left">Interior Details</h6>
                     <h3 class="text-left"style="line-height:150%">편의성에서 안전성까지, palesade는 모든 부분에서<br> 운전자와 탑승자를 최우선으로 배려합니다.</h3>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-4 palesade-car-img">
-                    <div class="first-title text-center">
-                        <h3>전면부와 후면부 디자인</h3>
-                    </div>
-                      <!-- Trigger the modal with a button -->
-                      <img src="images/whitecar4.jpg" data-toggle="modal" data-target="#myModal1" class="modal-img modal-img1"><a></a><h3 class="whitecar-txt">당신의 감각을 일깨워 줄 플래그십 SUV</h3></img>
-        
-                      <!-- Modal -->
-                      <div class="modal fade" id="myModal1" role="dialog">
-                          <div class="modal-dialog modal-md">
-                          <div class="modal-content">
-                              <div class="modal-header">
-                              <button type="button" class="close" data-dismiss="modal">&times;</button>
-                              <h4 class="modal-title">당신의 감각을 일깨워 줄 플래그십 SUV</h4>
-                              </div>
-                              <div class="modal-body" style="width: 100%;">
-                              <img src="images/whitecar4.jpg">
-                              </div>
-                              <div class="body-txt" style="margin-left:2.5%;">
-                                  <h4>바디컬러 클래딩과 프론트 & 리어 크롬 스키드 플레이트를<br> 적용해 웅장하고 와이드한 이미지를 구현합니다</h4>
-                              </div>
-                              <div class="modal-footer">
-                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                              </div>
-                          </div>
-                          </div>
-                      </div>
-                </div>
-            </div>
+
         </div>
     </div>
 </div>
 <!-- section04  end-->
+<!-- <section class="test">
+    <div class="container">
+        <div class="tab">
+            <ul class="nav nav-pills">
+                <li ><a  data-toggle="pill" href="#menu1">MENU-1</a></li>
+                <li><a data-toggle="pill" href="#menu2">MENU-2</a></li>
+                <li class="active"><a data-toggle="pill" href="#menu3">MENU-3</a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="menu1" class="tab-pane fade in active">
+                    <h3>HOME</h3>
+                    <p>Some content.</p>
+                </div>
+                <div id="menu2" class="tab-pane fade">
+                    <h3>Menu 1</h3>
+                    <p>Some content in menu 1.</p>
+                </div>
+                <div id="menu3" class="tab-pane fade">
+                    <h3>Menu 2</h3>
+                    <p>Some content in menu 2.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<div class="section05">
+    <div class="container text-center" style="padding-top: 2%;">
+        <div class="col-sm-12" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500" style="padding-bottom: 2%;">
+            <h1>Space</h1>
+            <h4>하이테크한 이미지와 운전자 중심의 실내공간</h4>
+            <h4>나파가죽을 사용해 내부 공간을 한층 고급스럽게 업그레이드 했습니다.</h4>
+        </div>
+        <div class="tab">
+            <ul class="nav nav-pills">
+                <li class="active"><a href="#menu1" data-toggle="pill">블랙 원톤(니트)</a></li>
+                <li><a href="#menu2" data-toggle="pill">블랙원톤(멜란지)</a></li>
+                <li><a href="#menu3" data-toggle="pill">버건디</a></li>
+                <li><a href="#menu4" data-toggle="pill">웜그레이</a></li>
+            </ul>
+            <!-- tab-nav -->
+            <div class="tab-content position-ab">
+                <div id="menu1" class="tab-pane in active fade in active">
+                    <img src="images/palisade_lx2_20my_space_interior_color_black_one_tone_artificial_leather_seat.png">
+                    <div class="plus-tab">
+
+                    </div>
+                </div>
+                <div id="menu2" class="tab-pane  fade ">
+                    <img src="images/palisade_lx2_20my_space_interior_color_black_one_tone_leather_seat.png">
+                    <div class="plus-tab">
+
+                    </div>
+                </div>
+                <div id="menu3" class="tab-pane  fade ">
+                    <img src="images/palisade_lx2_20my_space_interior_color_burgundy_napa_leather_seat.png">
+
+                </div>
+                <div id="menu4" class="tab-pane  fade ">
+                    <img src="images/palisade_lx2_20my_space_interior_color_warm_gray_napa_leather_seat.png">
+>
+                </div>
+                <!-- <div id="menu3" class="tab-pane in active fade">
+                    <img src="images/palisade_lx2_20my_space_interior_color_black_one_tone_artificial_leather_seat.png">
+                    <div class="plus-tab">
+                        <div class="panel panel-primary">
+                            <a data-target="#plus01" data-toggle="collapse">
+                                <h4 class="panel-title">
+                                    기능보기
+                                </h4>
+                            </a>
+                        </div>
+                        <div id="plus01" class="collapse">
+                            정방충돌방지를 하기 위해서 옵션을 추가해야 됩니다.
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <!-- tab end -->
+
+    </div>
+</div>
+<!-- section05 end -->
 <script type="text/javascript" src="js/js.js"></script>
 </body>
 </html>

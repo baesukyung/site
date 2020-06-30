@@ -103,6 +103,7 @@ $('.modal-img1').hover(function(){
 $('.modal-img1').mouseleave(function(){
     $('.whitecar-txt').hide();
 });
-
+AOS.init();
+new Swiper('.swiper-container');
 });
 

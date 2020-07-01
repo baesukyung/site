@@ -198,7 +198,7 @@
     width: 100%;
     padding-bottom: 7%;
 }
-.modal-img{
+/* .modal-img{
     overflow: hidden;
     box-shadow: 0px 0px 10px 0px #e5e5e5;
     box-sizing: border-box;
@@ -229,6 +229,9 @@
    margin-left: -2%;
    font-size: 20pt;
    display: none;
+} */
+.bg01{
+    background: url('../images/01backlight.jpg');
 }
 
 /* section03 end */

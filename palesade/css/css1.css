@@ -1,0 +1,205 @@
+@font-face { font-family: 'MapoFlowerIsland'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoFlowerIslandA.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+.section01 {
+    background: url('../images/990F8E495BFF69F244.jpg');
+    background-position:bottom center;
+    background-size: cover;
+    width: 100%;
+   overflow: hidden;
+    background-repeat: no-repeat;
+}
+
+.title {
+    color: ivory;
+    font-size: 60pt;
+    font-family: 'MapoFlowerIsland';
+}
+
+.title-sub-txt {
+    color: ivory;
+    font-size: 20pt;
+
+    font-family: 'MapoFlowerIsland';
+    padding-top: 15%;
+}
+
+.text-main-padding {
+    padding-top: 25%;
+    display: flex;
+}
+
+.icon-img1 img {
+    width: 20%;
+}
+
+.icon-bg {
+    margin-top: 22%;
+    background: #fff;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.logo-img-width img {
+    width: 4%;
+    margin-top: .5%;
+
+}
+.logo-bg{
+    background: #fff;
+    padding: 10px;
+}
+
+
+.align-items {
+    vertical-align: middle;
+}
+
+.padding-top-10 {
+    padding-top: 5%;
+}
+
+.img-padding {
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+.line-height p{
+    line-height: 30px;
+    margin-bottom: -2px;
+    border-top: 1px solid #2e3a36;
+    border-bottom: 1px solid #2e3a36;
+    font-family: 'MapoFlowerIsland';
+}
+.span-spacing p {
+    margin-left: 3%;
+    font-family: 'MapoFlowerIsland';
+}
+
+.span-spacing span {
+    margin-left: 7%;
+}
+.margin-top-5{
+    margin-top: -5%;
+}
+
+/* section01 */
+
+.section02 {
+    position: relative;
+    background-color: lightgray;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+#r2t,
+#mc,
+#tb,
+#cb,
+#rf {
+    display: none;
+}
+#r2t1,
+#mc1,
+#tb1,
+#cb1,
+#rf1 {
+    display: none;
+}
+.subject-wrap {
+    display: flex;
+}
+
+.select-txt {
+    margin-right: 45%;
+    font-family: 'MapoFlowerIsland';
+}
+
+/* .text-right {
+    margin-right: 20%;
+} */
+
+.col-sm-12>ul>li {
+    list-style: none;
+   }
+.col-sm-4>ul>li{
+    list-style: none;
+}
+.subject {
+    font-weight: 600;
+    font-size: 12pt;
+}
+
+.tab-color-text>ul>li {
+    list-style: none;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    margin: 10px 20px;
+    
+}
+
+.tab-color-text>ul {
+    display: flex;
+   
+}
+
+.col-sm-6>ul>li {
+    list-style: none;
+}
+
+.tab-car-img img {
+    width: 90%;
+}
+
+.padding-10 {
+    padding-top: 5%;
+}
+
+.padding-left-30 {
+    padding-left: 30%;
+}
+.tab-color-text>ul>li>a{
+    display: block;
+}
+.wc9 {
+    background-color: #f2f4f3;
+}
+
+.r2t {
+    background-color: #464a49;
+}
+
+.mc {
+    background-color: #222c3d;
+}
+
+.tb {
+    background-color: #18181a;
+}
+
+.cb {
+    background-color: #381719;
+}
+
+.rf {
+    background-color: #2e3a36;
+}
+
+
+
+
+@media(max-width: 767px) {
+    .text-main-padding {
+        padding: 0 !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .title-sub-txt {
+        padding: 0 !important;
+    }
+}

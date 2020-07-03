@@ -1,0 +1,165 @@
+'use strict';
+
+/** [Hyundai] Generated On : Fri, 26 Jun 2020 21:32:01 GMT **/(function ($) {
+	'use strict';
+
+	function VLPFeatureGrid($elem) {
+		var galleryItems = $elem.find('a[data-gallery]');
+
+		function insertCorrectIcons() {
+			$elem.find('.image-block__block.image .image-block__header-overlay').append('<span class="icon-plus image-block__overlay-icon"></span>');
+			$elem.find('.image-block__block.video .image-block__header-overlay').append('<span class="icon-chevron-right image-block__overlay-icon"></span>');
+			$elem.find('.image-block__block.video .image-block__inner-wrapper').append('<span class="icon-video-play image-block__overlay-icon"></span>');
+		}
+
+		function videoPlayIconListener() {
+			$elem.find('.icon-video-play').on('click', function () {
+				$(this).closest('.image-block__inner-wrapper').find('.image-block__lightbox-link').click();
+			});
+		}
+		insertCorrectIcons();
+		videoPlayIconListener();
+	}
+
+	$(document).ready(function () {
+		var region = typeof Cookies !== 'undefined' ? Cookies.get('province') : 'on';
+		var lang = typeof Cookies !== 'undefined' ? Cookies.get('hyundai#lang') : 'en';
+		var vlpModel = $('#vlp-model').attr('analytics-id').split(' ');
+		var siteSubSection = $('.vlp-nav__link.current').data('analytics') || '';
+		var modelName = vlpModel[1];
+		var modelYear = vlpModel[0];
+
+		$('.vlp-feature-grid').each(function () {
+			new VLPFeatureGrid($(this));
+		});
+
+		var $splOffersGridCta = $(".vlp-feature-grid__cta .splOffer__button");
+
+		$splOffersGridCta.on('click', function (e) {
+			var $this = $(this);
+			var $modelName = $('#vlp-model').attr('analytics-id');
+			var $gridName = $this.attr('analytics-id');
+
+			if (typeof dataLayer !== 'undefined') {
+				dataLayer.push({
+					'category': 'special offer model specific link',
+					'action': 'special offer model: ' + $gridName, 'label': $modelName,
+					'value': '',
+					'event': 'GA Event'
+				});
+			}
+		});
+
+		$(document).on('click', '.image-block__block.video div.embed-responsive', function () {
+			var videoTitle = $(this).data('analytics');
+
+			if (typeof dataLayer !== 'undefined') {
+				dataLayer.push({
+					'event': 'vlpMediaEvent',
+					'language': lang,
+					'vlpCategory': 'showroom:Overview:Video',
+					'vlpAction': 'mediaClick',
+					'vlpLabel': modelName + ':Video:' + videoTitle,
+					'vlpValue': '1',
+					'regionName': region,
+					'siteSection': 'showroom',
+					'siteSubSection': siteSubSection,
+					'ctaLocation': siteSubSection,
+					'mediaType': 'Video',
+					'mediaName': 'Video Title',
+					'modelYear': modelYear,
+					'modelName': modelName
+				});
+			}
+		});
+
+		$('.vlp-feature-grid__cta .cta__button').click(function () {
+			var ctaName = $(this).data('analytics') || '';
+			var ctaLocation = $(this).attr('analytics-id') || '';
+
+			if (typeof dataLayer !== 'undefined') {
+				dataLayer.push({
+					'event': 'vlpCTAClick',
+					'language': lang,
+					'vlpCategory': 'showroom:Overview:' + ctaName,
+					'vlpAction': 'ctaClicks',
+					'vlpLabel': modelName + ':Overview:' + ctaName,
+					'vlpValue': '1',
+					'regionName': region,
+					'siteSection': 'showroom',
+					'siteSubSection': siteSubSection,
+					'ctaLocation': ctaLocation,
+					'ctaName': ctaName,
+					'modelYear': modelYear,
+					'modelName': modelName
+				});
+			}
+		});
+
+		$('.buttonsPlaceholder .cta__button').click(function () {
+			var ctaName = $(this).data('analytics').trim();
+
+			if (typeof dataLayer !== 'undefined') {
+				dataLayer.push({
+					'event': 'vlpCTAClick',
+					'language': lang,
+					'vlpCategory': 'showroom:Overview:' + ctaName,
+					'vlpAction': 'ctaClicks',
+					'vlpLabel': modelName + ':Overview:' + ctaName,
+					'vlpValue': '1',
+					'regionName': region,
+					'siteSection': 'showroom',
+					'siteSubSection': siteSubSection,
+					'ctaLocation': "What do owners think",
+					'ctaName': ctaName,
+					'modelYear': modelYear,
+					'modelName': modelName
+				});
+			}
+		});
+
+		$('.vlp-feature-grid__image-grid .image-block__inner-wrapper a').click(function () {
+			var ctaName = $(this).data('analytics').trim() || '';
+			var ctaLocation = $(this).closest('.vlp-feature-grid').find('header h1').data('analytics') || '';
+
+			if (typeof dataLayer !== 'undefined') {
+				dataLayer.push({
+					'event': 'vlpCTAImages',
+					'language': lang,
+					'vlpCategory': 'showroom:Overview:' + ctaName,
+					'vlpAction': 'ctaClicks',
+					'vlpLabel': modelName + ':Overview:' + ctaName,
+					'vlpValue': '1',
+					'regionName': region,
+					'siteSection': 'showroom',
+					'siteSubSection': siteSubSection,
+					'ctaLocation': ctaLocation,
+					'ctaName': ctaName,
+					'modelYear': modelYear,
+					'modelName': modelName
+				});
+			}
+		});
+
+		$(document).on('click', '.swatch-holder button', function () {
+			var modelColor = $(this).attr('title').trim() || '';
+			if (typeof dataLayer !== 'undefined') {
+				dataLayer.push({
+					'event': 'vlpColorClick',
+					'language': lang,
+					'vlpCategory': 'showroom:Overview:color select',
+					'vlpAction': 'colorSelect',
+					'vlpLabel': modelName + ':Overview:Color:' + modelColor,
+					'vlpValue': '1',
+					'regionName': region,
+					'siteSection': 'showroom',
+					'siteSubSection': siteSubSection,
+					'ctaLocation': 'Seeing is Believing',
+					'ctaName': modelColor,
+					'modelYear': modelYear,
+					'modelName': modelName
+				});
+			}
+		});
+	});
+})(jQuery);

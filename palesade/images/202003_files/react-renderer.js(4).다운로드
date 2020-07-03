@@ -1,0 +1,22 @@
+﻿/*
+ *
+ * React.createElement(
+ *  type,
+ *  [props],
+ *  [...children]
+ * );
+ *
+ * see: React.createElement() API Documentation
+ *
+ * https://facebook.github.io/react/docs/react-api.html#createelement
+ *
+ */
+
+var json = document.getElementById("reactview-shopping-tools-menu").getAttribute("data-props-json");
+var data = JSON.parse(json);
+
+ReactDOM.render(React.createElement(Provider, {
+  store: window.hacc.redux.store
+}, React.createElement(window.hacc.nav.ShoppingTools.ShoppingToolsContextMenu, data)
+  ), document.getElementById("reactview-shopping-tools-menu")
+);

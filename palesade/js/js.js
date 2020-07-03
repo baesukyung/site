@@ -106,17 +106,25 @@ $('.modal-img1').mouseleave(function(){
 AOS.init();
 
 
-var swiper = new Swiper('.swiper-container', {
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
+ var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      // init: false,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
         prevEl: '.swiper-button-prev',
       nextEl: '.swiper-button-next',
      
     },
-  });
+
+    });
+
+
+
+
   $(document).ready(function(){
     $(".bg01").click(function(){
       $("#myModal01").modal();
@@ -138,25 +146,25 @@ var swiper = new Swiper('.swiper-container', {
       });
   });
 
-$('#menu1').click(function(){
+$('.conven01').click(function(){
 $('#ex01').css('display','block');
 $('#ex02').css('display','none');
 $('#ex03').css('display','none');
 $('#ex04').css('display','none');
 });
-$('#menu2').click(function(){
+$('.conven02').click(function(){
     $('#ex02').css('display','block');
     $('#ex01').css('display','none');
     $('#ex03').css('display','none');
     $('#ex04').css('display','none');
     });
-    $('#menu3').click(function(){
+    $('.conven03').click(function(){
      $('#ex03').css('display','block');
     $('#ex02').css('display','none');
     $('#ex01').css('display','none');
     $('#ex04').css('display','none');
     });
-    $('#menu4').click(function(){
+    $('.conven04').click(function(){
     $('#ex04').css('display','block');
     $('#ex02').css('display','none');
     $('#ex03').css('display','none');

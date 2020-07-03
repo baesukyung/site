@@ -1,0 +1,40 @@
+/** [Hyundai] Generated On : Fri, 29 May 2020 05:50:45 GMT **/
+#ie-sunset-view {
+  display: none;
+  min-height: 45px;
+  background-color: #F6F3F2;
+  text-align: center;
+  border-bottom: 1px solid #DDDDDD; }
+  #ie-sunset-view .ie-sunset__content {
+    display: flex;
+    justify-content: center; }
+  #ie-sunset-view .ie-sunset__browser-icons {
+    vertical-align: bottom;
+    width: 123px;
+    display: inline-block;
+    background: url(../img/browsericons.png) no-repeat 50% 10px;
+    background-size: 120px;
+    width: 130px;
+    margin: 0 0 0 20px;
+    height: 45px; }
+  #ie-sunset-view .ie-sunset__message {
+    display: inline-block;
+    padding: 13px;
+    font-size: 16px;
+    font-family: 'HyundaiSansHead-Regular'; }
+
+.ie#root .global-nav-header.vlp-nav-scroll-up {
+  top: -120px; }
+  .ie#root .global-nav-header.vlp-nav-scroll-up .global-header__navbar-links {
+    height: 70px; }
+
+.ie#root .global-nav-header .vn-filters, .ie#root .global-nav-header .nav-modal-background, .ie#root .global-nav-header .nav-modal-background--submenu {
+  top: 135px; }
+
+.ie#root .global-nav-header .vn-filters.scroll-up {
+  transform: translateY(-135px); }
+
+.ie#root .vlp-nav.vlp-nav--fixed {
+  transform: translateY(-96px) !important; }
+
+/*# sourceMappingURL=component.css.map */

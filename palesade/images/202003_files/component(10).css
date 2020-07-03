@@ -1,0 +1,32 @@
+.full-bleed-image-fca {
+  position: relative;
+  text-align: center;
+  color: #FFF; }
+  .full-bleed-image-fca .container {
+    height: 700px;
+    padding: 20px 0;
+    position: relative; }
+  .full-bleed-image-fca__heading {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: 'HyundaiSansHead-Medium';
+    font-weight: 600;
+    font-size: 35px; }
+  .full-bleed-image-fca__wrapper {
+    top: auto;
+    right: 10px;
+    bottom: 20px;
+    left: 10px;
+    position: absolute; }
+@media (max-width: 991px) {
+  .full-bleed-image-fca .container {
+    height: 490px; }
+  .full-bleed-image-fca__heading {
+    font-size: 30px; }
+  .full-bleed-image-fca__text {
+    font-size: 14px; } }
+@media (max-width: 767px) {
+  .full-bleed-image-fca .container {
+    height: 400px; }
+  .full-bleed-image-fca__heading {
+    font-size: 25px; } }

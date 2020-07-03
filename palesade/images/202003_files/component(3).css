@@ -1,0 +1,362 @@
+/** [Hyundai] Generated On : Tue, 26 May 2020 11:35:07 GMT **/
+/* Screen Sizes */
+/* Font Sizes */
+/* Font Styles */
+/* Global Colours */
+/* Font Colours */
+/* Semi-Transparent Overlay */
+/* Borders */
+/* Global Element Sizes */
+/*
+  Transform
+*/
+/*
+  Flex Containers
+*/
+/*
+  Flex Children
+*/
+.vlp-fca {
+  position: relative;
+  margin-bottom: 20px; }
+  .vlp-fca.ratio-16-9 .vlp-fca__background {
+    position: relative;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto; }
+  .vlp-fca.ratio-16-9 .vlp-fca__placeholder {
+    padding-bottom: 56.25%; }
+  .vlp-fca__content {
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    min-height: 50px;
+    color: #FFF;
+    padding: 0;
+    max-height: 23%; }
+    .vlp-fca__content-container {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      max-width: 1160px;
+      margin: 0 auto; }
+    .vlp-fca__content p {
+      margin-bottom: 0;
+      line-height: 1; }
+  .vlp-fca__column {
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center; }
+    .vlp-fca__column:first-child {
+      justify-content: flex-start; }
+  .vlp-fca__model {
+    margin-right: 5px;
+    max-width: 480px; }
+  .vlp-fca__pricing-info {
+    margin: 0; }
+  .vlp-fca__special-offers, .vlp-fca__fuel-economy {
+    margin: 0 5px;
+    max-width: 280px; }
+  .vlp-fca__divider {
+    width: 1px;
+    height: 60px;
+    background-color: #FFF; }
+  .vlp-fca__link {
+    color: white;
+    text-decoration: underline;
+    margin-bottom: 0;
+    line-height: 1; }
+    .vlp-fca__link-offers {
+      margin-left: 1em;
+      display: inline-block;
+      position: relative;
+      font-family: 'HyundaiSansHead-Regular';
+      font-weight: 400; }
+      .vlp-fca__link-offers:before {
+        font-family: 'icons';
+        font-size: 40px;
+        vertical-align: middle;
+        top: 1px;
+        right: auto;
+        bottom: auto;
+        left: -28px;
+        position: absolute;
+        color: #AACAE6; }
+      .vlp-fca__link-offers span:nth-child(2):after {
+        font-family: 'icons';
+        content: '\e906';
+        font-size: 0.8em;
+        bottom: 0;
+        color: #AACAE6;
+        padding-left: 5px;
+        vertical-align: middle;
+        line-height: 1.6; }
+      .vlp-fca__link-offers--external span:nth-child(2):after {
+        content: '\e905'; }
+    .vlp-fca__link:hover {
+      color: #FFF;
+      text-decoration: underline; }
+  .vlp-fca__name {
+    line-height: 1;
+    font-size: 36px;
+    margin-top: 0; }
+  .vlp-fca__sub-title {
+    font-size: 25px;
+    margin-top: 5px; }
+  .vlp-fca__stats {
+    color: #AACAE6;
+    font-family: 'HyundaiSansHead-Bold';
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 1.2;
+    margin-top: 10px; }
+  .vlp-fca .vlp-price {
+    color: #AACAE6;
+    font-family: 'HyundaiSansHead-Bold';
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 1;
+    margin-top: 10px; }
+  .vlp-fca .spl-offer {
+    color: #FFF;
+    font-weight: 100;
+    font-family: 'HyundaiSansHead-Regular';
+    padding-left: 20px;
+    font-size: 25px;
+    line-height: 1.1;
+    margin-top: 0;
+    margin-left: 30px; }
+    .vlp-fca .spl-offer span {
+      display: block; }
+  .vlp-fca__placeholder {
+    padding-bottom: 36.4583333%; }
+  .vlp-fca__background {
+    position: relative; }
+  .vlp-fca .video-container {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    overflow: hidden;
+    background-color: #000; }
+    .vlp-fca .video-container video {
+      height: 100%;
+      top: 50%;
+      right: auto;
+      bottom: auto;
+      left: 50%;
+      position: absolute;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+  .vlp-fca__control {
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 26px;
+    padding-left: 6px;
+    padding-top: 2px;
+    top: 50%;
+    right: auto;
+    bottom: auto;
+    left: 50%;
+    position: absolute;
+    margin-left: -25px;
+    margin-top: -25px; }
+  .vlp-fca__remark {
+    padding-bottom: 5px; }
+
+@media (min-width: 992px) and (max-width: 1439px) {
+  .vlp-fca__content {
+    padding: 5px; }
+  .vlp-fca__model {
+    max-width: max-content; }
+  .vlp-fca__name {
+    font-size: 32px;
+    margin-top: 5px; }
+    .vlp-fca__name br {
+      display: none; }
+    .vlp-fca__name__content {
+      display: inline-block; }
+  .vlp-fca__divider {
+    height: 40px; }
+  .vlp-fca__link {
+    font-size: 14px; }
+    .vlp-fca__link-offers:before {
+      font-size: 30px;
+      top: 1px;
+      left: -18px; }
+  .vlp-fca__spl-offer {
+    color: #FFF;
+    font-weight: 100;
+    font-family: 'HyundaiSansHead-Regular'; }
+  .vlp-fca__sub-title {
+    font-size: 16px;
+    margin-top: 0px; }
+  .vlp-fca__stats {
+    font-size: 28px;
+    margin-top: 0px;
+    line-height: 1; }
+  .vlp-fca__remark {
+    margin-top: 0; }
+  .vlp-fca .spl-offer {
+    font-size: 16px;
+    margin-left: 20px; }
+  .vlp-fca .vlp-price {
+    font-size: 28px;
+    margin-top: 5px;
+    line-height: 1.3; }
+    .vlp-fca .vlp-price span {
+      line-height: 0.8; }
+    .vlp-fca .vlp-price sup {
+      top: 0;
+      font-size: 28px; }
+  .vlp-fca__pricing-info.subTitle {
+    padding-left: 12%; } }
+
+@media (max-width: 991px) {
+  .container-fluid#root {
+    overflow-x: hidden; }
+  .vlp-fca {
+    margin-bottom: 12px; }
+    .vlp-fca__content {
+      padding: 10px; }
+    .vlp-fca__model {
+      max-width: 245px; }
+    .vlp-fca__divider {
+      height: 40px; }
+    .vlp-fca__sub-title.economy-tab {
+      margin-top: 25px; }
+    .vlp-fca__name {
+      font-size: 28px;
+      margin-bottom: 3px;
+      line-height: 0.9; }
+    .vlp-fca__link {
+      font-size: 14px; }
+    .vlp-fca__link-offers:before {
+      font-size: 32px;
+      top: 10px;
+      left: -40px; }
+    .vlp-fca__sub-title {
+      font-size: 17px;
+      line-height: 1;
+      margin-top: 5px; }
+    .vlp-fca__stats {
+      font-size: 17px;
+      line-height: 1;
+      margin-top: 5px; }
+    .vlp-fca__remark {
+      font-size: 11px; }
+    .vlp-fca .vlp-price {
+      font-size: 28px;
+      line-height: 1; }
+      .vlp-fca .vlp-price sup {
+        top: 0;
+        font-size: 28px; }
+    .vlp-fca .spl-offer {
+      font-size: 18px;
+      margin-left: 40px;
+      line-height: 23px;
+      padding: 0; }
+    .vlp-fca__placeholder {
+      padding-bottom: 63.802083%; }
+    .vlp-fca.ratio-16-9 .vlp-fca__placeholder {
+      padding-bottom: 63.802083%; } }
+
+@media (max-width: 767px) {
+  .vlp-fca {
+    margin-bottom: 6px; }
+    .vlp-fca__content {
+      position: relative;
+      bottom: auto;
+      padding: 10px 10px 20px 10px;
+      background-color: #413F40; }
+      .vlp-fca__content-container {
+        flex-wrap: wrap;
+        justify-content: center; }
+    .vlp-fca__column {
+      text-align: center;
+      justify-content: center; }
+      .vlp-fca__column:first-child, .vlp-fca__column:nth-child(2) {
+        width: 100%;
+        justify-content: center; }
+    .vlp-fca__model {
+      margin-bottom: 35px;
+      max-width: max-content; }
+    .vlp-fca__pricing-info {
+      margin: 0 0 35px 0; }
+    .vlp-fca__special-offers {
+      margin: 0 13px; }
+    .vlp-fca__fuel-economy {
+      margin: 0 0 0 13px; }
+    .vlp-fca__divider {
+      height: 26px; }
+      .vlp-fca__divider:first-of-type {
+        display: none; }
+    .vlp-fca__link-offers:before {
+      content: '';
+      top: -5px; }
+    .vlp-fca__sub-title, .vlp-fca__stats {
+      font-size: 12px; }
+    .vlp-fca__sub-title {
+      margin-top: 0; }
+    .vlp-fca__stats {
+      margin-top: 0;
+      line-height: 1.2; }
+    .vlp-fca__remark {
+      line-height: 1; }
+    .vlp-fca .vlp-price {
+      font-size: 20px;
+      margin-top: 5px; }
+      .vlp-fca .vlp-price sup {
+        top: 0;
+        font-size: 20px; }
+    .vlp-fca .spl-offer {
+      font-size: 12px;
+      line-height: 1.1;
+      padding: 0;
+      margin: 0; }
+    .vlp-fca__placeholder {
+      padding-bottom: 87.5%; }
+    .vlp-fca.ratio-16-9 .vlp-fca__placeholder {
+      padding-bottom: 87.5%; } }
+
+.vlp-fca .reevooPlaceholder {
+  position: absolute;
+  width: 100%;
+  z-index: 1; }
+
+.vlp-fca .reevooPlaceholder .container {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 20px; }
+
+.vlp-fca .reevoomark_badge {
+  position: absolute !important;
+  top: 20px;
+  right: 0;
+  background-color: #FFF;
+  border-radius: 50%;
+  border: solid 1px #ccc;
+  background-size: cover;
+  height: 140px !important;
+  width: 140px !important; }
+
+@media (max-width: 1200px) {
+  .vlp-fca .reevoomark_badge {
+    right: 10px; } }
+
+@media (max-width: 780px) {
+  .vlp-fca .reevoomark_badge {
+    height: 80px !important;
+    width: 80px !important; } }
+
+/*# sourceMappingURL=vlp-fca.css.map */

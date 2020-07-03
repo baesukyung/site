@@ -1,0 +1,40 @@
+/** [Hyundai] Generated On : Fri, 29 May 2020 05:50:45 GMT **/"use strict";
+
+jQuery.noConflict();
+
+(function ($) {
+  function renderPulldownContent(message) {
+
+    var pulldownBar = $('<div class="ie-sunset__content">' + '<span class="ie-sunset__browser-icons"></span>' + '<div class="ie-sunset__message">' + message + '</div>' + '</div>');
+
+    $('#ie-sunset-view').html(pulldownBar).show();
+  }
+
+  function getData() {
+    var elem = document.getElementById("ie-sunset-view"),
+        ieSunsetData = {
+      "message": "To experience Hyundai Canada at its best, please use latest version of Chrome, Safari, Firefox or Edge."
+    };
+
+    if (elem) {
+      var jsonData = elem.getAttribute("data-ie-sunset-json");
+      ieSunsetData = jsonData ? JSON.parse(jsonData) : ieSunsetData;
+    }
+    return ieSunsetData;
+  }
+
+  $(document).ready(function () {
+    var ieCheck = window.navigator.userAgent.indexOf('MSIE ') > 0;
+    var ie11Check = window.navigator.userAgent.indexOf('Trident/') > -1;
+
+    if (ieCheck || ie11Check) {
+      var data = getData();
+      renderPulldownContent(data.message);
+      $('#root').addClass('ie');
+
+      if ($('#reactview-global-nav').length > 0) {
+        $(document.body).attr('style', 'padding-top:140px !important;');
+      }
+    }
+  });
+})(jQuery);

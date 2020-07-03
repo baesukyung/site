@@ -1,0 +1,32 @@
+﻿.model-overview__header {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.model-overview__section p {
+    line-height: 1.5;
+}
+
+.model-overview .image-block__block {
+    position: relative;
+}
+
+    .model-overview .image-block__block img {
+        max-width: 100%;
+    }
+
+    .model-overview .image-block__block .icon-video-play {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 70px;
+        height: 70px;
+        width: 70px;
+        font-weight: 800;
+        font-size: 20px;
+        padding: 25px 27px;
+        color: #413F40;
+        cursor: pointer;
+    }

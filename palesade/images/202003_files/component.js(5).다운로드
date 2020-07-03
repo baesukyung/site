@@ -1,0 +1,200 @@
+"use strict";
+
+jQuery.noConflict();
+
+(function ($) {
+    var requestURL;
+    var tiles = [];
+    var activeTiles = [];
+    var filterValues = [];
+    var $grid;
+    var count;
+    var query = window.location.search;
+    var search = query.split("=").pop().replace(/%20/g, " ");
+
+    function createTileMarkup(tile) {
+        var tileId = 'tile-' + tile.itemId;
+        var linkId = 'link-' + tile.itemId;
+        var eventDate = tile.multiDayEventSummary || tile.dateText || '';
+        var eventTime = tile.multiDayEventDetails || tile.timeText || '';
+
+        return "\n      <div class=\"tile\">\n          " + (tile.hasOwnProperty('videoSource') ? "<a href=\"#\" class=\"video-play\" data-micromodal-trigger=\"video-modal\" data-video-source=\"" + tile.videoSource + "\">\n            <img class=\"tile__image\" src=\"" + tile.imageSource + "\" alt=\"" + tile.imageAlttext + "\">\n          </a>" : "") + "\n          " + (!tile.hasOwnProperty('videoSource') && tile.imageSource ? "<img class=\"tile__image\" src=\"" + tile.imageSource + "\" alt=\"" + tile.imageAlttext + "\">" : '') + "\n          <div class=\"tile__content\">\n            <div class=\"tile__details\">\n              " + (tile.sectionTitle ? "<span class=\"section-title\">" + tile.sectionTitle + "</span>" : '') + "\n              " + (tile.contentType !== 'Events' && tile.dateText ? "<span aria-hidden=\"true\" class=\"date\">" + tile.dateText + "</span>" : '') + "\n              " + (tile.contentType !== 'Events' && tile.dateSrtext ? "<span class=\"tile__srText\">" + tile.dateSrtext + "</span>" : '') + "\n            </div>\n            " + (tile.contentType === 'Review Article' && (tile.vehicleName || tile.reviewer || tile.quoter || tile.quote) ? "<div class=\"tile__article-review\">\n                " + (tile.vehicleName ? "<span class=\"vehicle-name\">" + tile.vehicleName + "</span>" : '') + "\n                " + (tile.reviewer ? "<span class=\"reviewer\">" + tile.reviewer + "</span>" : '') + "\n                " + (tile.quoter ? "<span class=\"quoter\">" + tile.quoter + "</span>" : '') + "\n                " + (tile.quote ? "<p class=\"quote\">" + tile.quote + "</p>" : '') + "\n              </div>" : '') + "\n            " + (tile.contentType !== 'Events' && tile.title ? "<span class=\"article-title\" id=\"" + tileId + "\">" + tile.title + "</span>" : '') + "\n            " + (tile.contentType !== 'Events' && tile.description ? "<p class=\"description\">" + tile.description + "</p>" : '') + "\n            " + (tile.contentType === 'Events' ? "<div class=\"tile__event\">\n              " + (tile.title ? "<span class=\"event-name\" id=\"" + tileId + "\">" + tile.title + "</span>" : '') + "\n              " + (eventDate !== '' ? "<span aria-hidden=\"true\" class=\"date\">" + eventDate + "</span>" : '') + "\n              " + (tile.dateSrtext ? "<span class=\"tile__srText\">" + tile.dateSrtext + "</span>" : '') + "\n              " + (eventTime !== '' ? "<span aria-hidden=\"true\" class=\"date\">" + eventTime + "</span>" : '') + "\n              " + (tile.timeSrtext ? "<span class=\"tile__srText\">" + tile.timeSrtext + "</span>" : '') + "\n              " + (tile.locationSrtext ? "<span class=\"tile__srText\">" + tile.locationSrtext + "</span>" : '') + "\n              " + (tile.locationName || tile.locationAddress ? "<div class=\"location\">\n                  " + (tile.locationName ? "<span class=\"location-name\">" + tile.locationName + "</span>" : '') + "\n                  " + (tile.locationAddress ? "<span class=\"location-address\">" + tile.locationAddress + "</span>" : '') + "\n                  " + (tile.locationCity && tile.locationProvince && tile.locationZip ? "<span class=\"location-address\">" + tile.locationCity + ", " + tile.locationCity + ", " + tile.locationZip + "</span>" : '') + "\n                </div>" : '') + "\n            </div>" : "") + "\n            " + (tile.linkUrl ? "<div><a class=\"link\" id=\"" + linkId + "\" href=\"" + tile.linkUrl + "\" aria-describedby=\"" + tileId + "\">" + tile.linkText + "</a></div>" : '') + "\n            " + (tile.externalLinkUrl ? "<div><a target=\"_blank\" id=\"" + linkId + "\" class=\"external-link\" href=\"" + tile.externalLinkUrl + "\" aria-describedby=\"" + tileId + "\">" + tile.externalLinkText + "</a></div>" : '') + "\n          </div>\n        </div>\n    ";
+    }
+
+    function showLoadButton() {
+        $('.load-button').css('display', 'flex');
+    }
+
+    function hideLoadButton() {
+        $('.load-button').css('display', 'none');
+    }
+
+    function getTiles(markupArray) {
+        //get the array, push the 9 tiles into grid
+        count = markupArray.length;
+        var limit = count <= 9 || window.location.search ? count : 9;
+        var tiles = '';
+
+        for (var i = 0; i < limit; i++) {
+            var tile = createTileMarkup(markupArray.shift());
+            tiles += tile;
+            count = markupArray.length;
+        }
+        return tiles;
+    }
+
+    function renderTiles() {
+        var $newTiles = $(getTiles(activeTiles));
+        $newTiles.find('.video-play').bind('click', function (e) {
+            e.preventDefault();
+            var videoURL = $(this).attr('data-video-source');
+            $('.video-overlay__frame').attr('src', videoURL);
+            if (typeof MicroModal !== 'undefined') {
+                MicroModal.show('video-modal');
+            }
+        });
+        $grid.append($newTiles);
+        $grid.imagesLoaded(function () {
+            $grid.masonry('appended', $newTiles);
+        });
+        if (count == 0) {
+            hideLoadButton();
+        } else {
+            showLoadButton();
+        }
+        if (typeof MicroModal !== 'undefined') {
+            MicroModal.init({
+                disableScroll: true,
+                onShow: function onShow() {
+                    $('#filter-dropdown').attr('tabindex', -1);
+                },
+                onClose: function onClose(modal) {
+                    $('.video-overlay__frame').attr('src', '');
+                    $('#filter-dropdown').removeAttr('tabindex');
+                }
+            });
+        }
+    }
+
+    function removeTiles() {
+        $grid.masonry('remove', $grid.find('.tile'));
+    }
+
+    function getData(requestURL) {
+        $.getJSON(requestURL, function (json) {
+            $grid = $('.grid').masonry({
+                columnWidth: '.grid-sizer',
+                itemSelector: '.tile'
+            });
+
+            json.results.results.map(function (tile) {
+                tiles.push(tile);
+            });
+
+            //get a list of filtervalues
+            if (json.filters != null && json.filters.length > 0) {
+                json.filters[0].filterValues.map(function (value) {
+                    filterValues.push(value.id);
+                    $('#filter-dropdown').append($('<option>', {
+                        value: value.id,
+                        text: value.label.toUpperCase()
+                    }));
+                });
+            }
+
+            //Adding the title text
+            $('.grid-title').text(json.title);
+
+            //Adding CTA text
+            $('.cta-label').text(json.ctaLabel);
+
+            if (window.location.search) {
+                var $resultsAmount = $('.ne-results__amount');
+
+                $('.ne-results__number').text(json.results.count);
+
+                $resultsAmount.attr('aria-label', search + ". " + $resultsAmount.text());
+                $resultsAmount.focus();
+            }
+
+            //initial render
+            //check if there is a hash in the url, if so render those tiles, otherwise default to all tiles
+            if (window.location.hash && filterValues.indexOf(window.location.hash.substring(1)) > -1) {
+                var hash = window.location.hash.substring(1);
+                activeTiles = tiles.filter(function (tile) {
+                    if (tile.hasOwnProperty('filterValue')) {
+                        var tileFilterValues = tile.filterValue.split('|');
+                        if (tileFilterValues.indexOf(hash) > -1) {
+                            return tile;
+                        }
+                    }
+                });
+                $('#filter-dropdown').val(hash);
+            } else {
+                activeTiles = tiles.slice(); //activetiles getting copied from masterlist
+            }
+            renderTiles();
+
+            //push these in grid on load more button
+
+            $('.load-button').on('click', function (e) {
+                e.preventDefault();
+                renderTiles();
+            });
+
+            $('#filter-dropdown').on('change', function () {
+                var _this = this;
+
+                $('.ne-results').hide();
+                removeTiles();
+                if (this.value == 'all') {
+                    activeTiles = [];
+                    activeTiles = tiles.slice();
+                    location.hash = '';
+                    renderTiles();
+                    $grid.masonry('layout');
+                    return;
+                } else {
+                    activeTiles = [];
+                    activeTiles = tiles.filter(function (tile) {
+                        if (tile.hasOwnProperty('filterValue')) {
+                            var tileFilterValues = tile.filterValue.split('|');
+                            if (tileFilterValues.indexOf(_this.value) > -1) {
+                                return tile;
+                            }
+                        }
+                    });
+                    if (activeTiles.length == 0) {
+                        $('.ne-results').show();
+                    }
+                    location.hash = this.value;
+                    renderTiles();
+                    $grid.masonry('layout');
+                }
+            });
+        });
+    }
+
+    if (window.location.search && search !== "") {
+        requestURL = $('.grid-container').attr('data-tiles') + query;
+        var $searchBox = $('.ne-search__searchbox');
+
+        $searchBox.val(search);
+        //$searchBox.focus();
+
+        getData(requestURL);
+        $('.ne-results').show();
+    } else {
+        requestURL = $('.grid-container').attr('data-tiles');
+        getData(requestURL);
+    }
+
+    $('.ne-search__form').on('submit', function (e) {
+        e.preventDefault();
+        var $searchInput = $('.ne-search__searchbox');
+        var lang = document.documentElement.lang;
+        var url = window.location.href;
+        url = url.substring(0, url.indexOf("?"));
+        window.location.href = url + '?language=' + lang + '&query=' + $searchInput.val();
+    });
+})(jQuery);

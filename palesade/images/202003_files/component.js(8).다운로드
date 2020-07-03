@@ -1,0 +1,52 @@
+﻿var comingsoon360 = (function ($) {
+    'use strict';
+
+    $(function () {
+        $('.cs-360 .curtain button').click(enable360);
+        $(window).on('scroll', disable360);
+
+        if ($('.video-loop').length > 0) {
+            $('.video-loop').find('video').attr('loop', true);
+        }
+    });
+
+    var enable360 = function (e) {
+        e.preventDefault();
+
+        var self = $(e.currentTarget);
+        self.parent().fadeOut();
+    }
+
+    var disable360 = function () {
+        var curtain = $('.cs-360 .curtain');
+        curtain.fadeIn();
+    }
+
+}(jQuery));
+
+var comingsoonGalleryGrid = (function ($) {
+    'use strict';
+
+    $.fn.equalHeights = function () {
+        var maxHeight = 0,
+            $this = $(this);
+
+        $this.each(function () {
+            var height = $(this).innerHeight();
+
+            if (height > maxHeight) { maxHeight = height; }
+        });
+
+        return $this.css('height', maxHeight);
+    };
+
+    if (window.matchMedia('(min-width: 769px)').matches) {
+        // auto-initialize plugin
+        $('[data-equal]').each(function () {
+            var $this = $(this),
+                target = $this.data('equal');
+            $this.find(target).equalHeights();
+        });
+    }
+
+}(jQuery));

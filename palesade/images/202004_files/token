@@ -1,0 +1,1 @@
+(function(){roxanne_dynamic={host:'https://ref.dealerinspire.com',token:'MTczNjAwODc0MTE3NjQxMDUzNzM2OTU5Mzg5NjU',site_id:'110005457',mixpanel:'',enable_events:'true'};var t='https://ref.dealerinspire.com/site/code?enable_events=true&tag=aea3525314e30a7eddb78ed56f7eaca4',e=document.createElement('script');e.src=t;e.async=!0;document.head.appendChild(e)})(this);

@@ -1,0 +1,1125 @@
+.cs-hero,
+.cs-live,
+.cs-form,
+.cs-video,
+.cs-features,
+.cs-360,
+.cs-gallery,
+.cs-gallery-grid,
+.cs-single-centered-image {
+  background: #01000D;
+  color: #fff;
+  padding: 20px 0 40px;
+}
+
+  .cs-hero h2,
+  .cs-live h2,
+  .cs-form h2,
+  .cs-video h2,
+  .cs-features h2,
+  .cs-360 h2,
+  .cs-gallery h2,
+  .cs-gallery-grid h2,
+  .cs-single-centered-image h2 {
+    font-size: 60px;
+    font-family: 'HyundaiSansHead-Bold', sans-serif;
+    font-weight: 400;
+    margin-bottom: .45em;
+  }
+
+  .cs-hero .btn-primary,
+  .cs-live .btn-primary,
+  .cs-form .btn-primary,
+  .cs-video .btn-primary,
+  .cs-features .btn-primary,
+  .cs-360 .btn-primary,
+  .cs-gallery .btn-primary,
+  .cs-gallery-grid .btn-primary,
+  .cs-single-centered-image .btn-primary {
+    background-color: #0FBAE6;
+    border-color: #0FBAE6;
+    min-width: 232px;
+    text-transform: none;
+    transition: all .4s;
+  }
+
+    .cs-hero .btn-primary:hover,
+    .cs-live .btn-primary:hover,
+    .cs-form .btn-primary:hover,
+    .cs-video .btn-primary:hover,
+    .cs-features .btn-primary:hover,
+    .cs-360 .btn-primary:hover,
+    .cs-gallery .btn-primary:hover,
+    .cs-gallery-grid .btn-primary:hover,
+    .cs-single-centered-image .btn-primary:hover {
+      background-color: #002C5F;
+      border-color: #002C5F;
+      color: #fff;
+    }
+
+    .cs-hero .btn-primary:disabled, .cs-hero .btn-primary.disabled,
+    .cs-live .btn-primary:disabled,
+    .cs-live .btn-primary.disabled,
+    .cs-form .btn-primary:disabled,
+    .cs-form .btn-primary.disabled,
+    .cs-video .btn-primary:disabled,
+    .cs-video .btn-primary.disabled,
+    .cs-features .btn-primary:disabled,
+    .cs-features .btn-primary.disabled,
+    .cs-360 .btn-primary:disabled,
+    .cs-360 .btn-primary.disabled,
+    .cs-gallery .btn-primary:disabled,
+    .cs-gallery .btn-primary.disabled,
+    .cs-gallery-grid .btn-primary:disabled,
+    .cs-gallery-grid .btn-primary.disabled {
+      background: transparent;
+      border-color: #A09F9F;
+      color: #A09F9F;
+      cursor: default;
+    }
+
+  .cs-hero .modal .modal-content,
+  .cs-live .modal .modal-content,
+  .cs-form .modal .modal-content,
+  .cs-video .modal .modal-content,
+  .cs-features .modal .modal-content,
+  .cs-360 .modal .modal-content,
+  .cs-gallery .modal .modal-content,
+  .cs-gallery-grid .modal .modal-content {
+    color: #000;
+    font-family: 'HyundaiSansHead-Regular';
+    font-size: 16px;
+    text-align: left;
+  }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .cs-gallery-grid h2 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cs-hero h2,
+  .cs-live h2,
+  .cs-form h2,
+  .cs-video h2,
+  .cs-features h2,
+  .cs-360 h2,
+  .cs-gallery h2,
+  .cs-gallery-grid h2,
+  .cs-single-centered-image h2 {
+    font-size: 28px;
+  }
+}
+
+.cs-theme-light {
+  background: #fff;
+  color: #01000D;
+}
+
+.cs-360 {
+  text-align: center;
+}
+
+  .cs-360 h2 {
+    margin-bottom: 20px;
+  }
+
+  .cs-360 .iframe-wrapper {
+    position: relative;
+  }
+
+    .cs-360 .iframe-wrapper .curtain {
+      background: rgba(0, 0, 0, 0.6);
+      border: none;
+      bottom: 0;
+      content: '';
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+    }
+
+      .cs-360 .iframe-wrapper .curtain .btn:focus {
+        color: #fff;
+      }
+
+  .cs-360 iframe {
+    border: none;
+    height: 60vh;
+    width: 100%;
+  }
+
+.cs-hero.cs-cta {
+  height: auto;
+  padding: 40px 0;
+}
+
+  .cs-hero.cs-cta img {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    max-width: 1140px;
+    position: static;
+    transform: none;
+  }
+
+  .cs-hero.cs-cta .content {
+    color: #fff !important;
+    bottom: auto;
+    top: 0;
+    text-align: right;
+  }
+
+  .cs-hero.cs-cta .inner {
+    float: right;
+    max-width: 70%;
+    padding: 60px 40px;
+  }
+
+  .cs-hero.cs-cta h2 {
+    font-size: 54px;
+    margin-bottom: 40px;
+  }
+
+  .cs-hero.cs-cta p {
+    font-family: 'HyundaiSansHead-Regular', sans-serif;
+    font-size: 18px;
+    line-height: 1.2;
+    margin: 0 0 40px;
+    padding: 0 0 0 40%;
+    position: static;
+    width: auto;
+  }
+
+.cta-wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1160px;
+  position: absolute;
+  bottom: 35px;
+}
+
+a.btn-primary.cta {
+  border-color: #002c5f;
+  background: #002c5f;
+  color: #fff;
+}
+
+  a.btn-primary.cta:hover {
+    background-color: #fff;
+    color: #002C5F;
+  }
+
+@media (max-width: 768px) {
+  .cs-hero.cs-cta {
+    padding: 20px 0;
+  }
+
+    .cs-hero.cs-cta h2 {
+      font-size: 32px;
+      margin-bottom: .45em;
+    }
+
+  .cta-wrapper {
+    bottom: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cs-hero.cs-cta img {
+    height: 360px;
+    width: auto;
+  }
+
+  .cs-hero.cs-cta .content {
+    position: static;
+    text-align: left;
+  }
+
+  .cs-hero.cs-cta .inner {
+    max-width: none;
+    padding: 0;
+  }
+
+  .cs-hero.cs-cta h2 {
+    font-size: 32px;
+    margin-bottom: .45em;
+  }
+
+  .cs-hero.cs-cta p {
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  .cs-hero.cs-cta .btn {
+    display: block;
+    margin: auto;
+    width: 232px;
+  }
+
+  .cta-wrapper {
+    bottom: 190px;
+  }
+}
+
+.cs-features {
+  text-align: center;
+}
+
+  .cs-features .picture {
+    align-items: center;
+    display: flex;
+  }
+
+    .cs-features .picture img {
+      height: auto;
+      width: 100%;
+    }
+
+  .cs-features ul {
+    font-size: 18px;
+    font-family: 'HyundaiSansHead-Bold', sans-serif;
+    font-weight: 400;
+    line-height: 1.1;
+  }
+
+  .cs-features li {
+    padding: 14px 0;
+  }
+
+@media (max-width: 768px) {
+  .cs-features {
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 769px) {
+  .cs-features .content {
+    display: flex;
+  }
+
+  .cs-features .picture {
+    width: 70%;
+  }
+
+  .cs-features ul {
+    font-size: 24px;
+    text-align: right;
+    width: 30%;
+  }
+
+  .cs-features li {
+    margin-left: -15%;
+  }
+}
+
+.cs-form {
+  text-align: center;
+}
+
+  .cs-form h2 {
+    margin-top: 40px;
+  }
+
+  .cs-form form {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    max-width: 760px;
+  }
+
+  .cs-form .form-field {
+    padding: 15px;
+    text-align: left;
+  }
+
+@media (min-width: 769px) {
+  .cs-form .form-field {
+    width: 50%;
+  }
+}
+
+.cs-form .form-consent,
+.cs-form .form-button,
+.cs-form .form-message {
+  padding: 15px;
+  width: 100%;
+}
+
+.cs-form .form-consent {
+  text-align: left;
+}
+
+.cs-form .form-message {
+  display: none;
+}
+
+.cs-form .cs-invalid-format,
+.cs-form .cs-required-field {
+  color: #e89494;
+  display: none;
+  padding: 6px 0;
+}
+
+.cs-form input[type=text],
+.cs-form select {
+  background: transparent;
+  border: none;
+  border-bottom: solid 1px;
+  padding: 8px 0;
+  width: 100%;
+}
+
+  .cs-form input[type=text]::placeholder {
+    color: #fff;
+    font-family: 'HyundaiSansHead-Bold', sans-serif;
+    font-weight: 400;
+    opacity: 1;
+  }
+
+  .cs-form input[type=text]::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #fff;
+    font-family: 'HyundaiSansHead-Bold', sans-serif;
+    font-weight: 400;
+    opacity: 1;
+  }
+
+  .cs-form input[type=text]::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #fff;
+    font-family: 'HyundaiSansHead-Bold', sans-serif;
+    font-weight: 400;
+    opacity: 1;
+  }
+
+  .cs-form input[type=text]:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #fff;
+    font-family: 'HyundaiSansHead-Bold', sans-serif;
+    font-weight: 400;
+    opacity: 1;
+  }
+
+  .cs-form input[type=text]:-moz-placeholder {
+    /* Firefox 18- */
+    color: #fff;
+    font-family: 'HyundaiSansHead-Bold', sans-serif;
+    font-weight: 400;
+    opacity: 1;
+  }
+
+.cs-form .dropdown {
+  position: relative;
+}
+
+  .cs-form .dropdown:after {
+    border-style: solid;
+    border-width: 2px 2px 0 0;
+    color: #fff;
+    content: '';
+    display: inline-block;
+    height: .75em;
+    position: absolute;
+    right: 30px;
+    transform: rotate(135deg);
+    top: 25px;
+    vertical-align: middle;
+    width: .75em;
+  }
+
+  .cs-form .dropdown select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+  }
+
+    .cs-form .dropdown select option {
+      color: #000;
+    }
+
+    .cs-form .dropdown select::-ms-expand {
+      display: none;
+    }
+
+.cs-form label {
+  font-family: 'HyundaiSansHead-Bold', sans-serif;
+  font-weight: 400;
+}
+
+.cs-form .radio label + label {
+  margin-left: 20px;
+}
+
+.cs-form a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+  .cs-form a:hover {
+    color: #0FBAE6;
+  }
+
+.cs-form .form-hide-vehicle-options {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .cs-form form {
+    display: block;
+  }
+}
+
+.cs-form.cs-theme-light input[type=text]::placeholder {
+  color: #000;
+}
+
+.cs-form.cs-theme-light input[type=text]::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #000;
+}
+
+.cs-form.cs-theme-light input[type=text]::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #000;
+}
+
+.cs-form.cs-theme-light input[type=text]:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #000;
+}
+
+.cs-form.cs-theme-light input[type=text]:-moz-placeholder {
+  /* Firefox 18- */
+  color: #000;
+}
+
+.cs-form.cs-theme-light a {
+  color: #000;
+}
+
+  .cs-form.cs-theme-light a:hover {
+    color: #0FBAE6;
+  }
+
+.cs-form.cs-theme-light .cs-invalid-format,
+.cs-form.cs-theme-light .cs-required-field {
+  color: #c00;
+}
+
+/* Screen Sizes */
+/* Font Sizes */
+/* Font Styles */
+/* Global Colours */
+/* Font Colours */
+/* Semi-Transparent Overlay */
+/* Borders */
+/* Global Element Sizes */
+/*
+  Transform
+*/
+/*
+  Flex Containers
+*/
+/*
+  Flex Children
+*/
+.vlp-gallery-title {
+  font-family: 'HyundaiSansHead-Medium';
+  font-weight: 600;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 70px;
+}
+
+.vlp-gallery-filter {
+  margin-bottom: 25px;
+  font-size: 0;
+}
+
+.vlp-gallery-filter-mobile {
+  display: none;
+  position: relative;
+}
+
+  .vlp-gallery-filter-mobile .filter-dropdown-toggle {
+    width: 100%;
+    background-color: #D8D8D1;
+    border-radius: 0;
+    border: none;
+    font-family: 'HyundaiSansHead-Regular';
+    font-weight: 400;
+    text-transform: capitalize;
+    text-align: left;
+  }
+
+    .vlp-gallery-filter-mobile .filter-dropdown-toggle .current-filter {
+      text-transform: uppercase;
+    }
+
+    .vlp-gallery-filter-mobile .filter-dropdown-toggle .icon-chevron-down {
+      top: 50%;
+      right: 10px;
+      bottom: auto;
+      left: auto;
+      position: absolute;
+      margin-top: -0.5em;
+    }
+
+  .vlp-gallery-filter-mobile .filter-dropdown-menu {
+    display: none;
+    position: absolute;
+    z-index: 700;
+    width: 100%;
+    background-color: #FFF;
+  }
+
+    .vlp-gallery-filter-mobile .filter-dropdown-menu .dropdown-item {
+      width: 100%;
+      border: 0;
+      border-bottom: 1px solid #A09F9F;
+      text-align: left;
+    }
+
+    .vlp-gallery-filter-mobile .filter-dropdown-menu.show {
+      display: block;
+    }
+
+.vlp-gallery .image-gallery {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+  .vlp-gallery .image-gallery .image-block {
+    height: 300px;
+    padding: 10px;
+  }
+
+    .vlp-gallery .image-gallery .image-block:not(.video) .image-block__overlay {
+      background-color: rgba(0, 0, 0, 0.8);
+      top: 0;
+      right: 0;
+      bottom: auto;
+      left: auto;
+      position: absolute;
+      height: 40px;
+      width: 40px;
+      text-decoration: none;
+    }
+
+      .vlp-gallery .image-gallery .image-block:not(.video) .image-block__overlay:hover {
+        text-decoration: none;
+      }
+
+    .vlp-gallery .image-gallery .image-block:not(.video) .image-block__overlay-icon {
+      font-weight: 800;
+      font-size: 20px;
+      padding: 10px;
+    }
+
+    .vlp-gallery .image-gallery .image-block.video .image-block__overlay {
+      top: 43%;
+      right: auto;
+      bottom: auto;
+      left: 45%;
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 50px;
+      height: 50px;
+      width: 50px;
+    }
+
+    .vlp-gallery .image-gallery .image-block.video .image-block__overlay-icon {
+      font-weight: 800;
+      font-size: 20px;
+      padding: 15px 17px;
+      color: #413F40;
+    }
+
+    .vlp-gallery .image-gallery .image-block.filtered {
+      display: none;
+    }
+
+    .vlp-gallery .image-gallery .image-block .disclaimer-text {
+      font-family: 'HyundaiSansHead-Regular';
+      font-weight: 400;
+      font-size: 14px;
+      color: #FFF;
+      top: auto;
+      right: auto;
+      bottom: 0;
+      left: 15px;
+      position: absolute;
+    }
+
+  .vlp-gallery .image-gallery .image-block__lightbox-link {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .vlp-gallery .image-gallery .image-block__image {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    -webkit-transition: -webkit-transform 0.5s ease;
+    -moz-transition: -moz-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+    .vlp-gallery .image-gallery .image-block__image:hover {
+      -webkit-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+
+  .vlp-gallery .image-gallery:before, .vlp-gallery .image-gallery:after {
+    width: 0 !important;
+    height: 0 !important;
+  }
+
+@media (max-width: 991px) {
+  .vlp-gallery .image-gallery .image-block {
+    height: 200px;
+  }
+}
+
+@media (max-width: 767px) {
+  .vlp-gallery {
+    width: 100%;
+    padding: 0;
+  }
+
+  .vlp-gallery-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .vlp-gallery-filter {
+    display: none;
+  }
+
+  .vlp-gallery-filter-mobile {
+    display: block;
+  }
+
+  .vlp-gallery .image-gallery {
+    margin-top: 25px;
+  }
+
+    .vlp-gallery .image-gallery .image-block {
+      padding: 5px 0;
+      height: auto;
+    }
+
+      .vlp-gallery .image-gallery .image-block .disclaimer-text {
+        font-size: 11px;
+      }
+
+      .vlp-gallery .image-gallery .image-block .image-block__overlay {
+        display: none;
+      }
+
+      .vlp-gallery .image-gallery .image-block.video .image-block__overlay {
+        display: block;
+      }
+
+    .vlp-gallery .image-gallery .image-block__lightbox-link {
+      height: 0;
+      padding-bottom: 56.25%;
+    }
+}
+
+.cs-gallery-grid {
+  text-align: center;
+}
+
+  .cs-gallery-grid ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-gallery-grid li {
+    width: 33.3333%;
+  }
+
+  .cs-gallery-grid .columns-1 li {
+    width: 100%;
+  }
+
+  .cs-gallery-grid .columns-2 li {
+    width: 50%;
+  }
+
+  .cs-gallery-grid .columns-4 li {
+    width: 25%;
+  }
+
+  .cs-gallery-grid .columns-5 li {
+    width: 20%;
+  }
+
+  .cs-gallery-grid img {
+    height: auto;
+    width: 100%;
+  }
+
+  .cs-gallery-grid figure {
+    position: relative;
+  }
+
+  .cs-gallery-grid figcaption {
+    bottom: 0;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 18px;
+    font-family: 'HyundaiSansHead-Bold', sans-serif;
+    font-weight: 400;
+    padding: 10px 20px;
+    position: absolute;
+    background: rgba(0,0,0,0.8);
+    width: 100%;
+  }
+
+@media (max-width: 768px) {
+  .cs-gallery-grid li {
+    width: 100% !important;
+  }
+}
+
+.cs-hero {
+  height: calc(100vw/1.8);
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+
+  .cs-hero img {
+    display: inline-block;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+
+  .cs-hero .img-disclaimer {
+    background: #01000D;
+    bottom: 0;
+    color: #f4f4f4;
+    font-size: 12px;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    position: absolute;
+  }
+
+  .cs-hero .content {
+    bottom: 40px;
+    color: #fff;
+    padding: 40px 0 20px;
+    position: absolute;
+    text-align: center;
+    top: 30px;
+    width: 100%;
+  }
+
+  .cs-hero h1 {
+    font-size: 60px;
+    font-family: 'HyundaiSansHead-Bold', sans-serif;
+    font-weight: 400;
+  }
+
+  .cs-hero h2 {
+    font-size: 32px;
+    font-family: 'HyundaiSansHead-Bold', sans-serif;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+
+  .cs-hero p {
+    font-family: 'HyundaiSansHead-Bold', sans-serif;
+    font-size: 32px;
+    line-height: 1.4;
+    margin: 0;
+  }
+
+  .cs-hero .btn {
+    margin-top: 20px;
+  }
+
+@media (max-width: 1024px) {
+  .cs-hero .content {
+    top: 0;
+  }
+
+  .cs-hero h2,
+  .cs-hero p {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  .cs-hero h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .cs-hero {
+    height: auto;
+  }
+
+    .cs-hero img {
+      height: auto;
+      max-width: none;
+      position: static;
+      transform: none;
+      width: 100%;
+    }
+
+    .cs-hero .img-disclaimer {
+      display: inline-block;
+      position: static;
+    }
+
+    .cs-hero .content {
+      padding: 10px 0 10px;
+      position: static;
+    }
+
+      .cs-hero .content h1 {
+        left: 0;
+        padding: 20px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+      }
+
+    .cs-hero.cs-theme-light .content h2,
+    .cs-hero.cs-theme-light .content p {
+      color: #000;
+    }
+}
+
+.cs-hero.cs-theme-light .img-disclaimer {
+  background: #fff;
+  color: #01000D;
+}
+
+.cs-hero.cs-hero-secondary {
+  padding: 40px 0;
+}
+
+  .cs-hero.cs-hero-secondary img {
+    transform: translate(-50%, -50%);
+  }
+
+  .cs-hero.cs-hero-secondary .content {
+    bottom: 20px;
+    top: 6vh;
+  }
+
+  .cs-hero.cs-hero-secondary h1,
+  .cs-hero.cs-hero-secondary h2 {
+    color: #01000D;
+  }
+
+  .cs-hero.cs-hero-secondary h2 {
+    font-size: 54px;
+  }
+
+  .cs-hero.cs-hero-secondary p {
+    font-family: 'HyundaiSansHead-Regular', sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    margin: 0;
+    bottom: 60px;
+    left: 0;
+    padding: 0 15px;
+    position: absolute;
+  }
+
+@media (max-width: 767px) {
+  .cs-hero.cs-hero-secondary img {
+    transform: none;
+  }
+
+  .cs-hero.cs-hero-secondary .content h2 {
+    font-size: 32px;
+    left: 0;
+    padding: 20px;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    width: 100%;
+  }
+
+  .cs-hero.cs-hero-secondary .content p {
+    position: static;
+  }
+}
+
+@media (min-width: 769px) {
+  .cs-hero.cs-hero-secondary p {
+    font-size: 20px;
+    left: 50%;
+    margin-left: -390px;
+    width: 780px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .cs-hero.cs-hero-secondary h2 {
+    font-size: 40px;
+  }
+}
+
+.cs-hero.cs-hero-secondary.cs-theme-light h1,
+.cs-hero.cs-hero-secondary.cs-theme-light h2 {
+  color: #fff;
+}
+
+.cs-live {
+  text-align: center;
+}
+
+  .cs-live h2 {
+    font-size: 36px;
+  }
+
+.cs-hero.cs-poster {
+  padding: 40px 0;
+}
+
+  .cs-hero.cs-poster .content {
+    bottom: 40px;
+    text-align: left;
+    top: auto;
+  }
+
+  .cs-hero.cs-poster h2 {
+    font-size: 54px;
+    max-width: 600px;
+    text-shadow: 0 0 4px #000;
+  }
+
+@media (max-width: 1024px) {
+  .cs-hero.cs-poster h2 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cs-hero.cs-poster h2 {
+    text-shadow: none;
+  }
+}
+
+.cs-video video {
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.cs-video .video-external > div {
+  margin: auto;
+}
+
+.cs-video iframe {
+  border: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.cs-video p {
+  font-size: 20px;
+  margin: 20px auto;
+  max-width: 630px;
+  text-align: center;
+}
+
+.cs-video.full-video .container {
+  width: auto;
+}
+
+@media (max-width: 768px) {
+  .cs-video .video-internal {
+    display: none;
+  }
+}
+
+.cs-video .video-disclaimer {
+  background: #01000D;
+  bottom: 0;
+  color: #f4f4f4;
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px;
+}
+
+.cs-video.cs-theme-light .video-disclaimer {
+  background: #fff;
+  color: #01000D;
+}
+
+.cs-single-centered-image {
+  text-align: center;
+}
+
+  .cs-single-centered-image .content {
+    margin: 0 auto;
+    max-width: 720px;
+    padding: 20px 0;
+  }
+
+  .cs-single-centered-image h2 {
+    margin: 0 0 20px;
+  }
+
+  .cs-single-centered-image img {
+    display: inline-block;
+  }
+
+@media (max-width: 768px) {
+  .cs-single-centered-image img {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 769px) {
+  .cs-single-centered-image img {
+    max-width: 720px;
+  }
+
+  .cs-single-centered-image h2 {
+    font-size: 42px;
+  }
+}

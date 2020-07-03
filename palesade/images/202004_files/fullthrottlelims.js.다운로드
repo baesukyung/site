@@ -1,0 +1,291 @@
+var fullthrottlelims_pxl_client_id = 577;
+var fullthrottlelims_pxl_client_type = 1;
+var fullthrottlelims_pxl_customer_id = 244016457;
+var fullthrottlelims_pxl_coords;
+var fullthrottlelims_pixel_sent_coords ;
+var fullthrottlelims_pixel_location = "https://hits.livemarketshoppers.com/";
+var fullthrottlelims_pixel_watchID = 0;
+var fullthrottlelims_pixel_retry_in_row = 1;   
+
+var fullthrottlelims_pixel_dom_event_loaded = false;
+var fullthrottlelims_pixel_initial_call_done = false;
+
+
+
+function fullthrottlelims_pxl_getCookie(name) {
+  var matches = document.cookie.match(new RegExp(
+    "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+  ));
+  return matches ? decodeURIComponent(matches[1]) : undefined;
+}
+
+function fullthrottlelims_pxl_set_recheck_cookie(recheck_count)  //!!
+{
+   if( typeof recheck_count == 'undefined' )
+   {
+       recheck_count = 0;
+   }
+   recheck_count++;
+
+   if( recheck_count <= fullthrottlelims_pixel_retry_in_row )
+   {
+      var recheck_date = new Date(new Date().getTime() + 7200 * 1000 );
+      document.cookie = "r="+recheck_count+"; path=/; expires=" + recheck_date.toUTCString();
+   }
+
+}
+
+function fullthrottlelims_pxl_set_access_provided_cookie()
+{
+   var recheck_date = new Date(new Date().getTime() + 7200 * 1000 );
+   document.cookie = "acs=1; path=/; expires=" + recheck_date.toUTCString();
+}
+
+function fullthrottlelims_pxl_set_coordinates_cookies()
+{
+   var lat = fullthrottlelims_pxl_coords['lat'];
+   var lon = fullthrottlelims_pxl_coords['lon'];
+   var accuracy = fullthrottlelims_pxl_coords['acc'];
+   var src      = fullthrottlelims_pxl_coords['src'];
+   var date = new Date(new Date().getTime() + 24*3600 * 1000);
+
+   document.cookie = "lat="+lat+"; path=/; expires=" + date.toUTCString();
+   document.cookie = "lon="+lon+"; path=/; expires=" + date.toUTCString();
+   document.cookie = "acc="+accuracy+"; path=/; expires=" + date.toUTCString();
+   document.cookie = "src="+src+"; path=/; expires=" + date.toUTCString();
+}
+
+function fullthrottlelims_get_coordinates_from_cookies()
+{
+    var lat = fullthrottlelims_pxl_getCookie('lat');
+    var lon = fullthrottlelims_pxl_getCookie('lon');
+    var accuracy = fullthrottlelims_pxl_getCookie('acc');
+    var source = fullthrottlelims_pxl_getCookie('src');
+
+    fullthrottlelims_pxl_coords = {};
+    if( lat || lon )
+    {
+             fullthrottlelims_pxl_coords['lat'] = lat;
+             fullthrottlelims_pxl_coords['lon'] = lon;
+             fullthrottlelims_pxl_coords['acc'] = accuracy;
+    }
+
+    if( ! accuracy )
+    {
+        accuracy = 0;  //if not present yet - set maximum
+        fullthrottlelims_pxl_coords['acc'] = accuracy;
+    }
+
+    if( ! source )
+    {
+        fullthrottlelims_pxl_coords['src'] = '';
+    }
+    else
+    {
+        fullthrottlelims_pxl_coords['src'] = source;
+    }
+
+
+    return ;
+}
+
+function fullthrottlelims_pxl_track_and_hit(position, source)
+{
+       if( source != 's' && fullthrottlelims_pxl_coords['src'] == 's' ||
+           ! fullthrottlelims_pxl_coords['src'] ||
+           fullthrottlelims_pxl_coords['acc'] > position.coords.accuracy )
+       {
+           fullthrottlelims_pxl_coords['lat'] = position.coords.latitude;
+           fullthrottlelims_pxl_coords['lon'] = position.coords.longitude;
+           fullthrottlelims_pxl_coords['acc'] = position.coords.accuracy;
+           fullthrottlelims_pxl_coords['src'] = source;
+
+           fullthrottlelims_pxl_set_coordinates_cookies();
+
+           if( ! fullthrottlelims_pixel_sent_coords || 
+                 fullthrottlelims_pixel_sent_coords['lat']!= fullthrottlelims_pxl_coords['lat'] ||
+                 fullthrottlelims_pixel_sent_coords['lon']!= fullthrottlelims_pxl_coords['lon'] 
+             )
+           {
+               fullthrottlelims_pxl_submit_info('hit', source);
+           }
+      }
+}
+
+
+
+function fullthrottlelims_pxl_get_coordinates()
+{
+    var not_need_recheck = fullthrottlelims_pxl_getCookie('r');
+    var access_already_provided = fullthrottlelims_pxl_getCookie('acs');
+
+    fullthrottlelims_pxl_set_recheck_cookie(not_need_recheck);
+
+    //not_need_recheck = 0;
+
+
+    if( ! not_need_recheck || not_need_recheck < fullthrottlelims_pixel_retry_in_row )  //|| access_already_provided
+    {
+        if (navigator.geolocation) 
+        {
+            navigator.geolocation.getCurrentPosition(function( position ) 
+            {
+                fullthrottlelims_pxl_set_access_provided_cookie();
+
+                fullthrottlelims_pxl_track_and_hit( position, 's' );
+
+                // run only if rights provided
+                //high accuracy
+                navigator.geolocation.getCurrentPosition(function( position ) 
+                {
+                    fullthrottlelims_pxl_track_and_hit( position, 'g' );
+                }, 
+                function(error){} , 
+                 { maximumAge:1200000, timeout:600000, enableHighAccuracy: true}
+                );
+
+               //watch
+               fullthrottlelims_pixel_watchID = navigator.geolocation.watchPosition(
+                 function ( position )
+                 {
+                     fullthrottlelims_pxl_track_and_hit( position, 't' );
+                 }, 
+                 function (error)
+                 {
+                 }, 
+                  { maximumAge:1200000, timeout:600000, enableHighAccuracy: true}
+                );
+            });
+        }
+
+
+    }
+}
+
+
+function fullthrottlelims_pxl_init(dom_content_loaded)
+{
+   //console.log( "init type: "+dom_content_loaded);
+   if( dom_content_loaded ) 
+   {
+      fullthrottlelims_pixel_dom_event_loaded = true;
+      fullthrottlelims_pxl_get_pixel(); //force update pixel 
+   }
+   else
+   {
+      fullthrottlelims_pixel_initial_call_done = true;
+   }
+
+   fullthrottlelims_get_coordinates_from_cookies();
+
+   if( ! dom_content_loaded || dom_content_loaded && ! fullthrottlelims_pixel_initial_call_done )
+   {
+      fullthrottlelims_pxl_get_coordinates();
+      fullthrottlelims_pxl_submit_info('hit', '');
+   }
+
+   if( typeof fullthrottlelims_cookie_init != 'undefined' )
+   {
+       fullthrottlelims_cookie_init(dom_content_loaded);
+   }
+}
+
+function fullthrottlelims_pxl_create_pixel()
+{
+     var id = fullthrottlelims_pixel_dom_event_loaded ? 'fullthrottlelims_pxl_image' : 'fullthrottlelims_pxl_image_t';
+     //console.log( "created "+id );
+     var fullthrottlelims_pxl_tracker = ( function () {
+         var img = document.createElement( 'img' );
+         img.id=id;
+         img.style.cssText = "display: none;";
+         return img;
+        })();
+     document.body.appendChild( fullthrottlelims_pxl_tracker );
+     return id;
+}
+
+function fullthrottlelims_pxl_get_pixel()
+{
+   var img = document.getElementById("fullthrottlelims_pxl_image");
+   if( ! img )
+   {
+      img = document.getElementById("fullthrottlelims_pxl_image_t"); //temp pixel
+      if( ! img ) 
+      {
+          if( ! document.body ) //body not created yet , pixel cannot be added
+          {
+             //console.log( "cannot create right now" );
+             return null;
+          }
+          else
+          {
+              var id = fullthrottlelims_pxl_create_pixel();
+              img = document.getElementById(id);
+          }
+      }
+      else
+      {
+          if( fullthrottlelims_pixel_dom_event_loaded )
+          {
+              img.remove();
+              var id = fullthrottlelims_pxl_create_pixel();
+              img = document.getElementById(id);
+          }
+      }
+   }
+   else
+   {
+       var img_t = document.getElementById("fullthrottlelims_pxl_image_t"); //temp pixel
+       if( img_t ) 
+       {
+           img_t.remove();
+       }
+   }
+   return img;
+}
+
+function fullthrottlelims_pxl_submit_info(action, source)
+{
+   var img = fullthrottlelims_pxl_get_pixel();
+
+   if( ! img ) //img not created , need bit later
+   {
+        setTimeout(function() { fullthrottlelims_pxl_submit_info(action, source) }, 100);
+        return;
+   }
+
+   var clientid = fullthrottlelims_pxl_customer_id;
+   var now=new Date();
+   var r  = now.getTime() +"-"+Math.random();
+   var referrer = escape(document.referrer);
+   var browser = escape(navigator.userAgent);
+   var userLang = navigator.language || navigator.userLanguage
+   var location = escape(window.location.href);
+
+   var image_src = fullthrottlelims_pixel_location+"fullthrottlelims_pxl.gif?c="+clientid+'&r='+r+'&f='+referrer+'&b='+browser+'&l='+escape(userLang)+'&p='+location;
+
+   if( fullthrottlelims_pxl_coords && typeof fullthrottlelims_pxl_coords['lat'] != 'undefined' )
+   {
+       image_src += '&t='+fullthrottlelims_pxl_coords['lat'];
+       image_src += '&n='+fullthrottlelims_pxl_coords['lon'];
+       image_src += '&acc='+fullthrottlelims_pxl_coords['acc'];
+       image_src += '&src='+fullthrottlelims_pxl_coords['src'];
+
+       fullthrottlelims_pixel_sent_coords = {};
+       fullthrottlelims_pixel_sent_coords['lat'] = fullthrottlelims_pxl_coords['lat'];
+       fullthrottlelims_pixel_sent_coords['lon'] = fullthrottlelims_pxl_coords['lon'];
+       fullthrottlelims_pixel_sent_coords['acc'] = fullthrottlelims_pxl_coords['acc'];
+       fullthrottlelims_pixel_sent_coords['src'] = fullthrottlelims_pxl_coords['src'];
+   }
+   
+   image_src += '&s='+fullthrottlelims_pxl_client_id+'&hs='+source+'&ss='+fullthrottlelims_pxl_client_type;
+
+   var dateObj = new Date();
+   var timezone = dateObj.getTimezoneOffset();
+
+   image_src += '&z='+timezone;
+
+   img.src = image_src;
+
+}
+

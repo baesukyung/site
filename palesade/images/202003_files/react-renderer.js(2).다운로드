@@ -1,0 +1,22 @@
+/*
+ *
+ * React.createElement(
+ *  type,
+ *  [props],
+ *  [...children]
+ * );
+ *
+ * see: React.createElement() API Documentation
+ *
+ * https://facebook.github.io/react/docs/react-api.html#createelement
+ *
+ */
+
+ReactDOM.render(React.createElement(
+    window.hacc.vehicles.Gallery360.Model360,
+    {
+        trimid: document.getElementById("reactview-gallery-360").getAttribute("data-prop-id"),
+        showbutton: document.getElementById("reactview-gallery-360").getAttribute("data-prop-showinterior360"),
+        showExterior: document.getElementById("reactview-gallery-360").getAttribute("data-prop-showexterior360")
+    }
+      ), document.getElementById("reactview-gallery-360"));

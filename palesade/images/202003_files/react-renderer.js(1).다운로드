@@ -1,0 +1,52 @@
+﻿/*
+ *
+ * React.createElement(
+ *  type,
+ *  [props],
+ *  [...children]
+ * );
+ *
+ * see: React.createElement() API Documentation
+ *
+ * https://facebook.github.io/react/docs/react-api.html#createelement
+ *
+ */
+var json = document.getElementById("reactview-nav-header").getAttribute("data-props-json");
+var headerdata = JSON.parse(json);
+
+json = document.getElementById("reactview-fca-overlay").getAttribute("data-props-json");
+var overlaydata = JSON.parse(json);
+
+json = document.getElementById("reactview-fca-preownedoverlay").getAttribute("data-props-json");
+var preownedoverlaydata = JSON.parse(json);
+
+
+json = document.getElementById("reactview-context-menu").getAttribute("data-props-json");
+var menudata = JSON.parse(json);
+
+json = document.getElementById("reactview-nav-header").getAttribute("data-showroom-json")
+var showroomjson = JSON.parse(json);
+
+window.hacc.nav.GlobalNavigation.ModelShowroomData = showroomjson;
+
+headerdata.modelshowroom = window.hacc.nav.GlobalNavigation.ModelShowroomData;
+headerdata.overlaycontent = overlaydata;
+headerdata.preownedoverlaycontent = preownedoverlaydata;
+
+ReactDOM.render(React.createElement(Provider, {
+  store: window.hacc.redux.store
+}, React.createElement(window.hacc.nav.GlobalNavigation.GlobalNavigationModal, {})
+), document.getElementById("reactview-nav-modal")
+);
+
+ReactDOM.render(React.createElement(Provider, {
+  store: window.hacc.redux.store
+}, React.createElement(window.hacc.nav.GlobalNavigation.Header, headerdata)
+), document.getElementById("reactview-nav-header")
+);
+
+ReactDOM.render(React.createElement(Provider, {
+  store: window.hacc.redux.store
+}, React.createElement(window.hacc.nav.GlobalNavigation.HamburgerMenu, menudata)
+), document.getElementById("reactview-context-menu")
+);

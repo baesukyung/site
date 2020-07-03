@@ -1,0 +1,383 @@
+/*************************************************************
+  함수명 : fn_get_trim_list
+  설 명 : Get spec data from AJAX call 
+  인 자 : target content's id for add html markup, modelYear
+  사용법 : 
+  수정일        수정자        Version     Function명
+  ----------  ----------- ----------- -------------------------
+  2017.01.02  이경주        0.1         최초작성 trim 정보 가져올때 spec 정보를 모두 가져오기
+  2017.02.23  이경주        0.9         trim 선택시 spec data 가져오기로 변경
+  2017.03.06  정진호        1.0         Engine Label, Transmission Type 값 변경
+  2017.06.28  김경수        1.1         Cargo Area, Fuel Consumption 값이 0일 경우 Front 화면에 표시되지 않도록 수정(M-00068)  
+  2017.08.08  류재명        1.1         Fuel Tank Capacity (liter), Weight (Heaviest curb, lightest curb, gross vehicle weight) 값이 0일 경우 Front 화면에 표시되지 않도록 수정(M-00082)  
+  2017.12.12  김경수        1.2         M-00104 NBrand Type 추가 theme
+ *************************************************************/
+var modelYear = "";
+var themeClass = "";
+$(function(){
+	$(".specsContent .sortSelect select").on("change", function(){
+		var trimCode = $.trim($(this).val());
+		if(trimCode)fn_draw_spec(modelYear, trimCode);	
+	});	
+});
+
+function fn_get_trim_list($target, spec_track_name, theme){
+	modelYear = $target.attr("data-modelyear");
+	themeClass = theme;
+	
+	console.log("themeClass : " + themeClass);
+	
+    if(modelYear == "undefined" || !modelYear || modelYear == '-'){
+        modelYear = "HG-2011" //set default value just in case
+    }
+  //  console.log(allowedcodes );
+    if(typeof allowedcodes == "undefined"){
+        allowedcodes =[];
+    }
+    if($target && modelYear){
+    	//console.log("22: /wsvc/ww/findacar.trims.do?modelYear=%s", modelYear);    	
+        $.ajax({
+            url : 'https://org3-www.hyundai.com/wsvc/ww/findacar.trims.do',
+            type : 'post',
+            data : "modelYear=" + modelYear,
+            dataType : 'json',
+            success : function(resData){
+                //console.log(resData);
+                var optValues = "";
+                if(resData.data){
+                    var items = resData.data;                   
+                    for(var i=0; i < items.length; i++){
+                        if(allowedcodes.length>0){
+                           if($.inArray(items[i].code,allowedcodes) != -1){
+                              optValues += '<option value="' + items[i].code + '" onClick="_satellite.trackEvent(\''+spec_track_name+'\', \''+items[i].displayName.replace(/\n/g, " ").replace(/\'/g, "").replace(/\"/g, "")+'\')">' + items[i].displayName + '</option>\n';
+                           }
+                           
+                        }else{
+                            optValues += '<option value="' + items[i].code + '" onClick="_satellite.trackEvent(\''+spec_track_name+'\', \''+items[i].displayName.replace(/\n/g, " ").replace(/\'/g, "").replace(/\"/g, "")+'\')">' + items[i].displayName + '</option>\n';
+                        }
+                    }// for(i)
+                    $("#selTrim").html(optValues); //set option value
+                    if(allowedcodes.length>0){
+                        fn_draw_spec(modelYear, allowedcodes[0]);
+                    }else{
+                            if(items.length > 0){
+                                 fn_draw_spec(modelYear, items[0].code);    
+                            }   
+                        }                 
+                } //if(retData.data)
+            }//success function(){}
+         });//ajax      
+    }//if($target)
+}//function
+
+//draw specContent
+function fn_draw_spec(modelYear, trimCode){
+    
+    var html = "";
+    if(modelYear && trimCode){
+        $.ajax({
+            url : 'https://org3-www.hyundai.com/wsvc/ww/findacar.specs.do',
+            type : 'post',
+            data : "modelYear=" + modelYear + "&trim=" + trimCode,
+            dataType : 'json',
+            async: false,   //do not change.
+            success : function(resData){
+                //console.log(resData);
+
+                if(resData.data){                   
+                    var item = resData.data[0];
+                    if(item.specHtmlYN == "Y"){
+                    	$("#specContWrap").addClass("hide");
+                    	$("#htmSpecContWrap").html(ComUtils.decodeXSSProtectedHTML(item.specHtml));                        	
+                    	$("#htmSpecContWrap").removeClass("hide");
+                    }else{
+                    	var htmOverView  = '<div class="overViewTable on">\n'
+                                         +  '  <div class="tit">'+Granite.I18n.get("Overview")+'</div>\n'
+                                         +  '  <table class="infoTableType' + themeClass + '">\n'
+                                         +  '    <caption>Overview Table</caption>\n'
+                                         +  '    <tbody>\n'
+                                         +  '      <tr>\n'
+                                         +  '        <th scope="row">'+Granite.I18n.get("Category")+'</th>\n'
+                                         +  '        <td> '+item.category+'</td>\n'
+                                         +  '      </tr>\n'
+                                         +  '      <tr>\n'
+                                         +  '        <th scope="row">'+Granite.I18n.get("Product label")+'</th>\n'
+                                         +  '        <td> '+item.productLabel+'</td>\n'
+                                         +  '      </tr>\n'
+                                         +  '      <tr>\n'
+                                         +  '        <th scope="row">'+Granite.I18n.get("Model name")+'</th>\n'
+                                         +  '        <td> '+item.modelName + '</td>\n'
+                                         +  '      </tr>\n'
+                                         +  '      <tr>\n'
+                                         +  '        <th scope="row">'+Granite.I18n.get("Seats")+'</th>\n'
+                                         +  '        <td> '+item.seats+'</td>\n'
+                                         +  '      </tr>\n'
+                                         +  '    </tbody>\n'
+                                         +  '   </table>\n'
+                                         +  '</div><!-- //.overViewTable -->\n';
+                      
+                        var htmPerformance = '<div class="performance on">\n'
+                                         +  '<dl class="specList">\n'
+                                         +  '    <dt>'+Granite.I18n.get("Engine")+'</dt>\n'
+                                         +  '    <dd>\n'
+                                         +  '        <dl>\n'
+                                         +  '            <dt>'+Granite.I18n.get("Engine Label")+'</dt>\n'
+                                         +  '            <dd>'+item.engineCapacityName+' '+item.engineTypeName+'</dd>\n'
+                                         +  '        </dl>\n'
+                                         +  '        <dl>\n'
+                                         +  '            <dt>'+Granite.I18n.get("Displacement (cc)")+'</dt>\n'
+                                         +  '            <dd>'+item.displacement.format()+'</dd>\n'
+                                         +  '        </dl>\n';
+                        			if(!ComUtils.isEmpty(item.maxSpeed)){	
+										 htmPerformance += ''
+										 +  '        <dl>\n'
+                                         +  '            <dt>'+Granite.I18n.get("Max. Speed (kph)")+'</dt>\n'
+                                         +  '            <dd>'+item.maxSpeed+'</dd>\n'
+										 +  '        </dl>\n';                                             
+			                        }
+			                        	 htmPerformance += ''
+                                         +  '        <dl>\n'
+                                         +  '            <dt>'+Granite.I18n.get("Max. Power (ps / rpm)")+'</dt>\n'
+                                         +  '            <dd>'+item.maxPower+'/'+item.maxPowerRpm.format()+'</dd>\n'
+                                         +  '        </dl>\n'
+                                         +  '        <dl>\n'
+                                         +  '            <dt>'+Granite.I18n.get("Max. Torque (kg&middot;m / rpm)")+'</dt>\n'
+                                         +  '            <dd>'+item.maxTorque+'/'+item.maxTorqueRpm.format()+'</dd>\n'
+                                         +  '        </dl>\n';			                        
+			                        if(!ComUtils.isEmpty(item.acceleration)){
+										 htmPerformance += ''
+										 +  '        <dl>\n'
+                                         +  '            <dt>'+Granite.I18n.get("Acceleration (0 - 100 kph) (sec)")+'</dt>\n'
+                                         +  '            <dd>'+item.acceleration+'</dd>\n'
+										 +  '        </dl>\n';                                             
+			                        }
+			                        if(!ComUtils.isEmpty(item.brakingDistance)){
+										 htmPerformance += ''
+										 +  '        <dl>\n'
+										 +  '            <dt>'+Granite.I18n.get("Braking Distance (100 - 0 kph) (m)")+'</dt>\n'
+										 +  '            <dd>'+item.brakingDistance+'</dd>\n'
+										 +  '        </dl>\n';                                             
+			                        }
+                         htmPerformance +=  '        <dl>\n'
+                                         +  '            <dt>'+Granite.I18n.get("Number of Cylinders")+'</dt>\n'
+                                         +  '            <dd>'+item.cylinders+'</dd>\n'
+                                         +  '        </dl>\n'
+                                         +  '        <dl>\n'
+                                         +  '            <dt>'+Granite.I18n.get("Valves of Cylinder")+'</dt>\n'
+                                         +  '            <dd>'+item.valvesCylinder+'</dd>\n'
+                                         +  '        </dl>\n'
+                                         +  '    </dd>\n'
+                                         +  '</dl>\n'
+                                         +  '<dl class="specList">\n'
+                                         +  '    <dt>'+Granite.I18n.get("Transmission")+'</dt>\n'
+                                         +  '    <dd>\n'
+                                         +  '        <dl>\n';
+                         			if(!ComUtils.isEmpty(item.gear)){
+                                    	 htmPerformance += ''
+                                         +  '            <dt>'+Granite.I18n.get("Transmission Type")+'</dt>\n'
+                                         +  '            <dd>'+item.gear+'-Speed '+item.transmissionType+' '+item.driveConfig+'</dd>\n';
+                                    }else{
+                                    	 htmPerformance += ''
+                                         +  '            <dt>'+Granite.I18n.get("Transmission Type")+'</dt>\n'
+                                         +  '            <dd>'+item.transmissionType+' '+item.driveConfig+'</dd>\n';                                    	
+                                    }
+                                    	 htmPerformance += ''
+                                         +  '        </dl>\n'
+                                         +  '     </dd>\n'
+                                         +  '</dl>\n'
+                                         +  '<dl class="specList">\n'
+                                         +  '    <dt>'+Granite.I18n.get("Fuel")+' <span class="webBlock">'+Granite.I18n.get("Consumption")+'</span></dt>\n'
+                                         +  '    <dd>\n'
+                                         +  '        <dl>\n'
+                                         +  '            <dt>'+Granite.I18n.get("Fuel Type")+'</dt>\n'
+                                         +  '            <dd>'+item.fuelType+'</dd>\n'
+                                         +  '        </dl>\n';
+                                    if(!ComUtils.isEmpty(item.fuelecoUrban) && item.fuelecoUrban != "0" && item.fuelecoUrban != 0){
+										 htmPerformance += ''
+										 +  '        <dl>\n'
+			                             +  '            <dt>'+Granite.I18n.get("Fuel Consumption")+'<span class="webBlock">'+Granite.I18n.get("(Urban / City)(liter / 100km)")+'</span></dt>\n'
+			                             +  '            <dd>'+item.fuelecoUrban+'</dd>\n'
+										 +  '        </dl>\n';                                             
+			                        }
+                                    if(!ComUtils.isEmpty(item.fuelecoHighway) && item.fuelecoHighway != "0" && item.fuelecoHighway != 0){
+										 htmPerformance += ''
+										 +  '        <dl>\n'
+			                             +  '            <dt>'+Granite.I18n.get("Fuel Consumption")+'<span class="webBlock">'+Granite.I18n.get("(Extra Urban / Highway)(liter / 100km)")+'</span></dt>\n'
+			                             +  '            <dd>'+item.fuelecoHighway+'</dd>\n'
+										 +  '        </dl>\n';                                             
+			                        }
+			                        if(!ComUtils.isEmpty(item.fuelecoCombined) && item.fuelecoCombined != "0" && item.fuelecoCombined != 0){
+										 htmPerformance += ''
+										 +  '        <dl>\n'
+			                             +  '            <dt>'+Granite.I18n.get("Fuel Consumption")+'<span class="webBlock">'+Granite.I18n.get("(Combined)(liter / 100km)")+'</span></dt>\n'
+			                             +  '            <dd>'+item.fuelecoCombined+'</dd>\n'
+										 +  '        </dl>\n';                                             
+			                        }
+			                        if(!ComUtils.isEmpty(item.fuelecoCo2combined)){
+										 htmPerformance += ''
+										 +  '        <dl>\n'
+			                             +  '            <dt>'+Granite.I18n.get("CO2 Emission (Combined) (g/km)")+'</dt>\n'
+			                             +  '            <dd>'+item.fuelecoCo2combined+'</dd>\n'
+										 +  '        </dl>\n';                                             
+			                        }
+			                        if(!ComUtils.isEmpty(item.fuelTank) && item.fuelTank != "0" && item.fuelTank != 0){
+			                        	 htmPerformance += ''   
+			                        		'        <dl>\n'            
+                                         +  '            <dt>'+Granite.I18n.get("Fuel Tank Capacity (liter)")+'</dt>\n'
+                                         +  '            <dd>'+item.fuelTank+'</dd>\n'
+                                         +  '        </dl>\n'
+                                         +  '    </dd>\n'
+                                         +  '</dl>\n' 
+                                         +  '</div><!-- //performance -->\n';
+			                        }
+                                         
+                        var htmDimension = '<div class="dimension on">\n'                        
+                                         +  '<dl class="specList">\n'
+                                         +  '    <dt>'+Granite.I18n.get("Exterior")+'</dt>\n'
+                                         +  '    <dd>\n'
+                                         +  '        <dl>\n'
+                                         +  '            <dt>'+Granite.I18n.get("Overall Length (mm)")+'</dt>\n'
+                                         +  '            <dd>'+item.overallLength.format()+'</dd>\n'
+                                         +  '        </dl>\n'
+                                         +  '        <dl>\n'
+                                         +  '            <dt>'+Granite.I18n.get("Overall Width (mm)")+'</dt>\n'
+                                         +  '            <dd>'+item.overallWidth.format()+'</dd>\n'
+                                         +  '        </dl>\n'
+                                         +  '        <dl>\n'
+                                         +  '            <dt>'+Granite.I18n.get("Overall Height (mm)")+'</dt>\n'
+                                         +  '            <dd>'+item.overallHeight.format()+'</dd>\n'
+                                         +  '        </dl>\n'
+                                         +  '        <dl>\n'
+                                         +  '            <dt>'+Granite.I18n.get("Wheelbase (mm)")+'</dt>\n'
+                                         +  '            <dd>'+item.wheelBase.format()+'</dd>\n'
+                                         +  '        </dl>\n';
+                        			 if(!ComUtils.isEmpty(item.wheelthreadFront)){			                         
+			                        	 htmDimension += ''
+										 +  '        <dl>\n'
+			                             +  '            <dt>'+Granite.I18n.get("Front Wheeltread (mm)")+'</dt>\n'
+			                             +  '            <dd>'+item.wheelthreadFront.format()+'</dd>\n'
+										 +  '        </dl>\n';                                             
+			                         }
+			                         if(!ComUtils.isEmpty(item.wheelthreadRear)){
+			                        	 htmDimension += ''
+										 +  '        <dl>\n'
+			                             +  '            <dt>'+Granite.I18n.get("Rear Wheeltread (mm)")+'</dt>\n'
+			                             +  '            <dd>'+item.wheelthreadRear.format()+'</dd>\n'
+										 +  '        </dl>\n';                                             
+			                         }
+			                         if(!ComUtils.isEmpty(item.overHangFront)){
+			                        	 htmDimension += ''
+										 +  '        <dl>\n'
+			                             +  '            <dt>'+Granite.I18n.get("Front Overhang (mm)")+'</dt>\n'
+			                             +  '            <dd>'+item.overHangFront.format()+'</dd>\n'
+										 +  '        </dl>\n';                                             
+			                         }
+			                         if(!ComUtils.isEmpty(item.overHangRear)){
+			                        	 htmDimension += ''
+										 +  '        <dl>\n'
+			                             +  '            <dt>'+Granite.I18n.get("Rear Overhang (mm)")+'</dt>\n'
+			                             +  '            <dd>'+item.overHangRear.format()+'</dd>\n'
+										 +  '        </dl>\n';                                             
+			                         }
+
+			                htmDimension += '    </dd>\n'
+                                         +  '</dl>\n';
+			                		if(!ComUtils.isEmpty(item.cargo) && item.cargo != "0" && item.cargo != 0){
+			                            htmDimension += ''           
+			                             +  '<dl class="specList">\n'
+			                             +  '    <dt>'+Granite.I18n.get("Cargo")+'</dt>\n'
+			                             +  '    <dd>\n'
+			                             +  '        <dl>\n'
+			                             +  '            <dt>'+Granite.I18n.get("Cargo Volume (VDA; liter)")+'</dt>\n'
+			                             +  '            <dd>'+item.cargo+'</dd>\n'
+			                             +  '        </dl>\n'
+			                             +  '    </dd>\n'
+			                             +  '</dl>\n';
+			                        }
+			                if((!ComUtils.isEmpty(item.weightCurbLightest) && item.weightCurbLightest != "0" && item.weightCurbLightest != 0)
+			                		|| (!ComUtils.isEmpty(item.weightCurbHeaviest) && item.weightCurbHeaviest != "0" && item.weightCurbHeaviest != 0)
+			                		|| (!ComUtils.isEmpty(item.weightGross) && item.weightGross != "0" && item.weightGross != 0)
+			                		){
+                            htmDimension += '<dl class="specList">\n'
+                                         +  '    <dt>'+Granite.I18n.get("Weight")+'</dt>\n'
+                                         +  '    <dd>\n';
+                            		if(!ComUtils.isEmpty(item.weightCurbLightest) && item.weightCurbLightest != "0" && item.weightCurbLightest != 0){
+			                        	 htmDimension += ''
+										 +  '        <dl>\n'
+                                         +  '            <dt>'+Granite.I18n.get("Lightest Curb Weight (kg)")+'</dt>\n'
+                                         +  '            <dd>'+item.weightCurbLightest.format()+'</dd>\n'
+										 +  '        </dl>\n';                                             
+			                        }
+                            		if(!ComUtils.isEmpty(item.weightCurbHeaviest) && item.weightCurbHeaviest != "0" && item.weightCurbHeaviest != 0){
+			                        	 htmDimension += ''
+										 +  '        <dl>\n'
+                                         +  '            <dt>'+Granite.I18n.get("Heaviest Curb Weight (kg)")+'</dt>\n'
+                                         +  '            <dd>'+item.weightCurbHeaviest.format()+'</dd>\n'
+										 +  '        </dl>\n';                                             
+			                        }
+                            		if(!ComUtils.isEmpty(item.weightGross) && item.weightGross != "0" && item.weightGross != 0){
+			                        	 htmDimension += ''
+										 +  '        <dl>\n'
+                                         +  '            <dt>'+Granite.I18n.get("Gross Vehicle Weight (kg)")+'</dt>\n'
+                                         +  '            <dd>'+item.weightGross.format()+'</dd>\n'
+										 +  '        </dl>\n';                                             
+			                        }			                        
+			                
+			                htmDimension += '    </dd>\n'
+                                         +  '</dl>\n';
+			                }
+			                htmDimension += '</div><!-- //demention -->';
+                                         
+                        var htmWheels = '<div class="wheels on">\n'
+                                         +  '<dl class="specList">\n'
+                                         +  '    <dt>'+Granite.I18n.get("Wheels & Tires")+'</dt>\n'
+                                         +  '    <dd>\n';
+                        			if(!ComUtils.isEmpty(item.wheelsFront)){
+			                        	htmWheels += ''
+										 +  '        <dl>\n'
+                                         +  '            <dt>'+Granite.I18n.get("Wheels")+'</dt>\n'
+                                         +  '            <dd>'+item.wheelsFront+'</dd>\n'
+										 +  '        </dl>\n';                                             
+			                        }                        
+
+			                        htmWheels += '   <dl>\n'
+                                         +  '            <dt>'+Granite.I18n.get("Tires")+'</dt>\n'
+                                         +  '            <dd>'+item.tiresFront+'</dd>\n'
+                                         +  '        </dl>\n'
+                                         +  '    </dd>\n'
+                                         +  '</dl>\n'
+                                         +  '</div><!-- //wheels -->';
+                        
+                        $("#overViewWrap").html(htmOverView); //overview
+                        $("#performanceWrap").html(htmPerformance); //performace
+                        $("#dimensionWrap").html(htmDimension); //performace
+                        $("#wheelsWrap").html(htmWheels); //performace  
+                        $("#htmSpecContWrap").html("").addClass("hide");
+                    	$("#specContWrap").removeClass("hide");                        
+                    }
+
+                    
+                } //if(retData.data)
+            }//success function(){}
+         });//ajax          
+    }
+}
+Number.prototype.format = function(){ 
+    if(this==0) return 0; 
+    var reg = /(^[+-]?\d+)(\d{3})/; 
+    var n = (this + '');
+    while (reg.test(n)) 
+        n = n.replace(reg, '$1' + ',' + '$2'); 
+    return n; 
+};
+
+String.prototype.format = function(){ 
+    try{
+        if(isNaN(this) ) 
+            return this; 
+        var num = parseFloat(this);         
+        return num.format();
+    }catch(err){
+        return this; 
+    }
+};

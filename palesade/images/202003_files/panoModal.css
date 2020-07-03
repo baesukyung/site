@@ -1,0 +1,75 @@
+/* Outer */
+.popup {
+    width:100%;
+    height:100%;
+    display:none;
+    position:fixed;
+    top:0px;
+    left:0px;
+    background:rgba(0,0,0,0.75);
+	z-index:500;
+}
+ 
+/* Inner */
+.popup-inner {
+    width:100%;
+	height:100%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+    box-shadow:0px 2px 6px rgba(0,0,0,1);
+    border-radius:1px;
+}
+ 
+/* Close Button */
+.popup-close {
+    width:35px;
+    height:35px;
+    padding-top:4px;
+    display:inline-block;
+    position:absolute;
+    top:30px;
+    right:30px;
+    transition:ease 0.25s all;
+    -webkit-transform:translate(50%, -50%);
+    transform:translate(50%, -50%);
+    border-radius:1000px;
+    background:black;
+    font-family:Arial, Sans-Serif;
+    font-size:25px;
+    text-align:center;
+    line-height:100%;
+    color:#fff;
+}
+ 
+.popup-close:hover {
+    -webkit-transform:translate(50%, -50%) rotate(180deg);
+    transform:translate(50%, -50%) rotate(180deg);
+    background:white;
+	color:black;
+    text-decoration:none;
+}
+
+#pano .close 
+  {	  
+	  opacity: 1;
+}
+  
+ #pano .callout-title 
+  {	  
+	  line-height: 1.31em;
+ }
+ 
+.toggles {
+	top:50px;
+	z-index:1000;
+}
+
+@media (max-width: 420px) {
+	.callout {
+	    width: 100%;
+	}
+	
+}

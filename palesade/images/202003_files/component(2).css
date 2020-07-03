@@ -1,0 +1,48 @@
+/** [Hyundai] Generated On : Tue, 11 Feb 2020 09:15:11 GMT **/
+/* Screen Sizes */
+/* Font Sizes */
+/* Font Styles */
+/* Global Colours */
+/* Font Colours */
+/* Semi-Transparent Overlay */
+/* Borders */
+/* Global Element Sizes */
+/*
+  Transform
+*/
+/*
+  Flex Containers
+*/
+/*
+  Flex Children
+*/
+.full-bleed {
+  position: relative; }
+  .full-bleed .container {
+    height: 650px;
+    position: relative; }
+    @media (max-width: 991px) {
+      .full-bleed .container {
+        height: 450px; } }
+    @media (max-width: 767px) {
+      .full-bleed .container {
+        height: 400px; } }
+  .full-bleed-legal {
+    font-size: 16px;
+    color: #FFF;
+    margin-bottom: 0;
+    line-height: 1;
+    top: auto;
+    right: 10px;
+    bottom: 15px;
+    left: 10px;
+    position: absolute;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: max-content; }
+    @media (max-width: 767px) {
+      .full-bleed-legal {
+        font-size: 14px;
+        bottom: 10px; } }
+
+/*# sourceMappingURL=full-bleed-image.css.map */

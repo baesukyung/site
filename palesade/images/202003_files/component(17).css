@@ -1,0 +1,286 @@
+/** [Hyundai] Generated On : Tue, 25 Feb 2020 06:31:44 GMT **/
+/* Screen Sizes */
+/* Font Sizes */
+/* Font Styles */
+/* Global Colours */
+/* Font Colours */
+/* Semi-Transparent Overlay */
+/* Borders */
+/* Global Element Sizes */
+/*
+  Transform
+*/
+/*
+  Flex Containers
+*/
+/*
+  Flex Children
+*/
+.global-footer {
+  text-align: center; }
+  .global-footer .icon-logo-en, .global-footer .icon-logo-fr {
+    color: transparent; }
+    .global-footer .icon-logo-en::before, .global-footer .icon-logo-fr::before {
+      font-size: 40px !important; }
+    @media (max-width: 991px) {
+      .global-footer .icon-logo-en::before, .global-footer .icon-logo-fr::before {
+        font-size: 26px !important; } }
+
+.global-footer .icon-hyundai-logo {
+  font-size: 100px;
+  color: #002C5F; }
+
+.global-footer__divider {
+  width: 120px;
+  height: 1px;
+  background-color: #413F40;
+  margin: 0 auto 20px auto; }
+
+@font-face {
+  font-family: 'icons';
+  src: url("../../../fonts/icons/icons.eot");
+  src: url("../../../fonts/icons/icons.eot") format("embedded-opentype"), url("../../../fonts/icons/icons.ttf") format("truetype"), url("../../../fonts/icons/icons.woff") format("woff"), url("../../../fonts/icons/icons.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: 'icons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1; }
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  display: inline-block; }
+
+.icon-download-pdf:before {
+  content: "\e92b"; }
+
+.icon-bill:before {
+  content: "\e92c"; }
+
+.icon-print:before {
+  content: "\e92d"; }
+
+.icon-save:before {
+  content: "\e92e"; }
+
+.icon-share:before {
+  content: "\e92f"; }
+
+.icon-summary:before {
+  content: "\e935"; }
+
+.icon-vehicles:before {
+  content: "\e900"; }
+
+.icon-special-offers:before {
+  content: "\e901"; }
+
+.icon-find-a-dealer:before {
+  content: "\e902"; }
+
+.icon-external-link:before {
+  content: "\e903"; }
+
+.icon-arrow-button::before {
+  content: "\e904"; }
+
+.icon-arrow-button.reverse::before {
+  transform: rotate(180deg); }
+
+.icon-arrow-button.down::before {
+  transform: rotate(90deg); }
+
+.icon-chevron-right:before,
+.icon-chevron-left:before {
+  content: "\e905"; }
+
+.icon-chevron-down:before,
+.icon-chevron-up:before {
+  content: "\e906"; }
+
+.icon-instagram:before {
+  content: "\e907"; }
+
+.icon-facebook:before {
+  content: "\e908"; }
+
+.icon-youtube:before {
+  content: "\e909"; }
+
+.icon-twitter:before {
+  content: "\e90a"; }
+
+.icon-checkmark:before {
+  content: "\e90b"; }
+
+.icon-video-play:before {
+  content: "\e90c"; }
+
+.icon-get-a-quote:before {
+  content: "\e90d"; }
+
+.icon-test-drive:before {
+  content: "\e90e"; }
+
+.icon-360-car:before {
+  content: "\e90f"; }
+
+.icon-transmission:before {
+  content: "\e910"; }
+
+.icon-engine:before {
+  content: "\e911"; }
+
+.icon-powertrain:before {
+  content: "\e911"; }
+
+.icon-flip-card:before {
+  content: "\e912"; }
+
+.icon-see-promo:before,
+.icon-curved-arrow:before {
+  content: "\e913"; }
+
+.icon-calculator:before {
+  content: "\e914"; }
+
+.icon-info:before {
+  content: "\e915"; }
+
+.icon-envelope:before {
+  content: "\e916"; }
+
+.icon-close-bold:before {
+  content: "\e917"; }
+
+.icon-close-light:before {
+  content: "\e918"; }
+
+.icon-printer:before {
+  content: "\e919"; }
+
+.icon-phone:before {
+  content: "\e91a"; }
+
+.icon-gallery:before {
+  content: "\e91b"; }
+
+.icon-360-arrow:before {
+  content: "\e91c"; }
+
+.icon-download:before {
+  content: "\e91d"; }
+
+.icon-shopping-cart:before {
+  content: "\e91e"; }
+
+.icon-build-and-price:before {
+  content: "\e91f"; }
+
+.icon-build-and-price.en:before {
+  content: "\e933"; }
+
+.icon-build-and-price.fr:before {
+  content: '\e934'; }
+
+.icon-shop-way:before {
+  content: "\e920"; }
+
+.icon-flag:before {
+  content: "\e921"; }
+
+.icon-minus:before {
+  content: "\e922"; }
+
+.icon-plus:before {
+  content: "\e923"; }
+
+.icon-gear:before {
+  content: "\e924"; }
+
+.icon-dealer-pin:before {
+  content: "\e925"; }
+
+.icon-hyundai-logo:before {
+  content: "\e926"; }
+
+.icon-warning:before {
+  content: "\e927"; }
+
+.icon-pen:before {
+  content: "\e928"; }
+
+.icon-calendar:before {
+  content: "\e929"; }
+
+.icon-seats:before {
+  content: "\e930"; }
+
+.icon-gears:before {
+  content: "\e931"; }
+
+.icon-menu-hamburger:before {
+  content: "\e932"; }
+
+.icon-telephone:before {
+  content: "\e92a"; }
+
+.icon-build-en:before {
+  content: "\e933"; }
+
+.icon-build-fr:before {
+  content: "\e934"; }
+
+.icon-ev:before {
+  content: "\e938"; }
+
+.icon-preferred:before {
+  content: "\e937"; }
+
+.icon-green-checkmark:before {
+  content: "\e936";
+  color: #547312; }
+
+.icon-red-x:before {
+  content: "\e93a";
+  color: #B32E22; }
+
+.icon-edit:before {
+  content: "\e939"; }
+
+.icon-logo-fr:before {
+  content: "\e93c";
+  color: #002c5f; }
+
+.icon-logo-en:before {
+  content: "\e93b";
+  color: #002c5f; }
+
+.icon-chevron-left:before {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg); }
+
+.icon-chevron-up:before {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg); }
+
+.icon-curved-arrow:before {
+  -moz-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH"; }
+
+.fa-search:before {
+  content: "\f002"; }
+
+/*# sourceMappingURL=icons.css.map */
+/* Created: Thu Jan 30 2020 11:22:46 GMT+0530 (India Standard Time) */
+
+/*# sourceMappingURL=pagefooter.css.map */

@@ -1,0 +1,17 @@
+.vlp-fca-disclaimer__trigger {
+  margin-bottom: 10px;
+  text-decoration: underline;
+  position: relative; }
+  .vlp-fca-disclaimer__trigger:after {
+    content: "-";
+    position: absolute;
+    right: -15px; 
+    top: 0;
+  }
+  .vlp-fca-disclaimer__trigger.collapsed:after {
+    content: "+"; }
+@media (max-width: 767px) {
+  .vlp-fca-disclaimer__trigger, .vlp-fca-disclaimer__content {
+    font-size: 14px; } }
+
+/*# sourceMappingURL=assets/component/css/vlp-fca-disclaimer.scss.map */

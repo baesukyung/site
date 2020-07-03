@@ -1,0 +1,118 @@
+/** [Hyundai] Generated On : Wed, 17 Jun 2020 06:51:32 GMT **/"use strict";
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+jQuery.noConflict();
+
+(function ($) {
+	$(document).ready(function () {
+		var videoElem = $('.vlp-fca').find('video').length ? $('.vlp-fca').find('video').get(0) : null;
+		var $playButton;
+		var $splOffersCta = $('#splOffer');
+		var region = typeof Cookies !== 'undefined' ? Cookies.get('province') : 'ON';
+
+		$splOffersCta.on('click', function (e) {
+			var $modelName = $('#vlp-model').attr('analytics-id');
+			if (typeof dataLayer !== 'undefined') {
+				dataLayer.push({
+					'category': 'special offer model specific',
+					'action': 'special offer model:  View Current Special Offer',
+					'label': $modelName,
+					'value': '',
+					'event': 'GA Event'
+				});
+			}
+		});
+
+		if (videoElem) {
+			$(videoElem).parent().append('<button class="vlp-fca__control btn-no-style icon-video-play"></button>');
+
+			$playButton = $(videoElem).parent().find('.vlp-fca__control');
+
+			loadVideo(videoElem);
+		}
+
+		function loadVideo(video) {
+			$playButton.on('click', playVideo.bind(video));
+			video.play();
+
+			if (video.readyState !== 4) {
+				video.addEventListener('canplaythrough', playVideo, false);
+				video.addEventListener('load', playVideo, false);
+			} else {
+				playVideo.call(video);
+			}
+		}
+
+		function playVideo() {
+			var that = this;
+			var maxIterations = 100;
+			var iterations = 1;
+			var interval;
+
+			this.removeEventListener('canplaythrough', playVideo, false);
+			this.removeEventListener('load', playVideo, false);
+			this.play();
+
+			interval = setInterval(function () {
+				if (parseFloat(that.currentTime) > 0 || iterations > maxIterations) {
+					$playButton.off('click', playVideo);
+					$playButton.hide();
+					clearPlayVideoInterval(interval);
+				}
+
+				iterations++;
+			}, 150);
+		}
+
+		function clearPlayVideoInterval(interval) {
+			clearInterval(interval);
+		}
+
+		// Interior 360 tracking
+		$(".full-bleed-image-fca__wrapper").on("click", function () {
+			var model = $('#vlp-model').attr('analytics-id');
+			var modelName = model.split(' ')[0];
+			var modelYear = model.split(' ')[1];
+			if (typeof dataLayer !== 'undefined') {
+				var _dataLayer$push;
+
+				dataLayer.push((_dataLayer$push = {
+					'event': 'modelDetails',
+					'siteSection': 'Vehicles',
+					'siteSubSection': 'Showroom',
+					'category': 'showroom:Overview',
+					'action': 'Button',
+					'label': 'Overview:View 360 Interior Experience',
+					'value': '1',
+					'regionName': region
+				}, _defineProperty(_dataLayer$push, 'siteSection', 'Vehicle Landing Page'), _defineProperty(_dataLayer$push, 'navLevel2', 'Overview'), _defineProperty(_dataLayer$push, 'navLevel3', 'Interior'), _defineProperty(_dataLayer$push, 'ctaType', 'Button'), _defineProperty(_dataLayer$push, 'ctaName', 'View 360 Interior Experience'), _defineProperty(_dataLayer$push, 'modelName', modelName), _defineProperty(_dataLayer$push, 'modelYear', modelYear), _dataLayer$push));
+			}
+		});
+	});
+})(jQuery);
+
+function onReevooBadgeClick() {
+	var badge = document.querySelector('reevoo-reviewable-badge');
+	var model = badge.getAttribute('model');
+	var modelYear = badge.getAttribute('model_year');
+	var dataLayerObject = {
+		'event': 'navClick',
+		'category': 'VN:Owner-Review:' + model,
+		'action': 'Review',
+		'label': 'test',
+		'value': '1',
+		'regionName': 'ON',
+		'siteSection': 'Vehicles',
+		'stepName': 'VN:CrossOver-SUV',
+		'modelName': model,
+		'modelYear': modelYear,
+		'modelFamily': model
+	};
+	if (typeof dataLayer !== 'undefined') {
+		dataLayer.push(dataLayerObject);
+	}
+	var baseUrl = location.origin + location.pathname;
+	baseUrl = baseUrl.charAt(baseUrl.length - 1) == '/' ? baseUrl : baseUrl + '/';
+	window.location.href = baseUrl + 'reviews' + location.search;
+}

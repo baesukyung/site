@@ -1,8 +1,8 @@
 @font-face { font-family: 'MapoFlowerIsland'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoFlowerIslandA.woff') format('woff'); font-weight: normal; font-style: normal; }
 
 .section01 {
-    background: url('../images/cloud.jpg');
-    background-position:bottom center;
+    background: url('../images/20200702.jpg');
+    background-position:center;
     background-size:cover;
     width: 100%;
     position: relative;
@@ -229,6 +229,13 @@
     padding-bottom: 7%;
 
     /* position: relative; */
+}
+.section03-img{
+    background: url('../images/kkk.jpg');
+    width: 100%;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .bg01{
     background: url('../images/01backlight.jpg');
@@ -519,13 +526,21 @@
     display: none;
 }
 @media(max-width: 767px) {
-
+    .section01 {
+        background: url('../images/2020070201.jpg');
+        background-position:center;
+        background-size:100%;
+        
+        width: 100%;
+      
+        background-repeat: no-repeat;
+    }
     .logo img{
         width: 10%;
     }
     .title p{
       font-size: 50pt;
-      margin-top: -30%;
+      padding-top: 22%;
     }
     .text-main-padding {
         padding: 0 !important;
@@ -533,7 +548,28 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 60vh;
+       
+    }
+    .main_txt{
+        font-size: 25pt;
+    }
+    h1{
+        font-size: 25pt;
+    }
+    h2{
+        font-size: 20pt;
+    }
+    h3{
+        font-size: 15pt;
+    }
+    h4{
+        font-size: 12pt;
+    }
+    h5{
+        font-size: 10pt;
+    }
+    p{
+        font-size: 22pt;
     }
 .bottom-p p{
     font-size: 13pt;
@@ -547,7 +583,7 @@
         display: flex;
     }
     .icon-txt p{
-        font-size: 10pt;
+        font-size: 9pt;
     }
     .icon-ex h1{
         font-size: 16pt;
@@ -581,14 +617,18 @@
         padding: 5%;
     }
     .modal-img{
-        width: 90%;
+        width: 60%;
 
     }
     .modal-content{
-        width: 100%;
-   
+        width: 90%;
+        margin-left: 40px;
     }
-
+    .body-text{
+        font-size: 10pt;
+        padding: 0 20px;
+        text-align: justify;
+    }
     .whitecar-txt{
         width: 100%;
         margin-top: -10%;
@@ -596,12 +636,36 @@
        font-size: 14pt;
        display: none;
     }
+    .text-al{
+        text-align: justify;
+    }
    /* section03 end */
 
+.conts-area{
+    display: none;
+}
 
 
+.swiper-slide{
+    width: 100%;
+}
+.swiper-slide img{
+    width: 100%;
+}
+.tab-content>div>img{
+    width: 100%;
+}
 
+.tab-explain>ul{
+    padding-top: 10%;
+}
 
+.display-f>li>a>p{
+    font-size: 10pt;
+    width: 100%;
+    text-align: center;
+
+}
    }
    
    

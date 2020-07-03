@@ -1,0 +1,57 @@
+﻿.ownersThink {
+    display: block;
+    margin: 70px 0;
+}
+.ownersThink .align-center {
+    text-align: center;
+}
+
+.ownersThink  p {
+    margin-bottom: 20px;
+}
+
+.ownersThink h2 {
+    margin-bottom: 10px;
+}
+
+.ownersThink .imagePlaceholder {
+    position: relative;
+}
+
+  .ownersThink .reevoomark_badge {
+    background-color: #fff;
+    position: absolute !important;
+    top: 40px;
+    left: 40px;
+    border: 1px solid #CCC;
+    border-radius: 50%;
+  }
+  
+  @media (max-width:780px) {
+    
+        .ownersThink .reevoomark_badge {
+            top: 20px;
+            left: 20px;
+            height: 80px !important;
+            width: 80px !important;
+            background-size: 80px;
+        }
+      
+        .ownersThink .cta__button {
+            display: block;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+            .ownersThink .cta__button .btn__icon {
+                padding-left: 0;
+                top: 50%;
+                right: 10px;
+                bottom: auto;
+                left: auto;
+                position: absolute;
+                -webkit-transform: translateY(-50%);
+                -moz-transform: translateY(-50%);
+                transform: translateY(-50%);
+            }
+  }

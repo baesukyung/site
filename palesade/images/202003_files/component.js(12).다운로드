@@ -1,0 +1,39 @@
+/** [Hyundai] Generated On : Fri, 26 Jun 2020 21:32:01 GMT **/ // JavaScript Document
+/*global $, jQuery, alert, console*/
+
+"use strict";
+
+jQuery.noConflict();
+
+(function ($) {
+   $(document).ready(function () {
+      var region = typeof Cookies !== 'undefined' ? Cookies.get('province') : 'on';
+      var lang = typeof Cookies !== 'undefined' ? Cookies.get('hyundai#lang') : 'en';
+      var vlpModel = window.location.pathname && window.location.pathname.split('/');
+      var siteSubSection = $('.vlp-nav__link.current').data('analytics') || '';
+      var modelName = vlpModel[4];
+      var modelYear = vlpModel[3];
+
+      var $cartridge = $('.cta-cartridge a.cta-cartridge__block__link');
+      $cartridge.click(function () {
+         var ctaName = $(this).data('analytics').trim();
+         if (typeof dataLayer !== 'undefined') {
+            dataLayer.push({
+               'event': 'vlpCTAClick',
+               'language': lang,
+               'vlpCategory': 'showroom:' + siteSubSection + ':' + ctaName,
+               'vlpAction': 'ctaClicks',
+               'vlpLabel': modelName + ':' + siteSubSection + ':' + ctaName,
+               'vlpValue': '1',
+               'regionName': region,
+               'siteSection': 'showroom',
+               'siteSubSection': siteSubSection,
+               'ctaLocation': 'Footer',
+               'ctaName': ctaName,
+               'modelYear': modelYear,
+               'modelName': modelName
+            });
+         }
+      });
+   });
+})(jQuery);

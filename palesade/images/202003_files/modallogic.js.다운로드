@@ -1,0 +1,23 @@
+"use strict";
+
+jQuery.noConflict();
+
+(function ($) {
+  MicroModal.init({
+    disableScroll: true,
+    onShow: function onShow() {
+      $('#filter-dropdown').attr('tabindex', -1);
+    },
+    onClose: function onClose(modal) {
+      $('.video-overlay__frame').attr('src', '');
+      $('#filter-dropdown').removeAttr('tabindex');
+    }
+  });
+
+  $('.video-play').on('click', function (e) {
+    e.preventDefault();
+    var videoURL = $(this).attr('data-video-source');
+    $('.video-overlay__frame').attr('src', videoURL);
+    MicroModal.show('video-modal');
+  });
+})(jQuery);

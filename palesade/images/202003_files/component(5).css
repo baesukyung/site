@@ -1,0 +1,55 @@
+/** [Hyundai] Generated On : Thu, 27 Feb 2020 07:01:26 GMT **/
+/* Screen Sizes */
+/* Font Sizes */
+/* Font Styles */
+/* Global Colours */
+/* Font Colours */
+/* Semi-Transparent Overlay */
+/* Borders */
+/* Global Element Sizes */
+/*
+  Transform
+*/
+/*
+  Flex Containers
+*/
+/*
+  Flex Children
+*/
+.vlp-scroll-top {
+  position: absolute;
+  right: 0;
+  top: 140vh;
+  width: 75px;
+  z-index: 9;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  -moz-transition: -moz-transform 0.3s ease;
+  transition: transform 0.3s ease; }
+  .vlp-scroll-top--fixed {
+    position: fixed;
+    top: 75vh; }
+  .vlp-scroll-top__link {
+    display: inline-block;
+    padding: 5px 7px 10px;
+    background-color: #002C5F;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold; }
+    .vlp-scroll-top__link:hover {
+      background-color: #002C5F;
+      color: white;
+      text-decoration: none; }
+    .vlp-scroll-top__link .icon-arrow-button {
+      font-size: 18px;
+      transform: rotate(-90deg);
+      font-weight: bold; }
+      .vlp-scroll-top__link .icon-arrow-button:before {
+        margin: 7px; }
+    .vlp-scroll-top__link p {
+      margin-bottom: 0;
+      line-height: 1.2; }
+
+/*# sourceMappingURL=component.css.map */

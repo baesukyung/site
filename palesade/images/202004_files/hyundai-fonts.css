@@ -1,0 +1,49 @@
+@font-face {
+	font-family: 'Hyundai Sans Head';
+	src:	url('/wp-content/themes/DealerInspireCommonTheme/includes/fonts/hyundai/hyundaisanshead-regular.woff2') format('woff2'), /* Super Modern Browsers */
+			url('/wp-content/themes/DealerInspireCommonTheme/includes/fonts/hyundai/hyundaisanshead-regular.woff') format('woff'), /* Pretty Modern Browsers */
+			url('/wp-content/themes/DealerInspireCommonTheme/includes/fonts/hyundai/hyundaisanshead-regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+	font-display: swap;
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Hyundai Sans Head';
+	src:	url('/wp-content/themes/DealerInspireCommonTheme/includes/fonts/hyundai/hyundaisanshead-bold.woff2') format('woff2'), /* Super Modern Browsers */
+			url('/wp-content/themes/DealerInspireCommonTheme/includes/fonts/hyundai/hyundaisanshead-bold.woff') format('woff'), /* Pretty Modern Browsers */
+			url('/wp-content/themes/DealerInspireCommonTheme/includes/fonts/hyundai/hyundaisanshead-bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+	font-display: swap;
+	font-style: normal;
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: 'Hyundai Sans Head';
+	src:	url('/wp-content/themes/DealerInspireCommonTheme/includes/fonts/hyundai/hyundaisanshead-light.woff2') format('woff2'), /* Super Modern Browsers */
+			url('/wp-content/themes/DealerInspireCommonTheme/includes/fonts/hyundai/hyundaisanshead-light.woff') format('woff'), /* Pretty Modern Browsers */
+			url('/wp-content/themes/DealerInspireCommonTheme/includes/fonts/hyundai/hyundaisanshead-light.ttf')  format('truetype'); /* Safari, Android, iOS */
+	font-display: swap;
+	font-style: normal;
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: 'Hyundai Sans Text';
+	src:	url('/wp-content/themes/DealerInspireCommonTheme/includes/fonts/hyundai/hyundaisanstext-regular.woff2') format('woff2'), /* Super Modern Browsers */
+			url('/wp-content/themes/DealerInspireCommonTheme/includes/fonts/hyundai/hyundaisanstext-regular.woff') format('woff'), /* Pretty Modern Browsers */
+			url('/wp-content/themes/DealerInspireCommonTheme/includes/fonts/hyundai/hyundaisanstext-regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+	font-display: swap;
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Hyundai Sans Text';
+	src:	url('/wp-content/themes/DealerInspireCommonTheme/includes/fonts/hyundai/hyundaisanstext-medium.woff2') format('woff2'), /* Super Modern Browsers */
+			url('/wp-content/themes/DealerInspireCommonTheme/includes/fonts/hyundai/hyundaisanstext-medium.woff') format('woff'), /* Pretty Modern Browsers */
+			url('/wp-content/themes/DealerInspireCommonTheme/includes/fonts/hyundai/hyundaisanstext-medium.ttf')  format('truetype'); /* Safari, Android, iOS */
+	font-display: swap;
+	font-style: normal;
+	font-weight: 500;
+}

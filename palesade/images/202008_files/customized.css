@@ -1,0 +1,113 @@
+.vocalcom-nav {
+  background-color: #808080;
+}
+.vocalcom-nav .nav-actions .btn-nav-action {
+  width: 40px;
+  height: 40px;
+  padding: 10px 10px;
+  font-size: 16px;
+  line-height: 1.33;
+  border-radius: 20px;
+  margin: 0 4px;
+}
+.vocalcom-nav .nav-actions .btn-primary {
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+.vocalcom-nav .nav-actions .btn-warning {
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+.vocalcom-nav .nav-actions .btn-default {
+  background-color: #fff;
+  border-color: #ccc;
+}
+.vocalcom-nav .nav-actions .btn-danger {
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+.vocalcom-nav .nav-actions .btn-success {
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+@media (max-width: 767px), (min-width: 768px) and (max-width: 991px) {
+  .vocalcom-nav .nav-actions .btn-nav-action {
+    width: 50px;
+    height: 50px;
+    padding: 13px 14px;
+    font-size: 20px;
+    border-radius: 25px;
+  }
+}
+.vocalcom-nav .vocalcom-panel.chat-panel .panel-footer .chat-input-container .btn {
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+.vocalcom-nav .vocalcom-panel.chat-panel .panel-footer .chat-close-container .btn {
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+.vocalcom-nav .vocalcom-panel.call-panel .panel-footer .btn#vocalcom-call-me {
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+.vocalcom-nav .vocalcom-panel.call-panel .panel-footer .btn#vocalcom-free-call {
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+.vocalcom-nav .vocalcom-panel.information-request-panel .panel-footer .btn {
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+.vocalcom-nav .vocalcom-panel.videoconf-panel .panel-footer .btn {
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+.vocalcom-nav .panel-default .panel-heading {
+  background-color: #f5f5f5;
+  border-color: #ddd;
+}
+.vocalcom-nav .panel-default .panel-body {
+  background-color: inherit;
+}
+.vocalcom-nav .panel-default .panel-footer {
+  background-color: #f5f5f5;
+  border-color: #ddd;
+}
+.vocalcom-nav label {
+  color: inherit;
+}
+.vocalcom-nav .vocalcom-panel .panel-body .the-wave-message .the-wave-message-body {
+  background-color: #f5f5f5;
+  border: 1px solid #dddddd;
+}
+.vocalcom-nav .vocalcom-panel .panel-body .the-wave-message .the-wave-message-body .the-wave-message-body-container {
+  font-size: 12px;
+  color: #777777;
+}
+.vocalcom-nav .vocalcom-panel .panel-body .the-wave-message.agent .the-wave-message-body {
+  background-color: #d9edf7;
+  border: 1px solid #bce8f1;
+}
+.vocalcom-nav .vocalcom-panel .panel-body .the-wave-message.agent .the-wave-message-body .the-wave-message-body-chev {
+  background-color: #d9edf7;
+}
+.vocalcom-nav .vocalcom-panel .panel-body .the-wave-message.agent .the-wave-message-body .the-wave-message-body-chev div {
+  border-left: 1px solid #bce8f1;
+}
+.vocalcom-nav .vocalcom-panel .panel-body .the-wave-message.agent .the-wave-message-info img.the-wave-message-avatar {
+  border: 5px solid  #d9edf7;
+}
+.vocalcom-nav .vocalcom-panel .panel-body .the-wave-message.supervisor .the-wave-message-body {
+  background-color: #f9f2f6;
+  border: 1px solid #f7e6ef;
+}
+.vocalcom-nav .vocalcom-panel .panel-body .the-wave-message.supervisor .the-wave-message-body .the-wave-message-body-chev {
+  background-color: #f9f2f6;
+}
+.vocalcom-nav .vocalcom-panel .panel-body .the-wave-message.supervisor .the-wave-message-body .the-wave-message-body-chev div {
+  border-left: 1px solid #f7e6ef;
+}
+.vocalcom-nav .vocalcom-panel .panel-body .the-wave-message.supervisor .the-wave-message-info img.the-wave-message-avatar {
+  border: 5px solid  #f9f2f6;
+}

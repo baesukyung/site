@@ -1,0 +1,70 @@
+/*************************************************************
+  함수명 : fn_get_support_list
+  설 명 : Get support list by AJAX call 
+  인 자 : target content's id for add html markup, modelYear
+  사용법 : 
+  수정일        수정자        Version     Function명
+  ----------  ----------- ----------- -------------------------
+  2017.01.02  이경주        1.0         최초작성
+  2017.12.15  김경수        1.1         M-00104 NBrand Type 추가
+ *************************************************************/
+var themeClass = "";
+
+function fn_get_support_list($target, modelYear){	
+	if(modelYear == "undefined" || modelYear == null || modelYear == "" || modelYear == '-'){
+		modelYear = "GF-2011" //set default value just in case
+	}
+	
+	
+	if($target && modelYear){
+		
+		$.ajax({
+	        url : '/wsvc/ww/findacar.support.do',
+	        type : 'post',
+	        data : "modelYear=" + modelYear,
+	        dataType : 'json',
+	        success : function(resData){
+            	//console.log(resData);
+	        	var html = "";
+	        	if(resData.data){
+                    var items = resData.data;
+                    var onClass = "", strStyle="";
+                    for(var i=0; i < items.length; i++){
+                    	var item = items[i];
+                    	if (i < 1) {
+                    		//onClass = ' on'; strStyle = "display:block;";
+                    	}else {
+                    		onClass = strStyle = "";
+                    	}
+                    	html += '<div class="togList' + onClass + '">\n'                               
+                    		 +	'  <button class="btnOpenClose ' + themeClass + '" data-code="' + item.code + '">' + item.displayName +'</button>\n'                    
+                    		 +  '  <div class="togCont ' + themeClass + '" style="'+ strStyle + '">\n'
+                    		 +  '    <div class="gridWrap n3">\n';
+                    	var countries = item.countries;
+                    	for(var j=0; j < countries.length; j++){
+                    		var country = countries[j];
+                    		
+                    	    var rootPage = $("#topLogo").attr("href").replace(".html", "");
+                    	    var extension = $(".gnbWrapFull").hasClass("edit") ? ".html" : "";
+                    		var linkUrl = linkUrl = rootPage + "/onepage/country." + country.code.toLowerCase() + extension;
+                    		var flagImg = '           '
+                    			        + '<img src="'+country.countryImage+ '" alt="' + country.code + '" class="flag" />\n';                    		
+                    		html += '      <div class="grid">\n' 
+                    		     +  '        <a href="' +linkUrl +'" onClick="_satellite.trackEvent(\''+support_track_name+'\', \''+country.displayName.replace(/\n/g, " ").replace(/\'/g, "").replace(/\"/g, "")+'\')">\n'
+                    		     +             flagImg 
+                    		     +  '           <span class="txtCountry">' + country.displayName + '</span>\n'
+                    		     +  '        </a>\n'
+                    		     +  '      </div><!-- //.grid -->\n';
+                    	}//for(j)
+                    	html += '    </div><!-- //.gridWrap -->\n'
+                              + '  </div><!-- //.togCont -->\n'
+                              + '</div><!-- //.togList -->\n';
+                    }// for(i)
+                    
+                    $target.html(html);
+	        	} //if(retData.data)
+	        }//success function(){}
+	     });//ajax
+	
+	}//if($target)
+}//function

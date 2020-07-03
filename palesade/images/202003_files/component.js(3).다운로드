@@ -1,0 +1,41 @@
+// JavaScript Document
+/*global $, jQuery, alert, console*/
+
+"use strict";
+
+jQuery.noConflict();
+
+(function ($) {
+
+    var scrollToTop = $('.vlp-scroll-top');
+    var header = $('.global-nav-header');
+    var sticky = $('.vlp-nav');
+    var stickySub = sticky.find('.vlp-nav__sub');
+    var headerHeight = header.outerHeight();
+    var stickyTop = sticky.offset().top;
+    var stickyHeight = sticky.outerHeight();
+    var stickySubHeight = stickySub.outerHeight();
+    var scrolled = false;
+    var scrollDistance = 0;
+    var $window = $(window);
+    var anchors = [], position, $current, scrollTop, scrollDown;
+
+    $window.on('scroll', function (e) {
+        scrolled = true;
+        scrollDistance = scrollDown === $window.scrollTop() > scrollTop ? scrollDistance + Math.abs($window.scrollTop() - scrollTop) : 0;
+        scrollDown = $window.scrollTop() > scrollTop;
+        scrollTop = $window.scrollTop();
+
+        if (scrollTop >= stickyTop - headerHeight && $window.scrollTop() > 0) {
+            scrollToTop.addClass('vlp-scroll-top--fixed');
+        } else {
+            scrollToTop.removeClass('vlp-scroll-top--fixed');
+        }
+    });
+
+    scrollToTop.find('a').on('click', function () {
+        $('html, body').animate({ scrollTop: 0 }, 'slow');
+        return false;
+    });
+
+})(jQuery);

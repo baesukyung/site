@@ -1,0 +1,73 @@
+﻿/* Screen Sizes */
+/* Font Sizes */
+/* Font Styles */
+/* Global Colours */
+/* Font Colours */
+/* Semi-Transparent Overlay */
+/* Borders */
+/* Global Element Sizes */
+/*
+  Flex Containers
+*/
+/*
+  Flex Children
+*/
+.cta-cartridge__border-box {
+  border-top: 1px solid #D8D8D1;
+  border-left: 1px solid #D8D8D1;
+  border-bottom: 1px solid #D8D8D1; }
+  .cta-cartridge__border-box:last-child {
+    border-right: 1px solid #D8D8D1; }
+
+.cta-cartridge__block {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 200px;
+  text-align: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center; }
+  .cta-cartridge__block__link {
+    display: block;
+    vertical-align: middle;
+    width: 100%;
+    color: #413F40; }
+    .cta-cartridge__block__link:hover {
+      color: #413F40; }
+    .cta-cartridge__block__link__icon {
+      font-size: 60px; }
+    .cta-cartridge__block__link__label {
+      padding: 20px 40px 0 40px;
+      font-family: 'HyundaiSansHead-Bold';
+      font-weight: 800;
+      height: 36px;
+      line-height: 1;
+      text-transform: uppercase; }
+
+@media (max-width: 991px) {
+  .cta-cartridge__block {
+    height: 150px; }
+    .cta-cartridge__block__link__icon {
+      font-size: 55px; }
+    .cta-cartridge__block__link__label {
+      font-size: 14px;
+      height: 34px; } }
+
+@media (max-width: 767px) {
+  .cta-cartridge__block {
+    height: 140px; }
+    .cta-cartridge__block__link__icon {
+      font-size: 45px; }
+    .cta-cartridge__block__link__label {
+      padding: 10px 20px 0 20px; }
+  .cta-cartridge__border-box:nth-child(1), .cta-cartridge__border-box:nth-child(2) {
+    border-bottom: none; }
+  .cta-cartridge__border-box:nth-child(2) {
+    border-right: 1px solid #D8D8D1; } }
+
+/*# sourceMappingURL=cta-cartridge.css.map */

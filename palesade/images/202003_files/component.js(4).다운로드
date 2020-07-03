@@ -1,0 +1,58 @@
+// JavaScript Document
+/*global $, jQuery, alert, console*/
+
+"use strict";
+
+jQuery.noConflict();
+
+(function ($) {
+    $(document).ready(function(){
+        $('.showcase').each(function () {
+            var $showcase = $(this);
+            var $main = $showcase.find('.mini-gallery__main');
+            var $nav = $showcase.find('.mini-gallery__nav');
+            var $triggers = $showcase.find('.showcase__toggle__trigger');
+            var $tabs = $showcase.find('.showcase__tab');
+
+            $main.slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true,
+                adaptiveHeight: false,
+                asNavFor: $nav,
+                prevArrow: $main.siblings('.mini-gallery__control--prev'),
+                nextArrow: $main.siblings('.mini-gallery__control--next'),
+                infinite: true
+            });
+
+            $nav.slick({
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                asNavFor: $main,
+                arrows: false,
+                focusOnSelect: true,
+                infinite: false,
+                responsive: [
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            centerMode: true,
+                            infinite: true,
+                            centerPadding: "30%"
+                        }
+                    }
+                ]
+            });
+
+            $triggers.click(function () {
+                $triggers.toggleClass('active');
+                $tabs.toggle();
+                $main.slick('setPosition');
+                $nav.slick('setPosition');
+            });
+        })
+	});
+}(jQuery));
+/*# sourceMappingURL=assets/component/js/mini-gallery.js */

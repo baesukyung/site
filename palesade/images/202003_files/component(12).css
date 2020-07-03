@@ -1,0 +1,90 @@
+/* Screen Sizes */
+/* Global Colours */
+/* Font Colours */
+/* Semi-Transparent Overlay */
+/* Screen Sizes */
+/* Font Sizes */
+/* Font Styles */
+/* Global Colours */
+/* Font Colours */
+/* Semi-Transparent Overlay */
+/* Borders */
+/* Global Element Sizes */
+.cta-cartridge__border-box {
+  border-top: 1px solid #D8D8D1;
+  border-left: 1px solid #D8D8D1;
+  border-bottom: 1px solid #D8D8D1; }
+  .cta-cartridge__border-box:last-child {
+    border-right: 1px solid #D8D8D1; }
+
+.cta-cartridge__block {
+  display: flex;
+  height: 200px;
+  text-align: center;
+  justify-content: center;
+  align-items: center; }
+  .cta-cartridge__block__link {
+    display: block;
+    vertical-align: middle;
+    width: 100%;
+    color: #413F40; }
+    .cta-cartridge__block__link:hover {
+      color: #413F40; }
+    .cta-cartridge__block__link__icon {
+      font-size: 60px; }
+    .cta-cartridge__block__link__label {
+      padding: 20px 40px 0 40px;
+      font-family: 'HyundaiSansHead-Bold';
+      font-weight: 800;
+      height: 36px;
+      line-height: 1;
+      text-transform: uppercase; }
+
+@media (max-width: 991px) {
+  .cta-cartridge__block {
+    height: 150px; }
+    .cta-cartridge__block__link__icon {
+      font-size: 55px; }
+    .cta-cartridge__block__link__label {
+      font-size: 14px;
+      height: 34px; } }
+
+@media (max-width: 767px) {
+  .cta-cartridge__border-box:nth-child(1), .cta-cartridge__border-box:nth-child(2) {
+    border-bottom: none; }
+  .cta-cartridge__border-box:nth-child(2) {
+    border-right: 1px solid #D8D8D1; } }
+
+.generic-text-page__heading {
+  font-family: 'HyundaiSansHead-Bold';
+  font-weight: 800;
+  margin-top: 65px;
+  margin-bottom: 25px; }
+.generic-text-page__section {
+  margin-bottom: 30px; }
+  .generic-text-page__section-heading {
+    margin-bottom: 15px; }
+  .generic-text-page__section-text {
+    line-height: 1.4; }
+    .generic-text-page__section-text-caps {
+      text-transform: uppercase; }
+    .generic-text-page__section-text-address p {
+      margin: 0; }
+
+.generic-text-page__ctas {
+  padding-top: 20px; }
+
+@media (max-width: 991px) {
+  .generic-text-page__heading {
+    font-size: 35px;
+    margin-top: 55px;
+    margin-bottom: 25px; } }
+@media (max-width: 767px) {
+  .generic-text-page__heading {
+    font-size: 30px;
+    margin-top: 35px;
+    margin-bottom: 20px; }
+  .generic-text-page__section-text {
+    font-size: 14px; } }
+
+/*# sourceMappingURL=generic-text-page.css.map */

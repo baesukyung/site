@@ -1,0 +1,11 @@
+
+var elem = document.getElementById("reactview-offer-card");
+var jsonOfferCards = elem.getAttribute("data-props-offercardjson");
+var jsonLegalNotice = elem.getAttribute("data-props-legalnotice");
+var offerCardJSON = JSON.parse(jsonOfferCards);
+var legalNoticeJSON = JSON.parse(jsonLegalNotice);
+
+ReactDOM.render(React.createElement(
+                    window.hacc.specialoffers.SpecialOffer,
+                    { dataPane: offerCardJSON, TnCJson: legalNoticeJSON }
+                ), elem);

@@ -1,0 +1,195 @@
+
+
+(function rda() {
+  if (window.roadsterAnalyticsVersion == 1) {return;}
+  window.roadsterAnalyticsVersion = 1;
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  var uu, agent, agentEmail, customer, referrer, landing, instore;
+  try {
+    var user_values = JSON.parse(decodeURIComponent(document.cookie.replace(/(?:(?:^|.*;\s*)rd_user\s*\=\s*([^;]*).*$)|^.*$/, "$1")));
+    uu = user_values.distinct_id;
+  }
+  catch(err) {
+    uu = document.cookie.replace(/(?:(?:^|.*;\s*)rda_uu\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+  }
+  finally {
+    if (!uu) {
+      uu = 'rdu' + Math.random().toString(36).substring(2, 10) + Math.random().toString(36).substring(2, 10) + Math.random().toString(36).substring(2, 8);
+      var now = new Date();
+      var future = new Date(now.getFullYear() + 1, now.getMonth(), 1);
+      document.cookie = 'rda_uu=' + uu + '; expires=' + future.toUTCString() + '; domain=sterlingmccallhyundai.com';
+    }
+  }
+
+  try {
+    var analytics_values = JSON.parse(decodeURIComponent(document.cookie.replace(/(?:(?:^|.*;\s*)rd_analytics\s*\=\s*([^;]*).*$)|^.*$/, "$1")));
+    agent =       analytics_values.agent        || '--NOT-SET--';
+    agentEmail =  analytics_values.agentEmail   || '--NOT-SET--';
+    customer =    '--NOT-SET--';
+    landing =     analytics_values.landing      || '--NOT-SET--';
+    referrer =    analytics_values.referrer == null ? '--NOT-SET--' : analytics_values.referrer;   // Can be '' (blank)
+    instore =     analytics_values.instore      || false;
+  }
+  catch(err) {
+    agent       = '--NOT-SET--';
+    agentEmail  = '--NOT-SET--';
+    customer    = '--NOT-SET--';
+    landing     = '--NOT-SET--';
+    referrer    = '--NOT-SET--';
+    instore     = false;
+  }
+
+  var locale = 'en-us' || '--NOT-SET--';
+
+  var siteAllCrossDomains = 'sterlingmccallhyundai.com';
+  var siteAllCrossDomainsList = siteAllCrossDomains ? siteAllCrossDomains.split(',') : '';
+
+  var gaCrossDomainReferrer =  _rdGetCrossDomainReferrer(siteAllCrossDomainsList);
+
+  // New roadster GA2 account
+    // Prevent GA from being created twice with same GA Tracking Id
+    // This happens when this file is inadvertently included in Express Store via GTM for example.
+    var found = false;
+    if (window.ga && window.ga.getAll) {
+      var gaTrackerList = ga.getAll();
+      for (var ii = 0; ii < gaTrackerList.length; ii++) {
+        var trackerId = gaTrackerList[ii].get('trackingId');
+        if (trackerId == 'UA-48510706-38') {
+          found = true;
+          break;
+        }
+      }
+    }
+
+    if (!found) {
+      ga('create', 'UA-48510706-38', 'auto', 'roadsterDealerGA2', {'allowLinker': true});
+      ga('roadsterDealerGA2.require', 'linker');
+      ga('roadsterDealerGA2.linker:autoLink', siteAllCrossDomainsList);
+      ga('roadsterDealerGA2.set', 'referrer', gaCrossDomainReferrer);
+
+      // Need to call this only after ga('create', ...)
+      var gaClientId = _rdGetGAClientId();
+
+      ga('roadsterDealerGA2.set', 'dimension1', 'sterlingmccallhyundai');
+      ga('roadsterDealerGA2.set', 'dimension2', uu);
+      ga('roadsterDealerGA2.set', 'dimension3', customer);
+      ga('roadsterDealerGA2.set', 'dimension4', instore);
+      ga('roadsterDealerGA2.set', 'dimension5', agent);
+      // ga('roadsterDealerGA2.set', 'dimension6', agentEmail);
+      ga('roadsterDealerGA2.set', 'dimension7', false);
+      ga('roadsterDealerGA2.set', 'dimension8', referrer);
+      ga('roadsterDealerGA2.set', 'dimension9', landing);
+      ga('roadsterDealerGA2.set', 'dimension10', document.URL);
+      ga('roadsterDealerGA2.set', 'dimension11', 'dealer');
+      ga('roadsterDealerGA2.set', 'dimension12', '--NOT-SET--');
+      ga('roadsterDealerGA2.set', 'dimension13', gaClientId);
+      ga('roadsterDealerGA2.set', 'dimension14', locale);
+      ga('roadsterDealerGA2.set', 'userId', uu);
+      ga('roadsterDealerGA2.send', 'pageview');
+    }
+
+    // Prevent GA from being created twice with same GA Tracking Id
+    // This happens when this file is inadvertently included in Express Store via GTM for example.
+    var found = false;
+    if (window.ga && window.ga.getAll) {
+      var gaTrackerList = ga.getAll();
+      for (var ii = 0; ii < gaTrackerList.length; ii++) {
+        var trackerId = gaTrackerList[ii].get('trackingId');
+        if (trackerId == 'UA-48510706-4') {
+          found = true;
+          break;
+        }
+      }
+    }
+
+    if (!found) {
+      ga('create', 'UA-48510706-4', 'auto', 'roadsterAll', {'allowLinker': true});
+      ga('roadsterAll.require', 'linker');
+      ga('roadsterAll.linker:autoLink', siteAllCrossDomainsList);
+      ga('roadsterAll.set', 'referrer', gaCrossDomainReferrer);
+
+      // Need to call this only after ga('create', ...)
+      var gaClientId = _rdGetGAClientId();
+
+      ga('roadsterAll.set', 'dimension1', 'sterlingmccallhyundai');
+      ga('roadsterAll.set', 'dimension2', uu);
+      ga('roadsterAll.set', 'dimension3', customer);
+      ga('roadsterAll.set', 'dimension4', instore);
+      ga('roadsterAll.set', 'dimension5', agent);
+      // ga('roadsterAll.set', 'dimension6', agentEmail);
+      ga('roadsterAll.set', 'dimension7', false);
+      ga('roadsterAll.set', 'dimension8', referrer);
+      ga('roadsterAll.set', 'dimension9', landing);
+      ga('roadsterAll.set', 'dimension10', document.URL);
+      ga('roadsterAll.set', 'dimension11', 'dealer');
+      ga('roadsterAll.set', 'dimension12', '--NOT-SET--');
+      ga('roadsterAll.set', 'dimension13', gaClientId);
+      ga('roadsterAll.set', 'dimension14', locale);
+      ga('roadsterAll.set', 'userId', uu);
+      ga('roadsterAll.send', 'pageview');
+    }
+
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      'roadster_dpid' : 'sterlingmccallhyundai', // Kept for backward compatibility
+      'dpid' : 'sterlingmccallhyundai',
+      'distinct_id': uu,
+      'property': 'dealer',
+      'pageName': 'Dealer Page',
+      'agent_uid': agent,
+      // 'agent_email': agentEmail,
+      'cust_uid': customer,
+      'in_store': instore,
+      'embedded': false,
+      'referrer': referrer,
+      'landing': landing,
+      'rd_gaid': 'UA-112623011-38',
+      'site_dealer': 'www.sterlingmccallhyundai.com',
+      'site_express': 'acceleride.sterlingmccallhyundai.com',
+      'site_all_cross_domains': siteAllCrossDomains,
+      'locale': locale
+    });
+
+    // Google Tag Manager
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P8QBWVM');
+    // End Google Tag Manager
+
+  function _rdGetCrossDomainReferrer(websiteHosts) {
+    var docReferrer = document.referrer;
+    var hname = new RegExp('https?://([^/:]+)').exec(docReferrer);
+    if (hname && websiteHosts) {
+      for (var i = websiteHosts.length; i--;) {
+        if (websiteHosts[i]) {
+          var websiteHost = websiteHosts[i];
+          if (new RegExp(websiteHost + '$').test(hname[1])) {
+            return null;
+          }
+        }
+      }
+    }
+    return docReferrer == '' ? null : docReferrer;
+  }
+
+  function _rdGetGAClientId() {
+    if (window.ga) {
+      try {
+        var tracker = ga.getAll()[0];
+        return tracker.get('clientId');
+      }
+      catch(e) {
+        return '';
+      }
+    }
+    return '';
+  }
+
+})();
+

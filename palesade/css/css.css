@@ -1,5 +1,12 @@
 @font-face { font-family: 'MapoFlowerIsland'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoFlowerIslandA.woff') format('woff'); font-weight: normal; font-style: normal; }
 
+
+/* .madal{
+    position: absolute;
+    top: 0;
+    left: 13%;
+} */
+
 .section01 {
     background: url('../images/20200702.jpg');
     background-position:center;
@@ -526,10 +533,10 @@
     display: none;
 }
 @media(max-width: 767px) {
-    .section01 {
+    /* .section01 {
         background: url('../images/2020070201.jpg');
         background-position:center;
-        background-size:100%;
+        background-size:cover;
         
         width: 100%;
       
@@ -537,7 +544,7 @@
     }
     .logo img{
         width: 10%;
-    }
+    } */
     .title p{
       font-size: 50pt;
       padding-top: 22%;

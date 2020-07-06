@@ -125,26 +125,26 @@ AOS.init();
 
 
 
-  $(document).ready(function(){
-    $(".bg01").click(function(){
-      $("#myModal01").modal();
-    });
-    $(".bg02").click(function(){
-        $("#myModal02").modal();
-      });
-      $(".bg03").click(function(){
-        $("#myModal03").modal();
-      });
-      $(".bg04").click(function(){
-        $("#myModal04").modal();
-      });
-      $(".bg05").click(function(){
-        $("#myModal05").modal();
-      });
-      $(".bg06").click(function(){
-        $("#myModal06").modal();
-      });
-  });
+  // $(document).ready(function(){
+  //   $(".bg01").click(function(){
+  //     $("#myModal01").modal();
+  //   });
+  //   $(".bg02").click(function(){
+  //       $("#myModal02").modal();
+  //     });
+  //     $(".bg03").click(function(){
+  //       $("#myModal03").modal();
+  //     });
+  //     $(".bg04").click(function(){
+  //       $("#myModal04").modal();
+  //     });
+  //     $(".bg05").click(function(){
+  //       $("#myModal05").modal();
+  //     });
+  //     $(".bg06").click(function(){
+  //       $("#myModal06").modal();
+  //     });
+  // });
 
 $('.conven01').click(function(){
 $('#ex01').css('display','block');
@@ -171,12 +171,5 @@ $('.conven02').click(function(){
     $('#ex01').css('display','none');
     });       
 });
-$(document).ready(function() {
-  $('#fullpage').fullpage({
-      verticalCentered: true,
-      anchors: ['anchor1', 'anchor2', 'anchor3'],
-      menu: '#menu',
-      sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE']
-  });
-});
+
 

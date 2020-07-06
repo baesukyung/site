@@ -522,7 +522,6 @@
     padding-bottom: 120px;
     background-color: lightgray;
 }
-
 .tab-explain{
     padding-top: 56%;
     font-size: 15pt;
@@ -668,6 +667,12 @@
     padding-top: 10%;
 }
 
+.display-f>li>a>p{
+    font-size: 10pt;
+    width: 100%;
+    text-align: center;
+
+}
    }
    
    

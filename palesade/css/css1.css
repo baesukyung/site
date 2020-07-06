@@ -23,7 +23,7 @@
     background: #fff;
     padding-top: 1%;
     padding-bottom: 1%;
-    margin-top: 19%;
+    margin-top: 17.5%;
     padding-top: 1.2%;
     padding-bottom: 1%;
    
@@ -63,8 +63,8 @@
 }
 
 .img-padding {
-    padding-top: 4%;
-    padding-bottom: 4%;
+   padding-top: 4%;
+    padding-bottom: 2%;
 }
 .line-height p{
     line-height: 40px;
@@ -91,7 +91,7 @@
 
 .section20{
     width: 100%;
-   
+    height: 100vh;
     position: relative;
 }
 .sub-bg{
@@ -253,7 +253,7 @@
     width: 100%;
     padding-bottom: 7%;
     position: relative;
-    /* position: relative; */
+
 }
 .section03-img{
     background: url('../images/kkk.jpg');
@@ -271,7 +271,7 @@
 }
 .myModal01{
     position: absolute;
-    z-index: 999999999999999999999;
+    z-index: 9999;
     top: 200px;
     left: 200px;
 }
@@ -375,11 +375,12 @@
     width: 100%;
     position: relative;
     height: 100vh;
+    
 }
 
 .modal {
     position: absolute;
-    z-index: 99999999999999999999999;
+    z-index: 9999999;
 }
 
 
@@ -401,7 +402,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 171, 107, 0.12);
+    background-color: rgba(184, 138, 117, 0.10);
     /* rgba(0 , 171, 107, 0.12); 색상값! */
     -webkit-border-radius: 50%;
     border-radius: 50%;
@@ -428,11 +429,11 @@
     top: 50%;
     left: 50%;
     z-index: 2;
-    width: 12px;
-    height: 12px;
+    width: 13px;
+    height: 13px;
     margin-top: -4px;
     margin-left: -4px;
-    background-color: #00ab6a;
+    background-color: #b88a75;
     border-radius: 50%;
     animation: dot-effec 1.5s ease-in-out infinite;
 }
@@ -494,19 +495,16 @@
     position: relative;
     width: 100%;
     padding-bottom: 3%;
-   height: 100vh;
+    height: 100vh;
 }
 .position-ab div{
     position: absolute;
 }
-
-
 .swiper-container {
     width: 100%;
     height: 100%;
   }
-
-  .swiper-slide {
+.swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
@@ -568,7 +566,8 @@
     background-color: lightgray;
 }
 .tab-explain{
-    padding-top: 56%;
+    line-height: 25px;
+    padding-top: 5%;
     font-size: 15pt;
 }
 .tab-explain>ul>li{
@@ -577,6 +576,21 @@
 #ex02,#ex03,#ex04{
     display: none;
 }
+
+.tab-pane>img{
+    width: 110%;
+}
+/* section06 end */
+.section07{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: lightgray;
+    
+    
+}
+
+
 @media(max-width: 767px) {
     
     .logo img{
@@ -724,7 +738,7 @@
     padding-top: 10%;
 }
 
-.display-f>li>a>p{
+.display-f>li>a{
     font-size: 10pt;
     width: 100%;
     text-align: center;

@@ -4969,7 +4969,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
 .nav>li>a {
     position: relative;
     display: block;
-    padding: 10px 0px;
+    padding: 10px 15px
 }
 
 .nav>li>a:focus,
@@ -5093,11 +5093,13 @@ textarea.input-group-sm>.input-group-btn>.btn {
 }
 
 .nav-pills>li {
-    float: left
+    float: left;
+   
 }
 
 .nav-pills>li>a {
-    border-radius: 4px
+    border-radius: 4px;
+    
 }
 
 .nav-pills>li+li {
@@ -7206,7 +7208,7 @@ button.list-group-item-danger.active:hover {
 
 .close {
     float: right;
-    font-size: 21px;
+    font-size: 50px;
     font-weight: 700;
     line-height: 1;
     color: #000;

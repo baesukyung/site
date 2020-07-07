@@ -106,6 +106,10 @@ $('.modal-img1').mouseleave(function(){
 // AOS.init();
 
 
+
+
+
+
  var swiper = new Swiper('.swiper-container', {
       slidesPerView: 1,
       spaceBetween: 10,

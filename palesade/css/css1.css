@@ -23,7 +23,7 @@
     background: #fff;
     
     padding-bottom: 1%;
-    margin-top: 18%;
+    margin-top: 17%;
     padding-top: 1.5%;
     
    
@@ -278,7 +278,7 @@
 .bg01{
     background: url('../images/01backlight.jpg');
     width: 100%;
-    height: 300px;
+    height:300px;
     background-repeat: no-repeat;
     background-position:center;
     background-size: cover; 
@@ -589,6 +589,56 @@
     
     
 }
+.section08{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+   
+    
+}
+.section09{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: lightgrey;
+    
+}
+.video-container{
+    position: relative; 
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+.video-container iframe, .video-container object, .video-container embed {
+    position: absolute;
+    left: 20%;
+    width: 100%;
+    height: 100%;
+    }
+
+   
+    
+    */
+.section10{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+   
+}
+.inline{
+    display: inline;
+}
+
+.section11{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.footer-bg{
+    background-color: #2f2f2f;
+    color:#fff;
+}
 
 
 @media(max-width: 767px) {
@@ -609,7 +659,7 @@
        
     }
     .logo-bottom-bg{
-        margin-top: 128%;
+        margin-top: 111.1%;
     }
     /* .main_txt{
         font-size: 25pt;
@@ -635,11 +685,16 @@
 .bottom-p p{
     font-size: 13pt;
 }
-
+.iconimg{
+    margin-top: -2.5%;
+}
     .icon-img1 img {
         width: 40%;
     }
+ 
     
+
+
     .section20{
         width: 100%;
        
@@ -681,9 +736,10 @@
     .tab-color-text ul{
         padding-left: 0;
         margin-left: -130px;
+        margin-top: 40px;
      }  
 
-
+     
 
      .model{
          padding-left: 13%;
@@ -694,6 +750,17 @@
     .padding-5{
         padding: 5%;
     }
+    /* section02 end */
+    .section03-img{
+        background-position:center;
+    }
+
+
+    /* section03 end */
+.section21{
+    width: 100%;
+    height: 1000px;
+}
     .modal-img{
         width: 60%;
 
@@ -702,6 +769,8 @@
         width: 90%;
         margin-left: 40px;
     }
+
+
     .body-text{
         font-size: 10pt;
         padding: 0 20px;
@@ -719,6 +788,18 @@
     }
    /* section03 end */
 
+.margin100{
+    margin-top:250%;
+}
+.swiper-container{
+    width: 80%;
+}
+
+
+.magintop20{
+    margin-top: 20%;
+}
+
 .conts-area{
     display: none;
 }
@@ -730,10 +811,16 @@
 .swiper-slide img{
     width: 100%;
 }
+
+.Convenience{
+    margin-top: -50%;
+}
 .tab-content>div>img{
     width: 100%;
 }
-
+.margintop20{
+   margin-top: -5%;
+}
 .tab-explain>ul{
     padding-top: 10%;
 }

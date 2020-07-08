@@ -5138,7 +5138,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
 .nav-justified>li>a {
     margin-bottom: 5px;
     text-align: center;
-    width: 276px!important;
+    /* width: 276px!important; */
 }
 
 .nav-justified>.dropdown .dropdown-menu {

@@ -254,18 +254,23 @@
 .section03{
     width: 100%;
     padding-bottom: 7%;
-   position: relative;
+   
 
 }
 .section03-img{
-    background: url('../images/bb.jpg');
+    background: url('../images/202001.jpg');
     width: 100%;
     height: 70vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-
+.section21{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  
+}
 .myModal01{
     position: absolute;
     z-index: 9999;
@@ -273,12 +278,46 @@
     left: 200px;
 }
 
+
+
 .modal-title{
     color: #b88a75;
    
 }
 
 /* section03 end */
+.section21{
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    
+}
+
+.modal {
+    position: absolute;
+    z-index: 9999999;
+}
+
+
+
+
+
+/* 시작 */
+/* .pali_img01 img{
+    width: 42%;
+    
+}
+.pali_img02 img{
+    width: 42%;
+}
+.bg01{
+    transition: all 0.5s;
+    
+}
+.bg01:hover{
+    transform: scale(1.04);
+    opacity: .7;
+} */
 .section21{
     width: 100%;
     height: 100vh;
@@ -398,10 +437,18 @@
     opacity: .7;
 }
 
-.modal {
-    position: absolute;
-    z-index: 9999999;
-}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .section04{
@@ -412,28 +459,17 @@
     height: 100vh;
 
 }
-/* .interior-img1 img{
+.interior-img1 img{
     width: 100%;
     position: relative;
-} */
-.interior-img1{
-    background: url('../images/palisade_lx2_20my_space_calligraphy_interior_beige.png');
-    background-size:cover;
-    width: 100%;
-    height: 70vh;
-    position: relative;
-    background-repeat: no-repeat;
-    
 }
-
-
 .point .bg {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(245, 222, 212, 0.1);
+    background-color: rgba(184, 138, 117, 0.10);
     /* rgba(0 , 171, 107, 0.12); 색상값! */
     -webkit-border-radius: 50%;
     border-radius: 50%;
@@ -464,7 +500,7 @@
     height: 13px;
     margin-top: -4px;
     margin-left: -4px;
-    background-color: rgb(253, 246, 229);
+    background-color: #b88a75;
     border-radius: 50%;
     animation: dot-effec 1.5s ease-in-out infinite;
 }
@@ -587,9 +623,9 @@
 .slide-txt>p{
     padding-top: 2.5%;
 }
-/* .swiper-slide>img{
+.swiper-slide img{
     width: 100%;
-} */
+}
 
  /*section05 end */
 .section06{
@@ -625,12 +661,6 @@
 .sleeping-img img{
     width: 100%;
 }
-.Various_img{
-    width: 100%;
-}
-.Various_wrap{
-    display: block;
-}
 .section08{
     width: 100%;
     height: 100vh;
@@ -646,7 +676,6 @@
     
 }
 .video-container{
-    width: 100%;
     position: relative; 
     padding-bottom: 56.25%;
     padding-top: 30px;
@@ -662,9 +691,7 @@
 
    
     
-.video-explain{
-    display: none;
-}
+    */
 .section10{
     width: 100%;
     height: 100vh;
@@ -710,9 +737,9 @@
     .logo-bottom-bg{
         margin-top: 111.1%;
     }
-     .main_txt{
-        font-size: 35pt;
-    } 
+    /* .main_txt{
+        font-size: 25pt;
+    } */
     h1{
         font-size: 25pt;
     }
@@ -757,15 +784,9 @@
     }
 
 
-.Various_wrap{
-    display: flex;
-}
-.display_none{
-    display: none;
-}
-.Various_img{
-    width: 130%;
-}
+
+
+
 
 
     .display-flex {
@@ -814,19 +835,10 @@
 
 
     /* section03 end */
-    .bg00{
-        
-        width: 100%;
-        height: 25vh;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        overflow: hidden;
-        transition: all 0.5s;
-    }
-    .bg_box{
-        height: 20vh;
-    }
+.section21{
+    width: 100%;
+    height: 1000px;
+}
     .modal-img{
         width: 60%;
 
@@ -851,10 +863,6 @@
     }
     .text-al{
         text-align: justify;
-        font-size: 11pt;
-    }
-    .text-al>li{
-        font-size: 11pt;
     }
    /* section03 end */
 
@@ -865,22 +873,17 @@
     margin-top:250%;
 }
 .swiper-container{
-    width: 100%;
+    width: 80%;
 }
 
 
 .magintop20{
     margin-top: 20%;
 }
-.interior-img1{
-    width: 100%;
-    height: 30vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    overflow: hidden;
-}
 
+.conts-area{
+    display: none;
+}
 
 
 .swiper-slide{
@@ -908,46 +911,6 @@
     width: 100%;
     text-align: center;
 
-}
-.margin_5{
-    margin-left: -12%;
-}
-
-.pa_top20{
-    margin-top: -10%;
-}
-.tab-explain{
-    margin-top: -10%;
-}
-
-.video-explain{
-    display: block;
-}
-.p_wrap>p{
-    font-size: 11pt;
-}
-.p_wrap>p>span{
-    padding-left: 10%;
-}
-.dis_in{
-    display: flex;
-    margin-left: -11%;
-}
-
-.panel-body>p{
-    font-size: 11pt;
-}
-.bottom-logo{
-    width: 20%;
-}
-.bottom-logo>img{
-    padding-bottom: 5%;
-}
-.footer_txt>p{
-    font-size: 10pt;
-}
-.footer-bg{
-    margin-top: 29%!important;
 }
    }
    

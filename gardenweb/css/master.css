@@ -13,8 +13,12 @@
 	width:100%;
 	background:#f6eeda;
 	position: relative;
+	
 }
-
+.bx-wrap{
+	padding-bottom: 4%;
+	
+}
 .nav ul:after{
 	content: "";
 	display: block;
@@ -212,6 +216,7 @@
 	width: 60%;
 	align-items: center;
 	justify-content: center;
+	padding-bottom: 2%;
 	
 }
 .info-txt{
@@ -237,10 +242,11 @@
 	width:100%; 
 	background:#fff;}
 
+
 .title1{
 	text-align: center;
 	font-family: 'Noto Serif KR', serif;
-
+	padding-bottom: 10%;
 }
 .title1 h2{
 	line-height: 5em;
@@ -390,7 +396,7 @@ figure.snip1200.hover p {
 .gallery-btn{
 	display: flex;
 	justify-content: space-between;
-	padding: 2% 18.2%;
+	padding: 0% 18.2%;
   }
 .gallery-btn1 img:hover{
 	transform: scale(1.1,1.1);

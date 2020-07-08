@@ -397,12 +397,14 @@ figure.snip1200.hover p {
 	display: flex;
 	justify-content: space-between;
 	padding: 0% 18.2%;
+	transition:all 0.9s, color 0.3;
+
   }
 .gallery-btn1 img:hover{
-	transform: scale(1.1,1.1);
+	transform: scale(1.03,1.03);
 }
 .gallery-btn2 img:hover{
-	transform: scale(1.1,1.1);
+	transform: scale(1.03,1.03);
 }
   
   .gallery-wrap{
@@ -449,6 +451,7 @@ figure.snip1200.hover p {
   .gallery-img4 img{
 	width: 80%;
   }
+
 
 /* .gallery-btn{
 	display: flex;

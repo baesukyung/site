@@ -96,7 +96,7 @@
 }
 .sub-bg{
     background: url('../images/cloud.jpg');
-    background-position: bottom center;
+    background-position: bottom ;
     
     background-size: cover;
     background-repeat: no-repeat;
@@ -104,9 +104,11 @@
     height: 100vh;
     overflow: hidden;
 }
-.sub-bg img{
-    width: 100%;
-}
+
+
+
+
+
 
 .icon-img1 img {
     width: 20%;
@@ -252,11 +254,11 @@
 .section03{
     width: 100%;
     padding-bottom: 7%;
-    position: relative;
+   
 
 }
 .section03-img{
-    background: url('../images/kkk.jpg');
+    background: url('../images/202001.jpg');
     width: 100%;
     height: 70vh;
     background-repeat: no-repeat;
@@ -556,6 +558,9 @@
 .slide-txt>p{
     padding-top: 2.5%;
 }
+.swiper-slide img{
+    width: 100%;
+}
 
  /*section05 end */
 .section06{
@@ -587,7 +592,9 @@
     position: relative;
     background: lightgray;
     
-    
+}
+.sleeping-img img{
+    width: 100%;
 }
 .section08{
     width: 100%;
@@ -642,7 +649,11 @@
 
 
 @media(max-width: 767px) {
-    
+    .section03-img{
+        width: 100%;
+        background-position: center;
+      
+    }
     .logo img{
         width: 10%;
     }
@@ -699,6 +710,10 @@
         width: 100%;
        
     }
+    .sub-bg {
+        width: 100%;
+        background-position: center;
+    }
     .padding-top30{
         padding-top: 5%;
     }
@@ -751,9 +766,7 @@
         padding: 5%;
     }
     /* section02 end */
-    .section03-img{
-        background-position:center;
-    }
+
 
 
     /* section03 end */
@@ -787,6 +800,9 @@
         text-align: justify;
     }
    /* section03 end */
+
+
+
 
 .margin100{
     margin-top:250%;

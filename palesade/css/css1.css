@@ -1,11 +1,13 @@
 @font-face { font-family: 'MapoFlowerIsland'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoFlowerIslandA.woff') format('woff'); font-weight: normal; font-style: normal; }
 
+
+
 .section01 {
     background: url('../images/20200702.jpg');
     background-position:right center;
     background-size:cover;
     width: 100%;
-    height: 100vh;
+    
     position: relative;
     background-repeat: no-repeat;
     transition: all 0.5s;
@@ -20,11 +22,11 @@
     padding-bottom: 4%;
 }
 .logo-bottom-bg{
-    background: #fff;
+    background: lightgray;
+    padding-top: 1%;
+    padding-bottom: .7%;
+    margin-top: 19.8%;
     
-    padding-bottom: 1.5%;
-    margin-top: 20%;
-    padding-top: 1.5%;
     
    
 }
@@ -51,6 +53,7 @@
 .logo-bg{
     background: #fff;
     padding: 10px;
+   
 }
 
 
@@ -91,7 +94,7 @@
 
 .section20{
     width: 100%;
-    height: 100vh;
+    
     position: relative;
 }
 .sub-bg{
@@ -101,8 +104,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100vh;
-    overflow: hidden;
+    
+   
 }
 
 
@@ -136,7 +139,7 @@
     padding-bottom: 5%;
     width: 100%;
     overflow: hidden;
-    height: 100vh;
+    
 }
 .main_txt{
     font-size: 50pt;
@@ -253,6 +256,7 @@
 /* section02 end */
 .section03{
     width: 100%;
+    height: 1000px;
     padding-bottom: 7%;
    position: relative;
 
@@ -281,7 +285,7 @@
 /* section03 end */
 .section21{
     width: 100%;
-    height: 100vh;
+    height: 1000px;
     background: lightgrey;
 }
 .bg_boxing{
@@ -409,7 +413,7 @@
     width: 100%;
     padding-bottom: 3%;
     background-color: lightgray;
-    height: 100vh;
+    
 
 }
 /* .interior-img1 img{
@@ -432,7 +436,6 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
     background-color: rgba(245, 222, 212, 0.1);
     /* rgba(0 , 171, 107, 0.12); 색상값! */
     -webkit-border-radius: 50%;
@@ -486,8 +489,8 @@
 
 
 .conts-area .point.point-1 {
-    top: 140px;
-    left: 950px;
+    top: 20%;
+    left: 75%;
     /* 네비게이션 */
 }
 .conts-area  .point.point-2 {
@@ -526,7 +529,7 @@
     position: relative;
     width: 100%;
     padding-bottom: 3%;
-    height: 100vh;
+
 }
 .position-ab div{
     position: absolute;
@@ -587,15 +590,14 @@
 .slide-txt>p{
     padding-top: 2.5%;
 }
-/* .swiper-slide>img{
+.swiper-slide>img{
     width: 100%;
-} */
+}
 
  /*section05 end */
 .section06{
     position: relative;
     width: 100%;
-    height: 100vh;
     /* padding-bottom: 120px; */
     background-color: lightgray;
 }
@@ -617,7 +619,7 @@
 /* section06 end */
 .section07{
     width: 100%;
-    height: 100vh;
+ 
     position: relative;
     background: lightgray;
     
@@ -633,14 +635,14 @@
 }
 .section08{
     width: 100%;
-    height: 100vh;
+
     position: relative;
    
     
 }
 .section09{
     width: 100%;
-    height: 100vh;
+    
     position: relative;
     background: lightgrey;
     
@@ -657,7 +659,7 @@
     position: absolute;
     left: 20%;
     width: 100%;
-    height: 100%;
+  
     }
 
    
@@ -667,7 +669,7 @@
 }
 .section10{
     width: 100%;
-    height: 100vh;
+    
     position: relative;
    
 }
@@ -677,7 +679,7 @@
 
 .section11{
     width: 100%;
-    height: 100vh;
+    
     position: relative;
 }
 .footer-bg{
@@ -708,8 +710,9 @@
        
     }
     .logo-bottom-bg{
-        margin-top: 111.1%;
+        margin-top: 125%;
     }
+ 
      .main_txt{
         font-size: 35pt;
     } 
@@ -733,6 +736,7 @@
     }
 .bottom-p p{
     font-size: 13pt;
+    padding-top: 3%;
 }
 .iconimg{
     margin-top: -2.5%;
@@ -931,6 +935,7 @@
 }
 .dis_in{
     display: flex;
+    flex-direction: column;
     margin-left: -11%;
 }
 
@@ -949,6 +954,10 @@
 .footer-bg{
     margin-top: 29%!important;
 }
-   }
-   
-   
+    
+}
+
+.section{
+    width: 100%;
+    height: 300px;
+}

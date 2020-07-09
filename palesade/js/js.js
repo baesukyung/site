@@ -1,9 +1,4 @@
-// $(function(){
-//     $('.r2t').click(function(){
-//         $('#r2t').stop().fadeIn();
-//         $('#wc9').stop().fadeOut();
-//     });
-// });
+
 
 $(function(){
     $('.wc9').click(function(){
@@ -110,21 +105,18 @@ $('.modal-img1').mouseleave(function(){
 
 
 
- var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 1,
-      spaceBetween: 10,
-      // init: false,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        prevEl: '.swiper-button-prev',
-      nextEl: '.swiper-button-next',
-     
-    },
-
-    });
+var swiper = new Swiper('.swiper-container', {
+  slidesPerView: 1,
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
 
 
 
@@ -221,12 +213,13 @@ $('.conven02').click(function(){
 });
 $(document).ready(function() {
   $('#fullpage').fullpage({
-      verticalCentered: true,
-      anchors: ['anchor1', 'anchor2', 'anchor3', 'anchor4',
-       'anchor5', 'anchor6', 'anchor7', 'anchor8'],
-      menu: '#menu',
-  
-  });
+    //options here
+    licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+    autoScrolling:true,
+    scrollHorizontally: true,
+    navigation: true,
+    navigationPosition:'right'
+});
 
 
 

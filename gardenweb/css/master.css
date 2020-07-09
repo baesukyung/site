@@ -369,7 +369,9 @@ figure.snip1200.hover p {
   transition-delay: 0.35s;
 }
 
-
+.cusor{
+	cursor: pointer;
+}
 
 
 

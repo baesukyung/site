@@ -2021,8 +2021,8 @@ pre code {
 }
 
 .container-fluid {
-    padding-right: 15px;
-    padding-left: 15px;
+    /* padding-right: 15px;
+    padding-left: 15px; */
     margin-right: auto;
     margin-left: auto
 }
@@ -4975,7 +4975,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
     position: relative;
     display: block;
     width: 100%;
-    padding: 10px 50px
+    padding: 10px 30px
 }
 
 .nav>li>a:focus,

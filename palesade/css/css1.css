@@ -1,48 +1,38 @@
 @font-face { font-family: 'MapoFlowerIsland'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoFlowerIslandA.woff') format('woff'); font-weight: normal; font-style: normal; }
 
 
-
-.section01 {
+.section01{
+    width: 100%;
+    position: relative;
+}
+.main_bg01 {
     background: url('../images/20200702.jpg');
     background-position:right center;
-    background-size:cover;
+    /* background-size:cover; */
     width: 100%;
-    
-    position: relative;
+    height: 100vh;
     background-repeat: no-repeat;
     transition: all 0.5s;
+    
 }
 
 .title {
-    color: ivory;
+   
     font-size:80pt;
     font-family: 'MapoFlowerIsland';
     color: #b88a75;
     padding-top: 4%;
     padding-bottom: 4%;
 }
-.logo-bottom-bg{
-    background: lightgray;
-    padding-top: 1%;
-    padding-bottom: .7%;
-    margin-top: 19.8%;
-    
-    
-   
-}
-.bottom-p{
-    font-size: 20pt;
+.title2{
+    color: #fff; 
+    font-size: 22pt;
     font-family: 'MapoFlowerIsland';
-    color: #b88a75;
-   
+    font-weight: 600;
 }
-
-.text-main-padding {
-    padding-bottom:15%;
-    display: flex;
-    
+.title2>p{
+   margin-top: -5%;
 }
-
 
 
 .logo-img-width img {
@@ -53,7 +43,6 @@
 .logo-bg{
     background: #fff;
     padding: 10px;
-   
 }
 
 
@@ -61,9 +50,7 @@
     vertical-align: middle;
 }
 
-.padding-top-10 {
-    padding-top: 5%;
-}
+
 
 .img-padding {
    padding-top: 4%;
@@ -95,12 +82,12 @@
 .section20{
     width: 100%;
     
-    position: relative;
+   
 }
 .sub-bg{
     background: url('../images/cloud.jpg');
-    background-position: bottom ;
-    
+    background-position: bottom;
+    height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -134,12 +121,7 @@
 
 
 .section02 {
-    position: relative;
-    background-color: lightgray;
-    padding-bottom: 5%;
-    width: 100%;
-    overflow: hidden;
-    
+  width: 100%;
 }
 .main_txt{
     font-size: 50pt;
@@ -215,9 +197,7 @@
     text-decoration: none;
     color: inherit;
  }
-.tab-car-img img {
-    width: 80%;
-}
+
 
 .padding-10 {
     padding-top: 5%;
@@ -250,16 +230,10 @@
 .rf {
     background-color: #2e3a36;
 }
-.display-flex{
-    display: flex;
-}
+
 /* section02 end */
 .section03{
     width: 100%;
-    height: 1000px;
-    padding-bottom: 7%;
-   position: relative;
-
 }
 .section03-img{
     background: url('../images/bb.jpg');
@@ -285,7 +259,6 @@
 /* section03 end */
 .section21{
     width: 100%;
-    height: 1000px;
     background: lightgrey;
 }
 .bg_boxing{
@@ -409,10 +382,9 @@
 
 
 .section04{
-    position: relative;
+  
     width: 100%;
-    padding-bottom: 3%;
-    background-color: lightgray;
+
     
 
 }
@@ -436,7 +408,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(245, 222, 212, 0.1);
+    background-color: rgba(36, 238, 120, 0.527);
     /* rgba(0 , 171, 107, 0.12); 색상값! */
     -webkit-border-radius: 50%;
     border-radius: 50%;
@@ -467,7 +439,7 @@
     height: 13px;
     margin-top: -4px;
     margin-left: -4px;
-    background-color: rgb(253, 246, 229);
+    background-color: rgb(36, 238, 120);
     border-radius: 50%;
     animation: dot-effec 1.5s ease-in-out infinite;
 }
@@ -494,28 +466,28 @@
     /* 네비게이션 */
 }
 .conts-area  .point.point-2 {
-    top: 530px;
-    left: 800px;
+    top: 85%;
+    left: 60%;
     /* 물통꽂는 */
 }
 .conts-area  .point.point-3 {
-    top: 178px;
-    left: 600px;
+    top: 27%;
+    left: 47.5%;
     /* 핸들 */
 }
 .conts-area  .point.point-4 {
-    top: 577px;
-    left: 514px;
+    top: 93%;
+    left:48%;
     /* 핸드레스트 */
 }
 .conts-area  .point.point-5 {
-    top: 150px;
-    left: 750px;
+    top: 23%;
+    left: 53%;
     /* 계기판 */
 }
 .conts-area .point-6 {
-    top: 400px;
-    left: 850px;
+    top: 61%;
+    left: 64%;
     /* 제어판 */
 }
 .conts-area  .point {
@@ -531,9 +503,7 @@
     padding-bottom: 3%;
 
 }
-.position-ab div{
-    position: absolute;
-}
+
 .swiper-container {
     width: 100%;
     height: 100%;
@@ -574,12 +544,12 @@
     display: none;
 }
 .slide-txt {
-   width: 98.3%;
+    width: 100%;
     position: absolute;
     top: 0;
-    right: .8%;
+    right: 0%;
     left: 0;
-    height:80px;
+    height:14%;
    
     background-color: rgba(0,0,0,.3);
     color: #fff;
@@ -596,10 +566,7 @@
 
  /*section05 end */
 .section06{
-    position: relative;
-    width: 100%;
-    /* padding-bottom: 120px; */
-    background-color: lightgray;
+   width: 100%;
 }
 .tab-explain{
     line-height: 25px;
@@ -614,8 +581,10 @@
 }
 
 .tab-pane>img{
-    width: 110%;
+    width:100%;
 }
+
+
 /* section06 end */
 .section07{
     width: 100%;
@@ -687,7 +656,9 @@
     color:#fff;
 }
 
+@media(min-width:768px){
 
+}
 @media(max-width: 767px) {
     .section03-img{
         width: 100%;
@@ -701,16 +672,19 @@
       font-size: 50pt;
       padding-top: 22%;
     }
-    .text-main-padding {
+    /* .text-main-padding {
         padding: 0 !important;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
        
-    }
-    .logo-bottom-bg{
-        margin-top: 125%;
+    } */
+.tab-car-img>div>img{
+    width: 110%;
+}
+    .title2>p{
+        font-size: 14pt;
     }
  
      .main_txt{
@@ -865,9 +839,7 @@
 
 
 
-.margin100{
-    margin-top:250%;
-}
+
 .swiper-container{
     width: 100%;
 }
@@ -894,15 +866,9 @@
     width: 100%;
 }
 
-.Convenience{
-    margin-top: -50%;
-}
-.tab-content>div>img{
-    width: 100%;
-}
-.margintop20{
-   margin-top: -5%;
-}
+
+
+
 .tab-explain>ul{
     padding-top: 10%;
 }
@@ -920,9 +886,7 @@
 .pa_top20{
     margin-top: -10%;
 }
-.tab-explain{
-    margin-top: -10%;
-}
+
 
 .video-explain{
     display: block;

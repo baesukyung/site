@@ -1,6 +1,8 @@
 @font-face { font-family: 'MapoFlowerIsland'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoFlowerIslandA.woff') format('woff'); font-weight: normal; font-style: normal; }
 
 
+
+
 .section01{
     width: 100%;
     position: relative;
@@ -21,29 +23,29 @@
     font-size:80pt;
     font-family: 'MapoFlowerIsland';
     color: #b88a75;
-    padding-top: 4%;
+    padding-top: 1%;
     padding-bottom: 4%;
 }
 .title2{
-    color: #fff; 
-    font-size: 22pt;
-    font-family: 'MapoFlowerIsland';
-    font-weight: 600;
+    color: #27357d; 
+    font-size: 18pt;
+   
+    font-weight: 500;
 }
 .title2>p{
-   margin-top: -5%;
+ margin-top: -5%;
 }
 
 
 .logo-img-width img {
-    width: 4%;
-    margin-top: .5%;
+    width: 4.5%;
+    margin-top: 1%;
 
 }
-.logo-bg{
+/* .logo-bg{
     background: #fff;
     padding: 10px;
-}
+} */
 
 
 .align-items {
@@ -620,15 +622,16 @@
 .sec09_bg{
     background: url('../images/09bg02.jpg');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
     width: 100%;
-}
-.rgb{
-    background-color: #000;
-    background-color: rgba(0,0,0,.3);
+
 }
 
+.rgb{
+    background-color: #000;
+    background-color: rgba(0,0,0,.7);
+}
 
 
 .video-container{
@@ -641,7 +644,7 @@
 .video-container iframe, .video-container object, .video-container embed {
     position: absolute;
     left: 20%;
-    width: 100%;
+    width: 97%;
     height: 100%;
     }
 
@@ -672,6 +675,21 @@
 .footer-bg{
     background-color: #2f2f2f;
     color:#fff;
+}
+
+
+.section09{
+    width: 100%;
+}
+.subtitle .btn {
+    background-color: #f6f3f2;
+    display: block;
+    text-align: center;
+    font-family: HyundaiSansTextKRR;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: -.4px;
+    line-height: 42px;
 }
 
 @media(min-width:768px){

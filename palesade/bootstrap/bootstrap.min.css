@@ -5037,10 +5037,10 @@ textarea.input-group-sm>.input-group-btn>.btn {
 .nav-tabs>li.active>a,
 .nav-tabs>li.active>a:focus,
 .nav-tabs>li.active>a:hover {
-    color: #555;
+    color: #fff;
     cursor: default;
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: #b88a75;
+    
     border-bottom-color: transparent
 }
 
@@ -5079,11 +5079,11 @@ textarea.input-group-sm>.input-group-btn>.btn {
     border-radius: 4px
 }
 
-.nav-tabs.nav-justified>.active>a,
+/*.nav-tabs.nav-justified>.active>a,
 .nav-tabs.nav-justified>.active>a:focus,
 .nav-tabs.nav-justified>.active>a:hover {
     border: 1px solid #ddd
-}
+}*/
 
 @media (min-width:768px) {
     .nav-tabs.nav-justified>li>a {

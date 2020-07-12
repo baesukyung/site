@@ -1,6 +1,9 @@
 @font-face { font-family: 'MapoFlowerIsland'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoFlowerIslandA.woff') format('woff'); font-weight: normal; font-style: normal; }
 
-
+#fp-nav ul li a span, 
+.fp-slidesNav ul li a span:active{
+    background: #b88a75 !important;
+}
 
 
 .section01{
@@ -28,17 +31,16 @@
 }
 .title2{
     color: #27357d; 
-    font-size: 18pt;
-   
-    font-weight: 500;
+    font-size: 14pt;
+    
 }
 .title2>p{
- margin-top: -5%;
+ margin-top: -4%;
 }
 
 
 .logo-img-width img {
-    width: 4.5%;
+    width:8%;
     margin-top: 1%;
 
 }
@@ -131,6 +133,7 @@
     font-family: 'MapoFlowerIsland';
     font-weight: 800;
 }
+
 #r2t,
 #mc,
 #tb,
@@ -175,7 +178,7 @@
 
 .tab-color-text>ul>li {
     list-style: none;
-    border: 1px solid #ccc;
+    border: 3.7px solid #ccc;
     border-radius: 50px;
 
     margin: 10px 20px;
@@ -211,6 +214,7 @@
 
 .wc9 {
     background-color: #f2f4f3;
+    
 }
 
 .r2t {
@@ -261,7 +265,7 @@
 /* section03 end */
 .section21{
     width: 100%;
-    background: #f6f3f2;
+
 }
 .bg_boxing{
     width: 100%;
@@ -590,10 +594,6 @@
 /* section06 end */
 .section07{
     width: 100%;
- 
-    position: relative;
-    background: lightgray;
-    
 }
 .sleeping-img img{
     width: 100%;
@@ -616,19 +616,29 @@
 /* section08 end */
 .section09{
     width: 100%;
-    background: #f6f3f2;
-    
+}
+.section{
+    width: 100%;
+}
+.subtitle .btn {
+    background-color: #f6f3f2;
+    display: block;
+    text-align: center;
+    font-family: HyundaiSansTextKRR;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: -.4px;
+    line-height: 42px;
 }
 .sec09_bg{
     background: url('../images/09bg02.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 100%;
-
 }
 
 .rgb{
+    width: 100%;
     background-color: #000;
     background-color: rgba(0,0,0,.7);
 }
@@ -650,13 +660,6 @@
 
 /* section09 end */
 
-
-
-
-
-   
-    
-
 .section10{
     width: 100%;
     
@@ -666,31 +669,27 @@
 .inline{
     display: inline;
 }
-
+/* section10 end */
 .section11{
     width: 100%;
-    
     position: relative;
 }
+.panel-body{
+    text-align: justify;
+}
+.panel-body>p{
+    text-align: center;
+}
+
+/* section11 end */
+
 .footer-bg{
     background-color: #2f2f2f;
     color:#fff;
 }
 
 
-.section09{
-    width: 100%;
-}
-.subtitle .btn {
-    background-color: #f6f3f2;
-    display: block;
-    text-align: center;
-    font-family: HyundaiSansTextKRR;
-    font-size: 14px;
-    line-height: 28px;
-    letter-spacing: -.4px;
-    line-height: 42px;
-}
+
 
 @media(min-width:768px){
 
@@ -702,11 +701,23 @@
       
     }
     .logo img{
-        width: 10%;
+        width: 30%;
+    }
+    .top10{
+        padding-top: 25%;
     }
     .title p{
       font-size: 50pt;
       padding-top: 22%;
+      color: ivory;
+    }
+    .title2{
+        width: 80%;
+        padding-left: 20%;
+    }
+    .title2>p{
+        font-size: 10pt;
+        color: ivory;
     }
     /* .text-main-padding {
         padding: 0 !important;
@@ -778,17 +789,18 @@
     display: none;
 }
 .Various_img{
-    width: 130%;
+    width: 100%;
+    height: 100%;
 }
 .tab-content{
-    margin-left: 14%;
+    width: 100%;
 }
 .nav>li>a{
-    width:80%;
+    width:100%;
 }
-.nav{
+/* .nav{
     margin-left: 4%;
-}
+} */
     .display-flex {
         display: flex;
     }
@@ -811,7 +823,8 @@
     .tab-color-text>ul>li>a{
         display: block;
         width: 17px;
-        height: 17px;}
+        height: 17px;
+    }
 
     .tab-color-text ul{
         padding-left: 0;
@@ -932,9 +945,7 @@
     text-align: center;
 
 }
-.margin_5{
-    margin-left: -12%;
-}
+
 
 .pa_top20{
     margin-top: -10%;
@@ -971,10 +982,14 @@
 .footer-bg{
     margin-top: 29%!important;
 }
-    
+.swiper-container{
+    width: 100%;
+}
+.swiper-slide{
+    width: 100%;
+}
+ .swiper-slide>img{
+     width: 100%;
+ }
 }
 
-.section{
-    width: 100%;
-    height: 300px;
-}

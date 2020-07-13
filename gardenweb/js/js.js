@@ -87,3 +87,11 @@ $(function(){
 			$('.gallery-img4').slideToggle();
 		});
 	});
+
+	//popup
+	$(function(){
+		$('.close').click(function(){
+			$('.popup').hide();
+			$('.popup_body').hide();
+		});
+	});

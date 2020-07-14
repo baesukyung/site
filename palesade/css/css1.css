@@ -272,6 +272,7 @@
 }
 .bg_box{
     overflow: hidden;
+    cursor: pointer;
 }
 .bgbox_wrap{
     overflow: hidden;
@@ -414,11 +415,12 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(36, 238, 120, 0.527);
+    background-color: rgb(107, 235, 160);
     /* rgba(0 , 171, 107, 0.12); 색상값! */
     -webkit-border-radius: 50%;
     border-radius: 50%;
     animation: record-lg 1.5s ease-in-out infinite;
+    cursor: pointer;
 }
 
 @keyframes record-lg {
@@ -441,13 +443,14 @@
     top: 50%;
     left: 50%;
     z-index: 2;
-    width: 13px;
-    height: 13px;
+    width: 15px;
+    height: 15px;
     margin-top: -4px;
     margin-left: -4px;
-    background-color: rgb(36, 238, 120);
+    background-color: rgb(59, 173, 107);
     border-radius: 50%;
     animation: dot-effec 1.5s ease-in-out infinite;
+    cursor: pointer;
 }
 
 
@@ -691,8 +694,18 @@
 
 
 
-@media(min-width:768px){
-
+@media(max-width:480px){
+/*section01*/
+.title p{
+    font-size:40pt;
+}
+.title2>p{
+    font-size: 8pt;
+}
+/*section03*/
+.outside{
+    margin-left: -7%;
+}
 }
 @media(max-width: 767px) {
     .section03-img{
@@ -812,8 +825,8 @@
     }
     .car-color-ex h4{
         font-size: 12pt;
-        width: 70%;
-       margin-left: 15%;
+        width: 90%;
+       margin-left: 5%;
     }
     .font-size h3{
         font-size: 14pt;
@@ -828,17 +841,17 @@
 
     .tab-color-text ul{
         padding-left: 0;
-        margin-left: -130px;
+        margin-left: -145px;
         margin-top: 40px;
      }  
 
 
 
      .model{
-         padding-left: 13%;
+         padding-left: 10.5%;
      }
     .outside{
-        padding-left: 11.8%;
+        padding-left: 9%;
     }
     .padding-5{
         padding: 5%;

@@ -2,7 +2,6 @@
 
 @font-face { font-family: 'InfinitySans-RegularA1'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/InfinitySans-RegularA1.woff') format('woff'); font-weight: normal; font-style: normal; }
 
-
 #fp-nav ul li a span, 
 .fp-slidesNav ul li a span:active{
     background: #b88a75 !important;
@@ -725,7 +724,7 @@
     .title p{
       font-size: 50pt;
       padding-top: 22%;
-      color: ivory;
+      color: #b88a75;
     }
     .title2{
         width: 80%;
@@ -743,16 +742,27 @@
         justify-content: center;
        
     } */
+    .section05{
+        margin-top: -10%;
+    }
+    .swiper-container{
+        margin-top: -10%;
+    }
 .tab-car-img>div>img{
     width: 110%;
 }
     .title2>p{
         font-size: 14pt;
     }
- 
+    .left_tab{
+        margin-left: 8%;
+    }
      .main_txt{
-        font-size: 35pt;
+        font-size: 28pt;
     } 
+    .Convenience{
+        margin-top: -3%;
+    }
     h1{
         font-size: 25pt;
     }
@@ -800,6 +810,9 @@
 
 .Various_wrap{
     display: flex;
+}
+.sec07_top{
+    margin-top: -10%;
 }
 .display_none{
     display: none;
@@ -937,7 +950,9 @@
     overflow: hidden;
 }
 
-
+.sec08_top{
+    margin-top: -20%;
+}
 
 .swiper-slide{
     width: 100%;
@@ -948,9 +963,10 @@
 
 .ex05_txt{
     font-size: 10pt;
+    margin-bottom: 12%;
 }
 .Multi_sub{
-    margin-top: -7%;
+    margin-top: -10%;
 }
 
 

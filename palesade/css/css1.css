@@ -1,4 +1,7 @@
-@font-face { font-family: 'MapoFlowerIsland'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoFlowerIslandA.woff') format('woff'); font-weight: normal; font-style: normal; }
+/*@font-face { font-family: 'MapoFlowerIsland'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoFlowerIslandA.woff') format('woff'); font-weight: normal; font-style: normal; }*/
+
+@font-face { font-family: 'InfinitySans-RegularA1'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/InfinitySans-RegularA1.woff') format('woff'); font-weight: normal; font-style: normal; }
+
 
 #fp-nav ul li a span, 
 .fp-slidesNav ul li a span:active{
@@ -24,7 +27,7 @@
 .title {
    
     font-size:80pt;
-    font-family: 'MapoFlowerIsland';
+    font-family: 'InfinitySans-RegularA1';
     color: #b88a75;
     padding-top: 1%;
     padding-bottom: 4%;
@@ -32,7 +35,7 @@
 .title2{
     color:#b88a75; 
     font-size: 17pt;
-    font-family: 'MapoFlowerIsland';
+    font-family: 'InfinitySans-RegularA1';
 }
 .title2>p{
  margin-top: -4%;
@@ -65,11 +68,11 @@
     margin-bottom: -2px;
     border-top: 1px solid #2e3a36;
     border-bottom: 1px solid #2e3a36;
-    font-family: 'MapoFlowerIsland';
+    font-family: 'InfinitySans-RegularA1';
 }
 .span-spacing p {
     margin-left: 3%;
-    font-family: 'MapoFlowerIsland';
+    font-family: 'InfinitySans-RegularA1';
 }
 
 .span-spacing span {
@@ -89,9 +92,9 @@
    
 }
 .sub-bg{
-    background: url('../images/cloud.jpg');
+    background: url('../images/cloud2.jpg');
     background-position: bottom;
-    height: 100vh;
+   height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -191,7 +194,7 @@
 }
 .tab-color-text>ul {
     display: flex;
-   
+   margin-left: -3%;
 }
 
 .col-sm-6>ul>li {

@@ -746,7 +746,32 @@ transition:all 0.5s ease-in-out;
 						color:#2fb29f;
 					}
 
-                        
+@media(max-width:400px){
+	.popup_body{
+		width: 120%;
+	}
+	.popup_bottom {
+		width: 100%;
+	}
+	.popup_bottom>h3{
+		font-size: .6em;
+		width: 100%;
+	}
+	.popup_bottom>h5{
+		font-size: .3em;
+		width: 100%;
+	}
+	.popup_logo{
+		margin-top: 30%;
+		z-index: 999999;
+	}
+	.popup_bottom>h5>span{
+		display:block;
+	}
+	.last{
+		padding-bottom: 5%;
+	}
+}                    
 @media(max-width:767px){
 
 	.popup_body{
@@ -754,6 +779,8 @@ transition:all 0.5s ease-in-out;
 		height: 25%;
 		left: 22.5%;
 	}
+
+
 	.popup_bottom>h3{
 		font-size: 1.5rem;
 	}

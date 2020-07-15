@@ -87,8 +87,6 @@
 
 .section20{
     width: 100%;
-    
-   
 }
 .sub-bg{
     background: url('../images/familly.jpg');
@@ -97,25 +95,16 @@
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    
-   
 }
-
-
-
-
-
 
 .icon-img1 img {
     width: 20%;
-
 }
 .position{
     position: relative;
     top: 83%;
     z-index: 5;
 }
-
 .icon-bg {
     position: absolute;
     top: 84%;
@@ -153,19 +142,13 @@
 .colors>ul>li>a>h3{
     color: inherit;
 }
-
-
-
 .subject-wrap {
     display: flex;
 }
-
 .select-txt {
     margin-right: 45%;
     font-family: 'MapoFlowerIsland';
 }
-
-
 .col-sm-12>ul>li {
     list-style: none;
    }
@@ -176,15 +159,11 @@
     font-weight: 600;
     font-size: 12pt;
 }
-
-
 .tab-color-text>ul>li {
     list-style: none;
     border: 3.7px solid #ccc;
     border-radius: 50px;
-
     margin: 10px 20px;
-    
 }
 .tab-color-text>ul>li>a{
     display: block;
@@ -204,37 +183,27 @@
     text-decoration: none;
     color: inherit;
  }
-
-
 .padding-10 {
     padding-top: 5%;
 }
-
 .padding-left-30 {
     padding-left: 30%;
 }
-
 .wc9 {
     background-color: #f2f4f3;
-    
 }
-
 .r2t {
     background-color: #464a49;
 }
-
 .mc {
     background-color: #222c3d;
 }
-
 .tb {
     background-color: #18181a;
 }
-
 .cb {
     background-color: #381719;
 }
-
 .rf {
     background-color: #2e3a36;
 }
@@ -251,23 +220,19 @@
     background-size: cover;
     background-position: center;
 }
-
 .myModal01{
     position: absolute;
     z-index: 9999;
     top: 200px;
     left: 200px;
 }
-
 .modal-title{
     color: #b88a75;
-   
 }
 
 /* section03 end */
 .section21{
     width: 100%;
-
 }
 .bg_boxing{
     width: 100%;
@@ -287,11 +252,8 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
     transition: all 0.5s;
 }
-
-
 .bg01{
     background: url('../images/01backlight.jpg');
     width: 100%;
@@ -301,7 +263,6 @@
     background-size: cover;
     overflow: hidden; 
     transition: 1s;
-    
 }
 .bg02{
     background: url('../images/02bottom.jpg');
@@ -323,7 +284,6 @@
     background-size: cover;
     overflow: hidden; 
     transition: 1s;
-    
 }
 .bg04{
     background: url('../images/04headlight.jpg');
@@ -334,7 +294,6 @@
     background-size: cover;
     overflow: hidden; 
     transition: 1s;
-    
 }
 .bg05{
     background: url('../images/05wheel.jpg');
@@ -345,7 +304,6 @@
     background-size: cover;
     overflow: hidden; 
     transition: 1s;
-    
 }
 .bg06{
     background: url('../images/06frontlight.jpg');
@@ -356,9 +314,7 @@
     background-size: cover; 
     overflow: hidden;
     transition: 1s;
-    
 }
-
 .bg01:hover{
     transform: scale(1.1);
     opacity: .7;
@@ -383,24 +339,16 @@
     transform: scale(1.1);
     opacity: .7;
 }
-
 .modal {
     position: absolute;
     z-index: 9999999;
 }
-
-
 .section04{
-  
-    width: 100%;
+  width: 100%;
 }
 .text-al>span{
     letter-spacing: .3px;
 }
-/* .interior-img1 img{
-    width: 100%;
-    position: relative;
-} */
 .interior-img1{
     background: url('../images/palisade_lx2_20my_space_calligraphy_interior_beige.png');
     background-size:cover;
@@ -408,23 +356,19 @@
     height: 70vh;
     position: relative;
     background-repeat: no-repeat;
-    
 }
-
-
 .point .bg {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgb(107, 235, 160);
-    /* rgba(0 , 171, 107, 0.12); 색상값! */
+    top: 20%;
+    left: 20%;
+    width: 27px;
+    height: 27px;
+    background-color: rgb(255, 255, 255,0.2);
     -webkit-border-radius: 50%;
     border-radius: 50%;
     animation: record-lg 1.5s ease-in-out infinite;
     cursor: pointer;
 }
-
 @keyframes record-lg {
 	0% {
 		opacity: 0;
@@ -439,7 +383,6 @@
 		transform: scale(1);
 	}
 }
-
 .point .dot {
     position: absolute;
     top: 50%;
@@ -454,10 +397,6 @@
     animation: dot-effec 1.5s ease-in-out infinite;
     cursor: pointer;
 }
-
-
-
-
 @keyframes dot-effec {
 	0% {
 		opacity: .5;
@@ -469,8 +408,6 @@
 		opacity: .5;
 	}
 }
-
-
 .conts-area .point.point-1 {
     top: 20%;
     left: 75%;
@@ -963,7 +900,21 @@ select {
     }
    /* section03 end */
 
-
+   .conts-area  .point.point-4 {
+    top: 85%;
+    left:48%;
+    /* 핸드레스트 */
+}
+.conts-area  .point.point-5 {
+    top: 13%;
+    left: 50%;
+    /* 계기판 */
+}
+.conts-area .point-6 {
+    top: 61%;
+    left: 60%;
+    /* 제어판 */
+}
 
 
 

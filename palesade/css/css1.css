@@ -671,9 +671,9 @@
     position: relative;
    
 }
-.inline{
+/* .inline{
     display: inline;
-}
+} */
 /* section10 end */
 .section11{
     width: 100%;
@@ -993,10 +993,13 @@
 .p_wrap>p>span{
     padding-left: 10%;
 }
+.section10{
+    width: 100%;
+}
 .dis_in{
-    display: flex;
+    display: inline;
     flex-direction: column;
-    margin-left: -11%;
+    
 }
 
 .panel-body>p{

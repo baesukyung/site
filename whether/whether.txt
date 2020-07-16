@@ -1,0 +1,33 @@
+api.openweathermap.org/data/2.5/weather?q={city name}&appid={your api key}
+
+api.openweathermap.org/data/2.5/weather?q={city name},{state code}&appid={your api key}
+
+api.openweathermap.org/data/2.5/weather?q={city name},{state code},{country code}&appid={your api key}
+
+
+
+
+ 
+
+
+
+
+24	kr 
+203db92cb00703b7f13cd37d38be66ed
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+체재
+단위 형식
+다국어 지원
+JavaScript 코드를위한 콜백 함수
+

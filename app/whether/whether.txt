@@ -1,0 +1,67 @@
+api.openweathermap.org/data/2.5/weather?q={city name}&appid={your api key}
+
+api.openweathermap.org/data/2.5/weather?q={city name},{state code}&appid={your api key}
+
+api.openweathermap.org/data/2.5/weather?q={city name},{state code},{country code}&appid={your api key}
+
+
+
+
+ 
+
+
+
+
+24	kr 
+203db92cb00703b7f13cd37d38be66ed
+ 
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <script>
+        var url='http://api.openweathermap.org/data/2.5/weather?q=seoul&appid=203db92cb00703b7f13cd37d38be66ed'
+        $.getJSON(url,function(data){
+         //날씨 데이터 객체
+            var sys = data.sys;         //국가명,일출 일몰
+            var city = data.name;          //도시명
+            var weather = data.weather;     //날씨 객체
+            var main = data.main;           //온도 기압 관련 객체
+            var wmain = wheather[0].main;   //구름상태(Cloudiness)
+            var w_id = wheather[0].id;      //날씨상태 id 코드
+            var icon = wheather[0].icon;    //날씨 아이콘 정보
+            var country = sys.country;      //국가명
+            var temp = maon.temp;           //현재 온도
+            var temp_min = main.temp_min;     //최저 온도
+            var tamp_max = main.temp_max;       //최고 온도
+
+
+            $('body').append(wmain + ',' + icon + ' ' + '현재온도:' + parseInt(temp-273.15) + ' ' + '최저온도:' + parseInt(temp_min-273.15) + ' ' + '최고온도:' + parseInt(temp_max-273.15) + ' ' + country + ' ' + city + ' ' + w_id + ' ' + '<br>');
+        });
+    </script>
+</body>
+</html
+
+ 
+
+
+
+
+
+
+
+체재
+단위 형식
+다국어 지원
+JavaScript 코드를위한 콜백 함수
+

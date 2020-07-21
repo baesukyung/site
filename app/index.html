@@ -12,11 +12,13 @@
     
 </head>
 <body>
+    <i class="moonset"></i>
     <div id="weather_info">
         <h1 class="city"></h1>
         <p id="time-result"></p>
         <section>
             <p class="w_id"></p>
+            <i class="moonset"></i>
             <i class="icon wi"></i>
             <p class="temp"></p>
             <aside>
@@ -75,6 +77,7 @@ $.getJSON(url, function(data) {
     $('#weather_info .temp_max').html(parseInt(temp_max-273.15)+'&deg' + 'max');
     $('#weather_info .temp').html(parseInt(temp-273.15)+'&deg;');
     $('#weather_info .load_img').hide();
+    $('#weather_info .moonset').html();
 })
 .fail(function(){
     alert("loading error");

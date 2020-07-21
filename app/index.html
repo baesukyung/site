@@ -12,23 +12,47 @@
     
 </head>
 <body>
-    <i class="moonset"></i>
     <div id="weather_info">
         <h1 class="city"></h1>
+        <h2 class="today"></h2>
         <p id="time-result"></p>
         <section>
-            <p class="w_id"></p>
-            <i class="moonset"></i>
-            <i class="icon wi"></i>
-            <p class="temp"></p>
-            <aside>
-                <p class="temp_max">max</p>
-                <p class="temp_min">min</p>
-            </aside>
-            <p class="wind">
-              
-            </p>
+            <div class="section_wrap">
+                <div class="main_wrap">
+                    <div class="main_icon">
+                        <i class="icon wi"></i>
+                    </div>
+                    <!-- <div class="weather_txt">
+                        <p class="w_id"></p>
+                    </div> -->
+                </div>
+                <div class="main_temp">
+                    <p class="temp"></p>
+                </div>
+            </div>
         </section>
+        <footer>
+            <div class="footer_bg"></div>
+            <div class="bottom_wrap">
+                <div class="tem">
+                    <i class="wi wi-thermometer"></i>
+                    <!-- <p class="temp"></p> -->
+                    <aside>
+                        <p class="aside_txt">Temperature</p>
+                        <p class="temp_max">max</p>
+                        <p class="temp_min">min</p>
+                    </aside>
+                </div>
+                <div class="humi">
+                    <i class="wi wi-humidity"></i>
+                    <p>Humidity</p>
+                </div>
+                <div class="win">
+                    <i class="wi wi-strong-wind"></i>
+                    <p>wind</p>
+                </div>
+            </div>
+        </footer>
         <img class="load_img" src="loading.gif" width="50">
         
     </div>
@@ -44,6 +68,7 @@
 
 $.getJSON(url, function(data) {
     var sys = data.sys;                 // 국가명, 일출/일몰
+   
     var wind = data.wind.speed;         
     var city = data.name;               // 도시명
     var weather = data.weather;         // 날씨 객체
@@ -58,7 +83,7 @@ $.getJSON(url, function(data) {
     var icon_url = 'http://openweathermap.org/img/w/' + icon;
    
 
-    var d = new Date(); var currentDate = d.getFullYear() + "년 " + ( d.getMonth() + 1 ) + "월 " + d.getDate() + "일"; var currentTime = d.getHours() + " : " + d.getMinutes() + " : " + d.getSeconds(); var result = document.getElementById("time-result"); result.innerHTML = currentDate +" , "+ currentTime;
+    // var d = new Date(); var currentDate = d.getFullYear() + "년 " + ( d.getMonth() + 1 ) + "월 " + d.getDate() + "일"; var currentTime = d.getHours() + " : " + d.getMinutes() + " : " + d.getSeconds(); var result = document.getElementById("time-result"); result.innerHTML = currentDate +" , "+ currentTime;
 
 
 
@@ -72,12 +97,14 @@ $.getJSON(url, function(data) {
     $('#weather_info>.city').html(city + "/" + country);
     // $('#weather_info .icon').html("<img src='" + icon_url + ".png'>");
     $('#weather_info .w_id').html(wmain);
-    $('#weather_info .wind').html('wind speed : '+wind);
+    // $('#weather_info .wind').html('wind speed : '+wind);
     $('#weather_info .temp_min').html(parseInt(temp_min-273.15)+'&deg' + 'min');
     $('#weather_info .temp_max').html(parseInt(temp_max-273.15)+'&deg' + 'max');
     $('#weather_info .temp').html(parseInt(temp-273.15)+'&deg;');
+    
     $('#weather_info .load_img').hide();
     $('#weather_info .moonset').html();
+    
 })
 .fail(function(){
     alert("loading error");

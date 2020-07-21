@@ -10,13 +10,14 @@ body{
 #weather_info{
     position: relative;
     width: 100%;
-    background: radial-gradient( #7eb7d5 40%, #427a9b);
+    /*background: radial-gradient( #7eb7d5 40%, #427a9b);*/
+    background: url('../images/09.jpg');
     border:1px solid #999;
     box-sizing: border-box;
     padding:10px;
     background-image: 100%;
     background-repeat:no-repeat;
-    background-position:bottom center;
+    background-position: center;
     /* background:#eee; */
     color:#fff;
     text-align: center;
@@ -29,25 +30,33 @@ h1{
     opacity: 0.8;
 }
 .icon{
-    font-size:3.5rem;
+    font-size:8rem;
+    padding-top: 8%;
+    text-align: right;
 }
 section{
+    width: 100%;
     overflow: hidden;
     color:#fff;
     text-shadow: 1px 1px 1px #999;
-    padding:10px 20px;
+     text-align: center;
+}
+section>.section_wrap{
+    display: flex;
+}
+section>.section_wrap>div{
+    width: 50%;
 }
 section>.w_id{
     text-align: center;
 }
-section>figure, section>.temp{
-    float: center;   
+p.temp{
+    font-size: 8rem;
+
 }
-section>figure>img{
-    width: 80px;
-}
-section>.temp{
-    font-size: 3.4em;
+section>.main_temp{
+    font-size: 30px;
+    text-align: left;
 }
 aside{
     overflow: hidden;
@@ -57,10 +66,42 @@ aside>p{
     font-size:1.8em;
     text-align: center;
 }
+aside>.aside_txt{
+    font-size: 1.2rem;
+}
 section>.wind{
     overflow: hidden;
     font-size: 1.5rem;
     color:#fff;
+}
+section>.moonset{
+    font-size: 1.2rem;
+}
+footer{
+    width: 100%;
+    position: relative;
+    padding-top: 10%;
+    background: lightgray;
+}
+footer>.bottom_wrap{
+    display: flex;
+    width: 100%;
+}
+footer>.bottom_wrap>div{
+    width: 33.3%;
+}
+footer>.footer_bg{
+    background: yellow;
+    width: 100%;
+}
+.humi>.wi-humidity{
+    font-size: 2rem;
+}
+.tem>.wi-thermometer{
+    font-size: 2rem;
+}
+.win>.wi-strong-wind{
+    font-size: 2rem;
 }
 /* 로딩이미지 */
 #weather_info .load img{

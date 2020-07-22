@@ -597,8 +597,65 @@ li {
     width: 100%;
     background:#f2f0e8;
 }
+.bottom3{
+    padding-bottom: 3%;
+}
+.main_txt{
+    font-size:4rem;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.main_txt>h1{
+    font-family: 'Kaushan Script', cursive;
+}
+.cont1{
+    width: 100%;
+    position: relative;
+}
+.hover_round{
+    width: 130px;
+    height: 130px;
+    background: white;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    border-radius: 100px;
+    position: absolute;
+    top: 34%;
+    left: 35%;
+    text-align: center;
+}
+.hover-txt{
+    padding-top: 40%;
 
+}
+.hover-txt>p{
+    font-weight: 800;
+    font-size: 16pt;
+}
+.cont2{
+    width: 100%;
+    position: relative;
+}
+.cont3{
+    width: 100%;
+    position: relative;
+}
 /* sec03 Area CSS end */
+/* sec04 Area CSS start */
+.sec04{
+    width: 100%;
+}
+.news_bg{
+    background-color:#f7b531;
+}
+.news_txt>h1{
+    line-height: 600px;
+    text-align: center;
+    color: white;
+    font-family: 'Kaushan Script', cursive;
+}
+
+/* sec04 Area CSS end */
 .categories_area {
     padding: 80px 0 50px 0;
 }

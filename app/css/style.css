@@ -10,33 +10,47 @@ body{
     font-size: 100%;
     font-family: 'Mukta', sans-serif;
 }
+.h1-today{
+    text-align: center;
+    color: white;
+}
+.h1-clock{
+    text-align: center;
+    color: white;
+}
 #weather_info{
     position: relative;
     width: 100%;
+    height: 100vh;
     /*background: radial-gradient( #7eb7d5 40%, #427a9b);*/
-    background: url('../images/09.jpg');
+    background: url('../images/10.jpg');
     border:1px solid #999;
     box-sizing: border-box;
     padding:10px;
     background-image: 100%;
     background-repeat:no-repeat;
     background-position: center;
+    background-size: cover;
     /* background:#eee; */
     color:#fff;
     text-align: center;
 }
 h1{
 
-    padding:10px;
-    font-size:1.8em;
+    padding:5px;
     text-align: center;
     opacity: 0.8;
 }
 .icon{
-    font-size:7rem;
-    padding-top: 10%;
+    font-size:12rem;
+    padding-top: 7%;
     text-align: right;
     text-shadow: 2px 2px 2px #999;
+}
+@media(max-width: 767px){
+    .icon{
+        padding-top: 15%;
+    }
 }
 section{
     width: 100%;
@@ -55,8 +69,8 @@ section>.w_id{
     text-align: center;
 }
 p.temp{
-    font-size: 8rem;
-
+    font-size: 13rem;
+    padding-top: 10%;
 }
 section>.main_temp{
     font-size: 30px;
@@ -70,15 +84,16 @@ aside{
     text-align: center;
 }
 aside>p{
-    font-size:1.8em;
+    font-size:3rem;
     text-align: center;
 }
 aside>.aside_txt{
-    font-size: 1.2rem;
+    font-size: 2rem;
+    padding-top: 3%;
 }
 section>.wind{
     overflow: hidden;
-    font-size: 1.5rem;
+    font-size: 3rem;
     color:#fff;
 }
 section>.moonset{
@@ -87,8 +102,12 @@ section>.moonset{
 footer{
     width: 100%;
     position: relative;
-    padding-top: 10%;
+    margin-top: 5%;
+    padding-top: 5%;
+    padding-bottom: 4%;
     background: rgb(230, 230, 230);opacity: .9;
+    box-sizing: border-box;
+    border-radius:10px;
 }
 footer>.bottom_wrap{
     display: flex;
@@ -102,26 +121,27 @@ footer>.footer_bg{
     width: 100%;
 }
 .humi>.wi-humidity{
-    font-size: 2rem;
+    font-size: 5rem;
     text-shadow: 2px 2px 2px #999;
 }
 
 .tem>.wi-thermometer{
-    font-size: 2rem;
+    font-size: 5rem;
     text-shadow: 2px 2px 2px #999;
 }
 .win>.wi-strong-wind{
-    font-size: 2rem;
+    font-size: 5rem;
     text-shadow: 2px 2px 2px #999;
 }
 .wind{
-    font-size:1.8rem;
+    font-size:3rem;
 }
 .txt{
-    font-size:1.2rem;
+    font-size:2rem;
+    padding-top: 3%;
 }
 .humidity{
-    font-size:1.8rem;
+    font-size:3rem;
 }
 /* 로딩이미지 */
 #weather_info .load img{

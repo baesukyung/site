@@ -44,36 +44,36 @@
                             <i class="wi wi-thermometer"></i>
                             <!-- <p class="temp"></p> -->
                             <aside>
-                                <p class="aside_txt">Temperature</p>
+                                <p class="aside_txt">온도</p>
                                 <p class="temp_max">max</p>
                                 <p class="temp_min">min</p>
                             </aside>
                         </div>
                         <div class="humi">
                             <i class="wi wi-humidity"></i>
-                            <p class='txt'>Humidity</p>
+                            <p class='txt'>습도</p>
                             <p class="humidity"></p>
                         </div>
                         <div class="win">
                             <i class="wi wi-strong-wind"></i>
-                            <p class='txt'>wind</p>
+                            <p class='txt'>바람</p>
                             <p class='wind'></p>
                             
                         </div>
                     </div>
                 </footer>
-                <img class="load_img" src="loading.gif" width="50">
+                <!-- <img class="load_img" src="loading.gif" width="50"> -->
                 
                
     </div>
 </div>
     <script>
-         var url = 'http://api.openweathermap.org/data/2.5/weather?q=Seoul&appid=203db92cb00703b7f13cd37d38be66ed';
+         var url = 'http://api.openweathermap.org/data/2.5/weather?lat=37.6152667&lon=126.7156207&appid=203db92cb00703b7f13cd37d38be66ed';
 
-     
+         
 
 
-
+        //  var url = 'http://api.openweathermap.org/data/2.5/uvi?appid=203db92cb00703b7f13cd37d38be66ed&lat=37.6152667&lon=126.7156207';
         
          $('weather_info .load_img').show();
 
@@ -110,12 +110,12 @@ $.getJSON(url, function(data) {
 
     var nowTimestamp = Math.floor(Date.now() / 1000);
                 var weatherClass = 'wi wi-owm-';
-                weatherClass += (nowTimestamp >= data.sunrise && nowTimestamp <= data.sunset ? 'day' : 'night');
+                weatherClass += (nowTimestamp >= data.sunrise && nowTimestamp <= data.sunset ? 'night' : 'day');
                 weatherClass += ('-' + weather[0].id);
 
                 $("#weather_info .icon").addClass(weatherClass); 
 
-    $('#weather_info>.city').html(city);
+    $('#weather_info>.city').html('김포');
     // $('#weather_info .icon').html("<img src='" + icon_url + ".png'>");
     $('#weather_info .w_id').html(wmain);
      $('#weather_info .wind').html(wind);

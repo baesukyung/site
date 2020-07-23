@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;500;700&display=swap');
 html{
     height: 100%;
     overflow: hidden;
     background:radial-gradient(ellipse at bottom,#1b2735 0%,#090a0f 100%);
 }
-#star{
+#stars{
     width: 1px;
     height: 1px;
     background:transparent;animation:animStar 50s linear infinite;
@@ -563,5 +564,16 @@ html{
         transform:translateY(-2000px);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
 
 

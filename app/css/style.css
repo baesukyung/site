@@ -121,6 +121,15 @@ footer>.footer_bg{
     background: yellow;
     width: 100%;
 }
+.tem>.wi>img{
+    filter: drop-shadow(2px 2px 2px #999);
+}
+.humi>.wi>img{
+    filter: drop-shadow(2px 2px 2px #999);
+}
+.win>.wi>img{
+    filter: drop-shadow(2px 2px 2px #999);
+}
 .humi>.wi-humidity{
     font-size: 5rem;
     text-shadow: 2px 2px 2px #999;

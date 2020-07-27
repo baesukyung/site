@@ -612,6 +612,46 @@ li {
     width: 100%;
     position: relative;
 }
+.cont1>a>img{
+    width: 100%;
+    height: 100%;
+}
+.cont1>a{
+    display: block;
+}
+.cont1:hover{
+    background: rgba(247,181,49, 0.7);
+}
+.cont1:hover .hover_round{
+    background: rgba(247,181,49,1);
+}
+.cont2:hover .hover_round{
+    background: rgba(117,195,125,1);
+}
+.cont3:hover .hover_round{
+    background: rgba(247,181,49,1);
+}
+.cont1>a>img:hover,
+.cont1:hover img{
+    visibility: hidden;
+}
+.cont2:hover{
+    background: rgba(117,195,125, 0.7);
+    cursor: pointer;
+}
+.cont2>a>img:hover,
+.cont2:hover img{
+    visibility: hidden;
+}
+.cont3:hover{
+    background: rgba(247,181,49, 0.7);
+    cursor: pointer;
+}
+.cont3>a>img:hover,
+.cont3:hover img{
+    visibility: hidden;
+}
+
 .hover_round{
     width: 130px;
     height: 130px;
@@ -623,6 +663,7 @@ li {
     top: 34%;
     left: 35%;
     text-align: center;
+    cursor: pointer;
 }
 .hover-txt{
     padding-top: 40%;
@@ -640,6 +681,7 @@ li {
     width: 100%;
     position: relative;
 }
+
 /* sec03 Area CSS end */
 /* sec04 Area CSS start */
 .sec04{

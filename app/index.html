@@ -129,6 +129,8 @@ $.getJSON(url, function(data) {
     $('#weather_info .humidity').html(humidity);
     //오늘날짜
     $('#weather_info .h1-today').html(allDay);
+    // $(".you").html('<img src="img/'+w_id+'_'+icon+'.jpg">');
+                        // 작동 이미지 파일 이름만 변경하면됨
 })
 .fail(function(){
     alert("loading error");

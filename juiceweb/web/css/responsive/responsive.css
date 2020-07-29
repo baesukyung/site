@@ -54,10 +54,26 @@
     .main_txt>h1{
         font-size:2rem;
     }
-
-    
     .cont1>a>img{
         width: 82%;
+    }
+    .cont1:hover{
+        transform: scale(.82,1);
+    }
+    .cont1:hover>.hover_round{
+        transform: scale(1.24,1);
+    }
+    .cont2:hover{
+        transform: scale(.82,1);
+    }
+    .cont2:hover>.hover_round{
+        transform: scale(1.24,1);
+    }
+    .cont3:hover{
+        transform: scale(.82,1);
+    }
+    .cont3:hover>.hover_round{
+        transform: scale(1.24,1);
     }
     .cont2>a>img{
         width: 82%;
@@ -77,10 +93,6 @@
     /* section04 */
     .news_txt>h1{
         line-height:100px;
-    }
-    .cont3>a>img:hover a{
-        background: rgba(247,181,49,1);
-        width: 85%;
     }
     .news_cont1>img{
         margin-left: 2.3%;

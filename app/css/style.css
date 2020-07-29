@@ -40,10 +40,10 @@ h1{
 
     padding:5px;
     text-align: center;
-    opacity: 0.8;
+   
 }
 .icon{
-    font-size:12rem;
+    font-size:9rem;
     padding-top: 7%;
     text-align: right;
     text-shadow: 2px 2px 2px #999;
@@ -70,7 +70,7 @@ section>.w_id{
     text-align: center;
 }
 p.temp{
-    font-size: 13rem;
+    font-size: 10rem;
     padding-top: 10%;
 }
 section>.main_temp{
@@ -85,20 +85,20 @@ aside{
     text-align: center;
 }
 aside>p{
-    font-size:3rem;
+    font-size:2rem;
     text-align: center;
 }
 aside>.aside_txt{
-    font-size: 2rem;
+    font-size: 1.7rem;
     padding-top: 3%;
 }
 section>.wind{
     overflow: hidden;
-    font-size: 3rem;
+    font-size: 1.5rem;
     color:#fff;
 }
 section>.moonset{
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 footer{
     width: 100%;
@@ -144,14 +144,14 @@ footer>.footer_bg{
     text-shadow: 2px 2px 2px #999;
 }
 .wind{
-    font-size:3rem;
+    font-size:2rem;
 }
 .txt{
-    font-size:2rem;
+    font-size:1.7rem;
     padding-top: 3%;
 }
 .humidity{
-    font-size:3rem;
+    font-size:2rem;
 }
 /* 로딩이미지 */
 #weather_info .load img{

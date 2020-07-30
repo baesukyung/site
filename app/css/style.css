@@ -42,14 +42,23 @@ h1{
     text-align: center;
    
 }
-.icon{
+.m_icon{
     font-size:9rem;
     padding-top: 7%;
     text-align: right;
     text-shadow: 2px 2px 2px #999;
 }
+
+
+/* 5일 날씨 */
+.small{
+    font-size:2.5rem;
+}
+.weather-5days{
+    display: flex;
+}
 @media(max-width: 767px){
-    .icon{
+    .m_icon{
         padding-top: 15%;
     }
 }
@@ -153,6 +162,7 @@ footer>.footer_bg{
 .humidity{
     font-size:2rem;
 }
+
 /* 로딩이미지 */
 #weather_info .load img{
     position: absolute;

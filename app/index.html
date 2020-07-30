@@ -16,11 +16,13 @@
 <body>
     <div class="container-fluid" id="weather_info">
 
-        <h1 class="city"></h1>
         <div class="container text-center">
-            <h1 class="h1-today"></h1>
-            <h1 class = "h1-clock"></h1>
-
+            <div id="top-weather">
+                <h1 class="city"></h1>
+                <h1 class="h1-today"></h1>
+                <h1 class = "h1-clock"></h1>
+            </div>
+        </div>
                
                 
                 <!-- <p id="time-result"></p> -->
@@ -28,7 +30,7 @@
                     <div class="section_wrap">
                         <div class="main_wrap">
                             <div class="main_icon">
-                                <i class="icon wi"></i>
+                                <i class="icon wi m_icon"></i>
                             </div>
                             <!-- <div class="weather_txt">
                                 <p class="w_id"></p>
@@ -63,6 +65,29 @@
                             
                         </div>
                     </div>
+
+
+
+
+                    <!-- 5일날씨 -->
+                    <div class="weather-5days text-center">
+                        <div class="today-w">
+                            <h1 class="firstday small"></h1>
+                            <i class="icon wi small"></i>
+                        </div>
+                        <div class="sec-w">
+                            <h1 class="secondday small"></h1>
+                        </div>
+                        <div class="thir-w">
+                            <h1 class="thirdday small"></h1>
+                        </div>
+                        <div class="four-w">
+                            <h1 class="fourthday small"></h1>
+                        </div>
+                        <div class="fifth-w">
+                            <h1 class="fifthday small"></h1>
+                        </div>
+                    </div>
                 </footer>
                 <!-- <img class="load_img" src="loading.gif" width="50"> -->
                 
@@ -70,14 +95,17 @@
     </div>
 </div>
     <script>
-         var url = 'https://api.openweathermap.org/data/2.5/weather?lat=37.6152667&lon=126.7156207&appid=203db92cb00703b7f13cd37d38be66ed';
+        //  var url = 'https://api.openweathermap.org/data/2.5/weather?lat=37.6152667&lon=126.7156207&appid=203db92cb00703b7f13cd37d38be66ed';
+
+
+        var url = 'https://api.openweathermap.org/data/2.5/onecall?lat=37.6152667&lon=126.7156207&exclude=minutely&appid=203db92cb00703b7f13cd37d38be66ed';
 
          
 
 
         //  var url = 'http://api.openweathermap.org/data/2.5/uvi?appid=203db92cb00703b7f13cd37d38be66ed&lat=37.6152667&lon=126.7156207';
         
-         $('weather_info .load_img').show();
+         $('#top-weather .load_img').show();
 
 $.getJSON(url, function(data) {
     
@@ -100,7 +128,17 @@ $.getJSON(url, function(data) {
     var month = today.getMonth() + 1; 
     var date = today.getDate(); 
     var day = today.getDay(); 
+    var seconddate = today.getDate() + 1; 
+    var thirddate = today.getDate() + 2;
+    var fourthdate = today.getDate() + 3;
+    var fifthdate = today.getDate() + 4;
     var allDay =  year + '.' + month + '.' + date;
+    var mdDay =  month + '.' + date;
+    var secDay = month + '.' + seconddate;
+    var thirDay = month + '.' + thirddate;
+    var fourDay = month + '.' + fourthdate;
+    var fifthDay = month + '.' + fifthdate;
+    
     var icon_url = 'https://openweathermap.org/img/w/' + icon;
     
  
@@ -129,6 +167,11 @@ $.getJSON(url, function(data) {
     $('#weather_info .humidity').html(humidity);
     //오늘날짜
     $('#weather_info .h1-today').html(allDay);
+    $('#weather_info .firstday').html(mdDay);
+    $('#weather_info .secondday').html(secDay);
+    $('#weather_info .thirdday').html(thirDay);
+    $('#weather_info .fourthday').html(fourDay);
+    $('#weather_info .fifthday').html(fifthDay);
     // $(".you").html('<img src="img/'+w_id+'_'+icon+'.jpg">');
                         // 작동 이미지 파일 이름만 변경하면됨
 })

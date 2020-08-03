@@ -1329,26 +1329,53 @@ li {
 
 
 /* Style the tab */
-.tab {
+.tab_nav{
     overflow: hidden;
-    border: 1px solid #ccc;
-    /* background-color: #f1f1f1; */
-  }
-  
+    border: 1px solid orange;
+}
+.suggest_menu{
+    line-height:40px;
+    font-size: 22px;
+    font-weight:600;
+} 
+.border-wrap{
+    display: flex;
+}
+.border-line01{
+    box-sizing: border-box;
+    border-bottom: 1px solid#000;
+    content: "";
+    margin-bottom:2%;
+}
+.border-line02{
+    box-sizing: border-box;
+    border-bottom: 1px solid#000;
+    content: "";
+    margin-bottom:2%;
+}
   /* Style the buttons inside the tab */
-  .tab button {
+  .nav-tabs {
     background-color: inherit;
-    float: left;
+    /* float: left; */
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
+    line-height:40px;
+    /* padding: 14px 16px; */
     transition: 0.3s;
     font-size: 17px;
+   
+  }
+  .nav-tabs>li>a{
+      display: block;
+      color:orange;
+  }
+  .nav-tabs>li{
+      width: 33.3%;
   }
   
   /* Change background color of buttons on hover */
-  .tab button:hover {
+  .nav-tabs>li:hover {
     background-color: #fff;
   }
   

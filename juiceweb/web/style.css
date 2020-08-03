@@ -1326,7 +1326,9 @@ li {
     content: "\f105";
     font-family: 'FontAwesome'
 }
-
+.bx_img{
+    display:flex!important;
+}
 
 /* Style the tab */
 .tab_nav{

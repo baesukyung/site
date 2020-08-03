@@ -10,6 +10,9 @@
   -ms-touch-action: pan-y;
   touch-action: pan-y;
 }
+.bx-wrapper{
+  max-width: 100%!important;
+}
 .bx-wrapper img {
   max-width: 100%;
   display: block;

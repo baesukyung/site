@@ -76,7 +76,7 @@
 
 .video_box{
     position: absolute;
-    top: 20%;
+    top: 7%;
     left: 20%;
     opacity: none !important;
 }
@@ -85,7 +85,7 @@
     font-family: 'Noto Sans KR', sans-serif;
 }
 .iframe-txt>h3{
-    padding-top:2.5%;
+    padding-top:3.5%;
 }
 @media(max-width:767px){
     iframe{
@@ -100,10 +100,5 @@
         padding-top:5%;
     }
 }
-@media(min-width:767px){
-    iframe{
-        width: 100%;
-       
-    }
-}
+
 /* section02 end */

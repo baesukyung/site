@@ -30,7 +30,7 @@
     }
 }
 
-/* section01 end */
+/* section01 end -------------------------------------------*/
 
 .section02{
     width: 100%;
@@ -76,7 +76,7 @@
 
 .video_box{
     position: absolute;
-    top: 7%;
+    top: 15%;
     left: 20%;
     opacity: none !important;
 }
@@ -84,8 +84,11 @@
     color:#412946;
     font-family: 'Noto Sans KR', sans-serif;
 }
-.iframe-txt>h3{
-    padding-top:3.5%;
+.iframe-txt>h2{
+    padding-top:2.2%;
+    letter-spacing: 7px;
+    word-spacing: 15px;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 @media(max-width:767px){
     iframe{
@@ -93,12 +96,204 @@
        
     }
     .video_box{
-        padding-top:28%;
+        padding-top:38%;
         margin-left: -3%;
     }
     .iframe-txt{
         padding-top:5%;
+       
+    }
+    .iframe-txt h2{
+        font-size: 2rem;
+        letter-spacing: 2px;
     }
 }
 
-/* section02 end */
+/* section02 end -------------------------------------------------*/
+
+.section03{
+    width: 100%;
+}
+.sec-bg{
+    background: linear-gradient(0deg,#bd97bb,#c78ea6);
+    width: 100%;
+    height: 100vh;
+}
+.singer_img{
+    width: 100%;
+}
+.singer_img img{
+    width: 14.1%;
+}
+@media(max-width:767px){
+
+    .singer_img img{
+        width: 13.6%;
+    }
+    .sec03-logo img{
+        width: 30%;
+    }
+    .sub-txt img{
+        width: 60%;
+    }
+    .singer-icon img{
+        width: 60%;
+    }
+    .singer-name h3{
+        font-size: 1.3rem;
+        word-spacing: 15px!important;
+        padding-left: 2%;
+    }
+    .sec03-last-txt h2{
+        font-size: 1.5rem;
+    }
+    .sec03-wrap{
+        padding-top: 50%;
+    }
+
+
+}
+
+
+.sec03-logo{
+    padding-top: 3%;
+}
+.sub-txt{
+    padding-top: 1%;
+}
+.singer-icon{
+    padding-top: 2%;
+}
+.singer-name{
+    padding-left: 2%;
+    padding-top: 1%;
+}
+.singer-name h3{
+    /* letter-spacing: 2.5px; */
+    word-spacing: 45px;
+    color:#412946;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.sec03-last-txt{
+    color:#412946;
+    padding-top: 1.8%;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+/* section03 end -------------------------------------------------*/
+.section04{
+    width: 100%;
+}
+.sec04-bg{
+    background: linear-gradient(0deg,#c78ea5,#bd97bb);
+    width: 100%;
+    height: 100vh;
+}
+.replay-wrap{
+    position: relative;
+    top: 10%;
+    
+}
+.point-dot01{
+    position: absolute;
+    width:6px;
+    height: 6px;
+    border-radius: 100px;
+    background-color: white;
+    top: 50%;
+    left: 46%;
+    /* z-index: 99999!important; */
+}
+.point-dot02{
+    position: absolute;
+    width:6px;
+    height: 6px;
+    border-radius: 100px;
+    background-color: white;
+    top: 50%;
+    left: 49.7%;
+}
+.point-dot03{
+    position: absolute;
+    width:6px;
+    height: 6px;
+    border-radius: 100px;
+    background-color: white;
+    top: 50%;
+    left: 53.5%;
+}
+.point-dot04{
+    position: absolute;
+    width:6px;
+    height: 6px;
+    border-radius: 100px;
+    background-color: white;
+    top: 50%;
+    left: 59%;
+}
+.point-dot05{
+    position: absolute;
+    width:6px;
+    height: 6px;
+    border-radius: 100px;
+    background-color: white;
+    top: 50%;
+    left: 62.8%;
+}
+.replay{
+    position: absolute;
+    left: 18%;
+}
+.replay img{
+    padding-top:1%;
+    
+}
+.replay-txt{
+    position: absolute;
+    left: 26.7%;
+    /* z-index: 99; */
+}
+.replay-txt h1{
+    /* padding-top: 11%; */
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    color: white;
+}
+.replay-txt h1 span{
+    color: #412946;
+}
+.title{
+    padding-top: 7%;
+}
+.title h3{
+    word-spacing: 10px;
+    letter-spacing: 10px;
+    color: #412946;
+}
+.border-box{
+    width: 60%;
+    box-sizing: border-box;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+   margin-left: 20%;
+   margin-top: 3%;
+}
+.border-box h4{
+    letter-spacing: 10px;
+    word-spacing: 11px;
+    line-height:30px;
+    color: #412946;
+    text-align: left;
+}
+.solution{
+    color: #412946;
+}
+.solution h1{
+    padding-top: 3%;
+}
+.round01{
+    width:10%;
+    height:30%;
+    background-color: white;
+    border-radius: 100px;
+  /
+}

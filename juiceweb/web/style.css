@@ -26,8 +26,11 @@
 /* ***** Fonts ***** */
 
 /* @import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700|Quicksand:300,400,500,700|Shadows+Into+Light+Two'); */
-@import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
+/* @import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css'); */
+/* font-family: 'NanumSquareRound'; */
 
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+/* font-family: 'Nanum Gothic', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 /* font-family: 'Kaushan Script', cursive; */
 
@@ -51,7 +54,7 @@
 }
 
 body {
-    font-family: 'NanumSquareRound',sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
     position: relative;
     z-index: auto;
 }
@@ -72,7 +75,9 @@ p {
     color: #51545f;
     font-size: 16px;
 }
-
+.align{
+    text-align:justify;
+}
 .section_padding_100 {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -458,8 +463,10 @@ li {
 .navbar.navbar-expand-lg .navbar-nav .nav-link {
     padding: 25px 30px;
     color: #f7b531;
-    text-transform: uppercase;
-    font-size: 14px;
+    /* text-transform: uppercase; */
+    font-size: 18px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
 }
 
 .navbar.navbar-expand-lg .navbar-nav .nav-link:hover,
@@ -581,15 +588,21 @@ li {
     width: 20%;
 }
 .sec02_txt1>h1{
-    font-size:4rem;
-    color: #f9b233;
-    padding-top: 10%;
-    padding-bottom:10%;
-    font-family: 'Kaushan Script', cursive;
+    font-size:2.5rem;
+    color: #000;
+    font-weight: 800;
+    padding-top: 5%;
+    padding-bottom:5%;
+    /* font-family: 'Kaushan Script', cursive; */
+    font-family: 'Nanum Gothic', sans-serif;
+
 }
-.sec02_img>h3{
+.sec02_img>p{
     color: #f9b233;
-    font-family: 'Kaushan Script', cursive;
+    /* font-family: 'Kaushan Script', cursive; */
+    font-weight: 600;
+    font-size: 1.4rem;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 .display-f{
     display:flex;
@@ -601,15 +614,19 @@ li {
     background:#f2f0e8;
 }
 .bottom3{
-    padding-bottom: 3%;
+    padding-bottom: 5%;
 }
 .main_txt{
     font-size:4rem;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 .main_txt>h1{
-    font-family: 'Kaushan Script', cursive;
+    /* font-family: 'Kaushan Script', cursive; */
+    font-family: 'Nanum Gothic', sans-serif;
+    /* color: #51545f; */
+    color:#000;
+    font-weight: 800;
 }
 .cont1{
     width: 100%;
@@ -622,16 +639,36 @@ li {
 
 .cont1:hover{
     background: rgba(247,181,49, 0.7);
+    transition:1.8s;
     
 }
 .cont1:hover .hover_round{
     background: rgba(247,181,49,1);
+    transition:1.8s;
 }
+.cont1:hover .hover-txt p{
+    color: #fff;
+    transition:.5s;
+}
+.cont2:hover .hover-txt p{
+    color: #fff;
+    transition:.5s;
+}
+.cont3:hover .hover-txt p{
+    color: #fff;
+    transition:.5s;
+}
+
+
+
+
 .cont2:hover .hover_round{
     background: rgba(117,195,125,1);
+    transition:1.8s;
 }
 .cont3:hover .hover_round{
     background: rgba(247,181,49,1);
+    transition:1.8s;
 }
 .cont1>a>img:hover,
 .cont1:hover img{
@@ -640,6 +677,7 @@ li {
 .cont2:hover{
     background: rgba(117,195,125, 0.7);
     cursor: pointer;
+    transition:1.8s;
 }
 .cont2>a>img:hover,
 .cont2:hover img{
@@ -647,6 +685,7 @@ li {
 }
 .cont3:hover{
     background: rgba(247,181,49, 0.7);
+    transition:1.8s;
     cursor: pointer;
 }
 .cont3>a>img:hover,
@@ -672,8 +711,9 @@ li {
 
 }
 .hover-txt>p{
-    font-weight: 800;
-    font-size: 16pt;
+    font-weight: 700;
+    font-size: 16px;
+    color:#000;
 }
 .cont2{
     width: 100%;
@@ -688,7 +728,7 @@ li {
 /* sec04 Area CSS start */
 .sec04{
     width: 100%;
-    padding-bottom: 3%;
+    padding-bottom: 5%;
 }
 .pointer{
     cursor: pointer;
@@ -698,10 +738,11 @@ li {
     width: 100%;
 }
 .news_txt>h1{
-    line-height: 825px;
+    line-height: 815px;
     text-align: center;
     color: white;
-    font-family: 'Kaushan Script', cursive;
+    /* font-family: 'Kaushan Script', cursive; */
+    font-family: 'Nanum Gothic', sans-serif;
 }
 .news_cont1{
     /* width: 190%;   */
@@ -723,13 +764,41 @@ li {
     margin-left: 5%;
     width: 95%;
 }
-.cont1-txt{
-    /* width: 190%; */
 
-}
 .cont1-txt>p{
     padding-left: 5%;
+    font-family:'Nanum Gothic', sans-serif;
+    font-size: 16px;
+    color: #000;
+    line-height:25px;
 }
+.cont2-txt>p{
+    padding-left: 5%;
+    font-family:'Nanum Gothic', sans-serif;
+    font-size: 16px;
+    color: #000;
+    line-height:25px;
+}
+.cont3-txt>p{
+    padding-left: 5%;
+    font-family:'Nanum Gothic', sans-serif;
+    font-size: 16px;
+    color: #000;
+    line-height:25px;
+}
+.cont4-txt>p{
+    padding-left: 5%;
+    font-family:'Nanum Gothic', sans-serif;
+    font-size: 16px;
+    color: #000;
+    line-height:25px;
+}
+
+.margin-bot3{
+    margin-bottom:5px;
+}
+
+
 .cont2-txt>p{
     padding-left: 5%;
 }
@@ -742,40 +811,23 @@ li {
 
 .cont1-m{
     font-weight: 700;
-    padding-top: 7%;
+    padding-top: 5%;
 }
-.news_cont2{
-    /* width: 190%; */
-}
-.cont2-txt{
-    /* width: 190%; */
-}
+
 .cont2-m{
     font-weight: 700;
-    padding-top: 7%;
+    padding-top: 5%;
 }
-.cont1-txt>p{
-   font-size:16px;
-}
-.news_cont3{
-    /* width: 190%; */
-}
-.cont3-txt{
-    /* width: 190%; */
-}
+
+
 .cont3-m{
     font-weight: 700;
-    padding-top: 7%;
+    padding-top: 5%;
 }
-.news_cont4{
-    /* width: 190%; */
-}
-.cont4-txt{
-    /* width: 190%; */
-}
+
 .cont4-m{
     font-weight: 700;
-    padding-top: 7%;
+    padding-top: 5%;
 }
 /* sec04 Area CSS end */
 .categories_area {
@@ -1057,7 +1109,7 @@ li {
     border-top: 2px solid #ccc;
 }
 .footer_area{
-    padding-top:10%;
+    padding-top:5%;
     padding-bottom: 5%;   
 }
 .copy_right_text {
@@ -1354,7 +1406,7 @@ li {
 
 .breadcrumb-item + .breadcrumb-item:before {
     content: "\f105";
-    font-family: 'FontAwesome'
+    font-family: 'Nanum Gothic', sans-serif;
 }
 /* modal */
 .modal-title>span{
@@ -1409,6 +1461,13 @@ li {
   .nav-tabs>li>a{
       display: block;
       color:white;
+    
+  }
+  .nav-tabs>li{
+    border-right: 1px solid #fff;
+  }
+  .nav-tabs>li:last-child{
+      border-right: none;
   }
   .nav-tabs>li{
       width: 33.3%;
@@ -1602,7 +1661,7 @@ li {
     content: '\f111';
     left: 0;
     top: 5px;
-    font-family: 'FontAwesome';
+    font-family: 'Nanum Gothic', sans-serif;
     font-size: 8px;
     color: #fc6c3f;
 }
@@ -1721,7 +1780,7 @@ li {
 .comment-wrapper .comment-date {
     font-size: 12px;
     text-transform: uppercase;
-    letter-spacing: 1px;
+   
 }
 
 .comment-wrapper .comment-content h5 {

@@ -1,8 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap'); */
 /* font-family: 'Noto Sans KR', sans-serif; */
+@font-face { font-family: 'SeoulHangangM'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SeoulHangangM.woff') format('woff'); font-weight: normal; font-style: normal; }
+
 
 *{margin:0;padding:0;}
-
+body{
+    font-family: 'SeoulHangangM';
+}
 
 #fp-nav ul li a span, 
 .fp-slidesNav ul li a span:active{
@@ -64,7 +68,7 @@
         padding-top:60%
     }
 }
-@media(min-width:767px){
+@media(min-width:768px){
     .note>img{
         width: 100%;
         padding-top:0;
@@ -82,7 +86,7 @@
 }
 .iframe-txt{
     color:#412946;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'SeoulHangangM';
     position: absolute;
     top: 86%;
     left: 37%;
@@ -92,8 +96,20 @@
     padding-top:2.2%;
     letter-spacing: 7px;
     word-spacing: 15px;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'SeoulHangangM';
 }
+/* @media(min-width:320px){
+    .iframe-txt{
+        padding-top: 15%;
+        
+        
+    }
+    .iframe-txt>h3>strong{
+        font-size:1.5rem;
+        letter-spacing: 2px;
+        word-spacing: 2.3px;
+    }
+} */
 @media(max-width:767px){
     iframe{
         width: 100%;
@@ -179,12 +195,12 @@
     /* letter-spacing: 2.5px; */
     word-spacing: 45px;
     color:#412946;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'SeoulHangangM';
 }
 .sec03-last-txt{
     color:#412946;
     padding-top: 1.8%;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'SeoulHangangM';
 }
 /* section03 end -------------------------------------------------*/
 .section04{
@@ -207,7 +223,7 @@
     border-radius: 100px;
     background-color: white;
    
-    left: 44%;
+    left: 42%;
     /* z-index: 99999!important; */
 }
 .point-dot02{
@@ -217,7 +233,7 @@
     border-radius: 100px;
     background-color: white;
     /* top: 50%; */
-    left: 48.5%;
+    left: 46%;
 }
 .point-dot03{
     position: absolute;
@@ -226,7 +242,7 @@
     border-radius: 100px;
     background-color: white;
    
-    left: 53%;
+    left: 50%;
 }
 .point-dot04{
     position: absolute;
@@ -235,7 +251,7 @@
     border-radius: 100px;
     background-color: white;
    
-    left: 59.3%;
+    left: 56.5%;
 }
 .point-dot05{
     position: absolute;
@@ -244,7 +260,7 @@
     border-radius: 100px;
     background-color: white;
     
-    left: 63.3%;
+    left: 60.8%;
 }
 /* .replay{
     position: absolute;
@@ -271,6 +287,35 @@
 .replay-txt h1 span{
     color: #412946;
 }
+/* @media(min-width:320px){
+    .replay-txt>h1>strong{
+        font-size:1.2rem;
+    }
+    .replay-txt{
+        margin-top: -2.8%;
+    }
+    .title>h3{
+        font-size:1.2rem!important;
+        word-spacing: 0;
+    }
+    .border-box h4{
+        font-size: 1.2rem!important;
+        text-align: justify;
+    }
+    .icon-txt>p{
+        font-size: 1rem;
+    }
+    .answer>p{
+        font-size: 1rem;
+        word-spacing: -1px;
+    }
+    .link_round>a>p{
+        font-size:1rem;
+    }
+    .link_round>a{
+        font-size:1rem;
+    }
+} */
 .title{
     padding-top: 2%;
 }
@@ -404,9 +449,69 @@
     filter:drop-shadow(5px);
 }
 .event_img{
-    width:60%;
-    position: absolute;
-    top: 20%;
-    left: -15%;
+    width:100%;
+
     
+}
+.event_img img{
+    width:95% ;
+    padding-left: 25%;
+    padding-top: 7%;
+}
+.evet-title>h1{
+    font-weight: 800;
+    color:#412946;
+    padding-top: 3%;
+}
+.event-text{
+    display: flex;
+    padding-left: 10%;
+    padding-top: 5%;
+}
+.dis-f{
+    display: flex;
+}
+.event-text01 p{
+    font-size: 2rem;
+    line-height:50px;
+    font-weight: 800;
+    background: #e2bbed;
+    width: 60px;
+    border-radius: 5px;
+}
+.event-text02{
+   
+    text-align: left;
+}
+.event-text02 p{
+    font-size: 2rem;
+    line-height:50px;
+  
+}
+.event-text01{
+    padding-right: 5%;
+}
+@media(max-width:767px){
+    .event_box{
+        width:70%;
+        height: 60%;
+        top: 15%;
+        left: 15%;
+    }
+    .evet-title>h1{
+        font-size: 2rem;
+    }
+    .dis-block{
+        display: block;
+    }
+    .event_img img{
+        width:20%;
+        padding-left: 0;
+    }
+    .event-text01>p{
+        font-size: 1.5rem;
+    }
+    .event-text02>p{
+        font-size: 1.4rem;
+    }
 }

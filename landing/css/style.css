@@ -45,15 +45,15 @@
     transition: all 0.5s;
     
 }
-.opacity-box{
+/* .opacity-box{
     width: 100%;
     height: 100vh;
     background:#e2bbed;
     opacity: .92;
-}
+} */
 /* style="background:#e2bbed;" */
 .note{
-    padding-top: 10%;
+    padding-top: 5%;
 }
 .note>img{
     width: 100%;
@@ -67,7 +67,7 @@
 @media(min-width:767px){
     .note>img{
         width: 100%;
-       
+        padding-top:0;
     }
 }
 .no-padding{
@@ -83,6 +83,10 @@
 .iframe-txt{
     color:#412946;
     font-family: 'Noto Sans KR', sans-serif;
+    position: absolute;
+    top: 86%;
+    left: 33%;
+    
 }
 .iframe-txt>h2{
     padding-top:2.2%;
@@ -199,8 +203,8 @@
     height: 6px;
     border-radius: 100px;
     background-color: white;
-    top: 50%;
-    left: 46%;
+   
+    left: 44%;
     /* z-index: 99999!important; */
 }
 .point-dot02{
@@ -209,8 +213,8 @@
     height: 6px;
     border-radius: 100px;
     background-color: white;
-    top: 50%;
-    left: 49.7%;
+    /* top: 50%; */
+    left: 48.5%;
 }
 .point-dot03{
     position: absolute;
@@ -218,8 +222,8 @@
     height: 6px;
     border-radius: 100px;
     background-color: white;
-    top: 50%;
-    left: 53.5%;
+   
+    left: 53%;
 }
 .point-dot04{
     position: absolute;
@@ -227,8 +231,8 @@
     height: 6px;
     border-radius: 100px;
     background-color: white;
-    top: 50%;
-    left: 59%;
+   
+    left: 59.3%;
 }
 .point-dot05{
     position: absolute;
@@ -236,64 +240,170 @@
     height: 6px;
     border-radius: 100px;
     background-color: white;
-    top: 50%;
-    left: 62.8%;
+    
+    left: 63.3%;
 }
-.replay{
+/* .replay{
     position: absolute;
     left: 18%;
-}
+} */
 .replay img{
     padding-top:1%;
+    width: 70%;
     
 }
 .replay-txt{
     position: absolute;
-    left: 26.7%;
+    left: 23%;
+    top: 1.8%;
     /* z-index: 99; */
 }
 .replay-txt h1{
     /* padding-top: 11%; */
-    letter-spacing: 5px;
+    letter-spacing: 10px;
     word-spacing: 10px;
     color: white;
+    font-size: 4rem;
 }
 .replay-txt h1 span{
     color: #412946;
 }
 .title{
-    padding-top: 7%;
+    padding-top: 2%;
 }
 .title h3{
     word-spacing: 10px;
-    letter-spacing: 10px;
+    letter-spacing: 5px;
     color: #412946;
 }
 .border-box{
-    width: 60%;
+    width: 70%;
     box-sizing: border-box;
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
-   margin-left: 20%;
-   margin-top: 3%;
+    margin-left: 15%;
+    margin-top: 3%;
 }
 .border-box h4{
-    letter-spacing: 10px;
-    word-spacing: 11px;
+    letter-spacing: 5px;
+    word-spacing: 5.3px;
     line-height:30px;
     color: #412946;
     text-align: left;
 }
 .solution{
     color: #412946;
+    padding-bottom: 2%;
 }
 .solution h1{
-    padding-top: 3%;
+    padding-top: 2%;
 }
-.round01{
-    width:10%;
-    height:30%;
-    background-color: white;
+.icon img{
+    width: 50%;
+}
+.icon-txt{
+    width: 75%;
+    padding-top:7%;
+    padding-left:23%;
+    text-align: justify;
+}
+.icon-txt p{
+    font-size:16px;
+  
+}
+.link_round{
+    width:20%;
+    height:7%;
+    box-sizing: border-box;
     border-radius: 100px;
-  /
+    background-color:#e2bbed;
+    position: absolute;
+    left: 40%;
+    margin-top: 3%;
+}
+.link_round>a>p{
+    padding-top:6%;
+    color:#412946;
+}
+.answer{
+    font-size: 16px;
+    font-weight: 700;
+    padding-top:3%;
+}
+@media(max-width:767px){
+
+    .replay-txt h1{
+        font-size:2rem;
+        word-spacing:4px;
+        letter-spacing:2px;
+        margin-top: 2%;
+    }
+    .title h3{
+        font-size:1.5rem;
+        letter-spacing:0px;
+        word-spacing:1px;
+    }
+    .border-box h4{
+        font-size: 1.5rem;
+        letter-spacing:1px;
+        word-spacing:1px;
+    }
+    .solution h1{
+        font-size:2rem;
+    }
+    .icon>img{
+        display:inline;
+    }
+    .icon img{
+        width: 70%;
+    }
+    .icon-wrapper{
+        display: flex;
+    }
+    .icon-txt{
+        width: 100%;
+        padding-left: 0;
+    }
+    .icon-txt p{
+        font-size:1.2rem;
+    }
+    .answer{
+        font-size: 1.2rem;
+    }
+    .link_round{
+        width: 28%;
+        margin-left: -4%;
+    }
+    .replay-wrap{
+       top:20%;
+    }
+}
+
+/* section04end -------------------------------------------------*/
+.section05{
+    width: 100%;
+}
+.sec05_bg{
+    background:url('../img/05bg.jpg');
+    width: 100%;
+    height: 100vh;
+    background-repeat:no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.event_box{
+    width: 50%;
+    height:50%;
+    background:white;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    filter:drop-shadow(5px);
+}
+.event_img{
+    width:60%;
+    position: absolute;
+    top: 20%;
+    left: -15%;
+    
 }

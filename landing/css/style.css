@@ -85,10 +85,10 @@
     font-family: 'Noto Sans KR', sans-serif;
     position: absolute;
     top: 86%;
-    left: 33%;
+    left: 37%;
     
 }
-.iframe-txt>h2{
+.iframe-txt>h3{
     padding-top:2.2%;
     letter-spacing: 7px;
     word-spacing: 15px;
@@ -125,9 +125,10 @@
 }
 .singer_img{
     width: 100%;
+    display: flex;
 }
-.singer_img img{
-    width: 14.1%;
+.singer_img>div>img{
+    width: 100%;
 }
 @media(max-width:767px){
 
@@ -148,8 +149,8 @@
         word-spacing: 15px!important;
         padding-left: 2%;
     }
-    .sec03-last-txt h2{
-        font-size: 1.5rem;
+    .sec03-last-txt h3{
+        font-size: 1.2rem;
     }
     .sec03-wrap{
         padding-top: 50%;
@@ -374,9 +375,9 @@
         width: 28%;
         margin-left: -4%;
     }
-    .replay-wrap{
+    /* .replay-wrap{
        top:20%;
-    }
+    } */
 }
 
 /* section04end -------------------------------------------------*/

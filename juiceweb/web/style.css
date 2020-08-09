@@ -608,6 +608,7 @@ li {
     font-size: 1.4rem;
     font-family: 'Nanum Gothic', sans-serif;
 }
+
 @media(max-width:767px){
     .sec02_img>p{
         font-size:1rem;
@@ -853,6 +854,30 @@ li {
     padding-top: 5%;
 }
 /* sec04 Area CSS end */
+
+/*menu area start*/
+
+
+.menu_img{
+    width: 95%;
+    cursor: pointer;
+    background-color: #ccc;
+}
+.menu_img>img{
+    width:90%;
+padding-top: 17%;
+padding-bottom: 17%;
+  
+}
+.menu_img>p{
+    padding-bottom: 30%;
+}
+#Fruits>h3{
+    padding-bottom: 5%;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 22px;
+}
+/*menu area end*/
 .categories_area {
     padding: 80px 0 50px 0;
 }
@@ -1432,9 +1457,13 @@ li {
     font-family: 'Nanum Gothic', sans-serif;
 }
 /* modal */
-.modal-content{
+.modal-cont{
     border-radius: 0!important;
     border: 1px solid #ccc;
+    position: absolute;
+    margin-top: 25%;
+    left: 13%;
+
 }
 .modal-title>span{
     font-size: 1rem;
@@ -1453,19 +1482,56 @@ li {
     font-size: .9rem;
 }
 .padding7{
-    padding-top: 7%;
-    padding-left: 7%;
-    padding-right: 7%;
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 .padding-mix{
     padding-top: 1%;
-    padding-left: 7%;
-    padding-right:7%;
+    padding-left: 10%;
+    padding-right:10%;
     padding-bottom:7%;
 }
 .modal-body dl{
     display:flex;
     width: 38.32%;
+}
+.dis-f{
+    display: flex;
+}
+.dis-f>dl>dt{
+    padding-right:5%;
+}
+.dl2{
+    padding-left: 10%;
+}
+.dl4{
+    padding-left: 10%;
+}
+
+
+.menu_img{
+    position: relative;
+}
+#myModal08{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.dl01{
+    font-size: .8rem;
+}
+.dl02{
+    font-size: .8rem;
+}
+.dl03{
+    font-size: .8rem;
+}
+.dl04{
+    font-size: .8rem;
+}
+.modal-mid dl{
+    width: 50%;
 }
 /* Style the tab */
 .tab_nav{

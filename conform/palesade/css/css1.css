@@ -624,7 +624,9 @@
 .panel-body>p{
     text-align: center;
 }
-
+.panel-txt{
+    padding-left: 20%;
+}
 /* section11 end */
 
 .footer-bg{

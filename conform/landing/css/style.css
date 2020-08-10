@@ -67,6 +67,8 @@ body{
         width: 100%;
         padding-top:60%
     }
+
+
 }
 @media(min-width:768px){
     .note>img{
@@ -80,7 +82,7 @@ body{
 
 .video_box{
     position: absolute;
-    top: 15%;
+    top: 25%;
     left: 20%;
     opacity: none !important;
 }
@@ -93,7 +95,7 @@ body{
     
 }
 .iframe-txt>h3{
-    padding-top:2.2%;
+    margin-top:-5%;
     letter-spacing: 7px;
     word-spacing: 15px;
     font-family: 'SeoulHangangM';
@@ -116,11 +118,12 @@ body{
        
     }
     .video_box{
-        padding-top:38%;
-        margin-left: -3%;
+        top: 38%;
+        left: 0%;
+        width: 100%;
     }
     .iframe-txt{
-        top:55%;
+        top:75%;
         left: 0;
         width: 100%;
        

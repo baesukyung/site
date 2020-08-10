@@ -867,7 +867,8 @@ select {
     }
     .modal-content{
         width: 90%;
-        margin-left: 40px;
+        margin-left: 25px;
+        margin-top: 15%;
     }
 
 

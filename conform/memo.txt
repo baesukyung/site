@@ -19,6 +19,6 @@ https://baesukyung.github.io/site/conform/detailpage/design.html
 
 
 (jpg파일 저장위치)
-https://github.com/baesukyung/site
+https://github.com/baesukyung/site/tree/master/conform
 
 

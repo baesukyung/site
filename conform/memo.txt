@@ -1,0 +1,24 @@
+1. UI 디자인
+https://baesukyung.github.io/site/conform/uidesign/uidesign.html
+
+2. 브랜드사이트
+https://baesukyung.github.io/site/conform/juiceweb/web/archive.html
+
+3. 자동차사이트
+https://baesukyung.github.io/site/conform/palesade/home.html
+
+4. 날씨앱
+https://baesukyung.github.io/site/conform/app/index.html
+
+5. 랜딩페이지(영화,드라마등)
+https://baesukyung.github.io/site/conform/landing/index.html
+
+6. 상세페이지
+https://baesukyung.github.io/site/conform/detailpage/design.html
+
+
+
+(jpg파일 저장위치)
+https://github.com/baesukyung/site
+
+

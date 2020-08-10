@@ -577,13 +577,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+   
 }
 
-.rgb{
-    width: 100%;
-    background-color: #000;
-    background-color: rgba(0,0,0,.7);
-}
+
 
 
 .video-container{
@@ -610,8 +607,54 @@
 .disf{
     display: inline;
 }
-.pad10{
-    padding-left: 10%;
+
+
+.Package_box {
+    position: relative;
+    width: 100%;
+  }
+  
+  .package_img {
+    /* display: block; */
+    width: 80%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    right: 0;
+    background-color: rgb(0, 0, 0,0.5);
+    overflow: hidden;
+    width: 80%;
+    height: 0;
+    transition: .5s ease;
+    text-align: center;
+  }
+  
+  .Package_box:hover .overlay {
+    height: 100%;
+    width: 80%;
+  }
+  
+  .overlay_txt {
+    /* color: #b88a75; */
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: justify;
+  }
+  .padding_0{
+    padding: 0;
+}
+.padding15{
+    padding: 15px;
 }
 /* section10 end */
 .section11{
@@ -850,6 +893,12 @@ select {
 
 
     /* section03 end */
+    .Interior{
+        text-align: center;
+    }
+ .text-al{
+     text-align: center!important;
+ }
     .bg00{
         
         width: 100%;
@@ -988,8 +1037,11 @@ select {
 .section10{
     width: 100%;
 }
-.pad10{
-    padding-left: 0;
+.overlay_txt h2{
+    font-size: 2rem;
+}
+.description{
+    font-size: 1.5rem;
 }
 .Protection{
     margin-top: -7%;
@@ -1003,8 +1055,17 @@ select {
 .description{
     margin-top: 10%;
 }
+.row_wrap{
+    display: flex;
+}
 .description>p{
    margin-top: 5%;
+}
+.padding_0{
+    padding: 0;
+}
+.wid_110{
+  width:75%;
 }
 .grid img{
     width: 100%;
@@ -1027,5 +1088,14 @@ select {
  .swiper-slide>img{
      width: 100%;
  }
+.disf_f{
+    display: flex;
+}
+.panel-body div>p{
+    font-size: 11pt;
+}
+.panel-txt{
+    padding-left:30%;
+}
 }
 

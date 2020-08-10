@@ -992,7 +992,50 @@ figure.effect-zoe figcaption {
 	-webkit-transform: translate3d(0,100%,0);
 	transform: translate3d(0,100%,0);
 }
-
+@media(max-width:767px){
+	figure.effect-zoe p.description{
+		top:-200%;
+		font-size:1rem!important;
+		padding: 0em!important;
+	}
+	figure.effect-zoe figcaption{
+		height: 2em;
+	}
+	figure.effect-zoe h2{
+		font-size: 1.3rem;
+		margin-top: -3%;
+	}
+	.grid figure>img {
+		width:79%;
+	}
+	.grid figure{
+		width: 55%;
+	}
+}
+@media(max-width:1718px){
+	figure.effect-zoe p.description{
+		bottom: 1em!important;
+	}
+	figure.effect-zoe figcaption{
+		height: 2em;
+	}
+	figure.effect-zoe h2{
+		font-size: 1.3rem;
+		margin-top: -3%;
+	}
+}
+@media(max-width:1199px){
+	figure.effect-zoe p.description{
+		bottom: 1em!important;
+	}
+	figure.effect-zoe figcaption{
+		height: 2em;
+	}
+	figure.effect-zoe h2{
+		font-size: 1.3rem;
+		margin-top: -3%;
+	}
+}
 figure.effect-zoe h2 {
 	float: left;
 }

@@ -861,7 +861,8 @@ li {
 .menu_img{
     width: 95%;
     cursor: pointer;
-    background-color: #ccc;
+    background-color: #f5f5f5;
+  
 }
 .menu_img>img{
     width:90%;

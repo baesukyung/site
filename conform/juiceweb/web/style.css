@@ -218,7 +218,9 @@ ol {
     margin: 0;
     padding: 0;
 }
-
+.modal button.close{
+    z-index: 9999;
+}
 #scrollUp {
     bottom: 55px;
     font-size: 14px;
@@ -1466,6 +1468,9 @@ padding-bottom: 17%;
     left: 13%;
 
 }
+.mod-body{
+    padding-left: 10%;
+}
 .modal-title>span{
     font-size: 1rem;
     color: #ccc;
@@ -1500,9 +1505,9 @@ padding-bottom: 17%;
 .dis-f{
     display: flex;
 }
-.dis-f>dl>dt{
+/* .dis-f>dl>dt{
     padding-right:5%;
-}
+} */
 .dl2{
     padding-left: 10%;
 }
@@ -1518,6 +1523,51 @@ padding-bottom: 17%;
     position: absolute;
     top: 0;
     left: 0;
+}
+#myModal09{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#myModal10{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#myModal11{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#myModal12{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#myModal13{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#myModal14{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#myModal15{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.padding10{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+.dl_margin{
+    margin-left: 5%;
+    margin-right: 20%;
 }
 .dl01{
     font-size: .8rem;

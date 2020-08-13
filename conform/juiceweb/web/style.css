@@ -867,15 +867,16 @@ li {
   
 }
 .menu_img>img{
-    width:90%;
-padding-top: 17%;
-padding-bottom: 17%;
+    width:80%;
+    padding-top: 17%;
+    padding-bottom: 17%;
   
 }
 .menu_img>p{
     padding-bottom: 30%;
 }
 #Fruits>h3{
+    padding-top: 3%;
     padding-bottom: 5%;
     font-family: 'Nanum Gothic', sans-serif;
     font-size: 22px;
@@ -1412,6 +1413,7 @@ padding-bottom: 17%;
 }
 
 
+
 .breadcumb-area {
     width: 100%;
     height: 500px;
@@ -1463,7 +1465,7 @@ padding-bottom: 17%;
 .modal-cont{
     border-radius: 0!important;
     border: 1px solid #ccc;
-    position: absolute;
+    position: absolute!important;
     margin-top: 25%;
     left: 13%;
 
@@ -1514,10 +1516,11 @@ padding-bottom: 17%;
 .dl4{
     padding-left: 10%;
 }
-
-
 .menu_img{
     position: relative;
+}
+.menu_img>p>strong{
+    font-weight:800;
 }
 #myModal08{
     position: absolute;
@@ -2029,4 +2032,13 @@ padding-bottom: 17%;
 	z-index: 99999;
 	color: #fff;
 	cursor: pointer;
+}
+
+.modal-open .modal{
+    overflow: hidden !important;
+}
+
+
+body.modal-open {
+    overflow:scroll !important;
 }

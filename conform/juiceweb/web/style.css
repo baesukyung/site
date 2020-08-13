@@ -221,6 +221,9 @@ ol {
 .modal button.close{
     z-index: 9999;
 }
+.margintop_7{
+    margin-top: -11% !important;
+}
 #scrollUp {
     bottom: 55px;
     font-size: 14px;
@@ -1474,9 +1477,15 @@ li {
     padding-left: 10%;
 }
 .modal-title>span{
-    font-size: 1rem;
+    font-size: 1;
     color: #ccc;
     font-weight: lighter;
+}
+.mo-title>span{
+    font-size: .8rem!important;
+}
+.mo-title{
+    font-size: .9rem!important;
 }
 .modal-header{
     border: none!important;
@@ -1485,6 +1494,7 @@ li {
     box-sizing: border-box;
     border-bottom:2px solid #000;
     line-height:35px;
+    font-size: 1.2rem;
 }
 .modal_txt p {
     font-size: .9rem;

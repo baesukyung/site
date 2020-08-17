@@ -656,6 +656,25 @@
 .padding15{
     padding: 15px;
 }
+@media(max-width:600px){
+    .description{
+        font-size: 1rem!important;
+    }
+    .overlay_txt>h2{
+        font-size: 1.5rem!important;
+    }
+}
+@media(max-width:375px){
+    .description{
+        font-size: .7rem!important;
+    }
+    .overlay_txt>h2{
+        font-size: 1.1rem!important;
+    }
+    .overlay_txt{
+        width: 95%;
+    }
+}
 /* section10 end */
 .section11{
     width: 100%;
@@ -1099,3 +1118,17 @@ select {
 }
 }
 
+@media(max-width:600px){
+
+}
+@media(max-width:375px){
+    .panel-txt{
+        padding-left: 3%;
+    }
+    .panel-body p{
+        text-align: left;
+    }
+    .footer-bg{
+        margin-top: -5%!important;
+    }
+}

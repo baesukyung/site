@@ -93,6 +93,21 @@ body{
         font-size: 1.6rem;
     }
 }
+@media(max-width:600px){
+    .replay_01-txt{
+       left: 28%!important;
+       top:15%;
+    }
+    .replay_01-txt>h1{
+        font-size: 3rem!important;
+    }
+    .video_box{
+        margin-left: -1%!important;
+    }
+    .iframe-txt>h3>strong{
+        margin-left: 0!important;
+    }
+}
 @media(max-width:767px){
     .note>img{
         width: 100%;
@@ -292,7 +307,12 @@ body{
         line-height: 25px;
     }
 }
-
+@media(max-width:600px){
+    .sec03-last-txt h3{
+        font-size: 1.6rem;
+       
+    }
+}
 /* section03 end -------------------------------------------------*/
 .section04{
     width: 100%;
@@ -538,7 +558,21 @@ body{
     }
 
 }
-
+@media(max-width:600px){
+    .replay-txt{
+        padding-left: 5%;
+       
+    }
+    .replay-txt h1{
+        font-size: 2.5rem;
+    }
+    .point-dot04{
+        left: 58%;
+    }
+    .point-dot05{
+        left: 63%;
+    }
+}
 /* section04end -------------------------------------------------*/
 .section05{
     width: 100%;

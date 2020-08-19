@@ -1086,6 +1086,48 @@ transition: all .5s ease;
 		float: left;
 		width: auto;
 	}
+	/* .nav{
+		letter-spacing:0px!important;
+	}
+	.bg-txt>h1{
+		font-size: 3.8rem;
+	}
+	.gallery-btn{
+	
+		padding-left: 5%;
+		padding-right:5%
+	}
+	#IRE>strong{
+		font-size:1.2rem;
+	}
+	#IRE1{
+		font-size:.8rem;
+	}
+	#IRE2{
+		font-size:.8rem;
+	}
+	.gallery-box{
+		display:block;
+	}
+	.gallery-box-bottom{
+		width: 80%;
+		margin-left:10%;
+	}
+	.gallery-txt-box{
+		width: 100%;
+	}
+	.gallery-txt{
+		width: 100%;
+		margin-left:0;
+	}
+	.title3{
+		padding-top: 0;
+	}
+	.title3 p{
+		font-size:.9rem;
+		padding-left: 2%;
+		padding-right: 2%;
+	} */
 }
 
 

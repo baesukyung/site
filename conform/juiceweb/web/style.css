@@ -1437,10 +1437,28 @@ li {
     z-index: -1;
 }
 
-.breadcumb-area .bradcumb-title h2 {
+.breadcumb-area .bradcumb-title01 h2 {
     font-size: 50px;
-    color: rgba(117,195,125,1);
+    /* color: rgba(117,195,125,1); */
+    color:white; 
+    filter: drop-shadow(1px,1px,1px,black);
     padding-top: 8%;
+    letter-spacing:13px;
+}
+.breadcumb-area .bradcumb-title02 h2 {
+    font-size: 50px;
+    color:white; 
+    filter: drop-shadow(1px,1px,1px,black);
+    padding-top: 8%;
+   
+}
+.breadcumb-area .bradcumb-title03 h2 {
+    font-size: 50px;
+    /* color: rgba(117,195,125,1); */
+    color:white; 
+    filter: drop-shadow(1px,1px,1px,black);
+    padding-top: 8%;
+    
 }
 .breadcumb-area .bradcumb-title h3 {
     font-size: 25px;
@@ -2052,3 +2070,12 @@ li {
 body.modal-open {
     overflow:scroll !important;
 }
+
+/*------------- single.html  --------------------- */
+.wrap{
+    background:url('img/bg-img/bg-fruits.jpg');
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+

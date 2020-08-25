@@ -2073,8 +2073,8 @@ body.modal-open {
 
 /*------------- single.html  --------------------- */
 .wrap{
-    background:url('img/bg-img/bg-fruits.jpg');
-    background-position: center;
+    background:url('img/bg-img/cont1.jpg');
+    /* background-position: center; */
     background-repeat:no-repeat;
     background-size: cover;
 }

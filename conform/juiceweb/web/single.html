@@ -129,46 +129,58 @@
     <!-- ****** Breadcumb Area Start ****** -->
 
     <div class="wrap">
+        <div class="breadcumb-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                                <li class="breadcrumb-item"><a href="#">Archive</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Single Post Blog</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
     <div class="breadcumb-area">
-        <div class="container h-100">
-            <div class="row h-100 align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
                 <div class="col-12">
-                    <div class="bradcumb-title">
-                        <h2>뉴스룸</h2>
+                    <div class="bradcumb-title news_title">
+                        <h2>Juice Farm News</h2>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="breadcumb-nav">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
-                            <li class="breadcrumb-item"><a href="#">Archive</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Single Post Blog</li>
-                        </ol>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <div class="container">
-        <h2>Dynamic Tabs</h2>
-        <p>To make the tabs toggleable, add the data-toggle="tab" attribute to each link. Then add a .tab-pane class with a unique ID for every tab and wrap them inside a div element with class .tab-content.</p>
-      
-        <ul class="nav nav-tabs">
-          <li class="active"><a data-toggle="tab" href="#menu1">Menu 1</a></li>
-          <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
-          <li><a data-toggle="tab" href="#menu3">Menu 3</a></li>
+        <ul class="nav nav-tabs text-center b-color">
+          <li class="active"><a data-toggle="tab" href="#menu1">BRAND NEWS</a></li>
+          <li><a data-toggle="tab" href="#menu2">EVENT</a></li>
+          <li><a data-toggle="tab" href="#menu3">사회공헌</a></li>
         </ul>
       
         <div class="tab-content">
           <div id="menu1" class="tab-pane fade in active">
-            <h3>HOME</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="col-12 text-center padding-3 news_sub_title">
+                <h3>공지사항&보도자료</h3>
+            </div>
+                <div class="col-12 display-f padding-3">
+                    <div class="col-4 news_img">
+                        <a href=""><img src="img/news/news1.jpg" alt=""></a>
+                    </div>
+                    <div class="col-8 news_box">
+                        <a href="">
+                            <h4>Juice Farm '7월의 신상메뉴' 출시</h4>
+                            <p>- <strong>Watermelon + Lime :</strong> 더운 여름 당신의 입안을 촉촉하게 적셔줄 메뉴~!! ★수박과 라임의 만남. 달콤하고 새콤한 맛을 느껴보세요.<br>
+                            - 수박껍질에 껍질에 약간의 라임을 블렌더에 넣어 함께 갈면 건강에 좋고 활기를 북돋는 훌륭한 간식을 만들 수 있습니다. 사실 수박 껍질에는 건강을 증진시키고 혈액을 생성하는 엽록소가 풍부할 뿐............아니라 핑크색 과육보다 더 많은 아미노산 시트룰린이 함유되어 있습니다.</p>
+                            <h6>2020-07-24</h6>
+                        </a>
+                    </div>
+                </div>
           </div>
           <div id="menu2" class="tab-pane fade">
             <h3>Menu 2</h3>
@@ -179,6 +191,16 @@
             <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
           </div>
         </div>
+        <div class="pagination text-center">
+            <a href="#">&laquo;</a>
+            <a class="active" href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+          </div>
       </div>
       
 

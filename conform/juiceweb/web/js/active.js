@@ -150,3 +150,9 @@ function openCity(evt, cityName) {
   
   // Get the element with id="defaultOpen" and click on it
   document.getElementById("defaultOpen").click();
+
+  $(function(){
+    $('.pagination>a').click(function(){
+        $(this).CSS('background','fc6c3f');
+    });
+  });

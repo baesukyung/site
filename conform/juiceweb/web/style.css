@@ -1419,7 +1419,6 @@ li {
 
 .breadcumb-area {
     width: 100%;
-    height: 500px;
     background-position: center;
     background-size: cover;
     position: relative;
@@ -1442,14 +1441,14 @@ li {
     /* color: rgba(117,195,125,1); */
     color:white; 
     filter: drop-shadow(1px,1px,1px,black);
-    padding-top: 8%;
+    padding-top: 20%;
     letter-spacing:13px;
 }
 .breadcumb-area .bradcumb-title02 h2 {
     font-size: 50px;
     color:white; 
     filter: drop-shadow(1px,1px,1px,black);
-    padding-top: 8%;
+    padding-top: 20%;
    
 }
 .breadcumb-area .bradcumb-title03 h2 {
@@ -1457,7 +1456,7 @@ li {
     /* color: rgba(117,195,125,1); */
     color:white; 
     filter: drop-shadow(1px,1px,1px,black);
-    padding-top: 8%;
+    padding-top: 20%;
     
 }
 .breadcumb-area .bradcumb-title h3 {
@@ -1619,6 +1618,7 @@ li {
 .tab_nav{
     overflow: hidden;
     border: 1px solid white;
+    margin: 3% 0 3% 0;
 }
 .suggest_menu{
     line-height:40px;
@@ -2073,9 +2073,65 @@ body.modal-open {
 
 /*------------- single.html  --------------------- */
 .wrap{
-    background:url('img/bg-img/cont1.jpg');
-    /* background-position: center; */
-    background-repeat:no-repeat;
-    background-size: cover;
+    background: #fee2d9;
+}
+.bradcumb-title{
+    /* padding: 5% 0 5% 0; */
+    height: 500px;
+}
+.news_title{
+    height: 100px;
+    padding: 2%;
+}
+.b-color li{
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    line-height:60px;
+}
+.b-color li:last-child{
+    border-right:1px solid #fff;
+}
+.padding-3{
+    padding: 3% 0 0 0;
+}
+.news_img{
+    width: 100%;
+}
+.news_box{
+    background: #fff;
+    line-height: 40px;
+    
+}
+.news_box a{
+    display: block;
+    padding: 3% 3%;
+    height: 271px;
+
+}
+.news_sub_title h3{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.news_box a>p{
+    overflow: hidden;
+    height:150px ;
+}
+.pagination{
+    width: 250px;
+    text-align: center!important;
+    
 }
 
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+  }
+  
+  .pagination a.active {
+    background-color: #fc6c3f;
+    color: white;
+  }
+  
+.pagination a:hover:not(.active) {background-color: #ddd;}

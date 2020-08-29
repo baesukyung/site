@@ -725,7 +725,7 @@ li {
     padding-top: 40%;
 
 }
-.hover-txt>p{
+.hover-txt>a>p{
     font-weight: 700;
     font-size: 16px;
     color:#000;
@@ -763,19 +763,19 @@ li {
     /* width: 190%;   */
     height: 100%;
 }
-.news_cont1>img{
+.news_cont1>a>img{
     margin-left: 5%;
     width: 95%;
 }
-.news_cont2>img{
+.news_cont2>a>img{
     margin-left: 5%;
     width: 95%;
 }
-.news_cont3>img{
+.news_cont3>a>img{
     margin-left: 5%;
     width: 95%;
 }
-.news_cont4>img{
+.news_cont4>a>img{
     margin-left: 5%;
     width: 95%;
 }
@@ -842,7 +842,9 @@ li {
     font-weight: 700;
     padding-top: 5%;
 }
-
+.margin-bottom{
+    margin-bottom: 0;
+}
 .cont2-m{
     font-weight: 700;
     padding-top: 5%;

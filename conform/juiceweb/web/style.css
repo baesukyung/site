@@ -1311,7 +1311,7 @@ li {
 :: 9.0 Goole Map Area CSS
 -------------------- */
 
-#googleMap {
+#map {
     height: 620px;
     width: 100%;
 }
@@ -2277,7 +2277,7 @@ body, html {
   
   .parallax {
     /* The image used */
-    background-image: url('img/news/n1.jpg');
+    background-image: url('img/bg-img/bottle.jpg');
     background-position: bottom;
   
     /* Full height */
@@ -2349,4 +2349,20 @@ body, html {
     -ms-transform:scale(1.1);   
     -o-transform:scale(1.1);
     transform:scale(1.1);
+}
+
+
+.parallax02{
+        /* The image used */
+        background-image: url('img/bg-img/image.png');
+        background-position: center;
+      
+        /* Full height */
+        height: 50%; 
+      
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
 }

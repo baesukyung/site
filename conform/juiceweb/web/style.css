@@ -314,6 +314,14 @@ img {
     padding-right: 100px;
 }
 
+.mlr-0{
+    margin-left:0px;
+    margin-right:0px;
+    padding-right: 0px!important;
+    padding-left:0px!important;
+    width: 100%;
+}
+
 
 ul,
 ol {
@@ -559,7 +567,8 @@ li {
 -------------------- */
 
 .logo_area .yummy-logo {
-    font-family: 'Shadows Into Light Two', cursive;
+    font-family: 'Nanum Gothic', sans-serif; 
+
     font-size: 60px;
     margin-bottom: 0;
     padding: 35px 0 20px 0;
@@ -2266,9 +2275,7 @@ body.modal-open {
         font-size: 1.2em;
     }
 }
-.wrap{
-    background: #fee2d9;
-}
+
 .bradcumb-title{
     /* padding: 5% 0 5% 0; */
     height: 500px;
@@ -2338,6 +2345,55 @@ body.modal-open {
 
 
 
+.event-img{
+    background: url('img/bg-img/6.jpg');
+    width: 100%;
+    height: 600px;
+    background-position:center right;
+    position: relative;
+}
+.event-img01{
+    background: url('img/bg-img/8.jpg');
+    width: 100%;
+    height: 600px;
+    background-position:center right;
+    position: relative;
+}
+.event-img-title{
+    position: absolute;
+    top: 43%;
+    left: 46%;
+    
+}
+.event-img-title01{
+    position: absolute;
+    top: 43%;
+    left: 42.3%;
+    
+}
+.event-img-title01 h1{
+    font-size: 3rem;
+    color: white;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 400;
+}
+.event-img-title h1{
+    font-size: 3rem;
+    color: white;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 *, *:before, *:after {
     box-sizing: inherit;
@@ -2394,11 +2450,45 @@ body.modal-open {
     background-color: #555;
   }
 
-.news-title>h2{
-    border-bottom: 4px solid #f7b531;
-    width: 120px;
+.border_top{
+    border-top: 2px solid #000;
 }
-
+.example{
+    margin-left:900px;
+}
+.event-wrap{
+    padding-right: 0!important;
+}
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #fff;
+  }
+  
+  form.example button {
+    
+    width: 20%;
+    padding: 10px;
+    background: #ccc;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+  
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
 
 
@@ -2497,4 +2587,192 @@ body, html {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+}
+
+/*--------------------- social start--------------------------- */
+.social_logo{
+    padding: 20px 0 20px 0;
+}
+
+
+/*---------------------- brand start----------------------------- */
+.wrap {
+    overflow: visible;
+    width: 460px;
+    padding:16px
+}
+.module {
+    position: relative;
+}
+.prl-0{
+    padding-left:0!important;
+    padding-right:0!important;
+}
+.module {
+    position: relative;
+    z-index: 0;
+    overflow: hidden
+}
+
+.module .md-cont {
+    overflow: hidden
+}
+
+.module .md-cont>a,
+.module .md-cont>img {
+    display: block;
+    -webkit-transition: -webkit-transform 1000ms ease 0s;
+    transition: -webkit-transform 1000ms ease 0s;
+    -o-transition: transform 1000ms ease 0s;
+    transition: transform 1000ms ease 0s;
+    transition: transform 1000ms ease 0s, -webkit-transform 1000ms ease 0s
+}
+
+.module .md-cont>a:after,
+.module .md-cont>img:after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    opacity: 0;
+    -webkit-transition: all .1s linear;
+    -o-transition: all .1s linear;
+    transition: all .1s linear
+}
+
+.module .md-cont:after,
+.module .md-cont:before,
+.module:after,
+.module:before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    display: inline-block;
+    -webkit-box-sizing: box-sizing;
+    box-sizing: box-sizing;
+    width: 4px;
+    height: 4px;
+    background: #74c4f1;
+    -webkit-transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+    transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+    -webkit-transition-duration: .25s;
+    -o-transition-duration: .25s;
+    transition-duration: .25s;
+    -webkit-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;    
+    opacity:0;
+}
+/* 위 아래 가로값 */
+.module:after, .module:before {
+    width:0;
+    height:4px
+}
+.module:before { /* left 방향으로 기본값이 정해져있기때문에 width100%가 좌->오 방향으로 그려짐 */
+    top:0;
+    left:0;
+    background: -moz-linear-gradient(left, #ff9d1c 0%, #f7e019 100%);
+    background: -webkit-linear-gradient(left, #ff9d1c 0%, #f7e019 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#ff9d1c), to(#f7e019));
+    background: -o-linear-gradient(left, #ff9d1c 0%, #f7e019 100%);
+    background: linear-gradient(left, #ff9d1c 0%, #f7e019 100%);
+    -webkit-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s
+}
+.module:after { /* right 방향으로 기본값이 정해져있기때문에 width100%가 오->좌 방향으로 그려짐 */
+    bottom: 0;
+    right: 0;
+    background: -moz-linear-gradient(left, #ff9d1c 0%, #f7e019 100%);
+    background: -webkit-linear-gradient(left, #ff9d1c 0%, #f7e019 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(left), color-stop(0%, #ff9d1c), to(#f7e019));
+    background: -o-linear-gradient(left, #ff9d1c 0%, #f7e019 100%);
+    background: linear-gradient(left, #ff9d1c 0%, #f7e019 100%);
+    -webkit-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s
+}
+/* 왼쪽 오른쪽 세로값 */
+.module .md-cont:after,
+.module .md-cont:before {
+    width: 4px;
+    height: 0
+}
+.module .md-cont:before {
+    right: 0;
+    top: 0;
+    background: -moz-linear-gradient(top, #ff9d1c 0%, #f7e019 100%);
+    background: -webkit-linear-gradient(top, #ff9d1c 0%, #f7e019 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff9d1c), to(#f7e019));
+    background: -o-linear-gradient(top, #ff9d1c 0%, #f7e019 100%);
+    background: linear-gradient(top, #ff9d1c 0%, #f7e019 100%);
+    -webkit-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s
+}
+.module .md-cont:after {
+    left: 0;
+    bottom: 0;
+    background: -moz-linear-gradient(top,#ff9d1c 0%, #f7e019 100%);
+    background: -webkit-linear-gradient(top, #ff9d1c 0%, #f7e019 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(top), color-stop(0%, #ff9d1c), to(#fcc83b));
+    background: -o-linear-gradient(top, #ff9d1c 0%, #f7e019 100%);
+    background: linear-gradient(top, #ff9d1c 0%, #f7e019 100%);
+    -webkit-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s
+}
+/* 호버시 pic의 확대 */
+.module:hover .md-cont>a,
+.module:hover .md-cont>img {
+    -webkit-animation-delay: 0!important;
+    animation-delay: 0!important;
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    transform: scale(1, 1)
+}
+
+.module:hover .md-cont:after,
+.module:hover .md-cont:before,
+.module:hover:after,
+.module:hover:before {
+    opacity: 1
+}
+
+/* 위, 아래 가로값 */
+.module:hover:after,
+.module:hover:before {
+    width: 100%
+}
+
+/* 왼쪽, 오른쪽 세로값 */
+.module:hover .md-cont:after,
+.module:hover .md-cont:before {
+    height: 100%
+}
+.module:hover:before { /* 상 1 */
+    -webkit-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s
+}
+.module:hover:after { /* 하 3 */
+    -webkit-transition-delay: .4s;
+    -o-transition-delay: .4s;
+    transition-delay: .4s
+}
+.module:hover .md-cont:before { /* 우 2 */
+    -webkit-transition-delay: .2s;
+    -o-transition-delay: .2s;
+    transition-delay: .2s
+}
+.module:hover .md-cont:after { /* 좌 4 */
+    -webkit-transition-delay: .6s;
+    -o-transition-delay: .6s;
+    transition-delay: .6s
 }

@@ -1853,21 +1853,24 @@ li {
     padding-top: 10%;
     padding-bottom: 10%;
 }
-.dl_margin{
+/* .dl_margin{
     margin-left: 5%;
     margin-right: 20%;
+} */
+.justity{
+    justify-content: space-around;
 }
 .dl01{
-    font-size: .8rem;
+    font-size: .9rem;
 }
 .dl02{
-    font-size: .8rem;
+    font-size: .9rem;
 }
 .dl03{
-    font-size: .8rem;
+    font-size: .9rem;
 }
 .dl04{
-    font-size: .8rem;
+    font-size: .9rem;
 }
 .modal-mid dl{
     width: 50%;
@@ -1987,9 +1990,9 @@ li {
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: white;
+    background-color: rgb(240, 240, 240);
     box-sizing: border-box;
-    border: 1px solid #f7b531;
+    
   }
   
   .menu-list01:hover .overlay {
@@ -2003,16 +2006,23 @@ li {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    text-align: justify;
+    text-align: center;
     width: 100%;
     padding: 20px;
 
   }
+  .over-txt-mid{
+      text-align: justify;
+      padding-bottom: 5%;
+  }
+  .over-txt-bottom{
+      border-top: 1px solid #000;
+      padding-top: 15%;
+      justify-content: space-between;
+  }
   .over_title{
       color: #000;
-
-     
-  }
+    }
   .over_title>span{
       color: #ccc;
       font-weight: lighter;
@@ -2541,11 +2551,28 @@ body.modal-open {
     margin-bottom: 16px;
     padding: 0 8px;
   }
-  
+  @media screen and (max-width: 1920px){
+    .example{
+      margin-right: 2%!important;
+    }
+  }
+  @media screen and (max-width: 1198px){
+    .example{
+        margin-left:65%!important;
+    }
+  }
   @media screen and (max-width: 650px) {
     .column {
       width: 100%;
       display: block;
+    }
+    .example{
+        margin-left:55%!important;
+        width: 190px;
+      
+    }
+    .news-title h2{
+        margin-bottom: 6%;
     }
   }
   

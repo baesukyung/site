@@ -139,22 +139,22 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
-                <div class="pat-img" style="padding:20px;">
+                <div class="pat-img" style="padding:15px;">
                     <img src="img/bg-img/bottle.jpg" alt="">
                 </div>
             </div>
             <div class="col-sm-6" >
-                <div class="pay-title" style="padding:20px;">
+                <div class="pay-title" style="padding:15px;">
                     <h2>[MIX2|키위+파인애플] - 첨가물 전혀 없는 비가열 100% 과일주스</h2>
                 </div>
                 <div class="row">
                     <div class="col-md-3 col-sm-3 col-xs-3">
-                        <div class="pay-left-txt" style="padding:20px;">
+                        <div class="pay-left-txt" style="padding:30px;">
                             <p>판매가</p>
                         </div>
                     </div>
                     <div class="col-md-9 col-sm-9 col-xs-9">
-                        <div class="pay-right-txt" style="padding:20px;">
+                        <div class="pay-right-txt" style="padding:15px;">
                             <h1>5,900<span>원</span></h1><br>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
@@ -166,52 +166,60 @@
                 </div>
                 <div class="row">
                     <div class="col-md-3 col-sm-3 col-xs-3">
-                        <div class="pay-left-txt" style="padding:20px;">
+                        <div class="pay-left-txt" style="padding:15px 0 0 30px;">
                             <p>판매량</p>
                         </div>
                     </div>
                     <div class="col-md-9 col-sm-9 col-xs-9">
-                        <div class="pay-right-txt" style="padding:20px;">
+                        <div class="pay-right-txt" style="padding:15px;">
                             <p>1.795구매</p>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-3 col-sm-3 col-xs-3">
-                        <div class="pay-left-txt" style="padding:20px;">
+                        <div class="pay-left-txt" style="padding:15px 0 0 30px;">
                             <p>배송방법</p>
                         </div>
                     </div>
                     <div class="col-md-9 col-sm-9 col-xs-9">
-                        <div class="pay-right-txt" style="padding:20px;">
+                        <div class="pay-right-txt" style="padding:15px;">
                             <p>30.000원 이상 무료배송</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12">
-                    <div class="pay-left-txt" style="padding:20px;">
-                        <p>옵션선택</p>
-                    </div>
-                    <div class="custom-select" style="width:600px;">
-                        <select>
-                          <option value="0">Select car:</option>
-                          <option value="1">Audi</option>
-                          <option value="2">BMW</option>
-                          <option value="3">Citroen</option>
-                          <option value="4">Ford</option>
-                          <option value="5">Honda</option>
-                          <option value="6">Jaguar</option>
-                          <option value="7">Land Rover</option>
-                          <option value="8">Mercedes</option>
-                          <option value="9">Mini</option>
-                          <option value="10">Nissan</option>
-                          <option value="11">Toyota</option>
-                          <option value="12">Volvo</option>
-                        </select>
-                      </div>
-                </div>
-                <div class="col-md-12">
-                    <a href="#" class="btn btn-warning " role="button">주문하기</a>
+                <dl class="option">
+                    <dt><p>옵션선택</p></dt>
+                    <dd>
+                        <div class="opt_box">
+                            <input type="hidden" name="option_necessary1"value="Y"></input>
+                            <input type="hidden" name="option_type1"value="2"></input>
+                            <input type="hidden" name="option_name1"value="상품옵션선택"></input>
+                            <input type="hidden" name="option_prc1"value="0"></input>
+                            <input type="hidden" name="option_how_cal1"value="1"></input>
+                            <input type="hidden" name="option_sel_item1"value></input>
+                            <input type="hidden" name="option_ea_ck1"value="N"></input>
+                            <input type="hidden" name="option_ea_num1"value></input>
+                            <input type="hidden" name="opt_prd_necessary1"value="N"></input>
+                        </div>
+                        <div class="opt">
+                            <div class="selectric-wrapper selectric-wing_multi_option selectric-necessary_Y selectric-below">
+                                <div class="selectric-hide-select">
+                                    <select name="option1" id="option1" onchange="optionCal(this.form,'1',this.value,this,'')" data-necessary="Y" class="wing_multi_option necessary_Y"tabindex="-1">
+                                        <option value>상품옵션선택</option>
+                                        <option value="MIX02|키위+파인애플">MIX02|키위+파인애플</option>
+                                        <option value="MIX02|키위+파인애플">MIX02|키위+파인애플</option>
+                                        <option value="MIX02|키위+파인애플">MIX02|키위+파인애플</option>
+                                        <option value="MIX02|키위+파인애플">MIX02|키위+파인애플</option>
+                                        <option value="MIX02|키위+파인애플">MIX02|키위+파인애플</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+                <div class="col-md-12 text-right" style="padding:30px 0 0 0;">
+                    <a href="#" class="btn btn-warning order-btn" role="button">주문하기</a>
                 </div>
              </div>
         </div>

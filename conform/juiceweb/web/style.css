@@ -1967,7 +1967,10 @@ li {
  } 
  .menu-list01>p{
      font-weight: bold;
-    
+    margin-top: 40px;
+ }
+ .over_title{
+     margin-bottom: 25px;
  }
  .over_title>span{
     font-weight: bold;

@@ -23,6 +23,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     transition: all 0.5s;
+    
 }
 .logo>img{
     width: 50%;

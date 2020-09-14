@@ -69,7 +69,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
     font-weight: 700;
     color: #232d37;
     line-height: 1.25;
@@ -2964,6 +2964,7 @@ form.example input[type=text] {
 }
 .hover_text01>h3{
     color: #f7b531;
+    font-family: 'Nanum Gothic', sans-serif;
 }
  .hover_images01{
      display: none;
@@ -2974,6 +2975,7 @@ form.example input[type=text] {
 
  .hover_text02>h3{
     color: #f7b531;
+    font-family: 'Nanum Gothic', sans-serif;
 }
  .hover_images02{
      display: none;
@@ -2984,6 +2986,7 @@ form.example input[type=text] {
 
  .hover_text03>h3{
     color: #f7b531;
+    font-family: 'Nanum Gothic', sans-serif;
 }
  .hover_images03{
      display: none;
@@ -2994,6 +2997,7 @@ form.example input[type=text] {
 
  .hover_text04>h3{
     color: #f7b531;
+    font-family: 'Nanum Gothic', sans-serif;
 }
  .hover_images04{
      display: none;

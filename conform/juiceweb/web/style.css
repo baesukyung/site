@@ -380,7 +380,8 @@ li {
 }
 
 .font-shadow-into-light {
-    font-family: 'Shadows Into Light Two', cursive !important;
+    font-family: 'Nanum Gothic', sans-serif;
+
 }
 
 .yummy-table {
@@ -713,13 +714,11 @@ li {
     font-weight: 800;
     padding-top: 5%;
     padding-bottom:5%;
-    /* font-family: 'Kaushan Script', cursive; */
     font-family: 'Nanum Gothic', sans-serif;
 
 }
 .sec02_img>p{
     color: #f9b233;
-    /* font-family: 'Kaushan Script', cursive; */
     font-weight: 600;
     font-size: 1.4rem;
     font-family: 'Nanum Gothic', sans-serif;
@@ -748,9 +747,7 @@ li {
     padding-bottom: 5%;
 }
 .main_txt>h1{
-    /* font-family: 'Kaushan Script', cursive; */
     font-family: 'Nanum Gothic', sans-serif;
-    /* color: #51545f; */
     color:#000;
     font-weight: 800;
 }
@@ -909,7 +906,6 @@ li {
     line-height: 815px;
     text-align: center;
     color: white;
-    /* font-family: 'Kaushan Script', cursive; */
     font-family: 'Nanum Gothic', sans-serif;
 }
 .news_cont1{
@@ -2947,41 +2943,189 @@ body, html {
     color: orange;
   }
   /* 옵션선택부분 */
-.opt{
-    margin-top: 10px;
-    margin-bottom: 10px;
+/*the container must be positioned relative:*/
+.custom-select {
+  position: relative;
+  font-family:'Nanum Gothic', sans-serif;;
+  height: 2.92rem!important;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+  background-color: #fff;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  color: #000;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+select>option>span{
+    text-align: right;
+}
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: #fff;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
 }
   /* 옵션선택 end */
   .order-btn{
       width: 50%;
       text-align: center;
       border-radius: 0px;
+      color: #fff;
   }
-  .selectric-wrapper{
-      position: relative;
-      cursor: pointer;
+
+/* ---------------payment02 start ---------------*/
+.colum-re {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
   }
-  .selectric-hide-select{
-      position: relative;
-      overflow: hidden;
-      width: 0;
-      height: 0;
+  
+  .col-25 {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
   }
-  #detail .wrap_prd > .info .opt select{
-      appearance: none;
+  
+  .col-50 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
   }
-  .selectric-hide-select select{
-      position: absolute;
-      left: 100%;
+  
+  .col-75 {
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
   }
-  select{
-      max-width: 100%;
-      height: 34px;
-      padding: 4px 34px 4px 6px;
-      border: 1px solid #dcdcdc;
-      background:url(https://app.rankingdak.com/_skin/new_rankingdak_ver4/img/common/select_bg.png) no-repeat;
-      background-position: 100% center;
-      background-color: #fff;
-      color: #000;
-      font: inherit;
+  
+  .col-25,
+  .col-50,
+  .col-75 {
+    padding: 0 16px;
+  }
+  
+  .wrpping {
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+  }
+  
+  input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .icon-container {
+    margin-bottom: 20px;
+    padding: 0 0 7px 0; 
+    font-size: 24px;
+  }
+  
+  .btn_click {
+    background-color: #f7b531;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  
+  .btn_click:hover {
+    background-color: #f7b531;
+  }
+  
+  a {
+    color: #212529;
+  }
+  
+  hr {
+    border: 1px solid lightgrey;
+  }
+  
+  span.price {
+    float: right;
+    color: grey;
+  }
+
+.box-size>p{
+    width:93%;
+    height:92%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    background: #fff;
+    text-align: center;
+   margin-left: 14px;
+}
+.box-size>p:hover{
+    background: #f7b531;
+    transition: ease-in;
+}
+.box-size>p>a>i{
+    padding-top: 17px;
+}
+.border05{
+    box-sizing: border-box;
+    border: 2px solid #000;
+    padding: 50px 20px 30px 20px;
+}
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+  @media (max-width: 800px) {
+    .colum-re {
+      flex-direction: column-reverse;
+    }
+    .col-25 {
+      margin-bottom: 20px;
+    }
   }

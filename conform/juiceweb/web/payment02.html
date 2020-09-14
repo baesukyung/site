@@ -131,89 +131,97 @@
     <!-- ****** Header Area End ****** -->
 
     <div class="container">
-        <h2 class="pt-30 pb-20">주문하기</h2>
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="pat-img" style="padding:15px;">
-                    <img src="img/news/sd.jpg" alt="">
-                </div>
-            </div>
-            <div class="col-sm-6" >
-                <div class="pay-title" style="padding:15px;">
-                    <h2>[MIX2|키위+파인애플] - 첨가물 전혀 없는 비가열 100% 주스</h2>
-                </div>
-                <div class="row">
-                    <div class="col-md-3 col-sm-3 col-xs-3">
-                        <div class="pay-left-txt" style="padding:30px;">
-                            <p>판매가</p>
-                        </div>
-                    </div>
-                    <div class="col-md-9 col-sm-9 col-xs-9">
-                        <div class="pay-right-txt" style="padding:15px;">
-                            <h1>5,900<span>원</span></h1><br>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-3 col-sm-3 col-xs-3">
-                        <div class="pay-left-txt" style="padding:15px 0 0 30px;">
-                            <p>판매량</p>
-                        </div>
-                    </div>
-                    <div class="col-md-9 col-sm-9 col-xs-9">
-                        <div class="pay-right-txt" style="padding:15px;">
-                            <p>1.795구매</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-3 col-sm-3 col-xs-3">
-                        <div class="pay-left-txt" style="padding:15px 0 0 30px;">
-                            <p>배송방법</p>
-                        </div>
-                    </div>
-                    <div class="col-md-9 col-sm-9 col-xs-9">
-                        <div class="pay-right-txt" style="padding:15px;">
-                            <p>30.000원 이상 무료배송</p>
-                        </div>
-                    </div>
-                </div>
+        <h2 class="pt-30 pb-20">주문/결제</h2>
+        <div class="row colum-re">
+        <div class="col-75">
+            <div class="container wrpping">
+            <form action="/action_page.php">
             
-                    <!--surround the select box with a "custom-select" DIV element. Remember to set the width:-->
-                    <div class="custom-select" style="width:600px;">
-                        <select>
-                        <option value="0">주스를 선택해주세요</option>
-                        <option value="1">[과일주스]</option>
-                        <option value="2">MIX2|키위+파인애플 (5,900원)</option>
-                        <option value="3">MIX2|라임+수박 (5,900원)</option>
-                        <option value="4">MIX2|사과+토마토 (5,900원)</option>
-                        <option value="5">MIX3|아보카도+아몬드+바나나 (5,900원)</option>
-                        <option value="6">MIX3|블랙베리+블루베리+딸기 (5,900원)</option>
-                        <option value="7">MIX2|석류+오렌지 (5,900원)</option>
-                        <option value="8">MIX2|자몽+비트 (5,900원)</option>
-                        <option value="9">[야채주스]</option>
-                        <option value="10">MIX2|브로컬리+청경채 (5,900원)</option>
-                        <option value="11">MIX2|단호박+파프리카 (5,900원)</option>
-                        <option value="12">MIX2|라임+시금치 (5,900원)</option>
-                        <option value="13">MIX3|생강+복숭아+당근 (5,900원)</option>
-                        <option value="14">[견과류주스]</option>
-                        <option value="15">MIX2|호두+코코넛 (5,900원)</option>
-                        <option value="16">MIX|가평잣+이천쌀 (5,900원)</option>
-                        <option value="17">MIX2|피스타치오+카카오 (5,900원)</option>
-                    </select>
-                    </div>
                
-                <div class="col-md-12 text-right">
-                    <a href="payment02.html"><input type="submit" value="주문하기" class="btn_click" style="width: 50%;"></a>
-                </div>
-             </div>
-        </div>
+                <div class="col-12">
+                    <p style="font-weight: 700; font-size:20px;">주문자 정보</p>
+                    <label for="fname"><i class="fa fa-user"></i> 이름(name)</label>
+                    <input type="text" id="fname" name="firstname" placeholder="배수경">
+                    <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                    <input type="text" id="email" name="email" placeholder="john@example.com">
+                    <label for="adr"><i class="fa fa-address-card-o" aria-hidden="true"></i> 주소</label>
+                    <input type="text" id="adr" name="address" placeholder="경기도 김포시 김포한강 4로">
+                    <label for="city"><i class="fa fa-mobile" aria-hidden="true"> 전화번호</i></label>
+                    <input type="text" id="city" name="city" placeholder="010-000-0000">
 
+                    <div class="row colum-re">
+                    <div class="col-50">
+                        <label for="state">State</label>
+                        <input type="text" id="state" name="state" placeholder="NY">
+                    </div>
+                    <div class="col-50">
+                        <label for="zip">Zip</label>
+                        <input type="text" id="zip" name="zip" placeholder="10001">
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <p style="font-weight: 700; font-size:20px;">결제</p>
+                    <p style="font-weight: 700;">결제방법</p><hr>
+                    <div class="icon-container" style="padding-top: 10px;">
+                        <div class="row">
+                            <div class="col-6 box-size">
+                                <p style="background: #f7b531;"><a href="#"><i class="fa fa-credit-card" aria-hidden="true">신용카드</i></a></p>
+                             </div>
+                            <div class="col-6 box-size">
+                                <p><a href=""><i class="fa fa-clock-o" aria-hidden="true">무통장입금</i></a></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 box-size">
+                                <p><a href=""><i class="fa fa-clock-o" aria-hidden="true">실시간계좌이체</i></a></p>
+                            </div>
+                            <div class="col-6 box-size">
+                                <p><a href=""><i class="fa fa-mobile" aria-hidden="true">휴대폰결제</i></a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <label for="cname">카드선택</label>
+                    <input type="text" id="cname" name="cardname" placeholder="배수경">
+                    <label for="ccnum">Credit card number</label>
+                    <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                    <label for="expmonth">Exp Month</label>
+                    <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                    <div class="row">
+                    <div class="col-50">
+                        <label for="expyear">Exp Year</label>
+                        <input type="text" id="expyear" name="expyear" placeholder="2020">
+                    </div>
+                    <div class="col-50">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="352">
+                    </div>
+                    </div>
+                </div>
+                
+               
+                <label>
+                <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                </label>
+                
+            </form>
+            </div>
+        </div>
+        <div class="col-25">
+            <div class="container border05">
+            <h5 class="pb-10">주문결제 금액</h5>
+            <p><a href="#">상품금액</a> <span class="price" style="font-size: 22px;font-weight: 700;">5,600원</span></p><hr>
+            <p><a href="#">배송비</a> <span class="price" style="font-size: 22px;font-weight: 700;">3,000원</span></p>
+            <hr>
+            <p>총결제금액 <span class="price" style="color:red"><b style="font-size: 22px;font-weight: 700;">5,600원</b></span></p><hr>
+            <p>개인정보 제3자 제공 동의 <input type="checkbox" id="myCheck" onclick="myFunction()"></p>
+            <p>결제대행서비스 이용 동의 <input type="checkbox" id="myCheck" onclick="myFunction()"></p><hr>
+            <p><input type="checkbox" id="myCheck" onclick="myFunction()"> 구매조건 및 이용약관에 동의하며, 결제를 진행합니다.</p>
+            </div>
+            <input type="submit" value="결제하기" class="btn_click">
+        </div>
+      </div>
     </div>
 
     <!-- ****** Breadcumb Area Start ****** -->
@@ -366,5 +374,10 @@ function closeAllSelect(elmnt) {
 /*if the user clicks anywhere outside the select box,
 then close all select boxes:*/
 document.addEventListener("click", closeAllSelect);
+$(function(){
+    $('.btn_click').click(function(){
+        alert('결제가 완료되었습니다.')
+    });
+});
 </script>
 </body>

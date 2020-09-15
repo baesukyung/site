@@ -1989,7 +1989,7 @@ li {
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(240, 240, 240,0.7);
     box-sizing: border-box;
     
   }
@@ -2481,7 +2481,7 @@ body.modal-open {
   }
   
   .pagination a.active {
-    background-color: #fc6c3f;
+    background-color: #f7b531;
     color: white;
   }
   
@@ -2944,23 +2944,22 @@ form.example input[type=text] {
 .hover_text02{
     position: absolute;
     top:58%;
-    left: 33%;
+    left: 34%;
    /* display: none; */
 
 }
 .hover_text03{
     position: absolute;
     top:58%;
-    left:37%;
+    left:39%;
    /* display: none; */
 
 }
 .hover_text04{
     position: absolute;
     top:58%;
-    left: 33%;
+    left: 35%;
    /* display: none; */
-
 }
 .hover_text01>h3{
     color: #f7b531;

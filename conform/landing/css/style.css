@@ -279,10 +279,10 @@ body{
 
 
 .sec03-logo{
-    padding-top: 3%;
+    padding: 3% 0 3% 0;
 }
 .sub-txt{
-    padding-top: 1%;
+    padding: 1% 0 3% 0;
 }
 .singer-icon{
     padding-top: 2%;
@@ -299,7 +299,7 @@ body{
 }
 .sec03-last-txt{
     color:#412946;
-    padding-top: 1.8%;
+    padding-top: 3%;
     font-family: 'SeoulHangangM';
 }
 @media(max-width:375px){

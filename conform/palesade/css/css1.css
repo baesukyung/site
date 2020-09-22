@@ -1272,3 +1272,21 @@ select {
             margin-top: 7%!important;
         }
     }
+
+    @media all and (min-width:375px) and (max-width:479px) {
+        .mt480{
+            margin-top: 6%;
+        }
+        .dis-change{
+            display: flex;
+        }
+        .wid_110{
+            width: 100%;
+        }
+        .overlay_txt{
+            width: 97%;
+        }
+        .overlay_txt p{
+            margin-top: -2.8%;
+        }
+    }

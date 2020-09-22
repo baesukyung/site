@@ -766,14 +766,16 @@ li {
 .cont-txt{
     position: absolute;
     display: none;
-    top:150px;
+    top:60%;
+    left: 35%;
+    text-align: center;
     border-bottom: 2px solid #000;
 
 }
 .cont-txt1{
     position: absolute;
     display: none;
-    top:200px;
+    top:70%;
     width: 100%;
     font-weight: 600;
 

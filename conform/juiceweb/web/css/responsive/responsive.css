@@ -55,9 +55,9 @@
         font-size:2rem;
     }
     .cont1>a>img{
-        width: 82%;
+        width: 100%;
     }
-    .cont1:hover{
+    /*.cont1:hover{
         transform: scale(.82,1);
     }
     .cont1:hover>.hover_round{
@@ -74,16 +74,15 @@
     }
     .cont3:hover>.hover_round{
         transform: scale(1.24,1);
-    }
+    }*/
     .cont2>a>img{
-        width: 82%;
+        width: 100%;
     }
     .cont3>a>img{
-        width: 82%;
+        width: 100%;
     }
     .hover_round{
-        width: 23%;
-        height: 23%;
+       
         text-align:center;
         align-items: center;
         vertical-align:center;

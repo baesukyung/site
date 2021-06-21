@@ -105,11 +105,11 @@ textarea.form-control{
 	height: 50px;
 }
 
-.navbar-wooster .primary-menu{
+/* .navbar-wooster .primary-menu{
 	margin-top: 0;
 	margin-left: -15px;
 	margin-right: -15px;
-}
+} */
 
 .navbar-wooster .navbar-collapse{
 	background-color: #fff;
@@ -732,11 +732,11 @@ ul.social li a i:focus{
 RESPONSIVE
 ******************************/
 @media (min-width: 768px){
-	.primary-menu{
+	/* .primary-menu{
 		position: relative;
 		overflow: hidden;
 		margin-top: 18px;
-	}
+	} */
 
 	.primary-menu .navbar-nav{
 		right: -75%;

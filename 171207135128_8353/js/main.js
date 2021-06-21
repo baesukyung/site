@@ -8,12 +8,14 @@
  * Copyright 2017, Codrops
  * http://www.codrops.com
  */
+
 {
     class Details {
         constructor() {
             this.DOM = {};
 
             const detailsTmpl = `
+            <div class="button_click"></div>
             <div class="details__bg details__bg--up"></div>
             <div class="details__bg details__bg--down"></div>
             <img class="details__img" src="" alt="img 01"/>
@@ -22,7 +24,7 @@
             <h3 class="details__subtitle"></h3>
             <div class="details__price"></div>
             <p class="details__description"></p>
-            <button class="details__addtocart">Add to cart</button>
+            <button class="details__addtocart"></button>
             <button class="details__close"><svg class="icon icon--cross"><use xlink:href="#icon-cross"></use></svg></button>
             <button class="details__magnifier"><svg class="icon icon--magnifier"><use xlink:href="#icon-magnifier"></use></svg></button>
             `;
@@ -43,6 +45,7 @@
             this.DOM.price = this.DOM.details.querySelector('.details__price');
             this.DOM.description = this.DOM.details.querySelector('.details__description');
             this.DOM.cart = this.DOM.details.querySelector('.details__addtocart');
+            this.DOM.cart = this.DOM.details.querySelector('.button_click>a');
             this.DOM.close = this.DOM.details.querySelector('.details__close');
             this.DOM.magnifier = this.DOM.details.querySelector('.details__magnifier');
 
@@ -310,10 +313,13 @@
         }
     };
 
+
+
+
     const DOM = {};
     DOM.grid = document.querySelector('.grid');
     DOM.content = DOM.grid.parentNode;
-    DOM.hamburger = document.querySelector('.dummy-menu');
+    // DOM.hamburger = document.querySelector('.dummy-menu');
     DOM.gridItems = Array.from(DOM.grid.querySelectorAll('.grid__item'));
     let items = [];
     DOM.gridItems.forEach(item => items.push(new Item(item)));
@@ -321,4 +327,12 @@
     DOM.details = new Details();
 
     imagesLoaded(document.body, () => document.body.classList.remove('loading'));
+
 };
+
+// $(function(){
+//     $('.mobile-btn').click(function(){
+//         $(this).toggleClass('active');
+//         $(".menudrop").toggle();
+//     });
+// });

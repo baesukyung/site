@@ -26,8 +26,8 @@ body {
 	--color-details-subtitle: #000;
 	--color-descr: #000;
 	--color-price: var(--color-link);
-	--color-bg-addtocart: #000;
-	--color-addtocart: #fff;
+	/* --color-bg-addtocart: #000;
+	--color-addtocart: #fff; */
 	--color-close: #000;
 	--color-bg-magnifier: #000;
 	--color-magnifier: #fff;
@@ -268,7 +268,7 @@ main {
 	position: absolute;
 	top: 10vh;
 	right: 10vw;
-	height: 80vh;
+	height: 60vh;
 }
 
 .details__bg,
@@ -295,18 +295,18 @@ main {
 .details__description {
 	line-height: 1.5;
 	font-weight: bold;
-	max-width: 50%;
+	max-width: 27%;
 	margin: 2em 0 0 0;
 	color: var(--color-details-desc);
 }
 
 .details__price {
-	font-size: 3em;
+	font-size: 2em;
 	font-weight: bold;
 	color: var(--color-price);
 }
 
-.details__addtocart {
+/* .details__addtocart {
 	border: 0;
 	margin: auto 0 0 0;
 	background: var(--color-bg-addtocart);
@@ -317,7 +317,7 @@ main {
 
 .details__addtocart:hover {
 	background: var(--color-btn-hover);
-}
+} */
 
 .details__close {
 	position: absolute;
@@ -331,7 +331,23 @@ main {
 	color: var(--color-close);
 }
 
-.dummy-menu {
+
+.button_click{
+	position: relative;
+	top: 7%;
+	width: 15%;
+	height:10%;
+	background-color: lightcoral;
+	z-index: 99;
+	text-align: center;
+}
+.button_click>a{
+	color: white;
+	font-size: 1.5em;
+}
+
+
+/* .dummy-menu {
 	border: 0;
 	background: none;
 	padding: 0;
@@ -343,7 +359,98 @@ main {
 	color: var(--color-close);
 	cursor: pointer;
 	z-index: 1000;
+} */
+/* .mobile-btn{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 30%;
+    left: 91%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    z-index: 1000;
 }
+
+.mobile-btn span{
+    width: inherit;
+    height: 5px;
+    background-color: #f1abea;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    transition: 0.5s;
+}
+
+
+.mobile-btn span:after{
+    content: '';
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    background-color: #ff7521;
+    transition: 0.5s;
+}
+.mobile-btn span:before{
+    content: '';
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    background-color: #ff7521;
+    transition: 0.5s;
+}
+.mobile-btn span:before{
+    top:0;
+    top:-15px;
+}
+.mobile-btn span:after{
+    top:0;
+    top:15px;
+}
+.mobile-btn.active span{
+    background-color: transparent;
+}
+.mobile-btn.active span:before{
+    top:0;
+    transform: rotate(45deg);
+}
+.mobile-btn.active span:after{
+    top:0;
+    transform: rotate(-45deg);
+}
+/*햄버거 버튼 클릭시 나오는 메뉴들*/
+/* .menudrop{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    display: none;
+}
+.menudrop ul{
+    line-height: 17rem;
+    font-size: 10rem;
+    color: #f6a16d;
+    cursor: pointer;
+}
+.menudrop ul li span{
+    font-size: 4rem;
+}
+.menudrop>ul>li{
+    color: #f6a16d;
+}
+.menutxt>li>a{
+    color:#f6a16d;
+}
+.menutxt>li>a:hover{
+    color:#fff;
+}
+.menutxt>li:hover{
+    background: #f1abea;
+}  */
 
 .details__magnifier {
 	border: 0;
@@ -363,12 +470,12 @@ main {
 	background: var(--color-btn-hover);
 }
 
-.details__deco {
+/* .details__deco {
 	width: 7em;
 	height: 20px;
 	background-position: 50% 97%;
 	background-size: 150%;
-}
+} */
 
 /* Related demos */
 .content--related {
@@ -422,11 +529,14 @@ main {
 	.grid__item {
 		padding: 0 2vw;
 	}
+	.product{
+		padding-top: 4em;
+	}
 	.product__bg {
-		height: 10em;
+		height: 8em;
 	}
 	.product__img {
-		max-height: 19em;
+		max-height: 10em;
 	}
 	.product__title {
 		font-size: 1.25em;
@@ -474,7 +584,7 @@ main {
 		text-align: center;
 		font-size: 1.25em;
 	}
-	.dummy-menu {
+	.mobile-btn {
 		margin: 1.75em 1.5em 0 0;
 	}
 }

@@ -16,11 +16,27 @@ https://baesukyung.github.io/site/conform/app/index.html
 5. 랜딩페이지(영화,드라마등)
 https://baesukyung.github.io/site/conform/landing/index.html
 
-6. 상세페이지(화장품)
+6.병원사이트 - 그누보드
+http://owlcity06.dothome.co.kr/
+
+
+1. 상세페이지(화장품)
 https://baesukyung.github.io/site/conform/cosmetic01/design.html
 
-8.병원사이트 - 그누보드
-http://owlcity06.dothome.co.kr/
+2.상세페이지-마스크
+https://baesukyung.github.io/site/conform/cosmetic02/design.html
+
+3.상세페이지-향기패치
+https://baesukyung.github.io/site/conform/cosmetic03/design.html
+
+4.상세페이지-테이프클리너리필
+https://baesukyung.github.io/site/conform/cosmetic04/design.html
+
+5.상세페이지-아이오페쿠션
+https://baesukyung.github.io/site/conform/cosmetic05/design.html
+
+6.상세페이지-아이오페에이지코렉터
+https://baesukyung.github.io/site/conform/cosmetic06/design.html
 
 
 

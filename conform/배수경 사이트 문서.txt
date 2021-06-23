@@ -17,7 +17,7 @@ https://baesukyung.github.io/site/conform/app/index.html
 https://baesukyung.github.io/site/conform/landing/index.html
 
 6. 상세페이지(화장품)
-https://baesukyung.github.io/site/conform/detailpage/design.html
+https://baesukyung.github.io/site/conform/cosmetic01/design.html
 
 8.병원사이트 - 그누보드
 http://owlcity06.dothome.co.kr/

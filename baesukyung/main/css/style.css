@@ -16,7 +16,7 @@ p,h6, address{
     left: 0;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to left, #f79d49, #f1acee);
+    background: linear-gradient(to left, #fcc8b6,#fec9fd,#d4b6fc,#d2f5ff);
     z-index: -1;
 }
 
@@ -29,100 +29,23 @@ nav{
 }
 #logo{
     grid-column: 2/3;
-    font-size: 24pt;
-}
-
-.mobile-btn{
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 7%;
-    left: 88%;
-    transform: translate(-50%,-50%);
-    cursor: pointer;
-    z-index: 99;
-}
-
-.mobile-btn span{
-    width: inherit;
-    height: 5px;
-    background-color: #f1abea;
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    transition: 0.5s;
-}
-
-
-.mobile-btn span:after{
-    content: '';
-    width: inherit;
-    height: inherit;
-    position: absolute;
-    background-color: #ff7521;
-    transition: 0.5s;
-}
-.mobile-btn span:before{
-    content: '';
-    width: inherit;
-    height: inherit;
-    position: absolute;
-    background-color: #ff7521;
-    transition: 0.5s;
-}
-.mobile-btn span:before{
-    top:0;
-    top:-15px;
-}
-.mobile-btn span:after{
-    top:0;
-    top:15px;
-}
-.mobile-btn.active span{
-    background-color: transparent;
-}
-.mobile-btn.active span:before{
-    top:0;
-    transform: rotate(45deg);
-}
-.mobile-btn.active span:after{
-    top:0;
-    transform: rotate(-45deg);
-}
-/*햄버거 버튼 클릭시 나오는 메뉴들*/
-.menudrop{
     width: 100%;
-    height: 100%;
-    background: #fff;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 5;
-    display: none;
+    height: 30px;
 }
-.menudrop ul{
-    line-height: 17rem;
-    font-size: 10rem;
-    color: #f6a16d;
-    cursor: pointer;
-}
-.menudrop ul li span{
-    font-size: 4rem;
-}
-.menudrop>ul>li{
-    color: #f6a16d;
-}
-.menutxt>li>a{
-    color:#f6a16d;
-}
-.menutxt>li>a:hover{
-    color:#fff;
-}
-.menutxt>li:hover{
-    background: #f1abea;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 section{
     display: flex;
     height: 80vh;

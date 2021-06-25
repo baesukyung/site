@@ -13,7 +13,8 @@ a:hover, a:focus{
 
 
 p{
-	margin-bottom: 40px;
+	/* margin-bottom: 40px; */
+    line-height: 40px;
 }
 
 p,h6, address{
@@ -21,18 +22,22 @@ p,h6, address{
 	color: #777;
 }
 
-h1,h2,h3,h4,h5,h6{
+/* h1,h2,h3,h4,h5,h6{
 	text-transform: uppercase;
+} */
+
+.d-flex{
+    display: flex;
 }
 header{
 	height: 800px;
 	text-align: center;
 	margin-bottom: 0;
 	position: relative;
-	background-image: url(../img/portfolio/01.jpg);
+	background-image: url(../img/portfolio/sea.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position:center center;
+	background-position:center top;
 }
 
 section{
@@ -108,6 +113,7 @@ textarea.form-control{
 
 .position_ab{
 	position: relative;
+    /* background: #fff; */
 }
 .navbar-header>.navbar-brand{
 	position: absolute;
@@ -246,12 +252,64 @@ textarea.form-control{
 	transition:all 0.3s;
 }
 
+/* 메인 카드 이미지 부분 */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    border-radius: 8px;
+  }
+  
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+  
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+  
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
 
 
 
+/* 메인 카드 이미지 부분 끝*/
 
-
-
+/* 스킬부분 */
+.skills {
+    text-align: right;
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
+    color: white;
+  }
+  .grey {
+    width: 100%;
+    background-color: #ddd;
+  }
+  .html {width: 90%; background-color: #8115ff;}
+  .css {width: 80%; background-color: #8115ff;}
+  .js {width:70%; background-color: #8115ff;}
+  .php {width: 60%; background-color: #8115ff;}
+  /* 스킬부분 끝 */
 
 .main-head h1{
 	text-transform: uppercase;
@@ -416,247 +474,15 @@ textarea.form-control{
 	padding: 50px 0;
 }
 
-/* .video{
-	background-image: url(../img/keyboard.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	height: 500px;
-	color: #fff;
-	position: relative;
-}
-
-.video-wrapper{
-	background-color: rgba(0,0,0,0.8);
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-
-.video .fa{
-	font-size: 70px;
-	color: #fff;
-}
-
-.centred-container{
-	position: absolute;
-	width: 100%;
-	text-align: center;
-	top: 50%;
-	-webkit-transform: translate(0,-50%);
-	-moz-transform: translate(0,-50%);
-	-ms-transform: translate(0,-50%);
-	-o-transform: translate(0,-50%);
-	transform: translate(0,-50%);
-}
-
-.video h3{
-	margin-bottom: 30px;
-}
-.video .glyphicon{
-	font-size: 70px;
-} */
 
 
-/**********************
-PORTFOLIO
-***********************/
-.centered-pills {
-	text-align: center;
-}
-.centered-pills ul.nav-pills {
-	display: inline-block;
-	margin-bottom: 50px;
-}
-.centered-pills li {
-	display: inline;
-}
-.centered-pills a {
-	float: left;
-}
-
-.nav-pills > li > a{
-	border-radius: 0;
-	color: #000;
-	border:1px solid #7ff2ff;
-	margin-right: 20px;
-}
-
-.nav-pills > li > a:hover,
-.nav-pills > li > a:focus,
-.nav-pills > li > a.active{
-	background: #8115ff	;
-	border-color: #8115ff;
-	color: #fff;
-}
-
-#portfolio-grid .mix{
-	display: none;
-}
-
-.mix{
-	position: relative;
-	padding: 70px;
-}
-.wid_ch1{
-	text-align: center;
-}
-
-.grey>img{
-	box-shadow:10px 10px #9f9f9f, 20px 20px #c8c8c8, 30px 30px #e9e8e9;
-	width: 100%;
-	height: 500px;
-}
 
 
-.mix:hover .overlay {
-	opacity: 1;
-  }
-.mix:hover .overlay_top10 {
-	opacity: 1;
-  }
-  .overlay {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 10%;
-	right: 0;
-	height: 100%;
-	width: 80%;
-	opacity: 0;
-	transition: .5s ease;
-	background-color:rgba(255, 255, 255, 0.8) ;
-  }
-  .overlay_top10 {
-	position: absolute;
-	top: 11%;
-	bottom: 0;
-	left: 10%;
-	right: 0;
-	height: 80%;
-	width: 80%;
-	opacity: 0;
-	transition: .5s ease;
-	background-color:rgba(255, 255, 255, 0.8) ;
-  }
-  .img-responsive {
-	display: block;
-  }
-  .text {
-	color: rgb(29, 29, 29);
-	font-size: 2.5rem;
-	font-weight: bold;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	text-align: center;
-  }
-  .text p{
-	color: rgb(29, 29, 29);
-	  line-height: 30px;
-	  font-size: 1.8rem;
-	  font-weight:lighter;
-  }
-/******
-TESTIMONIAL
-**********/
-.testimonial{
-	
-	background: url(../img/coffe.jpg) no-repeat center;
-	background-size: cover;
-	position: relative;
-}
-
-.mask{
-	width: 100%;
-	height: 100%;
-	display: block;
-	background: rgba(0,0,0,0.8);
-	
-}
-
-.single-testimonial{
-	padding: 80px 0;
-	text-align: center;
-
-}
-
-.single-testimonial .fa{
-	width: 50px;
-	height: 50px;
-	background-color: #fff;
-	color: #000;
-	margin-bottom: 30px;
-	line-height: 50px;
-	text-align: center;
-	border-radius: 100%;
-}
-
-.testimonial p{
-	font-size: 17px;
-	text-transform: uppercase;
-	color: #fff;
-}
-
-.testimonial h6{
-	color: #fff;
-}
-
-.team-member{
-	position: relative;
-	margin-bottom: 70px;
-}
-
-.team-member h6{
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	background: rgba(0,0,0,0.8);
-	color: #fff;
-	margin: 0;
-	text-align: center;
-	padding: 30px 0;
-}
 
 
-.subscribe-input{
-	text-align: left;
-	width: 100%;
-	border: 0 none;
-	background: transparent;
-	opacity: 0.9;
-	border: 1px solid #fff;
-	padding: 14px;
-}
 
-.btn-cta{
-	background-color: #fff;
-	border: 1px solid #fff;
-	color: #000;
-	font-weight: 400;
-	letter-spacing: 1px;
-	margin: 0;
-	padding: 15px 25px;
-	text-transform: uppercase;
-	width: 100%;
-}
 
-address{
-	text-align: center;
-	margin-bottom: 70px;
-}
 
-address .fa{
-	display: block;
-	font-size: 33px;
-	margin-bottom: 20px;
-}
 /**FOOTER**/
 footer{
 	background: #000;
@@ -752,7 +578,18 @@ RESPONSIVE
 }
 
 @media (max-width: 767px){
-
+    header{
+        height:600px;
+        text-align: center;
+        margin-bottom: 0;
+        background-image: url(../img/portfolio/sea.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:center center;
+    }
+    /* .about_img{
+        color: #8115ff;
+    } */
 	.navbar-toggle{
 		margin-top: -45px;
 	}

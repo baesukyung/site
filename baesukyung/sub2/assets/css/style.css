@@ -28,10 +28,10 @@ header{
 	text-align: center;
 	margin-bottom: 0;
 	position: relative;
-	background-image: url(../img/sea.jpg);
+	background-image: url(../img/design.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position:center top;
+	background-position:center center;
 }
 
 .title{
@@ -378,8 +378,7 @@ header{
 
 .my_img{
   border-radius: 50%;
-  width:220px;
-  height: 200px;
+
 }
 
 .pd-b10{

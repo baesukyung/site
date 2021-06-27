@@ -118,8 +118,15 @@ header{
   padding: 0;
 }
 
-
-
+.menudrop>ul>li{
+  font-size: 2rem !important;
+}
+.menudrop ul li span{
+  font-size: 2rem !important;
+}
+.menutxt>li>a{
+  font-size: 4rem !important;
+}
 }
 
 /* 햄버거 메뉴 */
@@ -198,9 +205,8 @@ header{
 .menudrop ul{
 	background: white;
 	line-height: 17rem;
-    /* font-size: 10rem; */
-    color: #7ff2ff;
-    cursor: pointer;
+  color: #7ff2ff;
+  cursor: pointer;
 	padding: 0;
 }
 .menudrop ul li span{

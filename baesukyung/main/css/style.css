@@ -162,27 +162,55 @@ section{
     left: 0;
     opacity:0.3 ;
 }
-@media (min-width: 768px){
+
+
+@media (max-width: 1024px){
+    .headline{
+        left: 0;
+        font-size: 80pt;
+    }
+    .menudrop ul{
+		line-height: 17rem;
+	}
+	.menudrop>ul>li{
+		font-size: 3rem;
+	}
+	.menudrop ul li span{
+		font-size: 3.5rem;
+	}
+
+  .menudrop ul li a{
+      font-size: 8rem;
+  }
+}
+
+/*@media (min-width: 768px){
     .menudrop ul li a{
-		font-size: 10rem;
+		font-size: 7rem;
 	}
 	.menudrop ul li a span{
 		font-size: 4rem;
 	}
 
-}
+}*/
 @media (max-width: 767px){
     .menudrop ul li{
         font-size: 3rem;
     }
 	.menudrop ul li a{
-		font-size: 4rem;
+		font-size: 3rem;
 	}
 	.menudrop ul li a span{
-		font-size: 2rem;
+		font-size: 1.8rem;
 	}
     .headline{
         font-size: 3.5rem;
     }
+    .menudrop ul{
+        line-height: 10rem;
+    }
 }
+
+
+
 

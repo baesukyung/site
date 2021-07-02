@@ -735,7 +735,9 @@ RESPONSIVE
 		overflow: hidden;
 		margin-top: 18px;
 	} */
-
+	.navbar-brand>img{
+		width: 60%;
+	}
 	.primary-menu .navbar-nav{
 		right: -75%;
 		position: absolute;

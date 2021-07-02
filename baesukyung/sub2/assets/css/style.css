@@ -48,7 +48,12 @@ header{
 .section-text{
 	padding: 50px 0;
 }
-
+/* .navbar{
+  position: fixed!important;
+  width: 100%;
+  color: white;
+  z-index: 999;
+} */
 .navbar-header{
 	height: 90px;
 }
@@ -71,7 +76,10 @@ header{
 	left: 10%;
 	top: 10%;
 }
-
+.navbar-brand>img{
+  width: 80%;
+  margin-left: -20%;
+}
 /* .navbar-wooster .primary-menu{
 	margin-top: 0;
 	margin-left: -15px;
@@ -103,7 +111,7 @@ header{
     width: 40px;
     height: 40px;
     position: absolute;
-    top: 70%;
+    top: 50%;
     left: 88%;
     transform: translate(-50%,-50%);
     cursor: pointer;
@@ -754,6 +762,7 @@ footer a:hover{
   margin-top: -45px;
 }
 .navbar-brand>img{
+  width: 65%;
   margin-left: -20%;
 }
 .navbar-wooster .navbar-toggle{
@@ -771,5 +780,8 @@ footer a:hover{
 }
 .menutxt>li>a{
   font-size: 3rem !important;
+}
+.mobile-btn{
+  top: 43%;
 }
 }

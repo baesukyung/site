@@ -209,6 +209,13 @@ section{
     .menudrop ul{
         line-height: 10rem;
     }
+    #logo>img{
+        width: 35%;
+    }
+    .mobile-btn{
+        width: 35px;
+        height: 30px;
+    }
 }
 
 
